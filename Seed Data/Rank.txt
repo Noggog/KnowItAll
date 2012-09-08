@@ -1,0 +1,3 @@
+Putty, 800
+Officer, 190
+Emperor, 1

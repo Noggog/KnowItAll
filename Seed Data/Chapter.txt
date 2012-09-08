@@ -1,0 +1,5 @@
+Blood Angels, 50
+Minotaurs, 5
+Space Wolves, 40
+Dark Angels, 35
+Black Templar, 25
