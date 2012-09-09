@@ -79,7 +79,7 @@ public class NPCRandomizer {
     }
 
     public static void loadFiles() throws IOException {
-	File srcFile = new File(KnowItAll.source);
+	File srcFile = new File(Database.source);
 
 	for (File f : srcFile.listFiles()) {
 	    if (f.isFile() && Ln.isFileType(f, "TXT")) {

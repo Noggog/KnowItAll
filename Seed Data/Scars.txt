@@ -1,5 +1,0 @@
-Normal, 900
-Missing Arm, 40
-Scarred Face, 400
-Missing Hand, 100
-Wheel Legs, 40

@@ -4,15 +4,16 @@
  */
 package knowitall.gui;
 
-import java.awt.Font;
 import javax.swing.JTextField;
+import javax.swing.event.DocumentListener;
+import lev.gui.LComponent;
 import lev.gui.resources.LFonts;
 
 /**
  *
  * @author Justin Swanson
  */
-public class SearchBar extends JTextField {
+public class SearchBar extends LComponent {
 
     JTextField field;
 
@@ -22,7 +23,7 @@ public class SearchBar extends JTextField {
 
     final void init() {
 	field = new JTextField();
-	field.setFont(LFonts.MyriadPro(20));
+	field.setFont(LFonts.MyriadProBold(20));
 	add(field);
 	setSize(5, 30);
 	field.setVisible(true);
@@ -33,5 +34,13 @@ public class SearchBar extends JTextField {
     final public void setSize(int x, int y) {
 	super.setSize(x, y);
 	field.setSize(x, y);
+    }
+
+    public void addDocumentListener(DocumentListener d) {
+	field.getDocument().addDocumentListener(d);
+    }
+
+    public String getText() {
+	return field.getText();
     }
 }
