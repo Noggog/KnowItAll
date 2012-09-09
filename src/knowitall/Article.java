@@ -26,6 +26,7 @@ public class Article {
 	try {
 	    spec = KnowItAll.gson.fromJson(new FileReader(specF), ArticleSpec.class);
 	    if (spec != null && spec.name != null && !spec.name.equals("")) {
+		spec.clean();
 		return true;
 	    }
 	} catch (FileNotFoundException ex) {
