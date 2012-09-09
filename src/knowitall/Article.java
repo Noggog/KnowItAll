@@ -7,12 +7,7 @@ package knowitall;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import lev.LFileChannel;
-import lev.Ln;
 
 /**
  *
@@ -50,5 +45,18 @@ public class Article {
 
     public String getContent() {
 	return spec.content;
+    }
+
+    public ArrayList<String[]> getSubcategories() {
+	if (spec.extraSubCategories == null) {
+	    return new ArrayList<>(0);
+	}
+	ArrayList<String[]> out = new ArrayList<>(spec.extraSubCategories.length);
+	for (String[] sub : spec.extraSubCategories) {
+	    if (sub.length == 2) {
+		out.add(sub);
+	    }
+	}
+	return out;
     }
 }

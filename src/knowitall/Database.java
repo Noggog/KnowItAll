@@ -50,7 +50,7 @@ public class Database {
 					Article a = new Article(category);
 					if (a.load(articleSpec)) {
 					    Database.articleMap.put(a.category, a);
-					    Database.articles.put(a.getName(), a);
+					    Database.articles.put(a.getName().toUpperCase(), a);
 					}
 				    }
 				} catch (Exception e) {

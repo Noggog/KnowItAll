@@ -12,5 +12,5 @@ public class ArticleSpec {
 
     public String name;
     public String content;
-    public String[][] subCategories;
+    public String[][] extraSubCategories;
 }

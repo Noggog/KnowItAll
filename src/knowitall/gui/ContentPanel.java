@@ -24,6 +24,7 @@ public class ContentPanel extends LPanel {
     }
 
     public void updateContent(String s) {
+	s = s.toUpperCase();
 	if (Database.articles.containsKey(s)) {
 	    target = Database.articles.get(s);
 	    Updater update = new Updater();
