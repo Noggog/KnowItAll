@@ -13,16 +13,29 @@ public class ArticleSpec {
     public String name;
     public String[][] extraSubCategories;
     public String content;
+    public String shortContent;
 
     public void clean() {
-	name = name.trim();
-	for (String[] s : extraSubCategories) {
-	    for (int i = 0; i < s.length; i++) {
-		s[i] = s[i].trim();
+	if (name != null) {
+	    name = name.trim();
+	}
+	if (extraSubCategories != null) {
+	    for (String[] s : extraSubCategories) {
+		for (int i = 0; i < s.length; i++) {
+		    s[i] = s[i].trim();
+		}
 	    }
 	}
-	char[] chars = content.toCharArray();
-	content = "";
+	shortContent = cleanContentStr(shortContent);
+	content = cleanContentStr(content);
+    }
+
+    public String cleanContentStr(String in) {
+	if (in == null) {
+	    return null;
+	}
+	char[] chars = in.toCharArray();
+	in = "";
 	boolean firstNL = true;
 	for (char c : chars) {
 	    if (c == '\r') {
@@ -36,12 +49,12 @@ public class ArticleSpec {
 		    firstNL = false;
 		    // Make sure there's a space between the two chars
 		    // Between the deleted NL character
-		    if (content.charAt(content.length() - 1) != ' ') {
-			content += " ";
+		    if (in.charAt(in.length() - 1) != ' ') {
+			in += " ";
 		    }
 		    continue;
 		} else {
-		    content += c;
+		    in += c;
 		    continue;
 		}
 	    }
@@ -51,7 +64,8 @@ public class ArticleSpec {
 	    if (((byte) c) == -3) {
 		c = '\'';
 	    }
-	    content += c;
+	    in += c;
 	}
+	return in;
     }
 }

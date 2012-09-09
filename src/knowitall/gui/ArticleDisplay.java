@@ -21,6 +21,7 @@ public class ArticleDisplay extends LPanel {
 
     Article article;
     LTextArea content;
+    LTextArea shortContent;
     LTextArea subCategories;
     LLabel title;
 
@@ -35,6 +36,12 @@ public class ArticleDisplay extends LPanel {
 	subCategories.setWrapStyleWord(true);
 	subCategories.setFont(LFonts.MyriadProBold(15));
 	add(subCategories);
+
+	shortContent = new LTextArea(Color.BLACK);
+	shortContent.setFont(LFonts.MyriadProBold(15));
+	shortContent.setLineWrap(true);
+	shortContent.setWrapStyleWord(true);
+	add(shortContent);
 
 	content = new LTextArea(Color.BLACK);
 	content.setLineWrap(true);
@@ -54,19 +61,26 @@ public class ArticleDisplay extends LPanel {
 	}
 	subCategories.setText(subCategoriesStr);
 	subCategories.setVisible(!subCategories.getText().equals(""));
+	shortContent.setText(a.getShort());
+	shortContent.setVisible(!shortContent.getText().equals(""));
     }
 
     @Override
     public void remeasure(Dimension size) {
-	if (subCategories.isVisible()) {
-	    subCategories.setSize(size.width - 2 * Spacings.articleDispay, 30);
-	    subCategories.setSize(subCategories.getPreferredSize());
-	    content.setLocation(Spacings.articleDispay, subCategories.getBottom());
-	} else {
-	    content.setLocation(Spacings.articleDispay, title.getBottom());
-	}
-	content.setSize(size.width - 2 * Spacings.articleDispay, 30);
-	content.setSize(content.getPreferredSize());
+	int y = title.getBottom();
+	y = position(subCategories, size, y);
+	y = position(shortContent, size, y);
+	position(content, size, y);
 	setSize(size.width, content.getY() + content.getHeight() + Spacings.articleDispay);
+    }
+
+    int position(LTextArea area, Dimension size, int y) {
+	if (area.isVisible()) {
+	    area.setLocation(Spacings.articleDispay, y);
+	    area.setSize(size.width - 2 * Spacings.articleDispay, 30);
+	    area.setSize(area.getPreferredSize());
+	    y = area.getBottom();
+	}
+	return y;
     }
 }

@@ -48,6 +48,10 @@ public class Article {
 	return spec.content;
     }
 
+    public String getShort() {
+	return spec.shortContent;
+    }
+
     public ArrayList<String[]> getSubcategories() {
 	if (spec.extraSubCategories == null) {
 	    return new ArrayList<>(0);
