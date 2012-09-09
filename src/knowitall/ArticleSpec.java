@@ -4,6 +4,11 @@
  */
 package knowitall;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
 /**
  *
  * @author Justin Swanson
@@ -15,24 +20,55 @@ public class ArticleSpec {
     public String content;
     public String shortContent;
 
+    public void noNull() {
+	name = noNull(name);
+	extraSubCategories = noNull(extraSubCategories);
+	content = noNull(content);
+	shortContent = noNull(shortContent);
+    }
+
+    public String noNull(String s) {
+	if (s == null) {
+	    return "";
+	}
+	return s;
+    }
+
+    public String[][] noNull(String[][] s) {
+	if (s == null) {
+	    return new String[0][];
+	}
+	return s;
+    }
+
     public void clean() {
-	if (name != null) {
-	    name = name.trim();
-	}
-	if (extraSubCategories != null) {
-	    for (String[] s : extraSubCategories) {
-		for (int i = 0; i < s.length; i++) {
-		    s[i] = s[i].trim();
-		}
+	noNull();
+	name = name.trim();
+
+	// SubCategories
+	ArrayList<String[]> tmp = new ArrayList<>(extraSubCategories.length);
+	for (String[] s : extraSubCategories) {
+	    if (s.length != 2) {
+		continue;
 	    }
+	    for (int i = 0; i < s.length; i++) {
+		s[i] = s[i].trim();
+	    }
+	    tmp.add(s);
 	}
+	extraSubCategories = new String[tmp.size()][];
+	int i = 0;
+	for (String[] s : tmp) {
+	    extraSubCategories[i++] = s;
+	}
+
 	shortContent = cleanContentStr(shortContent);
 	content = cleanContentStr(content);
     }
 
     public String cleanContentStr(String in) {
-	if (in == null) {
-	    return null;
+	if (in.equals("")) {
+	    return in;
 	}
 	char[] chars = in.toCharArray();
 	in = "";
@@ -67,5 +103,17 @@ public class ArticleSpec {
 	    in += c;
 	}
 	return in;
+    }
+
+    public Set<String> getWords() {
+	HashSet<String> out = new HashSet<>();
+	for (String[] s : extraSubCategories) {
+	    if (s.length == 2) {
+		out.addAll(Parsing.getWords(s[1]));
+	    }
+	}
+	out.addAll(Parsing.getWords(content));
+	out.addAll(Parsing.getWords(shortContent));
+	return out;
     }
 }

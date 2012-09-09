@@ -33,6 +33,12 @@ public class Database {
     static class LooseFileLoader extends SwingWorker<Integer, Article> {
 
 	@Override
+	protected void done() {
+	    Map<String, Article> tmp = articles;
+	    int wer = 23;
+	}
+
+	@Override
 	protected Integer doInBackground() throws Exception {
 	    File seeds = new File(source);
 	    for (File categoryDir : seeds.listFiles()) {
@@ -40,24 +46,7 @@ public class Database {
 		    Category category = new Category();
 		    if (category.load(categoryDir)) {
 			categories.add(category);
-			// Load Category's articles
-			File articleDir = new File(categoryDir.getPath() + "/Articles");
-			if (articleDir.isDirectory()) {
-			    for (File articleSpec : articleDir.listFiles()) {
-				try {
-				    if (articleSpec.isFile()
-					    && Ln.isFileType(articleSpec, "JSON")) {
-					Article a = new Article(category);
-					if (a.load(articleSpec)) {
-					    Database.articleMap.put(a.category, a);
-					    Database.articles.put(a.getName().toUpperCase(), a);
-					}
-				    }
-				} catch (Exception e) {
-				    Debug.log.logException(e);
-				}
-			    }
-			}
+			loadCategoryContents(category, new File(categoryDir.getPath() + "/Articles"));
 		    }
 		} catch (Exception e) {
 		    Debug.log.logException(e);
@@ -65,6 +54,32 @@ public class Database {
 	    }
 	    printArticles();
 	    return 0;
+	}
+
+	void loadCategoryContents(Category category, File articleDir) {
+	    if (articleDir.isDirectory()) {
+		for (File articleSpec : articleDir.listFiles()) {
+		    try {
+			if (articleSpec.isFile()
+				&& Ln.isFileType(articleSpec, "JSON")) {
+			    Article a = new Article(category);
+			    if (a.load(articleSpec)) {
+				publishArticle(a);
+			    }
+			}
+		    } catch (Exception e) {
+			Debug.log.logException(e);
+		    }
+		}
+	    }
+	}
+
+	void publishArticle(Article a) {
+	    for (Article rhs : Database.articles.values()) {
+		Article.link(a,rhs);
+	    }
+	    Database.articleMap.put(a.category, a);
+	    Database.articles.put(a.getName().toUpperCase(), a);
 	}
     }
 

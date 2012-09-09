@@ -75,6 +75,12 @@ public class KnowItAll {
     }
 
     public static void exitProgram() {
+	if (Debug.log.logging()) {
+	    Debug.log.newLog("All Words.txt");
+	    for (String s : Parsing.allWords) {
+		Debug.log.log("", s);
+	    }
+	}
 	Debug.log.close();
 	System.exit(0);
     }

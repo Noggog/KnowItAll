@@ -8,15 +8,20 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
 
 /**
  *
  * @author Justin Swanson
  */
-public class Article {
+public class Article implements Comparable {
 
     public Category category;
     ArticleSpec spec;
+    Set<String> words = new HashSet<>();
+    Set<Article> linked = new TreeSet<>();
 
     Article(Category c) {
 	category = c;
@@ -27,6 +32,7 @@ public class Article {
 	    spec = KnowItAll.gson.fromJson(new FileReader(specF), ArticleSpec.class);
 	    if (spec != null && spec.name != null && !spec.name.equals("")) {
 		spec.clean();
+		words = spec.getWords();
 		return true;
 	    }
 	} catch (FileNotFoundException ex) {
@@ -63,5 +69,22 @@ public class Article {
 	    }
 	}
 	return out;
+    }
+
+    public void linkTo(Article a) {
+	if (words.contains(a.getName().toUpperCase())) {
+	    linked.add(a);
+	}
+    }
+
+    public static void link (Article a, Article b) {
+	a.linkTo(b);
+	b.linkTo(a);
+    }
+
+    @Override
+    public int compareTo(Object o) {
+	Article b = (Article) o;
+	return this.getName().compareTo(b.getName());
     }
 }
