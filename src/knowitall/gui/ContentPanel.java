@@ -21,6 +21,9 @@ public class ContentPanel extends LPanel {
     ArrayList<ArticleDisplay> displays = new ArrayList<>();
 
     ContentPanel() {
+	for (int i = 0; i < 10; i++) {
+	    addDisplay();
+	}
     }
 
     public void updateContent(String s) {
@@ -29,21 +32,23 @@ public class ContentPanel extends LPanel {
 	    target = Database.articles.get(s);
 	    Updater update = new Updater();
 	    update.execute();
+	} else if (s.equals("")) {
+	    target = null;
+	    Updater update = new Updater();
+	    update.execute();
 	}
     }
 
     void displayArticles(ArrayList<Article> articles) {
 	while (displays.size() < articles.size()) {
-	    ArticleDisplay d = new ArticleDisplay();
-	    displays.add(d);
-	    add(d);
+	    addDisplay();
 	}
 
-	for (int i = 0 ; i < articles.size() ; i++) {
+	for (int i = 0; i < articles.size(); i++) {
 	    displays.get(i).load(articles.get(i));
 	}
 
-	for (int i = articles.size() ; i < displays.size() ; i++) {
+	for (int i = articles.size(); i < displays.size(); i++) {
 	    displays.get(i).load(null);
 	}
     }
@@ -60,21 +65,32 @@ public class ContentPanel extends LPanel {
     }
 
     @Override
-    public void remeasure (Dimension size) {
+    public void remeasure(Dimension size) {
 	setSize(size);
 	compactContent();
     }
 
+    final void addDisplay() {
+	ArticleDisplay d = new ArticleDisplay();
+	displays.add(d);
+	add(d);
+    }
+
     class Updater extends LSwingWorker<Integer, String> {
 
-	Updater () {
+	Updater() {
 	    super(true);
 	}
 
 	@Override
 	protected Integer doInBackground() throws Exception {
 	    ArrayList<Article> articles = new ArrayList<>();
-	    articles.add(target);
+	    if (target != null) {
+		articles.add(target);
+		for (Article link : target.getLinks()) {
+		    articles.add(link);
+		}
+	    }
 	    displayArticles(articles);
 	    compactContent();
 	    return 0;

@@ -9,6 +9,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -19,6 +20,7 @@ import java.util.TreeSet;
 public class Article implements Comparable {
 
     public Category category;
+    String name = "";
     ArticleSpec spec;
     Set<String> words = new HashSet<>();
     Set<Article> linked = new TreeSet<>();
@@ -71,8 +73,16 @@ public class Article implements Comparable {
 	return out;
     }
 
+    public void cleanInit() {
+	words = null;
+    }
+
+    public Set<Article> getLinks() {
+	return linked;
+    }
+
     public void linkTo(Article a) {
-	if (words.contains(a.getName().toUpperCase())) {
+	if (!equals(a) && words.contains(a.getName().toUpperCase())) {
 	    linked.add(a);
 	}
     }
@@ -80,6 +90,28 @@ public class Article implements Comparable {
     public static void link (Article a, Article b) {
 	a.linkTo(b);
 	b.linkTo(a);
+    }
+
+    @Override
+    public int hashCode() {
+	int hash = 3;
+	hash = 97 * hash + Objects.hashCode(this.spec.name);
+	return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+	if (obj == null) {
+	    return false;
+	}
+	if (getClass() != obj.getClass()) {
+	    return false;
+	}
+	final Article other = (Article) obj;
+	if (!Objects.equals(this.spec.name, other.spec.name)) {
+	    return false;
+	}
+	return true;
     }
 
     @Override

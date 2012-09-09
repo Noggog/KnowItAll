@@ -51,27 +51,36 @@ public class ArticleDisplay extends LPanel {
     }
 
     public void load(Article a) {
-	article = a;
-	title.setText(a.getName());
-	content.setText(a.getContent());
-	String subCategoriesStr = "";
-	ArrayList<String[]> subCategoriesList = a.getSubcategories();
-	for (String[] subCategory : subCategoriesList) {
-	    subCategoriesStr += subCategory[0] + " : " + subCategory[1] + "\n";
+	if (a == null) {
+	    setVisible(false);
+	} else {
+	    setVisible(true);
+	    article = a;
+	    title.setText(a.getName());
+	    content.setText(a.getContent());
+	    String subCategoriesStr = "";
+	    ArrayList<String[]> subCategoriesList = a.getSubcategories();
+	    for (String[] subCategory : subCategoriesList) {
+		subCategoriesStr += subCategory[0] + " : " + subCategory[1] + "\n";
+	    }
+	    subCategories.setText(subCategoriesStr);
+	    subCategories.setVisible(!subCategories.getText().equals(""));
+	    shortContent.setText(a.getShort());
+	    shortContent.setVisible(!shortContent.getText().equals(""));
 	}
-	subCategories.setText(subCategoriesStr);
-	subCategories.setVisible(!subCategories.getText().equals(""));
-	shortContent.setText(a.getShort());
-	shortContent.setVisible(!shortContent.getText().equals(""));
     }
 
     @Override
     public void remeasure(Dimension size) {
-	int y = title.getBottom();
-	y = position(subCategories, size, y);
-	y = position(shortContent, size, y);
-	position(content, size, y);
-	setSize(size.width, content.getY() + content.getHeight() + Spacings.articleDispay);
+	if (isVisible()) {
+	    int y = title.getBottom();
+	    y = position(subCategories, size, y);
+	    y = position(shortContent, size, y);
+	    position(content, size, y);
+	    setSize(size.width, content.getY() + content.getHeight() + Spacings.articleDispay);
+	} else {
+	    setSize(1, 1);
+	}
     }
 
     int position(LTextArea area, Dimension size, int y) {
