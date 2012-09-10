@@ -34,13 +34,15 @@ public class Article implements Comparable {
 	try {
 	    spec = KnowItAll.gson.fromJson(new FileReader(specF), ArticleSpec.class);
 	    if (spec != null && spec.name != null && !spec.name.equals("")) {
-		spec.clean();
+		spec.clean(category);
 		words = spec.getWords();
 		return true;
 	    }
 	} catch (FileNotFoundException ex) {
+	} catch (com.google.gson.JsonSyntaxException ex) {
 	    Debug.log.logException(ex);
 	}
+	Debug.log.logMain("Article Load", "Blocked Article: " + name + " with specfile path: " + specF.getPath());
 	Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, name, "Blocked article: " + name + " with specfile path: " + specF.getPath());
 	return false;
     }
@@ -89,7 +91,7 @@ public class Article implements Comparable {
 	}
     }
 
-    public static void link (Article a, Article b) {
+    public static void link(Article a, Article b) {
 	a.linkTo(b);
 	b.linkTo(a);
     }

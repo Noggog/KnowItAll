@@ -7,7 +7,10 @@ package knowitall;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  *
@@ -16,6 +19,7 @@ import java.util.Objects;
 public class Category implements Comparable {
 
     CategorySpec spec;
+    Set<String> subCategories = new HashSet<>();
 
     Category () {
     }
@@ -26,6 +30,7 @@ public class Category implements Comparable {
 	    try {
 		spec = KnowItAll.gson.fromJson(new FileReader(specF), CategorySpec.class);
 		if (spec != null && spec.name != null && !spec.name.equals("")) {
+		    subCategories.addAll(Arrays.asList(spec.extraSubCategories));
 		    return true;
 		}
 	    } catch (FileNotFoundException ex) {

@@ -12,6 +12,6 @@ public class CategorySpec {
 
     public static String categorySpecFilename = "kiacategoryspec.json";
 
-    String name;
-    String[] extraSubCategories;
+    String name = "";
+    String[] extraSubCategories = new String[0];
 }

@@ -1,7 +1,7 @@
 {
-	"name" : "Ranged Weapons",
+	"name" : "Grenades and Missiles",
 	"extraSubCategories" : 
 	[ 
-		"Class", "Range", "Rate of Fire", "Damage", "Penetration", "Clip", "Reload", "Special", "Weight", "Requisition", "Renown"
+		"Class", "Range", "Rate of Fire", "Damage", "Penetration", "Special", "Weight", "Requisition", "Renown"
 	]
 }

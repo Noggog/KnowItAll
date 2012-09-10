@@ -22,13 +22,13 @@ public class ArticleSpec {
     public int pageNumber = -1;
     public boolean GMOnly = false;
 
-    public void clean() {
+    public void clean(Category c) {
 	name = name.trim();
 
 	// SubCategories
 	ArrayList<String[]> tmp = new ArrayList<>(extraSubCategories.length);
 	for (String[] s : extraSubCategories) {
-	    if (s.length != 2) {
+	    if (s.length != 2 || !c.subCategories.contains(s[0]) || "".equals(s[1])) {
 		continue;
 	    }
 	    for (int i = 0; i < s.length; i++) {

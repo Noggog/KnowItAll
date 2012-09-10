@@ -1,0 +1,7 @@
+{
+	"name" : "Melee Weapons",
+	"extraSubCategories" : 
+	[ 
+		"Class", "Damage", "Penetration", "Special", "Weight", "Requisition", "Renown"
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"name" : "Ammunition",
+	"extraSubCategories" : 
+	[ 
+		"Requisition", "Renown", "Used With"
+	]
+}

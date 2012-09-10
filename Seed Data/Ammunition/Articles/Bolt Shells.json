@@ -1,0 +1,27 @@
+{
+	"name" : "Bolt Shells",
+	
+	"shortContent" : "Blocks eyesight and sensors for 1d10 rounds.",
+	
+	"content" : "The mass-reactive explosive bolt shell is among
+the deadliest kind of round in the Imperial arsenal.
+The Deathwatch takes great advantage of variations
+that have been made on this design over the years,
+yielding a wide variety of alternate rounds that still
+fire from a standard bolt weapon. The majority of
+bolt shell manufacturing capacity is reserved for the
+Adeptus Astartes, making them costly for others to obtain but
+a matter of course among Battle-Brothers.",
+
+	"extraSubCategories" : 
+	[ 
+		["Requisition", "N/A"],
+		["Renown", "None"],
+		["Used With", "Any Bolt-class Pistol, Basic, or Heavy weapon."],
+		["Effects", ""]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 150
+}
