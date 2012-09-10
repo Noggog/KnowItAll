@@ -6,6 +6,7 @@ package knowitall.gui;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.util.ArrayList;
 import knowitall.Article;
 import lev.gui.LLabel;
@@ -44,6 +45,7 @@ public class ArticleDisplay extends LPanel {
 	add(shortContent);
 
 	content = new LTextArea(Color.BLACK);
+	content.setFont(new Font("SansSerif", Font.PLAIN, 14));
 	content.setLineWrap(true);
 	content.setWrapStyleWord(true);
 	add(content);
