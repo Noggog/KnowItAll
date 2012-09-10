@@ -15,5 +15,9 @@ Aiming can be used with both melee and ranged attacks.",
 	[ 
 		["Type", "Half Action or Full Action"],
 		["Subtype", "Concentration"]
-	]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 237
 }

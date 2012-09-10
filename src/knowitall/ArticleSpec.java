@@ -15,34 +15,14 @@ import java.util.Set;
  */
 public class ArticleSpec {
 
-    public String name;
-    public String[][] extraSubCategories;
-    public String content;
-    public String shortContent;
-
-    public void noNull() {
-	name = noNull(name);
-	extraSubCategories = noNull(extraSubCategories);
-	content = noNull(content);
-	shortContent = noNull(shortContent);
-    }
-
-    public String noNull(String s) {
-	if (s == null) {
-	    return "";
-	}
-	return s;
-    }
-
-    public String[][] noNull(String[][] s) {
-	if (s == null) {
-	    return new String[0][];
-	}
-	return s;
-    }
+    public String name = "";
+    public String[][] extraSubCategories = new String[0][];
+    public String content = "";
+    public String shortContent = "";
+    public int pageNumber = -1;
+    public boolean GMOnly = false;
 
     public void clean() {
-	noNull();
 	name = name.trim();
 
 	// SubCategories
