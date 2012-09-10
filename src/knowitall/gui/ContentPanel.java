@@ -26,17 +26,10 @@ public class ContentPanel extends LPanel {
 	}
     }
 
-    public void updateContent(String s) {
-	s = s.toUpperCase();
-	if (Database.articles.containsKey(s)) {
-	    target = Database.articles.get(s);
-	    Updater update = new Updater();
-	    update.execute();
-	} else if (s.equals("")) {
-	    target = null;
-	    Updater update = new Updater();
-	    update.execute();
-	}
+    public void updateContent(Article a) {
+	target = a;
+	Updater update = new Updater();
+	update.execute();
     }
 
     void displayArticles(ArrayList<Article> articles) {
@@ -73,6 +66,7 @@ public class ContentPanel extends LPanel {
     final void addDisplay() {
 	ArticleDisplay d = new ArticleDisplay();
 	displays.add(d);
+	d.setVisible(false);
 	add(d);
     }
 

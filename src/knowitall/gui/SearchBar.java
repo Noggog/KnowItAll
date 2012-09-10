@@ -5,7 +5,9 @@
 package knowitall.gui;
 
 import javax.swing.JTextField;
+import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+import knowitall.Database;
 import lev.gui.LComponent;
 import lev.gui.resources.LFonts;
 
@@ -16,18 +18,45 @@ import lev.gui.resources.LFonts;
 public class SearchBar extends LComponent {
 
     JTextField field;
+    ContentPanel content;
 
-    public SearchBar() {
+    public SearchBar(ContentPanel content) {
+	this.content = content;
 	init();
     }
 
     final void init() {
 	field = new JTextField();
 	field.setFont(LFonts.MyriadProBold(20));
+	addDocumentListener(new DocumentListener() {
+	    @Override
+	    public void insertUpdate(DocumentEvent e) {
+		updateContent();
+	    }
+
+	    @Override
+	    public void removeUpdate(DocumentEvent e) {
+		updateContent();
+	    }
+
+	    @Override
+	    public void changedUpdate(DocumentEvent e) {
+		updateContent();
+	    }
+	});
 	add(field);
 	setSize(5, 30);
 	field.setVisible(true);
 	setVisible(true);
+    }
+
+    void updateContent() {
+	String s = field.getText().toUpperCase();
+	if (Database.articles.containsKey(s)) {
+	    content.updateContent(Database.articles.get(s));
+	} else if (s.equals("")) {
+	    content.updateContent(null);
+	}
     }
 
     @Override
