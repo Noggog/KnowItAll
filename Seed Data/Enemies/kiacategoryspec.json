@@ -1,0 +1,7 @@
+{
+	"name" : "Enemies",
+	"extraSubCategories" : 
+	[ 
+		"Movement", "Skills", "Talents", "Traits", "Armor", "Weapons", "Equipment", "Wounds"
+	]
+}

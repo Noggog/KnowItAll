@@ -1,0 +1,15 @@
+{
+	"name" : "Aim",
+	
+	"shortContent" : "Use a skill in combat.",
+	
+	"content" : "The active character may use a Skill. This usually involves
+making a Skill Test. This can be an Extended Action,
+depending on the Skill and the circumstances.",
+
+	"extraSubCategories" : 
+	[ 
+		["Type", "Half, Full, or Extended Action (Varies by circumstance)"],
+		["Subtype", "Concentration, Miscellaneous"]
+	]
+}

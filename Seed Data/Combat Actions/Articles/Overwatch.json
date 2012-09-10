@@ -1,0 +1,35 @@
+{
+	"name" : "Overwatch",
+	
+	"shortContent" : "Pick a 45 degree kill zone, select full-auto, semi-auto, and suppressing fire, and chose a condition which will trigger your gun fire.",
+	
+	"content" : "The active character guards a specific area or target, poised to
+shoot at an opportune moment. When Overwatch is declared,
+the active character establishes a kill zone, which is any
+general area, such as a corridor or treeline, that encompasses a
+45 degree arc in the direction that active character is facing.
+
+
+The active character then specifies either Full Auto
+Burst, Semi-Auto Burst, or Suppressing Fire, along with the
+conditions under which he will perform the chosen attack.
+At any time the specified conditions are met before the start
+of the character’s next Turn, he can perform that attack. If
+this attack occurs at the same time as another character’s
+Action, the character with the higher Agility Bonus acts first.
+If both characters have the same Agility Bonus, they make an
+Opposed Agility Test to see who acts first.
+
+
+Additionally, targets caught in the kill zone must make a
+Hard (–20) Pinning Test or become Pinned (see Pinning on
+page 248). If a character on Overwatch performs any Actions
+or Reaction, such as Dodge, his Overwatch immediately ends.
+Note this does not include Free Actions, such as speech.",
+
+	"extraSubCategories" : 
+	[ 
+		["Type", "Full Action"],
+		["Subtype", "Attack, Concentration, Ranged"]
+	]
+}

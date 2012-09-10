@@ -1,0 +1,38 @@
+{
+	"name" : "Suppressing Fire",
+	
+	"shortContent" : "Fire on all targets within a 45 degree kill zone. They must take a -20 Pinning Test and you may must make -20 BS test to see if any friend or foe is hit. GM determines randomly who is hit. Every 2 degrees of success is another bullet that hits.",
+	
+	"content" : "The active character unleashes a devastating hail of firepower to
+force his opponents to take cover. This action requires a weapon
+capable of fully automatic fire (see Rate of Fire, page 141). When
+Suppressing Fire is declared, the active character establishes
+a kill zone (or uses one previously established, see Overwatch,
+page 241), which is any general area, such as a corridor or
+treeline, that encompasses a 45 degree arc in the direction the
+active character is facing. Then, the active character fires a fully
+automatic burst and expends the appropriate ammo. All targets
+within the kill zone must take a Hard (–20) Pinning Test or
+become Pinned (see page 248). Additionally, the active character
+must make a Hard (–20) Ballistic Skill Test to determine if
+his wild spray of gunfire hits anyone, friend or foe, within the
+kill zone. A roll of 94–100 on the test indicates the weapon has
+Jammed (see Weapon Jams, page 249). If the Ballistic Skill Test
+succeeds, the GM assigns the hit to a random target within the
+kill zone. Furthermore, every two Degrees of Success score an
+extra hit against another random victim. Use of the Suppressive
+Fire action does not affect the defensive benefits of armour or
+cover. The number of hits scored may not exceed the weapon’s
+fully automatic Rate of Fire. Use Table 8–2: Multiple Hits to
+determine Hit Locations for multiple hits against the same target.
+The active character cannot choose to fail this Ballistic Skill Test.
+Note that Suppressing Fire is a separate Full Action from Full
+Auto Burst and therefore does not benefit from the+20 attack
+bonus Full Auto Burst provides.",
+
+	"extraSubCategories" : 
+	[ 
+		["Type", "Full Action"],
+		["Subtype", "Attack, Ranged"]
+	]
+}

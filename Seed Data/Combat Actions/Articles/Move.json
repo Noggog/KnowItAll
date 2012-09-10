@@ -1,0 +1,19 @@
+{
+	"name" : "Move",
+	
+	"shortContent" : "Move your character up to a designated amount of meters.",
+	
+	"content" : "The active character can spend a Half Action to move a
+number of metres equal to his Agility Bonus. As a Full Action,
+he may move twice that distance. If the Active character ends
+his movement adjacent to an opponent, he may engage that
+opponent in melee. If the active character moves away from
+an opponent with whom he is engaged, that opponent may
+make a free Standard Attack against the active character.",
+
+	"extraSubCategories" : 
+	[ 
+		["Type", "Half Action or Full Action"],
+		["Subtype", "Movement"]
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name" : "Jump or Leap",
+	
+	"shortContent" : "You jump or leap.",
+	
+	"content" : "The character can Jump vertically or Leap horizontally. If the
+character is engaged in melee, each opponent he is engaged
+with can make a free Standard Attack against the character. See
+Movement, page 205, for details on Jumping and Leaping.",
+
+	"extraSubCategories" : 
+	[ 
+		["Type", "Full Action"],
+		["Subtype", "Movement"]
+	]
+}

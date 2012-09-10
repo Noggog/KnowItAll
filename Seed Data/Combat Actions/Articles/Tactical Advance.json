@@ -1,0 +1,17 @@
+{
+	"name" : "Tactical Advance",
+	
+	"shortContent" : "Make a full move from cover to cover but benefit from the cover you left for the whole time you are in between.",
+	
+	"content" : "The active character moves from one position of cover
+to another position of cover. In so doing, he may cover a
+distance up to his Full Move. For the duration of the move, he
+is considered to benefit from the cover he left, even though he
+is moving in the open for a brief time.",
+
+	"extraSubCategories" : 
+	[ 
+		["Type", "Full Action"],
+		["Subtype", "Concentration, Miscellaneous"]
+	]
+}

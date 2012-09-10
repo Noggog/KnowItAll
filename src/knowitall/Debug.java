@@ -11,10 +11,15 @@ import lev.debug.LLogger;
  * @author Justin Swanson
  */
 public class Debug {
-    
+
     public static LLogger log;
 
     public static void init() {
 	log = new LLogger("Debug/");
+	log.addSpecial(Logs.BLOCKED_ARTICLES, "Blocked Articles.txt");
+    }
+
+    public static enum Logs {
+	BLOCKED_ARTICLES;
     }
 }

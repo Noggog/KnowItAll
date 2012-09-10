@@ -1,0 +1,19 @@
+{
+	"name" : "Parry",
+	
+	"shortContent" : "If you wield a weapon capable of parrying, take a WP test to negate an incoming melee attack.",
+	
+	"content" : "If the active character is wielding a melee weapon capable
+of Parrying, he can attempt to thwart an incoming melee
+attack by making a Challenging (+0) Weapon Skill Test.
+If the test succeeds, the incoming attack is considered to have
+missed. If the test fails, the attack connects and Damage is
+rolled normally. Parrying requires no special Skill or Talent,
+but Parry can only be used to negate a melee attack.",
+
+	"extraSubCategories" : 
+	[ 
+		["Type", "Reaction"],
+		["Subtype", "Defence, Melee"]
+	]
+}

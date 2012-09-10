@@ -1,0 +1,17 @@
+{
+	"name" : "Guarded Attack",
+	
+	"shortContent" : "-10 WS to your attack but +10 to Dodge and Parry until your next turn.",
+	
+	"content" : "The character performs a careful attack, making sure he
+remains well poised to defend himself. The character suffers
+a –10 penalty to his Weapon Skill Test, but he gains a +10
+bonus to all Dodge and Parry Tests until the start of his
+next Turn.",
+
+	"extraSubCategories" : 
+	[ 
+		["Type", "Full Action"],
+		["Subtype", "Attack, COncentration, Melee"]
+	]
+}

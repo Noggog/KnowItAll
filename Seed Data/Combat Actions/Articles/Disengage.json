@@ -1,0 +1,16 @@
+{
+	"name" : "Disengage",
+	
+	"shortContent" : "Safely break off of melee combat with a half move.",
+	
+	"content" : "The character breaks off from melee combat and may take a
+Half Move. Opponents that were engaged with the character
+do not gain any free attacks. See the Fleeing sidebar for
+more details.",
+
+	"extraSubCategories" : 
+	[ 
+		["Type", "Full Action"],
+		["Subtype", "Movement"]
+	]
+}

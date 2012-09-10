@@ -1,0 +1,16 @@
+{
+	"name" : "Focus Power",
+	
+	"shortContent" : "Used to manifest psychic powers in combat.",
+	
+	"content" : "This Action is used to manifest Psychic Powers in combat.
+Every Psychic Power specifies an Action type and one or more
+subtypes. For more information, see Chapter VI: Psychic
+Powers.",
+
+	"extraSubCategories" : 
+	[ 
+		["Type", "Half, Full, Free, or Extended Action"],
+		["Subtype", "Varies by Power"]
+	]
+}

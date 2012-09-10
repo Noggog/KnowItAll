@@ -1,0 +1,14 @@
+{
+	"name" : "Stand or Mount",
+	
+	"shortContent" : "Stand up or mount a riding beast or vehicle.",
+	
+	"content" : "If the active character is on the ground, he can stand. If he is
+already standing, he can mount a riding beast or a vehicle.",
+
+	"extraSubCategories" : 
+	[ 
+		["Type", "Half Action"],
+		["Subtype", "Movement"]
+	]
+}

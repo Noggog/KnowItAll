@@ -1,0 +1,19 @@
+{
+	"name" : "Feint",
+	
+	"shortContent" : "Make an opposed WP test against your opponent. If you win, your next attack against them cannot be Dodged or Parried.",
+	
+	"content" : "The character attempts to use guile and combat training to
+trick his opponent into a mistake. The character and his target
+make an Opposed Weapon Skill Test. If the active character
+wins, his next melee attack against that same target cannot
+be Dodged or Parried. If the active character’s next Action
+is anything other than a Standard Attack, the advantage of
+Feinting is lost.",
+
+	"extraSubCategories" : 
+	[ 
+		["Type", "Half Action"],
+		["Subtype", "Attack, Melee"]
+	]
+}

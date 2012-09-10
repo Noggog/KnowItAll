@@ -1,0 +1,16 @@
+{
+	"name" : "Multiple Attacks",
+	
+	"shortContent" : "Make two attacks this turn.",
+	
+	"content" : "This action allows the active character to make more than
+one attack on his Turn, provided he has the Swift Attack
+or Lightning Attack talent, or is wielding a weapon in his
+secondary hand. See Two-Weapon Fighting, page 246.",
+
+	"extraSubCategories" : 
+	[ 
+		["Type", "Full Action"],
+		["Subtype", "Attack, Melee, or Ranged"]
+	]
+}

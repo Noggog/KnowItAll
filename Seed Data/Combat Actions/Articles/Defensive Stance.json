@@ -1,0 +1,17 @@
+{
+	"name" : "Defensive Stance",
+	
+	"shortContent" : "Recieve 1 extra Reaction and enemies take -20 to WS tests against you until your next turn.",
+	
+	"content" : "The character makes no attacks and instead concentrates
+entirely on self-defence. Until the start of his next Turn,
+the character can make one additional Reaction, and all
+opponents suffer a –20 penalty to Weapon Skill Tests made
+to attack him.",
+
+	"extraSubCategories" : 
+	[ 
+		["Type", "Full Action"],
+		["Subtype", "Concentration, Melee"]
+	]
+}

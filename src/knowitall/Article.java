@@ -12,6 +12,7 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 import java.util.TreeSet;
+import knowitall.Debug.Logs;
 
 /**
  *
@@ -40,6 +41,7 @@ public class Article implements Comparable {
 	} catch (FileNotFoundException ex) {
 	    Debug.log.logException(ex);
 	}
+	Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, name, "Blocked article: " + name + " with specfile path: " + specF.getPath());
 	return false;
     }
 

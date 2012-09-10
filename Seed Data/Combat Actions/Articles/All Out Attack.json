@@ -1,0 +1,20 @@
+{
+	"name" : "All Out Attack",
+	
+	"shortContent" : "+20 WS attack.  The attacker cannot dodge or parry that turn.",
+	
+	"content" : "The character makes a furious melee attack at the expense of
+personal safety. He gains a +20 bonus to his next Weapon
+Skill Test, but he cannot Dodge or Parry until the start of his
+next Turn.",
+
+	"extraSubCategories" : 
+	[ 
+		["Type", "Full Action"],
+		["Subtype", "Attack, Melee"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 237
+}

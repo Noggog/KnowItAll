@@ -1,0 +1,19 @@
+{
+	"name" : "Called Shot",
+	
+	"shortContent" : "The attacker can target a specific locations on a target at -20 to hit.",
+	
+	"content" : "The active character attempts to attack a specific or vulnerable
+area on his target. The attacker declares a location on his
+target (Head, Body, Left Arm, Right Arm, Left Leg, or Right
+Leg) and makes a Hard (–20) Weapon Skill Test or a
+Hard (–20) Ballistic Skill Test. If he succeeds, he skips the
+Determine Hit Location step of the attack and instead hits the
+declared location.",
+
+	"extraSubCategories" : 
+	[ 
+		["Type", "Full Action"],
+		["Subtype", "Attack, Concentration, Melee, or Ranged"]
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"name" : "Maneuver",
+	
+	"shortContent" : "Take an Opposed WP test to move opponent 1 meter.",
+	
+	"content" : "By using superior footwork and aggression, the attacker can
+force his opponent to move one meter in any direction by
+succeeding at an Opposed Weapon Skill Test. If desired, the
+attacker can advance one meter as well. The opponent cannot
+be forced into another character or some other obstacle (such
+as wall).",
+
+	"extraSubCategories" : 
+	[ 
+		["Type", "Half Action"],
+		["Subtype", "Attack, Melee, Movement"]
+	]
+}

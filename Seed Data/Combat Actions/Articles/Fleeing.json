@@ -1,0 +1,25 @@
+{
+	"name" : "Fleeing",
+	
+	"shortContent" : "Leaving combat, either willingly or unwillingly.",
+	
+	"content" : "Sometimes the best course of action in combat is to get
+away from danger by any means necessary. A character
+can voluntarily flee from an opponent or be forced to flee
+because of Fear, a Psychic Power, or some other effect.
+When a character flees under his own control, he may
+take any of the following Actions: Disengage, Move, or
+Run. When a character flees against his will, he must
+perform the Run Action. If a character is engaged in
+melee with one or more opponents and he flees without
+using the Disengage Action, each of his opponents gets
+a free Standard Attack against the fleeing character. Such
+a free attack is made in addition to any other attacks the
+combatant receives during his Turn.",
+
+	"extraSubCategories" : 
+	[ 
+		["Type", ""],
+		["Subtype", ""]
+	]
+}

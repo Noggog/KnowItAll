@@ -1,0 +1,24 @@
+{
+	"name" : "Knock-Down",
+	
+	"shortContent" : "Take an Opposed Strength test to knock an enemy down.",
+	
+	"content" : "The attacker smashes his opponent in the hopes of knocking
+him off his feet. Make an Opposed Strength Test. If the
+attacker wins, the target is knocked prone and must use a
+Stand Action on his Turn to regain his feet. If the attacker
+succeeds by two or more Degrees of Success, the target also
+suffers 1d5–3+SB damage, with Armour Points counting
+as double, and one level of Fatigue. If the target wins the
+Opposed Strength Test, he keeps his footing. If the target
+wins by two or more Degrees of Success, the attacker is
+knocked prone instead. If the attacker spent a Half Action to
+move before performing the Knock-Down attack, he gains a
++10 bonus to the test.",
+
+	"extraSubCategories" : 
+	[ 
+		["Type", "Half Action"],
+		["Subtype", "Attack"]
+	]
+}
