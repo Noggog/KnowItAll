@@ -1,0 +1,31 @@
+{
+	"name" : "Astartes Scout Armor",
+	
+	"shortContent" : "+10 Concealment.  No penalty to Silent Move or Concealment due to AP.",
+	
+	"content" : "In most Codex Chapters, Neophyte Space Marines serve in the
+10th Company as Scouts as their first assignment. Scouts are
+placed under the instruction of an experienced sergeant, who
+both takes command of the squad and teaches the Scouts what
+it means to be a Space Marine. During this time, Scouts wear
+lighter, less-encumbering armour than the power armour worn
+by the Initiate Battle-Brothers of the Chapter. This armour is a
+version of carapace armour that offers protection while at the
+same time is extremely well-suited for stealth and skirmishing.
+Astartes Scout Armour provides a +10 bonus to Concealment
+Skill Tests and does not inflict a penalty to Silent Move and
+Concealment Skill Tests based on AP.",
+
+	"extraSubCategories" : 
+	[ 
+		["Locations Covered", "Body, Arms"],
+		["Armor Points", "8/10"],
+		["Weight", "30kg"],
+		["Requisition", "N/A"],
+		["Renown", "None"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 163
+}

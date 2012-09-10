@@ -1,0 +1,7 @@
+{
+	"name" : "Drugs and Consumables",
+	"extraSubCategories" : 
+	[ 
+		"Weight", "Requisition", "Renown"
+	]
+}

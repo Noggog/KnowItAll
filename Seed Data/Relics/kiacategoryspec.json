@@ -1,0 +1,7 @@
+{
+	"name" : "Relics",
+	"extraSubCategories" : 
+	[ 
+		"Class", "Range", "Rate of Fire", "Damage", "Penetration", "Clip", "Reload", "Special", "Weight", "Requisition", "Renown"
+	]
+}

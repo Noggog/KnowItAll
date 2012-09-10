@@ -27,7 +27,7 @@ public class ArticleDisplay extends LPanel {
     LLabel title;
 
     public ArticleDisplay() {
-	title = new LLabel("Temp", LFonts.MyriadProBold(32), Color.BLACK);
+	title = new LLabel("Temp", LFonts.MyriadProBold(28), Color.BLACK);
 	title.setLocation(Spacings.articleDispay, Spacings.articleDispay);
 	add(title);
 
@@ -35,17 +35,17 @@ public class ArticleDisplay extends LPanel {
 	subCategories.setLocation(Spacings.articleDispay, title.getBottom());
 	subCategories.setLineWrap(true);
 	subCategories.setWrapStyleWord(true);
-	subCategories.setFont(LFonts.MyriadProBold(16));
+	subCategories.setFont(LFonts.MyriadProBold(14));
 	add(subCategories);
 
 	shortContent = new LTextArea(Color.BLACK);
-	shortContent.setFont(LFonts.MyriadProBold(16));
+	shortContent.setFont(LFonts.MyriadProBold(14));
 	shortContent.setLineWrap(true);
 	shortContent.setWrapStyleWord(true);
 	add(shortContent);
 
 	content = new LTextArea(Color.BLACK);
-	content.setFont(new Font("SansSerif", Font.PLAIN, 14));
+	content.setFont(new Font("SansSerif", Font.PLAIN, 12));
 	content.setLineWrap(true);
 	content.setWrapStyleWord(true);
 	add(content);

@@ -1,0 +1,28 @@
+{
+	"name" : "De-Tox",
+	
+	"shortContent" : "Negates gases and toxins, both positive and negative.  Immune for 1d10 rounds.",
+	
+	"content" : "A more powerful form of the anti-toxins found in Astartes
+power armour, this drug can negate the effects of most
+dangerous gases and toxins if administered quickly enough.
+A dose of de-tox immediately ends the ongoing effects, both
+positive and negative, of any drugs, toxins, or gases affecting
+the character (unless the effect states that de-tox is not
+effective against them) and renders him immune for another
+1d10 Rounds. Given that natural Space Marine resilience
+protects him against many of the common chemicals that
+pose a threat to other beings, de-tox is manually administered
+to avoid unintended interruption of injector system effects.",
+
+	"extraSubCategories" : 
+	[ 
+		["Weight", ""],
+		["Requisition", "10"],
+		["Renown", "None"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 172
+}

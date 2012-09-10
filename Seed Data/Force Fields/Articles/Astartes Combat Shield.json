@@ -1,0 +1,25 @@
+{
+	"name" : "Astartes Combat Shield",
+	
+	"shortContent" : "Balanced weapon with 1d5+1 Impact damage.",
+	
+	"content" : "A combat shield is a compromise between flexibility and
+defence, trading the stronger field and physical protection a
+storm shield’s size offers for a free hand. A combat shield straps
+to the arm, providing an able parrying tool as well as a smaller
+energy field. A combat shield is a Balanced weapon that does
+1d5+1 Impact damage.",
+
+	"extraSubCategories" : 
+	[ 
+		["Protection Rating", "25"],
+		["Overload Roll", "01-10],
+		["Weight", "3"],
+		["Requisition", "20"],
+		["Renown", "Distinguished"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 166
+}

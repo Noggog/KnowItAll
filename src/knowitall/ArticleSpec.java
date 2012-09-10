@@ -6,8 +6,8 @@ package knowitall;
 
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Scanner;
 import java.util.Set;
+import knowitall.Debug.Logs;
 
 /**
  *
@@ -28,9 +28,19 @@ public class ArticleSpec {
 	// SubCategories
 	ArrayList<String[]> tmp = new ArrayList<>(extraSubCategories.length);
 	for (String[] s : extraSubCategories) {
+	    // Block bad subcategories
 	    if (s.length != 2 || !c.subCategories.contains(s[0]) || "".equals(s[1])) {
+		// Log the block
+		if (Debug.log.logging() && !"".equals(s[1])) {
+		    String blocked = "";
+		    for (String s2 : s) {
+			blocked += s2 + " ";
+		    }
+		    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Blocked SubCategory", "Blocked Subcategory from category " + c.getName() + ", article spec " + name + ": " + blocked);
+		}
 		continue;
 	    }
+	    // Trim categories
 	    for (int i = 0; i < s.length; i++) {
 		s[i] = s[i].trim();
 	    }
