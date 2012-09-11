@@ -1,0 +1,24 @@
+{
+	"name" : "Abhor The Witch",
+	
+	"shortContent" : "When the character makes a Charge
+Action using a jump pack, his melee attack deals an extra d10
+Damage for every two Degrees of Success, to a maximum
+bonus of 2d10.",
+	
+	"content" : "A Space Marine descending into battle on trails of fire is a
+true angel of death come to bring ruin and ending on all who
+stand in his way. When the Battle-Brother makes a Charge
+Action using a jump pack, his melee attack deals an extra d10
+Damage for every two Degrees of Success, to a maximum
+bonus of 2d10.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "Adeptus Astartes, Pilot (Personal)"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 115
+}

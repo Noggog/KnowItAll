@@ -1,0 +1,61 @@
+{
+	"name" : "Khorne Berzerker",
+	
+	"content" : "Khorne Berzerkers are
+Chaos Space Marines that have
+dedicated their lives to Khorne,
+the Blood God, skull lord of battles,
+patron of murder, slaughter and
+bloodshed in all its forms.
+The most infamous Khorne
+Berzerkers are the Chaos
+Space Marines of the World
+Eaters, the insane, undying
+remnants of the Legion that swore themselves to Khorne and
+followed Warmaster Horus to the Imperial palace itself.",
+
+	"extraSubCategories" : 
+	[ 
+		["Skills", "Awareness (Per), Command (Fel) +10, Dodge (Ag)
++10, Forbidden Lore (Daemons, Warp) (Int), Intimidate (S)
++20, Literacy (Int), Scrutiny (Per), Speak Language (Low
+Gothic) (Int), Survival (Int), Swim (S)"],
+		["Talents", "Ambidextrous, Astartes Weapon Training, Berserk
+Charge, Diehard, Fearless, Frenzy, Furious Assault, Hatred
+(Loyalist Space Marines) Heightened Senses (Sight, Sound,
+Smell), Jaded, Lightning Attack, Quick Draw, Rapid Reload,
+Resistance (psychic powers), Swift Attack, True Grit, Twoweapon
+wielder (Melee), Whirlwind of Death"],
+		["Traits", "Dark Sight, Fear 2 (Frightening), Size (Hulking),
+Unnatural Strength (x2), Unnatural Toughness (x2)"],
+		["Armor", "Astartes power armour (Head 8, Arms 8, Body 10,
+Legs 8)"],
+		["Weapons", "Astartes Chainsword (1d10+14 R; Pen 4,
+Balanced, Tearing) or Berzerker Axe (1d10+18 R; Pen 4;
+Tearing), Astartes Bolt Pistol (30m; S/3/–; 2d10+5 X; Pen 5;
+Clip12; Reload Full; Tearing) or Astartes Plasma Pistol (30m;
+S/2/–; 2d10+6 E; Pen 6; Clip10; Reload 3Full; Overheat)"],
+		["Equipment", "2 bolt pistol magazines, frag grenades."]
+	],
+	
+	"grid" :
+	[
+		["Wounds", "30"],
+		["Movement", "5/10/15/30"],
+		["Weapon Skill", "59"],
+		["Ballistic Skill", 40"],
+		["Strength",  "<sup>10</sup>45"],
+		["Toughness", "<sup>8</sup>45"],
+		["Agility", "40"],
+		["Intelligence", "30"],
+		["Perception", "40"],
+		["Will Power", "45"],
+		["Fellowship", "20"]
+	],
+	
+	"aka" : 
+	[
+		"berserker",
+		"berzerker"
+	]
+}

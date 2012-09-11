@@ -1,0 +1,21 @@
+{
+	"name" : "Combat Sense",
+	
+	"shortContent" : "The character may use his Perception Bonus in
+place of his Agility Bonus when rolling Initiative.",
+	
+	"content" : "The character has the ability to consciously recognise the
+proddings of his subconscious as it reacts to his preternaturally
+sharp senses, giving the character an edge that mere speed
+cannot match. The character may use his Perception Bonus in
+place of his Agility Bonus when rolling Initiative.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "Perception 40"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 115
+}

@@ -1,7 +1,7 @@
 {
 	"name" : "Abhor The Witch",
 	
-	"shortContent" : "Spend fate point pre-mission.  Willpower test to negate psychic, daemonic, or warp-based power's affect on himself.  Powers will still affect others.",
+	"shortContent" : "Spend a fate point pre-mission.  WP test to negate psychic, daemonic, or warp-based power's affect on himself.  Powers will still affect others.",
 	
 	"content" : "The Battle-Brother spends the time before battle armouring
 himself against the power of the warp by reciting canticles
@@ -24,7 +24,8 @@ it as normal.",
 
 	"extraSubCategories" : 
 	[ 
-		["Prerequisites", "Adeptus Astartes, may not be taken by characters with a Psy Rating"]
+		["Prerequisites", "Adeptus Astartes, may not be taken by
+characters with a Psy Rating"]
 	],
 	
 	"GMOnly" : false,

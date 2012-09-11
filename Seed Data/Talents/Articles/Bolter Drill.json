@@ -1,0 +1,26 @@
+{
+	"name" : "Bolter Drill",
+	
+	"shortContent" : "The character may chose to up a bolt weapon's RoF when firing on Semi or Full Auto by 1.",
+	
+	"content" : "The skill of an Adeptus Astartes with bolters of all types can
+be honed by training and combat, allowing Space Marines to
+unleash devastating volleys of disciplined fire that cut down
+their enemies like the sweep of a scythe. When firing any
+class of Bolt weapon on Full or Semi-Auto, the Battle-Brother
+may opt to increase the weapon’s rate of fire by +1 (this
+bonus applies to any and all bolt weapons wielded by the
+Space Marine, meaning that if he is firing more than one bolt
+weapon at a time, the bonus will apply to all such weapons).
+This Talent only applies to personal weaponry and does not
+impact vehicle-mounted weapons of any kind.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "Adeptus Astartes Weapon Training"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 114
+}

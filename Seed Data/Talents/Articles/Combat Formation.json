@@ -1,0 +1,20 @@
+{
+	"name" : "Combat Formation",
+	
+	"shortContent" : "Before rolling for Initiative, other players may chose to use the character's Intelligence bonus instead of their own for Initiative.",
+	
+	"content" : "The character has directed his comrades to prepare for danger,
+planning out their actions for many contingencies if attacked.
+Before rolling Initiative, all other members of the group
+may choose to use the character’s Intelligence Bonus for all
+Initiative rolls rather than individual Agility Bonuses.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "Intelligence 40"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 115
+}

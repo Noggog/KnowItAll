@@ -1,0 +1,19 @@
+{
+	"name" : "Crack Shot",
+	
+	"shortContent" : "Add +2 to the damage cause by the character when critical damage is caused.",
+	
+	"content" : "The character can place his shots where they inflict more
+harm, at creases, gaps, or joints in armour. When the
+character’s ranged attack causes Critical Damage, add +2 to
+the Damage.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "Ballistic Skill 40"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 115
+}

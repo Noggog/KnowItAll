@@ -1,0 +1,20 @@
+{
+	"name" : "Chem Geld",
+	
+	"shortContent" : "Charm tests against the character increase one level of difficulty and seduction tests against them automatically fail.",
+	
+	"content" : "Either chemical and surgical treatments or sheer will has
+rendered the character immune to most mundane temptations.
+Seduction attempts against him automatically fail, and Charm
+Tests increase their Difficulty by one level. Taking this Talent
+gives the character one Insanity Point.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "None"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 114
+}

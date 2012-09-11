@@ -4,8 +4,9 @@
  */
 package knowitall;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 import knowitall.Debug.Logs;
 
@@ -21,12 +22,16 @@ public class ArticleSpec {
     public String shortContent = "";
     public int pageNumber = -1;
     public boolean GMOnly = false;
+    public String[][] grid = new String[0][];
+    public String[] aka = new String[0];
+    public String[] forceLinkTo = new String[0];
+    public String source = "";
 
     public void clean(Category c) {
 	name = name.trim();
 
 	// SubCategories
-	ArrayList<String[]> tmp = new ArrayList<>(extraSubCategories.length);
+	Map<String, String> tmp = new HashMap<>(extraSubCategories.length);
 	for (String[] s : extraSubCategories) {
 	    // Block bad subcategories
 	    if (s.length != 2 || !c.subCategories.contains(s[0]) || "".equals(s[1])) {
@@ -44,14 +49,17 @@ public class ArticleSpec {
 	    for (int i = 0; i < s.length; i++) {
 		s[i] = s[i].trim();
 	    }
-	    tmp.add(s);
+	    tmp.put(s[0], s[1]);
 	}
 	extraSubCategories = new String[tmp.size()][];
 	int i = 0;
-	for (String[] s : tmp) {
-	    extraSubCategories[i++] = s;
+	for (String key : c.subCategories) {
+	    if (tmp.containsKey(key)) {
+		extraSubCategories[i++] = new String[]{key, tmp.get(key)};
+	    }
 	}
 
+	// Content
 	shortContent = cleanContentStr(shortContent);
 	content = cleanContentStr(content);
     }

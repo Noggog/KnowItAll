@@ -1,0 +1,19 @@
+{
+	"name" : "Deathwatch Training",
+	
+	"shortContent" : "Against Xenos, the character automatically confirms all Righteous Fury results.",
+	
+	"content" : "All Deathwatch Space Marines automatically confirm any
+Righteous Fury results (see page 245) against alien enemies
+without needing to re-roll the Ballistic Skill Test or Weapon
+Skill Test.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "Adeptus Astartes, member of the Deathwatch"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 115
+}

@@ -1,0 +1,20 @@
+{
+	"name" : "Counter Attack",
+	
+	"shortContent" : "When the character parries an enemy attack, they may make a Standard Attack as a Free Action against them at -20.",
+	
+	"content" : "The character’s lightning ripostes are things of deadly beauty,
+swift and invisible as the wind. After successfully Parrying an
+opponent’s attack, the character may immediately make an
+attack against that opponent using the weapon with which he
+Parried as a Free Action. This attack suffers a –20 penalty.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "Weapon Skill 40"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 115
+}

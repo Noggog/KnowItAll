@@ -14,4 +14,5 @@ public class CategorySpec {
 
     String name = "";
     String[] extraSubCategories = new String[0];
+    String[] gridCategories = new String[0];
 }

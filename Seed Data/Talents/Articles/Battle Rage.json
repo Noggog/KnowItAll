@@ -1,0 +1,19 @@
+{
+	"name" : "Battle Rage",
+	
+	"shortContent" : "The character may parry while frenzied.",
+	
+	"content" : "Long experience and indomitable will have allowed the
+character to master the beast within him, directing its
+rage while keeping a clear head. The character may Parry
+while Frenzied.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "Frenzy"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 114
+}

@@ -1,0 +1,24 @@
+{
+	"name" : "Astartes Weapon Specialisation",
+	
+	"shortContent" : "A specified weapon type and class may not suffer less than a -30 penalty.",
+	
+	"content" : "A Space Marine is a master of the tools of warfare, but through
+long practice and affinity he may reach a level of mastery
+with a particular type of weapon so that it becomes a tool of
+perfect destruction. When this Talent is taken, a type and class
+of weapons must be specified, such as bolt (pistols) or melee
+(chain). This Talent may be taken multiple times for different
+types and classes of weapons. When using the specified type of
+weapon, the Battle-Brother never suffers a penalty greater than
+–30 when using the weapon.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "Adeptus Astartes, Astartes Weapon Training"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 113
+}

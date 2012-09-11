@@ -1,0 +1,20 @@
+{
+	"name" : "Combat Master",
+	
+	"shortContent" : "Opponents gain no bonus for outnumbering the character in combat.",
+	
+	"content" : "The character’s weapon seems to be everywhere at once,
+keeping many more opponents at bay in close combat
+than would seem possible. Opponents fighting the
+character in hand-to-hand combat gain no bonuses for
+outnumbering him.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "Adeptus Astartes, may not be taken by characters with a Psy Rating"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 115
+}

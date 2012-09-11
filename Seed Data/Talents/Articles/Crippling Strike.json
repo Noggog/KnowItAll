@@ -1,0 +1,19 @@
+{
+	"name" : "Crippling Strike",
+	
+	"shortContent" : "When one of the character's melee attacks causes critical damage, add +4 damage.",
+ 	
+	"content" : "The character can land his blows precisely where they inflict
+the most harm, cutting into seams or hammering at weak
+points. When the character’s melee attack causes Critical
+Damage add +4 Damage.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "Weapon Skill 50"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 115
+}

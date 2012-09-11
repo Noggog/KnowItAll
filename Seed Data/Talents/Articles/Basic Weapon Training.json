@@ -1,0 +1,24 @@
+{
+	"name" : "Basic Weapon Training",
+	
+	"shortContent" : "The character does not get -20 for not being proficient in the weapon of these weapon classes.",
+	
+	"content" : "The character has received Basic Weapon Training in a group
+of weapons, and can use them without penalty. The Universal
+group includes the Bolt, Las, Launcher, Melta, Plasma, and SP
+groups. Weapon Skill or Ballistic Skill Tests used with a weapon
+that a character does not have training for suffer a –20 penalty.
+
+
+Talent Groups: Bolt, Las, Launcher, Melta, Plasma, Primitive,
+SP and Universal",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "None"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 113
+}

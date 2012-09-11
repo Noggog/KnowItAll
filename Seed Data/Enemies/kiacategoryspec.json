@@ -2,6 +2,11 @@
 	"name" : "Enemies",
 	"extraSubCategories" : 
 	[ 
-		"Movement", "Skills", "Talents", "Traits", "Armor", "Weapons", "Equipment", "Wounds"
+		"Skills", "Talents", "Traits", "Armor", "Weapons", "Equipment"
+	],
+	
+	"grid" :
+	[
+		"Wounds", "Move", "Weapon Skill", "Ballistic Skill", "Strength", "Toughness", "Agility", "Intelligence", "Perception", "Will Power", "Fellowship"
 	]
 }

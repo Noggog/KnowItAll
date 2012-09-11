@@ -13,7 +13,7 @@ energy field. A combat shield is a Balanced weapon that does
 	"extraSubCategories" : 
 	[ 
 		["Protection Rating", "25"],
-		["Overload Roll", "01-10],
+		["Overload Roll", "01-10"],
 		["Weight", "3"],
 		["Requisition", "20"],
 		["Renown", "Distinguished"]

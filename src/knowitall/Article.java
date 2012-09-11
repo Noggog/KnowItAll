@@ -65,11 +65,16 @@ public class Article implements Comparable {
     }
 
     public ArrayList<String[]> getSubcategories() {
-	if (spec.extraSubCategories == null) {
-	    return new ArrayList<>(0);
-	}
-	ArrayList<String[]> out = new ArrayList<>(spec.extraSubCategories.length);
-	for (String[] sub : spec.extraSubCategories) {
+	return getAttributes(spec.extraSubCategories);
+    }
+
+    public ArrayList<String[]> getGrid() {
+	return getAttributes(spec.grid);
+    }
+
+    public ArrayList<String[]> getAttributes(String[][] strs) {
+	ArrayList<String[]> out = new ArrayList<>(strs.length);
+	for (String[] sub : strs) {
 	    if (sub.length == 2) {
 		out.add(sub);
 	    }

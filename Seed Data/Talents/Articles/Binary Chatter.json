@@ -1,0 +1,19 @@
+{
+	"name" : "Binary Chatter",
+	
+	"shortContent" : "+10 bonus to any
+attempt to instruct, program, or communicate with servitors.",
+	
+	"content" : "The character has optimised his use of Techna-Lingua for
+controlling servitors. The character receives a +10 bonus to any
+attempt to instruct, program, or communicate with servitors.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "None"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 114
+}
