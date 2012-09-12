@@ -7,11 +7,7 @@ package knowitall;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 import knowitall.Debug.Logs;
 
 /**
@@ -25,6 +21,7 @@ public class Article implements Comparable {
     ArticleSpec spec;
     Set<String> words = new HashSet<>();
     Set<Article> linked = new TreeSet<>();
+    ArticleHTML html = new ArticleHTML();
 
     Article(Category c) {
 	category = c;
@@ -36,6 +33,7 @@ public class Article implements Comparable {
 	    if (spec != null && spec.name != null && !spec.name.equals("")) {
 		spec.clean(category);
 		words = spec.getWords();
+		html.load(this);
 		return true;
 	    }
 	} catch (FileNotFoundException ex) {
@@ -94,6 +92,10 @@ public class Article implements Comparable {
 	return "Vert Image";
     }
 
+    public String getHTML() {
+	return html.getHTML();
+    }
+    
     public void cleanInit() {
 	words = null;
     }
