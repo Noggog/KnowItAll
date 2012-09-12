@@ -81,6 +81,18 @@ public class Article implements Comparable {
 	}
 	return out;
     }
+    
+    public Integer getPageNum() {
+	return spec.pageNumber;
+    }
+    
+    public String getIcon() {
+	return category.getIcon();
+    }
+    
+    public String getImage() {
+	return "Vert Image";
+    }
 
     public void cleanInit() {
 	words = null;

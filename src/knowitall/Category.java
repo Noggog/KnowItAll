@@ -77,4 +77,7 @@ public class Category implements Comparable {
 	return spec.name.compareTo(rhs.spec.name);
     }
 
+    public String getIcon() {
+	return "Icon";
+    }
 }
