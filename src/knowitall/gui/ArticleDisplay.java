@@ -5,13 +5,11 @@
 package knowitall.gui;
 
 import java.awt.Dimension;
-import java.util.ArrayList;
 import javax.swing.text.html.StyleSheet;
 import knowitall.Article;
 import lev.gui.LHTMLPane;
 import lev.gui.LPanel;
 import lev.gui.LTextArea;
-import org.apache.ecs.html.*;
 
 /**
  *
