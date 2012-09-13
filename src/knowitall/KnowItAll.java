@@ -31,7 +31,7 @@ public class KnowItAll {
 	try {
 	    Debug.init();
 	    createFrame();
-	    Database.loadLooseFiles();
+	    Database.reloadArticles();
 	} catch (Exception e) {
 	    Debug.log.logException(e);
 	    Debug.log.close();

@@ -9,12 +9,13 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.*;
 import knowitall.Debug.Logs;
+import lev.gui.LSwingTreeNode;
 
 /**
  *
  * @author Justin Swanson
  */
-public class Article implements Comparable {
+public class Article extends LSwingTreeNode implements Comparable {
 
     public Category category;
     String name = "";
@@ -31,6 +32,7 @@ public class Article implements Comparable {
 	try {
 	    spec = KnowItAll.gson.fromJson(new FileReader(specF), ArticleSpec.class);
 	    if (spec != null && spec.name != null && !spec.name.equals("")) {
+		spec.src = specF;
 		spec.clean(category);
 		words = spec.getWords();
 		html.load(this);
@@ -79,15 +81,15 @@ public class Article implements Comparable {
 	}
 	return out;
     }
-    
+
     public Integer getPageNum() {
 	return spec.pageNumber;
     }
-    
+
     public String getIcon() {
 	return category.getIcon();
     }
-    
+
     public String getImage() {
 	return "Vert Image";
     }
@@ -95,7 +97,7 @@ public class Article implements Comparable {
     public String getHTML() {
 	return html.getHTML();
     }
-    
+
     public void cleanInit() {
 	words = null;
     }

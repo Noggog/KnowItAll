@@ -7,37 +7,73 @@ package knowitall;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
+import knowitall.Debug.Logs;
+import lev.gui.LSwingTreeNode;
 
 /**
  *
  * @author Justin Swanson
  */
-public class Category implements Comparable {
+public class Category extends LSwingTreeNode implements Comparable {
 
     CategorySpec spec;
-    Set<String> subCategories = new HashSet<>();
+    Set<String> subCategorySet = new HashSet<>();
+    ArrayList<String> subCategoryOrder = new ArrayList<>();
 
-    Category () {
+    Category() {
     }
 
-    public boolean load (File categoryDir) {
+    public boolean load(LSwingTreeNode node, File categoryDir) {
+	if (node instanceof Category) {
+	    mergeSubCategories(((Category) node).spec.extraSubCategories);
+	}
 	File specF = new File(categoryDir.getPath() + "/" + CategorySpec.categorySpecFilename);
 	if (specF.isFile()) {
 	    try {
 		spec = KnowItAll.gson.fromJson(new FileReader(specF), CategorySpec.class);
-		if (spec != null && spec.name != null && !spec.name.equals("")) {
-		    subCategories.addAll(Arrays.asList(spec.extraSubCategories));
+		if (spec.name == null) {
+		    spec.name = categoryDir.getName();
+		}
+		if (spec == null) {
+		    String error = "Skipped because it had a null spec: " + categoryDir;
+		    Debug.log.logError("Category", error);
+		    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Category", error);
+		} else if (spec.name.equals("")) {
+		    String error = "Skipped because spec name was empty: " + categoryDir;
+		    Debug.log.logError("Category", error);
+		    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Category", error);
+		} else if (Database.categories.contains(this)) {
+		    String error = "Skipped because Database already had a category with the same name: " + spec.name + " (" + categoryDir + ")";
+		    Debug.log.logError("Category", error);
+		    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Category", error);
+		} else {
+		    mergeSubCategories(spec.extraSubCategories);
 		    return true;
 		}
 	    } catch (FileNotFoundException ex) {
 		Debug.log.logException(ex);
 	    }
+	} else {
+	    Debug.log.log("Category", "Assumed defaults because it had no spec: " + categoryDir);
+	    spec = new CategorySpec();
+	    spec.name = categoryDir.getName();
+	    return true;
 	}
 	return false;
+    }
+
+    public void mergeSubCategories(String[] strs) {
+	for (String s : strs) {
+	    String su = s.toUpperCase();
+	    if (!subCategorySet.contains(su)) {
+		subCategorySet.add(su);
+		subCategoryOrder.add(s);
+	    }
+	}
     }
 
     @Override
@@ -56,7 +92,7 @@ public class Category implements Comparable {
 	    return false;
 	}
 	final Category other = (Category) obj;
-	if (!Objects.equals(this.getName(), other.getName())) {
+	if (!this.getName().equalsIgnoreCase(other.getName())) {
 	    return false;
 	}
 	return true;
@@ -74,6 +110,9 @@ public class Category implements Comparable {
     @Override
     public int compareTo(Object o) {
 	Category rhs = (Category) o;
+	if (equals(rhs)) {
+	    return 0;
+	}
 	return spec.name.compareTo(rhs.spec.name);
     }
 

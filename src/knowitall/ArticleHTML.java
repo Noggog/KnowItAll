@@ -24,11 +24,13 @@ public class ArticleHTML {
 	// Title
 	body.addElement(new Font(6).addElement(new B().addElement(a.getName()))).addElement(new BR());
 
+	generateSubCategories(a, body);
+
 	generateGrid(a, body, true);
 
 	// Short Content
 	if (!a.getShort().equals("")) {
-	    body.addElement(new Font(3).addElement(new B()).addElement(a.getShort() + new BR()));
+	    body.addElement(new Font(3).addElement(new B().addElement(a.getShort())).addElement(new BR()));
 	}
 
 	// Content
@@ -72,15 +74,15 @@ public class ArticleHTML {
 		    t.addAttribute("border", "1");
 		    t.addAttribute("align", "left");
 		    t.addAttribute("valign", "top");
-		    
+
 		    TD labelCell = new TD();
 		    labelCell.addElement(new B().addElement(item[0]));
 		    t.addElement(new TR().addElement(labelCell));
-		    
+
 		    TD contentCell = new TD();
 		    contentCell.addElement(item[1]);
 		    t.addElement(new TR().addElement(contentCell));
-		    
+
 		    body.addElement(t);
 		}
 		body.addElement(new BR());

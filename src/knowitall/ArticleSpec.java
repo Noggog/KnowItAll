@@ -4,6 +4,7 @@
  */
 package knowitall;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -16,6 +17,7 @@ import knowitall.Debug.Logs;
  */
 public class ArticleSpec {
 
+    File src;
     public String name = "";
     public String[][] extraSubCategories = new String[0][];
     public String content = "";
@@ -34,14 +36,14 @@ public class ArticleSpec {
 	Map<String, String> tmp = new HashMap<>(extraSubCategories.length);
 	for (String[] s : extraSubCategories) {
 	    // Block bad subcategories
-	    if (s.length != 2 || !c.subCategories.contains(s[0]) || "".equals(s[1])) {
+	    if (s.length != 2 || !c.subCategorySet.contains(s[0].toUpperCase()) || "".equals(s[1])) {
 		// Log the block
 		if (Debug.log.logging() && !"".equals(s[1])) {
 		    String blocked = "";
 		    for (String s2 : s) {
-			blocked += s2 + " ";
+			blocked += s2 + " | ";
 		    }
-		    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Blocked SubCategory", "Blocked Subcategory from category " + c.getName() + ", article spec " + name + ": " + blocked);
+		    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Blocked SubCategory", "Blocked Subcategory from category " + c.getName() + ", article spec " + src + ": " + blocked);
 		}
 		continue;
 	    }
@@ -53,7 +55,7 @@ public class ArticleSpec {
 	}
 	extraSubCategories = new String[tmp.size()][];
 	int i = 0;
-	for (String key : c.subCategories) {
+	for (String key : c.subCategoryOrder) {
 	    if (tmp.containsKey(key)) {
 		extraSubCategories[i++] = new String[]{key, tmp.get(key)};
 	    }
