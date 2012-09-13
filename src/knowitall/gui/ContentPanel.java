@@ -27,9 +27,19 @@ public class ContentPanel extends LPanel {
     }
 
     public void updateContent(Article a) {
-	target = a;
+	if (a != null) {
+	    target = a;
+	} else if (target != null) {
+	    target = Database.articles.get(target.getName().toUpperCase());
+	} else {
+	    return;
+	}
 	Updater update = new Updater();
 	update.execute();
+    }
+
+    public void update() {
+	updateContent(null);
     }
 
     void displayArticles(ArrayList<Article> articles) {

@@ -69,11 +69,14 @@ public class ArticleHTML {
 		}
 		body.addElement(new BR());
 	    } else {
+		boolean first = true;
 		for (String[] item : gridList) {
 		    Table t = new Table();
 		    t.addAttribute("border", "1");
-		    t.addAttribute("align", "left");
-		    t.addAttribute("valign", "top");
+		    if (first) {
+			first = false;
+			t.addAttribute("style", "float:left");
+		    }
 
 		    TD labelCell = new TD();
 		    labelCell.addElement(new B().addElement(item[0]));

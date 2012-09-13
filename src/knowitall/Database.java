@@ -24,9 +24,13 @@ public class Database {
     public static LSwingTreeNode articleTree;
     public static Map<String, Article> articles = new TreeMap<>();
 
-    public static void reloadArticles() {
+    public static void reloadArticles(Runnable run) {
 	clear();
-	loadLooseFiles();
+	loadLooseFiles(run);
+    }
+
+    public static void reloadArticles() {
+	reloadArticles(null);
     }
 
     public static void clear() {
@@ -35,9 +39,13 @@ public class Database {
 	articleTree = new LSwingTreeNode();
     }
 
-    public static void loadLooseFiles() {
-	LooseFileLoader load = new LooseFileLoader();
+    public static void loadLooseFiles(Runnable run) {
+	LooseFileLoader load = new LooseFileLoader(run);
 	load.execute();
+    }
+
+    public static void loadLooseFiles() {
+	loadLooseFiles(null);
     }
 
     public static void doneLoading() {
@@ -46,9 +54,22 @@ public class Database {
 
     static class LooseFileLoader extends SwingWorker<Integer, Article> {
 
+	Runnable runAfter = null;
+
 	@Override
 	protected void done() {
+	    if (runAfter != null) {
+		runAfter.run();
+	    }
 	    doneLoading();
+	}
+
+	LooseFileLoader() {
+
+	}
+
+	LooseFileLoader(Runnable runAfter) {
+	    this.runAfter = runAfter;
 	}
 
 	@Override

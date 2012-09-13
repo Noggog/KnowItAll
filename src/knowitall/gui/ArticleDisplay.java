@@ -30,6 +30,8 @@ public class ArticleDisplay extends LPanel {
 		+ "margin-right: 10px;"
 		+ "margin-bottom: 15px;"
 		+ "margin-left: 10px;}");
+	ss.addRule("table { border-style: hidden; }");
+//	ss.addRule("td { border-style: dotted; }");
 	add(htmlContent);
 	setOpaque(true);
     }
