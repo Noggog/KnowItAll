@@ -6,6 +6,7 @@ package knowitall.gui;
 
 import java.awt.Dimension;
 import java.util.ArrayList;
+import javax.swing.SwingUtilities;
 import knowitall.Article;
 import knowitall.Database;
 import lev.gui.LPanel;
@@ -42,7 +43,7 @@ public class ContentPanel extends LPanel {
 	updateContent(null);
     }
 
-    void displayArticles(ArrayList<Article> articles) {
+    void loadArticles(ArrayList<Article> articles) {
 	while (displays.size() < articles.size()) {
 	    addDisplay();
 	}
@@ -67,6 +68,19 @@ public class ContentPanel extends LPanel {
 	setPreferredSize(getSize());
     }
 
+    public void displayArticles(final boolean on) {
+	for (final ArticleDisplay display : displays) {
+	    if (display.article != null) {
+		SwingUtilities.invokeLater(new Runnable() {
+		    @Override
+		    public void run() {
+			display.setVisible(on);
+		    }
+		});
+	    }
+	}
+    }
+
     @Override
     public void remeasure(Dimension size) {
 	setSize(size);
@@ -74,10 +88,15 @@ public class ContentPanel extends LPanel {
     }
 
     final void addDisplay() {
-	ArticleDisplay d = new ArticleDisplay();
+	final ArticleDisplay d = new ArticleDisplay();
 	displays.add(d);
 	d.setVisible(false);
-	add(d);
+	SwingUtilities.invokeLater(new Runnable() {
+	    @Override
+	    public void run() {
+		add(d);
+	    }
+	});
     }
 
     class Updater extends LSwingWorker<Integer, String> {
@@ -88,6 +107,7 @@ public class ContentPanel extends LPanel {
 
 	@Override
 	protected Integer doInBackground() throws Exception {
+	    displayArticles(false);
 	    ArrayList<Article> articles = new ArrayList<>();
 	    if (target != null) {
 		articles.add(target);
@@ -95,8 +115,9 @@ public class ContentPanel extends LPanel {
 		    articles.add(link);
 		}
 	    }
-	    displayArticles(articles);
+	    loadArticles(articles);
 	    compactContent();
+	    displayArticles(true);
 	    return 0;
 	}
     }

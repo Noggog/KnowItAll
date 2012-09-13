@@ -5,6 +5,7 @@
 package knowitall.gui;
 
 import java.awt.Dimension;
+import javax.swing.SwingUtilities;
 import javax.swing.text.html.StyleSheet;
 import knowitall.Article;
 import lev.gui.LHTMLPane;
@@ -37,18 +38,16 @@ public class ArticleDisplay extends LPanel {
     }
 
     public void load(Article a) {
-	if (a == null) {
-	    setVisible(false);
-	} else {
-	    setVisible(true);
-	    article = a;
+	article = a;
+	setVisible(false);
+	if (a != null) {
 	    htmlContent.setText(a.getHTML());
 	}
     }
 
     @Override
     public void remeasure(Dimension size) {
-	if (isVisible()) {
+	if (article != null) {
 	    htmlContent.setSize(size.width - 2);
 	    setSize(size.width, htmlContent.getBottom());
 	} else {
