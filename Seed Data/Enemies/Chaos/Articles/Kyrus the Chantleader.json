@@ -1,51 +1,81 @@
 {
-	"name" : "Industrial/Mining Servitor",
+	"name" : "Kyrus the Chantleader",
 	
-	"content" : "There are a number of heavy industrial and mining servitors still
-in operation around the Pyroclast-Gamma-9 facility. These are
-huge, hulking brutes, with a vaguely simian form, far more heavily
-augmented than most servitor drones, with armoured hydraulic
-exoskeletons fused into their once-human flesh and a plethora of
-implanted machine-tools. Most are still operating on emergency
-orders to defend their assigned posts, asking for the security signal
-in a strained guttural voice to any human that approaches and
-attacking remorselessly until the intruder is dead or driven away if
-the watchword is not spoken within ten seconds. While slow and
-not designed for combat, they are nerveless extremely strong and
-well-protected, and more than able to obliterate a human being
-into a bloody smear with a single blow.",
+	"content" : "The Deathwatch data-vaults aboard Watch Fortress Erioch
+record that Kyrus the Chantleader emerged from the Hadex
+Anomaly in 801.M40 and orchestrated a series of devastating
+raids on worlds near the heart of the Jericho Reach. A Chaos
+Space Marine formerly of the Word Bearers Legion, Kyrus
+has made a number of dark pacts with the Ruinous Powers.
+These pacts have granted Kyrus the favour of Khorne,
+Slaanesh, Nurgle, and Tzeentch, and the Chaos Space Marine
+has led large numbers of Lesser Daemons from all four dark
+gods in several engagements along the length and breadth
+of the Reach. The daemon armies of Kyrus the Chantleader
+are a persistent danger to the Achilus Crusade in the Acheros
+Salient. Many senior Inquisitors of the Ordo Malleus
+consider him a much larger threat, citing a number of reports
+indicating that the daemon forces he surrounds himself with
+are particularly powerful for their kind.
+
+Captured agents of the Stigmatus have claimed that Kyrus
+hails from a Daemon world within the Anomaly, a bleak and
+twisted planet that serves as a battleground for the dark gods’
+rivalries. This nameless place is said to have a large native
+population of mutants and outcasts, all now turned to the
+worship of the Ruinous Powers by Kyrus and his followers.
+
+Kyrus has been blessed with many gifts from his dark
+masters, including the ability to manifest massive black wings
+and two mighty weapons; the pistol dubbed Hateblazer is an
+ancient plasma weapon of uncertain origin, and he wields a
+daemon-infused chain axe named Corruptis.",
 
 	"extraSubCategories" : 
 	[ 
-		["Skills", "Awareness (Per) +10, Climb (S)"],
-		["Talents", "Heightened Senses (Vision), Melee Weapon Training
-(Primitive), Thrown Weapon Training (Primitive)"],
-		["Traits", "Armour Plating, Dark Sight, Machine (5), Improved
-Natural Weapon (Implanted Tools), Size (hulking), Sturdy,
-Unnatural Strength (x2)"],
-		["Armor", "Reinforced structure and armor plate (All 7)"],
-		["Weapons", "Implanted machine tools, i.e. saws, drills, grinders and servo claws (1D10+12 R or I, Pen 4)"],
-		["Equipment", "Internal micro-bead (to relay data and receive instruction only), in-built respirator."]
+		["Skills", "Awareness (Per) +10, Charm (Fel) +20, Command
+(Fel) +20, Deceive (Fel) +20, Dodge (Ag) +20, Interrogation
+(Int), Intimidate (S) +20, Lore: Forbidden (Chaos) +20, Lore:
+Forbidden (Warp) +20, Security (Int), Tactics (All) +10"],
+		["Talents", "Air of Authority, Blademaster, Counter-Attack,
+Combat Master, Crushing Blow, Fearless, Hammer Blow, Into
+the Jaws of Hell, Iron Discipline, Lightning Attack, Master Orator, Swift Attack, Whirlwind of Death."],
+		["Traits", "From Beyond, Size (Hulking), Unnatural Strength
+(x2), Unnatural Toughness (x2)."],
+		["Armor", "Corrupted power armour (Body 10, Arms and Legs
+8, Head 8)"],
+		["Weapons", "Hateblazer (30m; S/–/–; 2d10+8 E; Pen 8;
+Overheat), Corruptis (1d10+16 R; Warp Weapon)"],
+		["Equipment", ""],
+		["Special Rules", "<b>Blessing of Chaos:</b> Kyrus is protected by the pacts he has
+made with the Ruinous Powers; this acts as a Force Field (see
+page 166 in the Deathwatch Rulebook) with a rating of
+33 (this also accounts for his exceptionally high number of
+starting Wounds) that does not overload.
+<br>
+<br>
+<b>Dark Wings:</b> Kyrus may grow a pair of massive, bat-like wings
+sprouting from his back at will. He has the Flyer (15) Trait."]
 	],
 	
 	"grid" :
 	[
-		["Wounds", "20"],
-		["Movement", "1/2/3/6"],
-		["Weapon Skill", "25"],
-		["Ballistic Skill", 10"],
-		["Strength",  "<sup>10</sup>50"],
-		["Toughness", "<sup>5</sup>50"],
-		["Agility", "15"],
-		["Intelligence", "10"],
-		["Perception", "20"],
-		["Will Power", "30"],
-		["Fellowship", "5"]
+		["Wounds", "41"],
+		["Movement", "5/10/15/30"],
+		["Weapon Skill", "55"],
+		["Ballistic Skill", 48"],
+		["Strength",  "<sup>12</sup>53"],
+		["Toughness", "<sup>10</sup>54"],
+		["Agility", "46"],
+		["Intelligence", "46"],
+		["Perception", "47"],
+		["Will Power", "51"],
+		["Fellowship", "49"]
 	],
 	
 	"aka" : 
 	[
-		"Industrial Servitor",
-		"Mining Servitor"
+		"kyrus",
+		""
 	]
 }

@@ -11,6 +11,7 @@ import java.awt.event.MouseListener;
 import java.io.IOException;
 import javax.swing.BorderFactory;
 import javax.swing.ScrollPaneConstants;
+import javax.swing.SwingUtilities;
 import knowitall.Database;
 import knowitall.Debug;
 import lev.gui.LImagePane;
@@ -85,10 +86,17 @@ public class MainPanel extends LPanel {
     }
 
     @Override
-    public void remeasure(Dimension size) {
+    public void remeasure(final Dimension size) {
 	super.setSize(size);
 	search.setSize(getWidth() - Spacings.mainPanel * 3 - 87, search.getHeight());
 	scroll.setSize(getWidth(), getHeight() - search.getBottom() - Spacings.mainPanel);
 	content.setPreferredSize(new Dimension(scroll.getWidth(), 50));
+	content.remeasure(size);
+	SwingUtilities.invokeLater(
+		new Runnable() {
+		    @Override
+		    public void run() {
+		    }
+		});
     }
 }

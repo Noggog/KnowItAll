@@ -35,18 +35,16 @@ public class Category extends LSwingTreeNode implements Comparable {
 	if (specF.isFile()) {
 	    try {
 		spec = KnowItAll.gson.fromJson(new FileReader(specF), CategorySpec.class);
-		if (spec.name == null) {
-		    spec.name = categoryDir.getName();
-		}
 		if (spec == null) {
 		    String error = "Skipped because it had a null spec: " + categoryDir;
 		    Debug.log.logError("Category", error);
 		    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Category", error);
-		} else if (spec.name.equals("")) {
-		    String error = "Skipped because spec name was empty: " + categoryDir;
-		    Debug.log.logError("Category", error);
-		    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Category", error);
-		} else if (Database.categories.contains(this)) {
+		    return false;
+		}
+		if (spec.name == null || spec.name.equals("")) {
+		    spec.name = categoryDir.getName();
+		}
+		if (Database.categories.contains(this)) {
 		    String error = "Skipped because Database already had a category with the same name: " + spec.name + " (" + categoryDir + ")";
 		    Debug.log.logError("Category", error);
 		    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Category", error);

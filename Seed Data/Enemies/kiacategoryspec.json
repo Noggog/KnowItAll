@@ -2,7 +2,7 @@
 	"name" : "Enemies",
 	"extraSubCategories" : 
 	[ 
-		"Skills", "Talents", "Traits", "Armor", "Weapons", "Equipment"
+		"Skills", "Talents", "Traits", "Armor", "Weapons", "Equipment", "Special Rules", "Horde"
 	],
 	
 	"grid" :

@@ -1,46 +1,54 @@
 {
-	"name" : "Industrial/Mining Servitor",
+	"name" : "Bloodletter",
 	
-	"content" : "There are a number of heavy industrial and mining servitors still
-in operation around the Pyroclast-Gamma-9 facility. These are
-huge, hulking brutes, with a vaguely simian form, far more heavily
-augmented than most servitor drones, with armoured hydraulic
-exoskeletons fused into their once-human flesh and a plethora of
-implanted machine-tools. Most are still operating on emergency
-orders to defend their assigned posts, asking for the security signal
-in a strained guttural voice to any human that approaches and
-attacking remorselessly until the intruder is dead or driven away if
-the watchword is not spoken within ten seconds. While slow and
-not designed for combat, they are nerveless extremely strong and
-well-protected, and more than able to obliterate a human being
-into a bloody smear with a single blow.",
+	"content" : "The Lesser Daemons of Khorne are known as Bloodletters,
+and it is they who form the core of Khorne’s vast battle forces.
+Bloodletters are amongst the deadliest warriors in the galaxy,
+possessing immense strength in their sinewy limbs and savage
+in the ferocity of their brutal charge into battle. Their skin is
+the colour of blood, and the coppery scent of gore surrounds
+them like a shroud.",
 
 	"extraSubCategories" : 
 	[ 
-		["Skills", "Awareness (Per) +10, Climb (S)"],
-		["Talents", "Heightened Senses (Vision), Melee Weapon Training
-(Primitive), Thrown Weapon Training (Primitive)"],
-		["Traits", "Armour Plating, Dark Sight, Machine (5), Improved
-Natural Weapon (Implanted Tools), Size (hulking), Sturdy,
-Unnatural Strength (x2)"],
+		["Skills", "Awareness (Per), Climb (S) +20, Dodge (Ag),
+Intimidate (S) +20, Psyniscience (Per), Speak Language (any
+one), Wrangling (Int) +10."],
+		["Talents", "Battle Rage, Combat Master, Crushing Blow,
+Fearless, Frenzy, Furious Assault, Swift Attack."],
+		["Traits", "Brutal Charge, Daemonic (TB 8), †Daemonic
+Presence, Fear (2), From Beyond, Improved Natural
+Weapons, Natural Weapons (Claws) Strange Physiology,
+Unnatural Strength (x2), Warp Instability.
+
+<b>Daemonic Presence:</b> All enemies within 10 metres of
+a Bloodletter suffer a –10 penalty to Willpower Tests in
+the area."],
 		["Armor", "Reinforced structure and armor plate (All 7)"],
-		["Weapons", "Implanted machine tools, i.e. saws, drills, grinders and servo claws (1D10+12 R or I, Pen 4)"],
-		["Equipment", "Internal micro-bead (to relay data and receive instruction only), in-built respirator."]
+		["Weapons", "Hellblades (1d10+12 R; Balanced, Warp
+Weapon), Claws (1d10+10 R; Pen 2)."],
+		["Equipment", "None"],
+		["Horde", "When
+Bloodletters form a
+Horde, they gain
+the Disciplined and
+Blood Soaked Tide
+Traits."]
 	],
 	
 	"grid" :
 	[
-		["Wounds", "20"],
-		["Movement", "1/2/3/6"],
-		["Weapon Skill", "25"],
-		["Ballistic Skill", 10"],
-		["Strength",  "<sup>10</sup>50"],
-		["Toughness", "<sup>5</sup>50"],
-		["Agility", "15"],
-		["Intelligence", "10"],
-		["Perception", "20"],
+		["Wounds", "25"],
+		["Movement", "4/8/12/24"],
+		["Weapon Skill", "55"],
+		["Ballistic Skill", 30"],
+		["Strength",  "<sup>8</sup>45"],
+		["Toughness", "<sup>8</sup>45"],
+		["Agility", "40"],
+		["Intelligence", "30"],
+		["Perception", "30"],
 		["Will Power", "30"],
-		["Fellowship", "5"]
+		["Fellowship", "10"]
 	],
 	
 	"aka" : 

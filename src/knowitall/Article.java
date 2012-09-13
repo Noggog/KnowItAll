@@ -18,7 +18,6 @@ import lev.gui.LSwingTreeNode;
 public class Article extends LSwingTreeNode implements Comparable {
 
     public Category category;
-    String name = "";
     ArticleSpec spec;
     Set<String> words = new HashSet<>();
     Set<Article> linked = new TreeSet<>();
@@ -31,19 +30,25 @@ public class Article extends LSwingTreeNode implements Comparable {
     public boolean load(File specF) {
 	try {
 	    spec = KnowItAll.gson.fromJson(new FileReader(specF), ArticleSpec.class);
-	    if (spec != null && spec.name != null && !spec.name.equals("")) {
-		spec.src = specF;
-		spec.clean(category);
-		words = spec.getWords();
-		html.load(this);
-		return true;
+	    if (spec == null) {
+		String error = "Skipped because it had a null spec: " + specF;
+		Debug.log.logError("Article", error);
+		Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", error);
+		return false;
 	    }
+	    if (spec.name == null || spec.name.equals("")) {
+		spec.name = specF.getName().substring(0, specF.getName().length() - 5);
+	    }
+	    spec.src = specF;
+	    spec.clean(category);
+	    words = spec.getWords();
+	    html.load(this);
+	    return true;
 	} catch (FileNotFoundException ex) {
 	} catch (com.google.gson.JsonSyntaxException ex) {
 	    Debug.log.logException(ex);
+	    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", "Skipped because it had a badly formatted spec: " + specF);
 	}
-	Debug.log.logMain("Article Load", "Blocked Article: " + name + " with specfile path: " + specF.getPath());
-	Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, name, "Blocked article: " + name + " with specfile path: " + specF.getPath());
 	return false;
     }
 
@@ -133,7 +138,7 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    return false;
 	}
 	final Article other = (Article) obj;
-	if (!Objects.equals(this.spec.name, other.spec.name)) {
+	if (!this.spec.name.equalsIgnoreCase(other.spec.name)) {
 	    return false;
 	}
 	return true;
@@ -142,6 +147,9 @@ public class Article extends LSwingTreeNode implements Comparable {
     @Override
     public int compareTo(Object o) {
 	Article b = (Article) o;
+	if (b.getName().equalsIgnoreCase(b.getName())) {
+	    return 0;
+	}
 	return this.getName().compareTo(b.getName());
     }
 }
