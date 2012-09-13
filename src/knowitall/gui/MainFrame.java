@@ -32,7 +32,8 @@ public class MainFrame extends LFrame {
 	setLocation(defaultLocation());
 	super.remeasure ();
 	background.setImage(KnowItAll.internalFiles + "background.jpg");
-	activePanel = new MainPanel();
+	GUI.mainPanel = new MainPanel();
+	activePanel = GUI.mainPanel;
 	add(activePanel,0);
 	remeasure ();
 	setVisible(true);

@@ -10,6 +10,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 import javax.swing.SwingWorker;
+import knowitall.gui.GUI;
 import lev.Ln;
 import lev.gui.LSwingTreeNode;
 
@@ -25,6 +26,7 @@ public class Database {
     public static Map<String, Article> articles = new TreeMap<>();
 
     public static void reloadArticles(Runnable run) {
+	GUI.displayArticles(false);
 	clear();
 	loadLooseFiles(run);
     }

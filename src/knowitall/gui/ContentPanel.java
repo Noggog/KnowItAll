@@ -28,6 +28,7 @@ public class ContentPanel extends LPanel {
     }
 
     public void updateContent(Article a) {
+	displayArticles(false);
 	if (a != null) {
 	    target = a;
 	} else if (target != null) {
@@ -107,7 +108,6 @@ public class ContentPanel extends LPanel {
 
 	@Override
 	protected Integer doInBackground() throws Exception {
-	    displayArticles(false);
 	    ArrayList<Article> articles = new ArrayList<>();
 	    if (target != null) {
 		articles.add(target);
