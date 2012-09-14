@@ -10,6 +10,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 import javax.swing.SwingWorker;
+import knowitall.Debug.Logs;
 import knowitall.gui.GUI;
 import lev.Ln;
 import lev.gui.LSwingTreeNode;
@@ -20,10 +21,12 @@ import lev.gui.LSwingTreeNode;
  */
 public class Database {
 
-    public static String source = "Seed Data/";
-    public static Set<Category> categories = new TreeSet<>();
-    public static LSwingTreeNode articleTree;
-    public static Map<String, Article> articles = new TreeMap<>();
+    private static String packages = "Packages";
+    private static String categoryIndexPath = "KIA Category Index";
+    private static CategoryIndex indexTree;
+    private static Map<String, CategoryIndex> categoryIndex = new TreeMap<>();
+    private static LSwingTreeNode articleTree;
+    private static Map<String, Article> articles = new TreeMap<>();
 
     public static void reloadArticles(Runnable run) {
 	GUI.displayArticles(false);
@@ -36,7 +39,7 @@ public class Database {
     }
 
     public static void clear() {
-	categories.clear();
+	categoryIndex.clear();
 	articles.clear();
 	articleTree = new LSwingTreeNode();
     }
@@ -67,7 +70,6 @@ public class Database {
 	}
 
 	LooseFileLoader() {
-
 	}
 
 	LooseFileLoader(Runnable runAfter) {
@@ -76,21 +78,52 @@ public class Database {
 
 	@Override
 	protected Integer doInBackground() throws Exception {
-	    File seeds = new File(source);
-	    for (File categoryDir : seeds.listFiles()) {
-		loadCategory(articleTree, categoryDir);
+	    File seeds = new File(packages);
+	    File categoryIndices = new File(packages + "/" + categoryIndexPath);
+	    if (categoryIndices.isDirectory()) {
+		// Load Category Indices
+		indexTree = new CategoryIndex(categoryIndices);
+		loadCategoryIndex(indexTree, categoryIndices);
+		// Load sources and articles
+		for (File sourceDir : seeds.listFiles()) {
+		    if (sourceDir.isDirectory() && !sourceDir.getName().equalsIgnoreCase(categoryIndexPath)) {
+			Source src = new Source(sourceDir);
+			articleTree.add(src);
+			for (File categoryDir : sourceDir.listFiles()) {
+			    loadCategoryFolder(src, categoryDir);
+			}
+		    }
+		}
+		printArticles();
 	    }
-	    printArticles();
 	    return 0;
 	}
 
-	void loadCategory(LSwingTreeNode node, File categoryDir) {
-	    try {
-		Category curCategory = new Category();
-		if (curCategory.load(node, categoryDir)) {
-		    node.add(curCategory);
-		    categories.add(curCategory);
+	void loadCategoryIndex(CategoryIndex parent, File dir) {
+	    // Load children categories
+	    for (File f : dir.listFiles()) {
+		if (f.isDirectory()) {
+		    CategoryIndex cat = new CategoryIndex(f);
+		    if (!categoryIndex.containsKey(cat.getName().toUpperCase())) {
+			cat.inherit(parent);
+			parent.add(cat);
+			categoryIndex.put(cat.toString().toUpperCase(), cat);
+			loadCategoryIndex(cat, f);
+		    } else {
+			String error = "Skipped because Database already had a category with the same name: " + cat.getName() + " (" + f + ")";
+			Debug.log.logError("CategoryIndex", error);
+			Debug.log.logSpecial(Debug.Logs.BLOCKED_ARTICLES, "Category", error);
+		    }
+		}
+	    }
+	}
 
+	void loadCategoryFolder(LSwingTreeNode node, File categoryDir) {
+	    try {
+		CategoryIndex index = Database.categoryIndex.get(categoryDir.getName().toUpperCase());
+		if (index != null) {
+		    Category curCategory = new Category(index);
+		    node.add(curCategory);
 		    for (File f : categoryDir.listFiles()) {
 			if (f.isDirectory()) {
 			    // If articles folder
@@ -98,10 +131,12 @@ public class Database {
 				loadCategoryContents(curCategory, f);
 			    } else // Otherwise assume it's a category folder
 			    {
-				loadCategory(curCategory, f);
+				loadCategoryFolder(curCategory, f);
 			    }
 			}
 		    }
+		} else {
+		    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Category", "Blocked because it didn't have a matching category index: " + categoryDir);
 		}
 	    } catch (Exception e) {
 		Debug.log.logException(e);
@@ -133,6 +168,14 @@ public class Database {
 	    c.add(a);
 	    articles.put(a.getName().toUpperCase(), a);
 	}
+    }
+
+    public static Article getArticle(String name) {
+	return articles.get(name.toUpperCase());
+    }
+
+    public static boolean hasArticle(String name) {
+	return articles.containsKey(name.toUpperCase());
     }
 
     public static void printArticles() {

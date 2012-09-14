@@ -32,7 +32,7 @@ public class ContentPanel extends LPanel {
 	if (a != null) {
 	    target = a;
 	} else if (target != null) {
-	    target = Database.articles.get(target.getName().toUpperCase());
+	    target = Database.getArticle(target.getName());
 	} else {
 	    return;
 	}

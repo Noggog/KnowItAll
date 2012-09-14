@@ -36,14 +36,14 @@ public class ArticleSpec {
 	Map<String, String> tmp = new HashMap<>(extraSubCategories.length);
 	for (String[] s : extraSubCategories) {
 	    // Block bad subcategories
-	    if (s.length != 2 || !c.subCategorySet.contains(s[0].toUpperCase()) || "".equals(s[1])) {
+	    if (s.length != 2 || !c.index.subCategorySet.contains(s[0].toUpperCase()) || "".equals(s[1])) {
 		// Log the block
 		if (Debug.log.logging() && !"".equals(s[1])) {
 		    String blocked = "";
 		    for (String s2 : s) {
 			blocked += s2 + " | ";
 		    }
-		    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Blocked SubCategory", "Blocked Subcategory from category " + c.getName() + ", article spec " + src + ": " + blocked);
+		    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Blocked SubCategory", "Blocked Subcategory from category " + c.index.getName() + ", article spec " + src + ": " + blocked);
 		}
 		continue;
 	    }
@@ -55,7 +55,7 @@ public class ArticleSpec {
 	}
 	extraSubCategories = new String[tmp.size()][];
 	int i = 0;
-	for (String key : c.subCategoryOrder) {
+	for (String key : c.index.subCategoryOrder) {
 	    if (tmp.containsKey(key)) {
 		extraSubCategories[i++] = new String[]{key, tmp.get(key)};
 	    }

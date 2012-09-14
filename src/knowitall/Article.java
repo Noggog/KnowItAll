@@ -92,7 +92,7 @@ public class Article extends LSwingTreeNode implements Comparable {
     }
 
     public String getIcon() {
-	return category.getIcon();
+	return category.index.getIcon();
     }
 
     public String getImage() {

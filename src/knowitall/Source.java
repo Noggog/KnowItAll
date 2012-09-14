@@ -4,22 +4,21 @@
  */
 package knowitall;
 
+import java.io.File;
 import lev.gui.LSwingTreeNode;
 
 /**
  *
  * @author Justin Swanson
  */
-public class Category extends LSwingTreeNode {
-
-    CategoryIndex index;
-
-    Category(CategoryIndex index) {
-	this.index = index;
+public class Source extends LSwingTreeNode {
+    String name;
+    Source (File src) {
+	name = src.getName();
     }
 
     @Override
     public String toString() {
-	return index.getName();
+	return name;
     }
 }

@@ -52,8 +52,8 @@ public class SearchBar extends LComponent {
 
     void updateContent() {
 	String s = field.getText().toUpperCase();
-	if (Database.articles.containsKey(s)) {
-	    content.updateContent(Database.articles.get(s));
+	if (Database.hasArticle(s)) {
+	    content.updateContent(Database.getArticle(s));
 	}
 //	else if (s.equals("")) {
 //	    content.updateContent(null);
