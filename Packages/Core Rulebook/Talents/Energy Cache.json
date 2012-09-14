@@ -1,0 +1,18 @@
+{
+	"shortContent" : "The character no longer gains fatigue from Luminen Charge, Luminen
+Shock, and Luminen Blast.",
+	
+	"content" : "The character has learned to focus the power stored within
+his Potentia Coil with greater efficiency. The character no
+longer gains Fatigue from using Luminen Charge, Luminen
+Shock, and Luminen Blast.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "Techmarine or Mechanicus Implants"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 117
+}

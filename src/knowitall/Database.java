@@ -23,6 +23,7 @@ public class Database {
 
     private static String packages = "Packages";
     private static String categoryIndexPath = "KIA Category Index";
+    private static String articlePath = "KIA Articles";
     private static CategoryIndex indexTree;
     private static Map<String, CategoryIndex> categoryIndex = new TreeMap<>();
     private static LSwingTreeNode articleTree;
@@ -125,14 +126,14 @@ public class Database {
 		    Category curCategory = new Category(index);
 		    node.add(curCategory);
 		    for (File f : categoryDir.listFiles()) {
-			if (f.isDirectory()) {
-			    // If articles folder
-			    if (f.getName().equalsIgnoreCase("Articles")) {
-				loadCategoryContents(curCategory, f);
-			    } else // Otherwise assume it's a category folder
-			    {
-				loadCategoryFolder(curCategory, f);
+			if (f.isFile()
+				&& Ln.isFileType(f, "JSON")) {
+			    Article a = new Article(curCategory);
+			    if (a.load(f)) {
+				publishArticle(curCategory, a);
 			    }
+			} else if (f.isDirectory()) {
+			    loadCategoryFolder(curCategory, f);
 			}
 		    }
 		} else {
@@ -140,24 +141,6 @@ public class Database {
 		}
 	    } catch (Exception e) {
 		Debug.log.logException(e);
-	    }
-	}
-
-	void loadCategoryContents(Category category, File articleDir) {
-	    if (articleDir.isDirectory()) {
-		for (File articleSpec : articleDir.listFiles()) {
-		    try {
-			if (articleSpec.isFile()
-				&& Ln.isFileType(articleSpec, "JSON")) {
-			    Article a = new Article(category);
-			    if (a.load(articleSpec)) {
-				publishArticle(category, a);
-			    }
-			}
-		    } catch (Exception e) {
-			Debug.log.logException(e);
-		    }
-		}
 	    }
 	}
 

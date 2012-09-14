@@ -1,0 +1,15 @@
+{
+	"shortContent" : "The character gains additional +10 when ganging up.  If both allies have it, then they both get +20.",
+	
+	"content" : "The character has experience of fighting in paired teams that
+work together to take down their enemies. When ganging up
+on an opponent, the character gains an additional +10 bonus
+to Weapon Skill Tests. If both characters who outnumber the
+enemy have this Talent, both gain an additional +10 bonus,
+for a total of +20. This bonus is in addition to the normal
+bonus gained from outnumbering opponents.",
+
+	"GMOnly" : false,
+	
+	"pageNumber" : 116
+}

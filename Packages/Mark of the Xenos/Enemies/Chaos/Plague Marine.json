@@ -1,0 +1,61 @@
+{
+	"name" : "Plague Marine",
+	
+	"content" : "A Space Marine’s body is hardened against every conceivable
+form of attack, not least against deadly biological weapons and
+engineered plagues of all kinds. Nonetheless a Space Marine can
+be laid low by certain warp-spawned infections and diseases,
+their fantastic constitution betraying them and trapping them
+in a fevered nightmare between life and death. Lingering in the
+wracking torture of their own ravaged bodies can force even a
+Battle-Brother’s resolve to weaken enough to make him cry out to
+the Chaos God Nurgle, the Plague Lord, for succour.",
+
+	"extraSubCategories" : 
+	[ 
+		["Skills", "Awareness (Per), Command (Fel) +10, Dodge (Ag),
+Forbidden Lore (Daemons, Warp) (Int), Intimidate (S) +20,
+Literacy (Int), Speak Language (Low Gothic) (Int), Survival
+(Int), Swim (S)."],
+		["Talents", "Astartes Weapon Training, Crippling Strike,
+Fearless, Hatred (Loyalist Space Marines), Heightened Senses
+(Sight, Sound, Touch), Jaded, Quick Draw, Rapid Reload,
+Swift Attack."],
+		["Traits", "Dark Sight, Fear 2 (Frightening), Size (Hulking),
+Stuff of Nightmares, Toxic (1d10)†, Unnatural Strength (x2),
+Unnatural Toughness (x3)"],
+		["Armor", "Astartes power armour (Head 8, Arms 8, Body 10,
+Legs 8)."],
+		["Weapons", "Astartes Chainsword (1d10+14 R; Pen 4;
+Balanced, Tearing), Astartes Bolt Pistol (30m; S/3/–;
+2d10+5 X; Pen 5; Clip12; Reload Full; Tearing), Astartes
+Bolter (100m; S/3/–; 2d10+5 X; Pen 5; Clip 28; Reload
+Full; Tearing), Plague Knife (1d10+10 R; Pen 2; Toxic)."],
+		["Equipment", "2 bolt pistol magazines, 4 bolter magazines, 3
+Blight grenades."],
+		["Special Rules", "<b>Cloud of Flies:</b> All those within 5 metres take a –10 penalty
+to Weapon Skill and Ballistic Skill Tests as choking clouds of
+buzzing, biting flies attack every exposed inch of flesh.
+<br>
+<br>
+<b>†Toxic (1d10):</b> This Trait applies to all Plague Marine attacks
+including ranged ones."] 
+	],
+	
+	"grid" :
+	[
+		["Wounds", "36"],
+		["Movement", "5/10/15/30"],
+		["Weapon Skill", "43"],
+		["Ballistic Skill", 43"],
+		["Strength",  "<sup>10</sup>45"],
+		["Toughness", "<sup>15</sup>55"],
+		["Agility", "40"],
+		["Intelligence", "30"],
+		["Perception", "30"],
+		["Will Power", "45"],
+		["Fellowship", "25"]
+	]
+	
+	
+}

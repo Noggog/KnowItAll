@@ -1,0 +1,23 @@
+{
+	"content" : "The Battle-Brother can focus his intent on where it is likely
+to do most Damage to his enemy and then strike the target
+down with a single shot. The Battle-Brother may declare
+that he is using this Talent before he makes a single ranged
+attack. If the attack hits, it ignores an additional point of
+armour per Degree of Success. If a 10 is rolled for Damage,
+it automatically triggers Righteous Fury without the need for
+another Ballistic Skill Test. This Talent may not be used in
+conjunction with Blast weapons, Semi or Full-Auto Bursts, or
+Flame weapons. It may, however, be used in conjunction with
+accurate weapons and in conjunction with making Called
+Shots and taking Aim Actions.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "Astartes Weapons Training, Ballistic Skill 50"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 117
+}

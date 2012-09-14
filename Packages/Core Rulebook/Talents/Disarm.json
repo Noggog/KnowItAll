@@ -1,0 +1,20 @@
+{
+	"shortContent" : "The character makes a Full Action Opposed WS test to force enemy to drop weapon.  3 degrees of success and he can take the weapon.",
+	
+	"content" : "The character can wrest weapons from his opponent’s hands
+through practised technique or brute force. If in close combat,
+the character may use a Full Action to disarm his foe by
+making an Opposed Weapon Skill Test. If the character wins
+the Test, the enemy drops his weapon at his feet. Should the
+character obtain three or more Degrees of Success, he may
+take the enemy’s weapon from him.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "Agility 30"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 116
+}

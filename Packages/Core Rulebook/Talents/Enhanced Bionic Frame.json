@@ -1,0 +1,17 @@
+{
+	"shortContent" : "The character gains the Auto-Stabilised trait.",
+	
+	"content" : "The character’s already impressive bionic body structure is
+steadied by a gyro-array guided by a targeting system linked
+to the machine-spirit. The character gains the Auto-stabilised
+Trait.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "Machinator Array"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 117
+}

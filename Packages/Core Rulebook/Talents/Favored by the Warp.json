@@ -1,0 +1,16 @@
+{
+	"shortContent" : "Roll twice on Psychic Phenomena table and choose favorable one.",
+	
+	"content" : "Whenever a Psychic Power results in Psychic Phenomena,
+the character may roll twice on that table and take the more
+favourable result.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "Willpower 35"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 118
+}

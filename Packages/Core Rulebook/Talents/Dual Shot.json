@@ -1,0 +1,25 @@
+{
+	"shortContent" : "The character makes a single BS roll, firing both guns.  Aim can be applied to both.  Does not suffer penalties for dual weilding.  Enemy's toughness only counts once.  A successful dodge will dodge both bullets.",
+	
+	"content" : "The character’s skill with guns is such that he can target
+two shots on exactly the same point. When armed with two
+pistols, the character may fire both simultaneously as a Full
+Action. A single Ballistic Skill Test is made, and if successful,
+the character hits his target with both shots. As the character
+is firing both guns as a single attack, he may take an Aim
+Action before firing to get a +10 or +20 bonus to the BS
+Test, and a red-dot laser sight mounted on any one of the
+weapons provides its +10 bonus. The character does not suffer
+from the normal –20 Ballistic Skill penalty for wielding two
+weapons. If the attack hits, the target’s armour gets applied as
+normal to both hits individually, but Toughness only counts
+once against the combined damage rolls of both hits. A single
+successful Dodge Test from the target avoids both shots.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "Agility 40, Two-Weapon Weilder"]
+	],
+	
+	"pageNumber" : 116
+}

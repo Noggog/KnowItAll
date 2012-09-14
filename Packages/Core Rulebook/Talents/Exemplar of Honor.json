@@ -1,0 +1,19 @@
+{
+	"shortContent" : "Spend fate point to regain cohesion equal to Fellowship bonus.",
+	
+	"content" : "The Battle-Brother exemplifies all that is finest in an Adeptus
+Astartes to the extent that his presence can rally his brothers
+and inspire them to fight together against overwhelming
+odds. The Battle-Brother may spend a Fate Point as a Free
+Action to regain Cohesion equal to his Fellowship Bonus. He
+may do this once per Round.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "Adeptus Astartes"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 118
+}

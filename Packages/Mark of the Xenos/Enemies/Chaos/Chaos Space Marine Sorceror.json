@@ -1,0 +1,63 @@
+{
+	
+	"content" : "Chaos Space Marine Sorcerers are some of the most depraved
+and demented individuals encountered by the forces of the
+Imperium. During the events of the Horus Heresy, many of
+them came from the ranks of the Thousand Sons Legion,
+which had a greater proportion of Astartes with the psyker
+mutation.",
+
+	"extraSubCategories" : 
+	[ 
+		["Skills", "Awareness (Per), Climb (S), Command (Fel) +10,
+Dodge (Ag) +10, Intimidate (S) +20, Literacy (Int),
+Lore: Forbidden (Daemonology, Psykers, The Warp) (Int),
+Lore: Scholastic (Legend, Numerology, Occult) (Int) +10,
+Psyniscience (Int) +20, Scrutiny (Per), Speak Language (Low
+Gothic) (Int), Survival (Int), Swim (S)."],
+		["Talents", "Astartes Weapon Training, Bolter Drill, Die Hard,
+Fearless, Hatred (Loyalist Space Marines), Heightened Senses
+(Sight, Sound, Smell), Jaded, Killing Strike, Quick Draw,
+Rapid Reload, Size (Hulking), Swift Attack, True Grit."],
+		["Traits", "Dark Sight, †Mark of Chaos, Unnatural Strength (x2),
+Unnatural Toughness (x2)."],
+		["Armor", "Astartes Power Armour (Head 8, Arms 8, Body 10,
+Legs 8)."],
+		["Weapons", "Force Sword (1d10+19 R; Pen 7; Balanced,
+Special), Astartes Bolt Pistol (30m; S/3/–; 2d10+5 X;
+Pen 5; Clip 12; Rld Full; Tearing), Astartes Combat Blade
+(1d10+14 R; Pen 2)."],
+		["Equipment", "4 bolt pistol magazines, Sorcerer Robes, Pendant or
+Emblem with mark of sworn Chaos God."],
+		["Special Rules", "<b>Psy Rating: 5</b>
+<br>
+<br>
+<b>Psychic Powers:<b> Choose two of the Chaos Psychic Powers
+found on page 127.
+<br>
+<br>
+<b>†Mark of Chaos:</b> The Sorcerer possesses one of the following
+Marks of Chaos. This Mark appears somewhere on his body
+and is also emblazoned upon his armour—Nurgle, Slaanesh,
+or Tzeentch. See page 363 of the Deathwatch Rulebook
+for information on how these Marks work. The Sorcerer
+may only ever possess a single Mark and may not change
+that Mark."]
+	],
+	
+	"grid" :
+	[
+		["Wounds", "30"],
+		["Movement", "5/10/15/30"],
+		["Weapon Skill", "43"],
+		["Ballistic Skill", 43"],
+		["Strength",  "<sup>10</sup>45"],
+		["Toughness", "<sup>8</sup>45"],
+		["Agility", "40"],
+		["Intelligence", "35"],
+		["Perception", "40"],
+		["Will Power", "50"],
+		["Fellowship", "27"]
+	]
+	
+}

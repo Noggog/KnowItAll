@@ -1,0 +1,66 @@
+{
+	"name" : "Obliterator",
+	
+	"content" : "Perhaps one of the most strange, and certainly amongst the
+most powerful of foes, Obliterators are shrouded in mystery.
+Walking armouries bulking even larger than Chaos Space
+Marines encased in Terminator Armour, Obliterators are
+masses of twisted flesh melded with weaponry, who look as
+if their flesh is in a state of flux. Obliterators are inhuman,
+grotesque arcano-cyborgs whose very flesh and blood
+can transform into white-hot plasma, titaniumfused
+bones, or internal organs that generate lethal
+amounts of electricity. Their brains are as much
+machine as living flesh.",
+
+	"extraSubCategories" : 
+	[ 
+		["Skills", "Awareness (Per), Forbidden Lore (Archeotech, Warp,
+Daemonology, Traitor Legions) (Int), Intimidate (S), Tech-Use
+(Int) +20."],
+		["Talents", "Ambidextrous, Crushing Blow, Fearless, Independent
+Targeting, Mighty Shot, Swift Attack, Two-Weapon wielder
+(Melee and Ranged)."],
+		["Traits", "Auto Stabilised, Daemonic, Fear (2), Natural Armour
+(Warped Mechanical Flesh), Regeneration (2), Size (Hulking),
+Sturdy, Unnatural Strength (x2), Unnatural Toughness (x2)."],
+		["Armor", "Warped Mechanical Flesh (12 All)."],
+		["Weapons", "Power Fist (2d10+22 E, Pen 9, Power Field,
+Unwieldy), Eviscerator Chainblade (1d10+22 R, Pen 5,
+Tearing, Unbalanced); Lascannon (300m; S/–/–; 6d10+12
+E; Pen 10; Clip X, Rld X); Multi-Melta (60m; S/–/–; 4d10+8
+E; Pen 13; Clip X, Rld X, Blast (1)); Plasma Cannon (150m;
+S/–/–; 2d10+13 E; Pen 10; Clip X, Rld X, Volatile, Blast
+(1)), Twin-Linked Plasma Gun (100m; S/2/–; 1d10+11 E;
+Pen 8; Clip X, Rld X, Volatile, Twin-Linked), Twin-Linked
+Meltagun (20m; S/–/–; 2d10+10 E; Pen 13; Clip X, Rld X,
+Twin-Linked), Twin-Linked Flamer (20m; S/–/–; 2d10+4
+E; Pen 3; Clip X, Rld X, Flame, Twin-Linked)."],
+		["Equipment", "None."],
+		["Special Rules", "<b>Walking Arsenal:</b> Obliterators can form a number of weapons
+from their bizarre flesh, which is an unholy fusion of the
+organic, the mechanical, and the daemonic. As a Half Action, an
+Obliterator may manifest a ranged weapon or melee weapon from
+the selection listed above. It is assumed to possess the necessary
+training to use any weapon it can create and its weapons have no
+need to be reloaded. The Obliterator may have 2 weapons formed
+at any given time and can fire a heavy weapon single-handed."]
+	],
+	
+	"grid" :
+	[
+		["Wounds", "40"],
+		["Movement", "4/8/12/24"],
+		["Weapon Skill", "45"],
+		["Ballistic Skill", 50"],
+		["Strength",  "<sup>10</sup>50"],
+		["Toughness", "<sup>10</sup>55"],
+		["Agility", "35"],
+		["Intelligence", "30"],
+		["Perception", "40"],
+		["Will Power", "45"],
+		["Fellowship", "-"]
+	]
+	
+	
+}

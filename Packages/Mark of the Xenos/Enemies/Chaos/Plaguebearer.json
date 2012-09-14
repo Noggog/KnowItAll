@@ -1,0 +1,67 @@
+{
+	
+	"content" : "The Lesser Daemons of Nurgle are shambling, pustulent
+creatures known as Plaguebearers. These daemons have
+gangling, bony limbs, their bodies swollen with decay, so
+much so that glistening innards are exposed through rents in
+their skin. They possess a single, cyclopean eye and a single
+horn rising above their haggard, drawn faces, their bodies
+covered in filth and parasites. Despite the Plaguebearer’s
+unusual appearance, they are supernaturally resilient to
+harm, the gifts of their master having inured them to all
+pain. Plaguebearers are constantly surrounded by
+clouds of droning flies and chant monotonous hymns,
+their gait a staggering lope. Their sonorous voices
+attempt to keep count of the number of
+noxious plagues unleashed by Nurgle; an
+impossible task, for the Grandfather of
+Plagues constantly invents new strains
+of viruses.",
+
+	"extraSubCategories" : 
+	[ 
+		["Skills", "Awareness (Per), Psyniscience (Per), Scholastic Lore
+(Numerology) (Int), Speak Language (any one).
+"],
+		["Talents", "Talents: Crippling Strike, Fearless."],
+		["Traits", "Daemonic (TB 10),
+†Daemonic Presence,
+Fear (2), From Beyond, Improved Natural Weapons,
+Natural Weapons (Claws), Regeneration (1), Strange
+Physiology, Unnatural Strength (x2), Unnatural
+Toughness (x2), Warp Instability."],
+		["Armor", ""],
+		["Weapons", "Plaguesword (1d10+13; Pen 1;
+Felling 1, Toxic), Claws (1d10+8; Pen 2; Toxic)."],
+		["Equipment", "Internal micro-bead (to relay data and receive instruction only), in-built respirator."],
+		["Special Rules", "<b>†Daemonic Presence:</b>
+All enemies
+within 10 metres of a Plaguebearer suffer
+a –10 penalty to Willpower Tests in
+the area.
+<br>
+<br>
+<b>Cloud of Flies:<b>
+All those within 5 metres take
+a –10 penalty to Weapon Skill and Ballistic Skill
+Tests as choking clouds of buzzing, biting
+flies attack every exposed inch of flesh."]
+	],
+	
+	"grid" :
+	[
+		["Wounds", "30"],
+		["Movement", "3/6/9/18"],
+		["Weapon Skill", "45"],
+		["Ballistic Skill", 30"],
+		["Strength",  "<sup>8</sup>43"],
+		["Toughness", "<sup>15</sup>55"],
+		["Agility", "30"],
+		["Intelligence", "30"],
+		["Perception", "30"],
+		["Will Power", "30"],
+		["Fellowship", "10"]
+	]
+	
+	
+}

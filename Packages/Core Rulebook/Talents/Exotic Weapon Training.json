@@ -1,0 +1,19 @@
+{
+	"shortContent" : "Negate -20 penalty for a specific Exotic weapon.",
+	
+	"content" : "The character is trained to use a particularly obscure type of
+weapon, allowing him to use armaments few others have ever
+seen. Weapons requiring this unique Talent are noted in their
+armoury descriptions. Weapon Skill or Ballistic Skill Tests used
+with a weapon that a character does not have training for suffer
+a –20 penalty.",
+
+	"extraSubCategories" : 
+	[ 
+		["Talent Groups", "Each exotic weapon"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 117
+}

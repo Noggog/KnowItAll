@@ -1,0 +1,19 @@
+{
+	"shortContent" : "While connected to an energy source, the character makes +10 toughness test to remove one level of Fatigue + one per degree of success.",
+	
+	"content" : "The character can channel the sacred flow of energy from his
+Potentia Coil or other energy source to replenish his flesh.
+Whilst in contact with a functioning, powered machine or
+fully charged battery or power cell, the character may make
+an Ordinary (+10) Toughness Test. Success removes
+one level of Fatigue plus one additional level of Fatigue for
+each additional Degree of Success. This takes one minute of
+meditation and ritual incantation.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "Techmarine or Mechanicus Implants"]
+	],
+	
+	"pageNumber" : 116
+}

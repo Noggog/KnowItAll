@@ -1,0 +1,28 @@
+{
+	"name" : "Aim",
+	
+	"shortContent" : "+10/+20 BS on next attack.  Other (re)actions break aim.",
+	
+	"content" : "The active character patiently takes extra time to make a more
+precise attack. Aiming as a Half Action grants a +10 bonus
+to the character’s next attack, while aiming as a Full Action
+grants a +20 bonus to the character’s next attack. The next
+Action the Aiming character performs must be an attack or
+the benefits of Aiming are lost. Aiming benefits are also lost if the character performs a Reaction before making his attack.
+Aiming can be used with both melee and ranged attacks.",
+
+	"extraSubCategories" : 
+	[ 
+		["Type", "Half Action or Full Action"],
+		["Subtype", "Concentration"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 237,
+	
+	"aka" : 
+	[
+		"Aiming"
+	]
+}

@@ -1,0 +1,14 @@
+{	
+	"shortContent" : "+10 to Intimidate or Interrogation.  -10 to non-threatening Fellowship tests.",
+	
+	"content" : "The character’s voice has particularly baleful or menacing
+qualities, causing others to quail before it. The character gains
+a +10 bonus to all Intimidate or Interrogation Tests when
+employing this talent, but suffers a –10 penalty to Fellowship
+Tests when dealing with others in a non-threatening manner,
+such as animals, children, or the easily startled.",
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 116
+}
