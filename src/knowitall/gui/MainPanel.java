@@ -20,6 +20,7 @@ import knowitall.Debug;
 import lev.gui.LImagePane;
 import lev.gui.LPanel;
 import lev.gui.LScrollPane;
+import lev.gui.LSwingTree;
 import skyproc.gui.SPDefaultGUI;
 
 /**
@@ -30,7 +31,7 @@ public class MainPanel extends LPanel {
 
     LImagePane logo;
     SearchBar search;
-    JTree tree;
+    LSwingTree tree;
     LScrollPane treeScroll;
     LScrollPane articleScroll;
     JSplitPane split;
@@ -74,7 +75,8 @@ public class MainPanel extends LPanel {
 	    Debug.log.logException(ex);
 	}
 
-	tree = new JTree();
+	tree = new LSwingTree();
+	GUI.tree = tree;
 
 	treeScroll = new LScrollPane(tree);
 	treeScroll.setBorder(BorderFactory.createEmptyBorder());
@@ -103,6 +105,7 @@ public class MainPanel extends LPanel {
 		});
 	    }
 	});
+	split.setDividerLocation(250);
 	add(split, 0);
     }
 

@@ -42,6 +42,11 @@ public class Database {
 	categoryIndex.clear();
 	articles.clear();
 	articleTree = new LSwingTreeNode();
+	GUI.regenerateTree();
+    }
+
+    public static LSwingTreeNode getTree() {
+	return articleTree;
     }
 
     public static void loadLooseFiles(Runnable run) {
@@ -58,6 +63,7 @@ public class Database {
 	    a.linkText();
 	    a.clean();
 	}
+	GUI.regenerateTree();
 	GUI.updateContentDisplay();
 	int wer = 23;
     }

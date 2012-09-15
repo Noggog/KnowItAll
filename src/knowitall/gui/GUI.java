@@ -8,7 +8,7 @@ import java.awt.MouseInfo;
 import javax.swing.SwingUtilities;
 import knowitall.Article;
 import knowitall.Database;
-import lev.gui.LImagePane;
+import lev.gui.LSwingTree;
 
 /**
  *
@@ -22,6 +22,7 @@ public class GUI {
     static ContentPanel contentPanel;
     static SearchBar search;
     static ArticleTooltip tooltip;
+    static LSwingTree tree;
 
     public static void displayArticles(boolean on) {
 	if (contentPanel != null) {
@@ -85,5 +86,10 @@ public class GUI {
 		tooltip.setVisible(false);
 	    }
 	});
+    }
+
+    public static void regenerateTree() {
+	tree.setRoot(Database.getTree());
+//	tree.expand(true);
     }
 }
