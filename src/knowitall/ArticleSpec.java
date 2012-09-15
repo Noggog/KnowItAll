@@ -28,6 +28,7 @@ public class ArticleSpec {
     public String[][] grid = new String[0][];
     public String[] aka = new String[0];
     public String[] forceLinkTo = new String[0];
+    public boolean blockLinking = false;
     public String source = "";
 
     public void clean(Category c) {

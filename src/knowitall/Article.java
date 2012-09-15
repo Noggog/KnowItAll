@@ -29,6 +29,7 @@ public class Article extends LSwingTreeNode implements Comparable {
     ArrayList<String[]> subCategories = new ArrayList<>();
     ArrayList<String[]> grid = new ArrayList<>();
     int pageNumber;
+    boolean blockLinking;
     Set<String> words = new TreeSet<>();
 
     Article(Category c) {
@@ -57,6 +58,7 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    grid = getAttributes(spec.grid);
 	    content = spec.content;
 	    pageNumber = spec.pageNumber;
+	    blockLinking = spec.blockLinking;
 	    reloadHTML();
 	    return true;
 	} catch (FileNotFoundException ex) {
@@ -135,7 +137,7 @@ public class Article extends LSwingTreeNode implements Comparable {
     }
 
     public void linkTo(Article a) {
-	if (!equals(a) && words.contains(a.getName().toUpperCase())) {
+	if (!equals(a) && words.contains(a.getName().toUpperCase()) && !a.blockLinking) {
 	    linked.add(a);
 	}
     }

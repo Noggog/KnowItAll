@@ -15,5 +15,7 @@ make a free Standard Attack against the active character.",
 	[ 
 		["Type", "Half Action or Full Action"],
 		["Subtype", "Movement"]
-	]
+	],
+	
+	"blockLinking" : true
 }
