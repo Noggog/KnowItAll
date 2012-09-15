@@ -16,5 +16,8 @@ Turn if it is used on two different weapons or items.",
 	[ 
 		["Type", "Half Action"],
 		["Subtype", "Miscellaneous"]
-	]
+	],
+	
+	"blockLinking" : true
+	
 }

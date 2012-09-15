@@ -1,7 +1,7 @@
 {
 	"name" : "Disengage",
 	
-	"shortContent" : "Safely break off of melee combat with a half move.",
+	"shortContent" : "Safely break off of melee combat and move a half action.",
 	
 	"content" : "The character breaks off from melee combat and may take a
 Half Move. Opponents that were engaged with the character

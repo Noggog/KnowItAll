@@ -41,7 +41,6 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    ArticleSpec spec = KnowItAll.gson.fromJson(new FileReader(specF), ArticleSpec.class);
 	    if (spec == null) {
 		String error = "Skipped because it had a null spec: " + specF;
-		Debug.log.logError("Article", error);
 		Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", error);
 		return false;
 	    }
@@ -52,6 +51,11 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    spec.clean(category);
 	    specFile = specF;
 	    name = spec.name;
+	    if (Database.hasArticle(name)) {
+		String error = "Skipped because an article already existed with that name: " + name + "  | File: " + specF;
+		Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", error);
+		return false;
+	    }
 	    words = spec.getWords();
 	    shortContent = spec.shortContent;
 	    subCategories = getAttributes(spec.extraSubCategories);

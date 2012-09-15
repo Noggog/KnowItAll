@@ -1,7 +1,7 @@
 {
 	"name" : "Dodge",
 	
-	"shortContent" : "Take a Dodge test to avoid hits.",
+	"shortContent" : "The character spends a reaction to take an agility test to avoid an attack.  Automatic and flame weapons are harder to dodge.",
 	
 	"content" : "Dodge is a Reaction that a character can perform when it is not
 his Turn. After a character is hit, but before Damage is rolled,
@@ -12,8 +12,8 @@ of the way at the last moment and the attack is considered to
 have missed (and thus no Damage is rolled). If the Dodge Test
 fails, the attack connects and deals Damage normally. Dodge
 can be used to avoid both melee and ranged attacks.
-
-
+<br>
+<br>
 Some attacks, such as those made with grenades, flamers,
 or guns firing semi-automatic or fully-automatic bursts, are
 especially difficult to avoid. When Dodging an area effect

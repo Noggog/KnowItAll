@@ -7,12 +7,86 @@ wicked curved beaks and multicoloured, spectrum-shattering
 wings. Those who gaze upon these twisted prisms of pure magic
 begin to feel their sanity shred and reason slip away. Faced by
 a being of change incarnate, bedrock beliefs crumble and twist,
-and the mind seeks firm purchase in vain.
+and the mind seeks firm purchase in vain.<br>
+<br>
 Treachery, deceit, capriciousness: these are the hallmarks
 of the Lords of Change. Tzeentch’s greatest servants weave
 scheme upon scheme, a dense tangle of intermingling threads,
 so convoluted and eon-spanning that none can grasp their
-true purpose.",
+true purpose.<br>
+<br>
+A confrontation with a Lord of Change is likely to occur
+when and where the creature wills it. Few have ever managed
+to get the drop on these servants of Tzeentch, for the Changer
+of Ways is the master of destiny itself, and his greatest servants
+possess a portion of that power.
+Lords of Change tend to work behind the scenes,
+pulling puppet strings from the shadows. So subtle are these
+manipulations, and so skilled, that often the playthings of a
+Lord of Change remain unaware that they are in the thrall of a
+deadly Daemon. Secret cults, heresies, revolutionaries, and even
+planetary governors have all fallen under the thrall of a Lord of
+Change at one point or another. Even Tzeentch’s bitterest foes
+can be manipulated into fulfilling the Great Deceiver’s ends—
+under his greatest daemons’ careful guidance, brother can be
+turned against brother, friend against friend, and the most zealous
+of Inquisitors can stumble from the path of righteousness. To
+confront a Lord of Change is to wander through a fog-shrouded
+mire of lies, ever unsure that one’s actions are correct, one false
+step away from sinking irrevocably.<br>
+<br>
+On the rare instances that a Lord of Change is bested, its
+schemes sundered and its plans laid to ruin, it will fight like a
+cornered animal, drawing upon its incredible sorcerous powers
+to fell its foes directly where deceit and deception have failed.
+Lords of Change are the greatest Sorcerers in the galaxy, and their
+mastery of magic is without peer. The mightiest psychic powers
+and spells employed by feeble human psykers and Sorcerers are
+the idle cantrips of a Lord of Change, for a Greater Daemon of
+Tzeentch is a creature of undiluted warp energy and the mortal
+world quakes at its touch. With the merest flick of an elegantly
+tapered claw, bodies mutate and writhe, buildings twist and melt,
+and beings of madness and horror spring forth, cackling, from
+running rivers of flesh. Nothing that is done cannot be undone;
+nothing that is made cannot be unmade. To prevail against a
+Lord of Change, one’s convictions must be firmer than the
+foundations of the earth.<br>
+<br>
+Lords of Change are deceptively delicate-looking. Their long,
+spindly bodies are topped by a savage, cruel bird’s head. Great
+feathered wings extend from their shoulder blades, glittering
+and glinting with a thousand impossible colours. Their bones
+are hollow, and despite their enormous size, they barely seem
+capable of supporting their own weight, often leaning upon
+immense staffs, etched with innumerable eldritch signs and sigils.
+Their appearance, however, is yet another ruse: Lords of
+Change are fearsome fighters, serpent-quick with skin like
+iron. They are also lore-masters, and possess a thorough
+knowledge of the great feints and fighting techniques of the
+galaxy. To fence with a Lord of Change is to invite one’s own
+ruin; many overzealous warriors have been felled by their
+vicious claws, cruel curved beaks and terrible, reaping staves,
+disemboweled before they could even lift their blades.<br>
+<br>
+Though a Lord of Change boasts many human slaves
+among his infernal retinue, it can also call upon a dreadful
+menagerie of Lesser Daemons when its back is up against the
+wall. The amorphous, spindle-limbed Pink and Blue horrors
+writhe with the boundless, ever-shifting energy of unbridled
+Chaos, warping the world around them as they gibber
+and shriek.<br>
+<br>
+The tubular Flamers of Tzeentch resemble hideous living
+columns, studded with still-melting mouths and faces and
+festooned with long, spindly arms. The gouts of magical,
+multi-coloured fire they spew from their mouth-like hands
+burn, freeze, blister, mutate and vaporize their enemies.<br>
+<br>
+High above, drifting on the currents of the aethyr, sail
+the manta-like Screamers of Tzeentch, twisted rays that trail
+slashing tendrils below their long, flat, strangely sinuous
+bodies. These tentacles are razor sharp, capable of flaying the
+flesh from even the most heavily-armoured foe.",
 
 	"extraSubCategories" : 
 	[ 
@@ -52,7 +126,7 @@ Bonus to any one Test.
 <br>
 <b>Supreme Sorcerer:</b> Lords of Change know all Psychic
 Powers from the Deathwatch Rulebook (and may know
-more; if you have access to rogue traDer or Dark heresy,
+more; if you have access to Rogue Trader or Dark Heresy,
 the Lord of Change knows all Lesser, Greater, and Ascended
 Psychic Powers as well, plus the Lesser and Greater Arcana
 of Sorcery), and may use them as if it had a Psy Rating of 9.
@@ -79,7 +153,7 @@ ignoring Toughness."]
 		["Wounds", "180"],
 		["Movement", "8/16/24/48"],
 		["Weapon Skill", "54"],
-		["Ballistic Skill", 53"],
+		["Ballistic Skill", "53"],
 		["Strength",  "<sup>18</sup>65"],
 		["Toughness", "<sup>12</sup>65"],
 		["Agility", "54"],
