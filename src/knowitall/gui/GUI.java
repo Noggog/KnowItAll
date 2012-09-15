@@ -42,6 +42,7 @@ public class GUI {
     }
 
     public static void setArticle(Article a) {
+	hideTooltip();
 	contentPanel.updateContent(a);
     }
 
