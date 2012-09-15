@@ -13,10 +13,8 @@ import org.apache.ecs.html.*;
  */
 public class ArticleHTML {
 
-    Html html;
-
-    public void load(Article a) {
-	html = new Html().addElement(new Head());
+    public static String load(Article a) {
+	Html html = new Html().addElement(new Head());
 	Body body = new Body();
 
 //	generateIconTable(a, body);
@@ -36,9 +34,7 @@ public class ArticleHTML {
 	// Content
 	body.addElement(new Font(3).addElement(a.getContent()));
 	html.addElement(body);
-    }
 
-    public String getHTML() {
 	return html.toString();
     }
 
@@ -54,12 +50,12 @@ public class ArticleHTML {
 	    contentUp = contentUp.substring(pos);
 	}
 
-	for (int i = locations.size() - 1 ; i > 0 ; i--) {
+	for (int i = locations.size() - 1; i > 0; i--) {
 //	    contentUp = contentUp.re
 	}
     }
 
-    public void generateSubCategories(Article a, Body body) {
+    static public void generateSubCategories(Article a, Body body) {
 	ArrayList<String[]> subCategoriesList = a.getSubcategories();
 	if (!subCategoriesList.isEmpty()) {
 	    for (String[] sc : subCategoriesList) {
@@ -69,7 +65,7 @@ public class ArticleHTML {
 	}
     }
 
-    public void generateGrid(Article a, Body body, boolean single) {
+    static public void generateGrid(Article a, Body body, boolean single) {
 	ArrayList<String[]> gridList = a.getGrid();
 	if (!gridList.isEmpty()) {
 	    if (single) {
@@ -110,7 +106,7 @@ public class ArticleHTML {
 	}
     }
 
-    public void generateIconTable(Article a, Body body) {
+    static public void generateIconTable(Article a, Body body) {
 	Table t = new Table();
 	t.addAttribute("border", 1);
 	t.addAttribute("width", 5);

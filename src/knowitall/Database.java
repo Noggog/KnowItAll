@@ -55,6 +55,9 @@ public class Database {
     }
 
     public static void doneLoading() {
+	for (Article a : articles.values()) {
+	    a.clean();
+	}
 	int wer = 23;
     }
 

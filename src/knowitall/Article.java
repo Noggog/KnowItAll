@@ -19,15 +19,17 @@ public class Article extends LSwingTreeNode implements Comparable {
 
     public Category category;
     File specFile;
-    ArticleContent content;
     String name;
+    Set<Article> linked = new TreeSet<>();
+    String html;
+
+    // Temporary
+    ArticleContent content;
     ArticleContent shortContent;
     ArrayList<String[]> subCategories = new ArrayList<>();
     ArrayList<String[]> grid = new ArrayList<>();
     int pageNumber;
     Set<String> words = new HashSet<>();
-    Set<Article> linked = new TreeSet<>();
-    ArticleHTML html = new ArticleHTML();
 
     Article(Category c) {
 	category = c;
@@ -55,7 +57,7 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    grid = getAttributes(spec.grid);
 	    content = new ArticleContent(spec.content);
 	    pageNumber = spec.pageNumber;
-	    html.load(this);
+	    html = ArticleHTML.load(this);
 	    return true;
 	} catch (FileNotFoundException ex) {
 	} catch (com.google.gson.JsonSyntaxException ex) {
@@ -113,11 +115,15 @@ public class Article extends LSwingTreeNode implements Comparable {
     }
 
     public String getHTML() {
-	return html.getHTML();
+	return html;
     }
 
-    public void cleanInit() {
+    public void clean() {
 	words = null;
+	content = null;
+	shortContent = null;
+	subCategories = null;
+	grid = null;
     }
 
     public Set<Article> getLinks() {
@@ -127,6 +133,7 @@ public class Article extends LSwingTreeNode implements Comparable {
     public void linkTo(Article a) {
 	if (!equals(a) && words.contains(a.getName().toUpperCase())) {
 	    linked.add(a);
+	    html = ArticleHTML.load(this);
 	}
     }
 
