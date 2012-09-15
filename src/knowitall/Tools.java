@@ -15,8 +15,8 @@ public class Tools {
     public static void deleteAllWithName(Collection<Article> articles, String name) {
 	for (Article a : articles) {
 	    if (a.getName().equalsIgnoreCase(name)) {
-		if (a.spec.src.isFile()) {
-		    a.spec.src.delete();
+		if (a.specFile.isFile()) {
+		    a.specFile.delete();
 		}
 	    }
 	}

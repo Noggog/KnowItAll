@@ -81,7 +81,6 @@ public class Parsing {
 	scan.useDelimiter("[0-9+., \t'/():-]");
 	while (scan.hasNext()) {
 	    String t = scan.next().toUpperCase();
-
 	    if (t.length() > 1 && !excludes.contains(t)) {
 		out.add(t);
 		allWords.add(t);

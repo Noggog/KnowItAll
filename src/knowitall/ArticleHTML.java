@@ -42,6 +42,23 @@ public class ArticleHTML {
 	return html.toString();
     }
 
+    public void addLink(Article a) {
+	ArrayList<Integer> locations = new ArrayList<>();
+	String contentUp = a.getContent();
+	String articleName = a.getName().toUpperCase();
+	int pos = 0;
+	int index = contentUp.indexOf(articleName);
+	while (index != -1) {
+	    locations.add(index + pos);
+	    pos = pos + index + articleName.length();
+	    contentUp = contentUp.substring(pos);
+	}
+
+	for (int i = locations.size() - 1 ; i > 0 ; i--) {
+//	    contentUp = contentUp.re
+	}
+    }
+
     public void generateSubCategories(Article a, Body body) {
 	ArrayList<String[]> subCategoriesList = a.getSubcategories();
 	if (!subCategoriesList.isEmpty()) {

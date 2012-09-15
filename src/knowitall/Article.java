@@ -18,7 +18,13 @@ import lev.gui.LSwingTreeNode;
 public class Article extends LSwingTreeNode implements Comparable {
 
     public Category category;
-    ArticleSpec spec;
+    File specFile;
+    ArticleContent content;
+    String name;
+    ArticleContent shortContent;
+    ArrayList<String[]> subCategories = new ArrayList<>();
+    ArrayList<String[]> grid = new ArrayList<>();
+    int pageNumber;
     Set<String> words = new HashSet<>();
     Set<Article> linked = new TreeSet<>();
     ArticleHTML html = new ArticleHTML();
@@ -29,7 +35,7 @@ public class Article extends LSwingTreeNode implements Comparable {
 
     public boolean load(File specF) {
 	try {
-	    spec = KnowItAll.gson.fromJson(new FileReader(specF), ArticleSpec.class);
+	    ArticleSpec spec = KnowItAll.gson.fromJson(new FileReader(specF), ArticleSpec.class);
 	    if (spec == null) {
 		String error = "Skipped because it had a null spec: " + specF;
 		Debug.log.logError("Article", error);
@@ -41,7 +47,14 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    }
 	    spec.src = specF;
 	    spec.clean(category);
+	    specFile = specF;
+	    name = spec.name;
 	    words = spec.getWords();
+	    shortContent = new ArticleContent(spec.shortContent);
+	    subCategories = getAttributes(spec.extraSubCategories);
+	    grid = getAttributes(spec.grid);
+	    content = new ArticleContent(spec.content);
+	    pageNumber = spec.pageNumber;
 	    html.load(this);
 	    return true;
 	} catch (FileNotFoundException ex) {
@@ -53,7 +66,7 @@ public class Article extends LSwingTreeNode implements Comparable {
     }
 
     public String getName() {
-	return spec.name;
+	return name;
     }
 
     @Override
@@ -62,22 +75,22 @@ public class Article extends LSwingTreeNode implements Comparable {
     }
 
     public String getContent() {
-	return spec.content;
+	return content.get();
     }
 
     public String getShort() {
-	return spec.shortContent;
+	return shortContent.get();
     }
 
     public ArrayList<String[]> getSubcategories() {
-	return getAttributes(spec.extraSubCategories);
+	return subCategories;
     }
 
     public ArrayList<String[]> getGrid() {
-	return getAttributes(spec.grid);
+	return grid;
     }
 
-    public ArrayList<String[]> getAttributes(String[][] strs) {
+    ArrayList<String[]> getAttributes(String[][] strs) {
 	ArrayList<String[]> out = new ArrayList<>(strs.length);
 	for (String[] sub : strs) {
 	    if (sub.length == 2) {
@@ -88,7 +101,7 @@ public class Article extends LSwingTreeNode implements Comparable {
     }
 
     public Integer getPageNum() {
-	return spec.pageNumber;
+	return pageNumber;
     }
 
     public String getIcon() {
@@ -125,7 +138,7 @@ public class Article extends LSwingTreeNode implements Comparable {
     @Override
     public int hashCode() {
 	int hash = 3;
-	hash = 97 * hash + Objects.hashCode(this.spec.name);
+	hash = 97 * hash + Objects.hashCode(getName());
 	return hash;
     }
 
@@ -138,7 +151,7 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    return false;
 	}
 	final Article other = (Article) obj;
-	if (!this.spec.name.equalsIgnoreCase(other.spec.name)) {
+	if (!this.getName().equalsIgnoreCase(other.getName())) {
 	    return false;
 	}
 	return true;
