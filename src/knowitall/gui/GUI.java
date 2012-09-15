@@ -58,6 +58,15 @@ public class GUI {
 	tooltip.setSize(mainPanel.getWidth() - 50);
 	tooltip.setLocation(25, MouseInfo.getPointerInfo().getLocation().y);
 	SwingUtilities.invokeLater(new Runnable() {
+
+	    @Override
+	    public void run() {
+		if (tooltip.getY() + tooltip.getHeight() > mainPanel.getHeight()) {
+		    tooltip.setLocation(25, MouseInfo.getPointerInfo().getLocation().y - tooltip.getHeight() - 65);
+		}
+	    }
+	});
+	SwingUtilities.invokeLater(new Runnable() {
 	    @Override
 	    public void run() {
 		dimmer.setVisible(true);
