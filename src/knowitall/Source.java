@@ -5,6 +5,7 @@
 package knowitall;
 
 import java.io.File;
+import lev.Ln;
 import lev.gui.LSwingTreeNode;
 
 /**
@@ -20,5 +21,11 @@ public class Source extends LSwingTreeNode {
     @Override
     public String toString() {
 	return name;
+    }
+
+    @Override
+    public void print(int depth) {
+	Debug.log.log(name, Ln.getNAmount(depth, "   ") + "Source: " + name + " ==============");
+	super.print(depth);
     }
 }

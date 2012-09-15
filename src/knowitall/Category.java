@@ -4,6 +4,7 @@
  */
 package knowitall;
 
+import lev.Ln;
 import lev.gui.LSwingTreeNode;
 
 /**
@@ -21,5 +22,15 @@ public class Category extends LSwingTreeNode {
     @Override
     public String toString() {
 	return index.getName();
+    }
+
+    public String getName() {
+	return toString();
+    }
+
+    @Override
+    public void print(int depth) {
+	Debug.log.log(getName(), Ln.getNAmount(depth, "   ") + "Category: " + getName() + " ==============");
+	super.print(depth);
     }
 }

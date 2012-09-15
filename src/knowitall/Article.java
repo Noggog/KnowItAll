@@ -9,6 +9,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.*;
 import knowitall.Debug.Logs;
+import lev.Ln;
 import lev.gui.LSwingTreeNode;
 
 /**
@@ -203,6 +204,11 @@ public class Article extends LSwingTreeNode implements Comparable {
     public static void link(Article a, Article b) {
 	a.linkTo(b);
 	b.linkTo(a);
+    }
+
+    @Override
+    public void print(int depth) {
+	Debug.log.log(getName(), Ln.getNAmount(depth, "   ") + "Article: " + getName() + " ==============");
     }
 
     @Override

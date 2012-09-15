@@ -63,6 +63,7 @@ public class Database {
 	    a.linkText();
 	    a.clean();
 	}
+	printArticles();
 	GUI.regenerateTree();
 	GUI.updateContentDisplay();
 	int wer = 23;
@@ -105,7 +106,6 @@ public class Database {
 			}
 		    }
 		}
-		printArticles();
 	    }
 	    return 0;
 	}
@@ -174,33 +174,8 @@ public class Database {
     public static void printArticles() {
 	if (Debug.log.logging()) {
 	    Debug.log.newLog("DatabaseContents.txt");
-	    for (Object cn : articleTree.getAllObjects()) {
-		printCategory(0, (Category) cn);
-	    }
+	    articleTree.print(0);
 	}
     }
 
-    public static void printCategory(int depth, Category c) {
-	String depthStr = Ln.getNAmount(depth, "   ");
-	Debug.log.log("Category", depthStr + "========= Category: " + c + "===========");
-
-	Set<Category> categories = new TreeSet<>();
-	Set<Article> articles = new TreeSet<>();
-	for (Object o : c.getAllObjects()) {
-	    if (o instanceof Category) {
-		categories.add((Category) o);
-	    } else if (o instanceof Article) {
-		articles.add((Article) o);
-	    }
-	}
-
-	int i = 1;
-	for (Article a : articles) {
-	    Debug.log.log("Article", depthStr + "     " + i++ + ": " + a);
-	}
-
-	for (Category subC : categories) {
-	    printCategory(depth + 1, subC);
-	}
-    }
 }
