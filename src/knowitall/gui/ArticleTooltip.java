@@ -46,6 +46,7 @@ public class ArticleTooltip extends LPanel {
 
     public void setSize(int x) {
 	pane.setSize(x - 2 * Spacings.articleDispay);
+	pane.setSize(pane.getWidth(), pane.getHeight() + 5);
 	super.setSize(x, pane.getBottom() + Spacings.articleDispay + 15);
     }
 }
