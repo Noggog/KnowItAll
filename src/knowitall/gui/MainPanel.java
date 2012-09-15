@@ -17,6 +17,7 @@ import knowitall.Debug;
 import lev.gui.LImagePane;
 import lev.gui.LPanel;
 import lev.gui.LScrollPane;
+import lev.gui.resources.LImages;
 import skyproc.gui.SPDefaultGUI;
 
 /**
@@ -30,22 +31,16 @@ public class MainPanel extends LPanel {
     LScrollPane scroll;
     ContentPanel content;
 
-    MainPanel() {
+    MainPanel() throws IOException {
 	super();
 
 	content = new ContentPanel();
 	GUI.contentPanel = content;
 
-	search = new SearchBar(content);
+	search = new SearchBar();
 	GUI.search = search;
 	search.setLocation(Spacings.mainPanel * 2 + 87, Spacings.mainPanel);
 	add(search);
-
-	scroll = new LScrollPane(content);
-	scroll.setLocation(0, search.getBottom() + Spacings.mainPanel);
-	scroll.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-	scroll.setBorder(BorderFactory.createEmptyBorder());
-	add(scroll);
 
 	try {
 	    logo = new LImagePane(SPDefaultGUI.class.getResource("SkyProc Logo Small.png"));
@@ -77,6 +72,12 @@ public class MainPanel extends LPanel {
 	    Debug.log.logException(ex);
 	}
 
+	scroll = new LScrollPane(content);
+	scroll.setLocation(0, search.getBottom() + Spacings.mainPanel);
+	scroll.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+	scroll.setBorder(BorderFactory.createEmptyBorder());
+	add(scroll, 0);
+
     }
 
     public class UpdateContent implements Runnable {
@@ -94,11 +95,5 @@ public class MainPanel extends LPanel {
 	scroll.setSize(getWidth(), getHeight() - search.getBottom() - Spacings.mainPanel);
 	content.setPreferredSize(new Dimension(scroll.getWidth(), 50));
 	content.remeasure(size);
-	SwingUtilities.invokeLater(
-		new Runnable() {
-		    @Override
-		    public void run() {
-		    }
-		});
     }
 }

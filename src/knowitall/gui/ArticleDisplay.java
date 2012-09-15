@@ -42,7 +42,6 @@ public class ArticleDisplay extends LPanel {
 		+ "margin-bottom: 15px;"
 		+ "margin-left: 10px;}");
 	ss.addRule("table { border-style: hidden; }");
-//	ss.addRule("td { border-style: dotted; }");
 	htmlContent.addHyperLinkListener(listener);
 	add(htmlContent);
 	setOpaque(true);
@@ -52,7 +51,7 @@ public class ArticleDisplay extends LPanel {
 	article = a;
 	setVisible(false);
 	if (a != null) {
-	    htmlContent.setText(a.getHTML());
+	    htmlContent.setText(a.getHTML(true));
 	}
     }
 
@@ -82,8 +81,11 @@ public class ArticleDisplay extends LPanel {
 	public void hyperlinkUpdate(HyperlinkEvent h) {
 	    HyperlinkEvent.EventType type = h.getEventType();
 	    if (type == HyperlinkEvent.EventType.ENTERED) {
+		GUI.setTooltip(h.getDescription());
 	    } else if (type == HyperlinkEvent.EventType.ACTIVATED) {
 		GUI.loadArticle(h.getDescription());
+	    } else if (type == HyperlinkEvent.EventType.EXITED) {
+		GUI.hideTooltip();
 	    }
 	}
     }

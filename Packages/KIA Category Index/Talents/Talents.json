@@ -2,6 +2,6 @@
 	"name" : "Talents",
 	"extraSubCategories" : 
 	[ 
-		"Prerequisites"
+		"Prerequisites", "Talent Groups"
 	]
 }

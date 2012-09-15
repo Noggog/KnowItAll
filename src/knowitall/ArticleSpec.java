@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeSet;
 import knowitall.Debug.Logs;
 
 /**
@@ -106,7 +107,7 @@ public class ArticleSpec {
     }
 
     public Set<String> getWords() {
-	HashSet<String> out = new HashSet<>();
+	Set<String> out = new TreeSet<>();
 	for (String[] s : extraSubCategories) {
 	    if (s.length == 2) {
 		out.addAll(Parsing.getWords(s[1]));

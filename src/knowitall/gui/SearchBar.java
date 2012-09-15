@@ -18,11 +18,9 @@ import lev.gui.resources.LFonts;
 public class SearchBar extends LComponent {
 
     JTextField field;
-    ContentPanel content;
     boolean fireSearches = true;
 
-    public SearchBar(ContentPanel content) {
-	this.content = content;
+    public SearchBar() {
 	init();
     }
 
@@ -82,5 +80,15 @@ public class SearchBar extends LComponent {
 	fireSearches = false;
 	field.setText(s);
 	fireSearches = true;
+    }
+
+    @Override
+    public void setFocusable(boolean in) {
+	field.setFocusable(in);
+    }
+
+    @Override
+    public void requestFocus() {
+	field.requestFocus();
     }
 }

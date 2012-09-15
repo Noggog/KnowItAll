@@ -13,7 +13,7 @@ import org.apache.ecs.html.*;
  */
 public class ArticleHTML {
 
-    public static String load(Article a) {
+    public static String load(Article a, boolean full) {
 	Html html = new Html().addElement(new Head());
 	Body body = new Body();
 
@@ -32,7 +32,9 @@ public class ArticleHTML {
 	}
 
 	// Content
-	body.addElement(new Font(3).addElement(a.getContent()));
+	if (full || a.getShort().equals("")) {
+	    body.addElement(new Font(3).addElement(a.getContent()));
+	}
 	html.addElement(body);
 
 	return html.toString();
@@ -104,5 +106,9 @@ public class ArticleHTML {
 	vertImageTR.addElement(new TD().addElement(a.getImage()).addAttribute("colspan", "2"));
 	t.addElement(vertImageTR);
 	body.addElement(t);
+    }
+
+    static public String linkTo(String in) {
+	return "<a href=\"" + in + "\" title=\"" + in + "\">";
     }
 }

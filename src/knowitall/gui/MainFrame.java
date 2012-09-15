@@ -21,7 +21,9 @@ import lev.gui.Lg;
  */
 public class MainFrame extends LFrame {
 
-    LPanel activePanel;
+    LPanel mainPanel;
+    LPanel topPanel;
+    LPanel dimmer;
 
     public MainFrame() {
 	super("Know It All");
@@ -30,21 +32,29 @@ public class MainFrame extends LFrame {
     public void createGUI() throws IOException {
 	setSize(defaultSize());
 	setLocation(defaultLocation());
-	super.remeasure ();
+	super.remeasure();
 	background.setImage(KnowItAll.internalFiles + "background.jpg");
 	GUI.mainPanel = new MainPanel();
-	activePanel = GUI.mainPanel;
-	add(activePanel,0);
-	remeasure ();
+	mainPanel = GUI.mainPanel;
+	add(mainPanel, 0);
+
+	GUI.dimmer = new Dimmer();
+	dimmer = GUI.dimmer;
+	add(dimmer, 0);
+
+	GUI.topPanel = new TopPanel();
+	topPanel = GUI.topPanel;
+	add(topPanel, 0);
+
+	remeasure();
 	setVisible(true);
 	setBackground(Color.BLACK);
     }
 
     @Override
-    public void remeasure () {
-	if (activePanel != null) {
-	    activePanel.remeasure(getRealSize());
-	}
+    public void remeasure() {
+	mainPanel.remeasure(getRealSize());
+	topPanel.remeasure(getRealSize());
     }
 
     public Dimension defaultSize() {

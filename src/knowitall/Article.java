@@ -22,13 +22,14 @@ public class Article extends LSwingTreeNode implements Comparable {
     String name;
     Set<Article> linked = new TreeSet<>();
     String html;
+    String htmlShort;
     // Temporary
     String content;
     String shortContent;
     ArrayList<String[]> subCategories = new ArrayList<>();
     ArrayList<String[]> grid = new ArrayList<>();
     int pageNumber;
-    Set<String> words = new HashSet<>();
+    Set<String> words = new TreeSet<>();
 
     Article(Category c) {
 	category = c;
@@ -56,7 +57,7 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    grid = getAttributes(spec.grid);
 	    content = spec.content;
 	    pageNumber = spec.pageNumber;
-	    html = ArticleHTML.load(this);
+	    reloadHTML();
 	    return true;
 	} catch (FileNotFoundException ex) {
 	} catch (com.google.gson.JsonSyntaxException ex) {
@@ -113,8 +114,12 @@ public class Article extends LSwingTreeNode implements Comparable {
 	return "Vert Image";
     }
 
-    public String getHTML() {
-	return html;
+    public String getHTML(boolean full) {
+	if (full) {
+	    return html;
+	} else {
+	    return htmlShort;
+	}
     }
 
     public void clean() {
@@ -144,7 +149,12 @@ public class Article extends LSwingTreeNode implements Comparable {
 	for (Article a : lengthSort.values()) {
 	    linkStrings(a.getName());
 	}
-	html = ArticleHTML.load(this);
+	reloadHTML();
+    }
+
+    public void reloadHTML() {
+	html = ArticleHTML.load(this, true);
+	htmlShort = ArticleHTML.load(this, false);
     }
 
     public void linkStrings(String in) {
@@ -175,13 +185,12 @@ public class Article extends LSwingTreeNode implements Comparable {
 	for (int i = locations.size() - 1; i >= 0; i--) {
 	    index = locations.get(i);
 	    content = content.substring(0, index)
-		    + "<a href=\"" + in + "\">"
+		    + ArticleHTML.linkTo(in)
 		    + content.substring(index, index + in.length())
 		    + "</a>"
 		    + content.substring(index + in.length(), content.length());
 	}
 
-	int wer = 23;
 	return content;
     }
 
@@ -215,7 +224,7 @@ public class Article extends LSwingTreeNode implements Comparable {
     @Override
     public int compareTo(Object o) {
 	Article b = (Article) o;
-	if (b.getName().equalsIgnoreCase(b.getName())) {
+	if (getName().equalsIgnoreCase(b.getName())) {
 	    return 0;
 	}
 	return this.getName().compareTo(b.getName());

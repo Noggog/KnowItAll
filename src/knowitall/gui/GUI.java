@@ -4,8 +4,11 @@
  */
 package knowitall.gui;
 
+import java.awt.MouseInfo;
+import javax.swing.SwingUtilities;
 import knowitall.Article;
 import knowitall.Database;
+import lev.gui.LImagePane;
 
 /**
  *
@@ -14,8 +17,11 @@ import knowitall.Database;
 public class GUI {
 
     static MainPanel mainPanel;
+    static Dimmer dimmer;
+    static TopPanel topPanel;
     static ContentPanel contentPanel;
     static SearchBar search;
+    static ArticleTooltip tooltip;
 
     public static void displayArticles(boolean on) {
 	if (contentPanel != null) {
@@ -37,5 +43,42 @@ public class GUI {
 
     public static void setArticle(Article a) {
 	contentPanel.updateContent(a);
+    }
+
+    public static void setTooltip(String s) {
+	if (Database.hasArticle(s)) {
+	    setTooltip(Database.getArticle(s));
+	}
+    }
+
+    public static void setTooltip(Article a) {
+	SwingUtilities.invokeLater(new Runnable() {
+	    @Override
+	    public void run() {
+		search.setFocusable(false);
+	    }
+	});
+	tooltip.load(a);
+	tooltip.setSize(mainPanel.getWidth() - 50);
+	tooltip.setLocation(25, MouseInfo.getPointerInfo().getLocation().y);
+	SwingUtilities.invokeLater(new Runnable() {
+	    @Override
+	    public void run() {
+		dimmer.setVisible(true);
+		tooltip.setVisible(true);
+	    }
+	});
+    }
+
+    public static void hideTooltip() {
+	SwingUtilities.invokeLater(new Runnable() {
+	    @Override
+	    public void run() {
+		search.setFocusable(true);
+		search.requestFocus();
+		dimmer.setVisible(false);
+		tooltip.setVisible(false);
+	    }
+	});
     }
 }

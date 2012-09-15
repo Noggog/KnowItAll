@@ -1,26 +1,17 @@
 {
-	"name" : "Abhor The Witch",
+
 	
-	"shortContent" : "Spend fate point pre-mission.  Willpower test to negate psychic, daemonic, or warp-based power's affect on himself.  Powers will still affect others.",
+	"shortContent" : "By spending 10 minutes
+studying or analysing a problem, the character gains a +10
+bonus to his next Intelligence Test.",
 	
-	"content" : "The Battle-Brother spends the time before battle armouring
-himself against the power of the warp by reciting canticles
-and litanies of hate and contempt against the unclean powers.
-This Talent may be used in the Oath Making phase before
-undertaking a mission. The Battle-Brother spends a Fate
-Point in the Oath Making phase and counts as having spent
-this Fate Point for the duration of the mission. During the
-mission, the Battle-Brother must take a Challenging (+0)
-Willpower Test whenever he is the subject of the effects of
-a Psychic Power, daemonic power other warp-based power.
-If the Willpower Test succeeds, then the Battle-Brother is
-unaffected by the power. If the Test fails, then the power
-affects him as normal. The effects of this Talent also apply to
-powers that cause Damage indirectly such as blasts, and those
-used by friendly psykers which might be beneficial to the
-Battle-Brother. A power that is resisted by a Battle-Brother
-using this Talent is not nullified if others will be affected by
-it as normal.",
+	"content" : "Logic and analysis do for the character what Tarot and
+the bones claim to do for the superstitious masses. By
+careful consideration of all the possible consequences, and
+examination of all evidence and information, the character
+can identify the best path for success. By spending 10 minutes
+studying or analysing a problem, the character gains a +10
+bonus to his next Intelligence Test.",
 
 	"extraSubCategories" : 
 	[ 
