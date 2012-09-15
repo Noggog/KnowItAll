@@ -175,7 +175,7 @@ public class Article extends LSwingTreeNode implements Comparable {
 	for (int i = locations.size() - 1; i >= 0; i--) {
 	    index = locations.get(i);
 	    content = content.substring(0, index)
-		    + "<a href=\"\">"
+		    + "<a href=\"" + in + "\">"
 		    + content.substring(index, index + in.length())
 		    + "</a>"
 		    + content.substring(index + in.length(), content.length());

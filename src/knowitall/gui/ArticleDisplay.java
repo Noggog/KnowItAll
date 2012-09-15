@@ -5,7 +5,15 @@
 package knowitall.gui;
 
 import java.awt.Dimension;
+import java.awt.Frame;
+import java.io.IOException;
+import java.net.URL;
+import javax.swing.JEditorPane;
+import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
+import javax.swing.event.HyperlinkEvent;
+import javax.swing.event.HyperlinkListener;
+import javax.swing.text.Document;
 import javax.swing.text.html.StyleSheet;
 import knowitall.Article;
 import lev.gui.LHTMLPane;
@@ -21,6 +29,8 @@ public class ArticleDisplay extends LPanel {
     Article article;
     LHTMLPane htmlContent;
 
+    static LinkListener listener = new LinkListener();
+
     public ArticleDisplay() {
 	htmlContent = new LHTMLPane();
 	htmlContent.setLocation(0, 0);
@@ -33,6 +43,7 @@ public class ArticleDisplay extends LPanel {
 		+ "margin-left: 10px;}");
 	ss.addRule("table { border-style: hidden; }");
 //	ss.addRule("td { border-style: dotted; }");
+	htmlContent.addHyperLinkListener(listener);
 	add(htmlContent);
 	setOpaque(true);
     }
@@ -63,5 +74,17 @@ public class ArticleDisplay extends LPanel {
 	    y = area.getBottom();
 	}
 	return y;
+    }
+
+    static class LinkListener implements HyperlinkListener {
+
+	@Override
+	public void hyperlinkUpdate(HyperlinkEvent h) {
+	    HyperlinkEvent.EventType type = h.getEventType();
+	    if (type == HyperlinkEvent.EventType.ENTERED) {
+	    } else if (type == HyperlinkEvent.EventType.ACTIVATED) {
+		GUI.loadArticle(h.getDescription());
+	    }
+	}
     }
 }

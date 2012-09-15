@@ -19,6 +19,7 @@ public class SearchBar extends LComponent {
 
     JTextField field;
     ContentPanel content;
+    boolean fireSearches = true;
 
     public SearchBar(ContentPanel content) {
 	this.content = content;
@@ -51,9 +52,12 @@ public class SearchBar extends LComponent {
     }
 
     void updateContent() {
+	if (!fireSearches) {
+	    return;
+	}
 	String s = field.getText().toUpperCase();
 	if (Database.hasArticle(s)) {
-	    content.updateContent(Database.getArticle(s));
+	    GUI.setArticle(Database.getArticle(s));
 	}
 //	else if (s.equals("")) {
 //	    content.updateContent(null);
@@ -72,5 +76,11 @@ public class SearchBar extends LComponent {
 
     public String getText() {
 	return field.getText();
+    }
+
+    public void setText(String s) {
+	fireSearches = false;
+	field.setText(s);
+	fireSearches = true;
     }
 }

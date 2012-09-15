@@ -37,6 +37,7 @@ public class MainPanel extends LPanel {
 	GUI.contentPanel = content;
 
 	search = new SearchBar(content);
+	GUI.search = search;
 	search.setLocation(Spacings.mainPanel * 2 + 87, Spacings.mainPanel);
 	add(search);
 
