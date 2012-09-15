@@ -18,4 +18,8 @@ public class GUI {
 	    contentPanel.displayArticles(on);
 	}
     }
+
+    public static void updateContentDisplay() {
+	contentPanel.update();
+    }
 }

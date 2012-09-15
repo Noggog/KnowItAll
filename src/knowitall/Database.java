@@ -56,8 +56,10 @@ public class Database {
 
     public static void doneLoading() {
 	for (Article a : articles.values()) {
+	    a.linkText();
 	    a.clean();
 	}
+	GUI.updateContentDisplay();
 	int wer = 23;
     }
 

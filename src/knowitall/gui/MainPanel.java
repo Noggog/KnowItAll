@@ -82,7 +82,7 @@ public class MainPanel extends LPanel {
 
 	@Override
 	public void run() {
-	    content.update();
+	    GUI.updateContentDisplay();
 	}
     }
 

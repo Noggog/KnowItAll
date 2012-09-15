@@ -22,10 +22,9 @@ public class Article extends LSwingTreeNode implements Comparable {
     String name;
     Set<Article> linked = new TreeSet<>();
     String html;
-
     // Temporary
-    ArticleContent content;
-    ArticleContent shortContent;
+    String content;
+    String shortContent;
     ArrayList<String[]> subCategories = new ArrayList<>();
     ArrayList<String[]> grid = new ArrayList<>();
     int pageNumber;
@@ -52,10 +51,10 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    specFile = specF;
 	    name = spec.name;
 	    words = spec.getWords();
-	    shortContent = new ArticleContent(spec.shortContent);
+	    shortContent = spec.shortContent;
 	    subCategories = getAttributes(spec.extraSubCategories);
 	    grid = getAttributes(spec.grid);
-	    content = new ArticleContent(spec.content);
+	    content = spec.content;
 	    pageNumber = spec.pageNumber;
 	    html = ArticleHTML.load(this);
 	    return true;
@@ -77,11 +76,11 @@ public class Article extends LSwingTreeNode implements Comparable {
     }
 
     public String getContent() {
-	return content.get();
+	return content;
     }
 
     public String getShort() {
-	return shortContent.get();
+	return shortContent;
     }
 
     public ArrayList<String[]> getSubcategories() {
@@ -133,8 +132,57 @@ public class Article extends LSwingTreeNode implements Comparable {
     public void linkTo(Article a) {
 	if (!equals(a) && words.contains(a.getName().toUpperCase())) {
 	    linked.add(a);
-	    html = ArticleHTML.load(this);
 	}
+    }
+
+    public void linkText() {
+	Map<Integer, Article> lengthSort = new TreeMap<>();
+	for (Article a : linked) {
+	    lengthSort.put(a.getName().length(), a);
+	}
+
+	for (Article a : lengthSort.values()) {
+	    linkStrings(a.getName());
+	}
+	html = ArticleHTML.load(this);
+    }
+
+    public void linkStrings(String in) {
+	content = linkString(content, in);
+	shortContent = linkString(shortContent, in);
+	for (String[] s : subCategories) {
+	    s[1] = linkString(s[1], in);
+	}
+	for (String[] s : grid) {
+	    s[1] = linkString(s[1], in);
+	}
+    }
+
+    public String linkString(String content, String in) {
+	in = in.toUpperCase();
+	String contentUp = content.toUpperCase();
+
+	ArrayList<Integer> locations = new ArrayList<>();
+	int pos = 0;
+	int index = contentUp.indexOf(in);
+	while (index != -1) {
+	    locations.add(index + pos);
+	    pos = pos + index + in.length();
+	    contentUp = contentUp.substring(index + in.length());
+	    index = contentUp.indexOf(in);
+	}
+
+	for (int i = locations.size() - 1; i >= 0; i--) {
+	    index = locations.get(i);
+	    content = content.substring(0, index)
+		    + "<a href=\"\">"
+		    + content.substring(index, index + in.length())
+		    + "</a>"
+		    + content.substring(index + in.length(), content.length());
+	}
+
+	int wer = 23;
+	return content;
     }
 
     public static void link(Article a, Article b) {
