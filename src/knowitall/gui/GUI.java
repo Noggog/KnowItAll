@@ -52,12 +52,7 @@ public class GUI {
     }
 
     public static void setTooltip(Article a) {
-	SwingUtilities.invokeLater(new Runnable() {
-	    @Override
-	    public void run() {
-		search.setFocusable(false);
-	    }
-	});
+	search.setFocusable(false);
 	tooltip.load(a);
 	tooltip.setSize(mainPanel.getWidth() - 50);
 	tooltip.setLocation(25, MouseInfo.getPointerInfo().getLocation().y);

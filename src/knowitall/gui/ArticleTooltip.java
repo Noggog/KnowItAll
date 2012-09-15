@@ -4,6 +4,7 @@
  */
 package knowitall.gui;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import knowitall.Article;
 import lev.gui.LHTMLPane;
@@ -19,7 +20,10 @@ public class ArticleTooltip extends LPanel {
 
     ArticleTooltip() {
 	pane = new LHTMLPane();
+	pane.setLocation(Spacings.articleDispay, Spacings.articleDispay);
 	add(pane);
+	setBackground(Color.WHITE);
+	setOpaque(true);
 	setVisible(false);
     }
 
@@ -41,7 +45,7 @@ public class ArticleTooltip extends LPanel {
     }
 
     public void setSize(int x) {
-	pane.setSize(x - 2);
-	super.setSize(x, pane.getBottom());
+	pane.setSize(x - 2 * Spacings.articleDispay);
+	super.setSize(x, pane.getBottom() + Spacings.articleDispay + 15);
     }
 }
