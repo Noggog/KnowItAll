@@ -7,8 +7,6 @@ package knowitall.gui;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
 import java.io.IOException;
 import knowitall.KnowItAll;
 import lev.gui.LFrame;

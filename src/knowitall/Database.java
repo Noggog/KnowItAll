@@ -6,9 +6,7 @@ package knowitall;
 
 import java.io.File;
 import java.util.Map;
-import java.util.Set;
 import java.util.TreeMap;
-import java.util.TreeSet;
 import javax.swing.SwingWorker;
 import knowitall.Debug.Logs;
 import knowitall.gui.GUI;

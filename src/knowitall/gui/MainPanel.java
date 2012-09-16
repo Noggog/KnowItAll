@@ -12,15 +12,15 @@ import java.beans.PropertyChangeListener;
 import java.io.IOException;
 import javax.swing.BorderFactory;
 import javax.swing.JSplitPane;
-import javax.swing.JTree;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingUtilities;
+import javax.swing.event.TreeSelectionEvent;
+import javax.swing.event.TreeSelectionListener;
+import javax.swing.tree.TreeSelectionModel;
+import knowitall.Article;
 import knowitall.Database;
 import knowitall.Debug;
-import lev.gui.LImagePane;
-import lev.gui.LPanel;
-import lev.gui.LScrollPane;
-import lev.gui.LSwingTree;
+import lev.gui.*;
 import skyproc.gui.SPDefaultGUI;
 
 /**
@@ -48,6 +48,7 @@ public class MainPanel extends LPanel {
 	try {
 	    logo = new LImagePane(SPDefaultGUI.class.getResource("SkyProc Logo Small.png"));
 	    logo.addMouseListener(new MouseListener() {
+
 		@Override
 		public void mouseClicked(MouseEvent e) {
 		    Database.reloadArticles(new UpdateContent());
@@ -76,6 +77,20 @@ public class MainPanel extends LPanel {
 	}
 
 	tree = new LSwingTree();
+	tree.getSelectionModel().setSelectionMode(TreeSelectionModel.SINGLE_TREE_SELECTION);
+	tree.addTreeSelectionListener(new TreeSelectionListener() {
+
+	    @Override
+	    public void valueChanged(TreeSelectionEvent arg0) {
+		LSwingTreeNode node = (LSwingTreeNode) tree.getLastSelectedPathComponent();
+		if (node == null) {
+		    return;
+		}
+		if (node instanceof Article) {
+		    GUI.loadArticle(node.toString());
+		}
+	    }
+	});
 	GUI.tree = tree;
 
 	treeScroll = new LScrollPane(tree);
@@ -93,9 +108,11 @@ public class MainPanel extends LPanel {
 	split.setLocation(0, search.getBottom() + Spacings.mainPanel);
 	split.setBorder(BorderFactory.createEmptyBorder());
 	split.addPropertyChangeListener(new PropertyChangeListener() {
+
 	    @Override
 	    public void propertyChange(final PropertyChangeEvent evt) {
 		SwingUtilities.invokeLater(new Runnable() {
+
 		    @Override
 		    public void run() {
 			if ("dividerLocation".equals(evt.getPropertyName())) {
