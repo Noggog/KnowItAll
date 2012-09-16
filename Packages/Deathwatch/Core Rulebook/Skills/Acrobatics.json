@@ -1,0 +1,38 @@
+{
+
+	
+	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
+	
+	"content" : "Acrobatics training supplements the character's natural agility
+in attempting types of movement the less athletic would not
+even consider. Leaping between the spires of an Imperial
+cathedral, jumping over the heads of shorter foes and falling
+with grace all become possible. The difficulty of the test
+depends on the difficulty of the feat involved: dodging around
+the legs of an enraged Ork and leaping from stone to stone
+in a swirling magma flow would both present significant
+challenges. The more degrees of success obtained, the more
+stylish or dramatic the end result.
+<br>
+<br>
+<b>Special uses</b><br>
+<b>Disengage</b><br>
+When taking the Disengage Action in combat (see page 239),
+the character may make a Challenging (+0) Acrobatics Test
+to reduce it to a Half Action.<br><br>
+<b>Jump And Leap</b><br>
+An Acrobatics Test may substitute for an Agility Test when
+jumping or a Strength Test when leaping, according to the
+appropriate rules on page 207.
+",
+
+	"extraSubCategories" : 
+	[ 
+		["Characteristic", "Agility"],
+		["Skill Use", "FullAction unless otherwise noted"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 94
+}

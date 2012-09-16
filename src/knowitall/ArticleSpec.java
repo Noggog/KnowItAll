@@ -72,6 +72,9 @@ public class ArticleSpec {
 	if (in.equals("")) {
 	    return in;
 	}
+	if (src.getPath().contains("Core Rulebook\\Talents\\Enemy.json")) {
+	    int wer = 23;
+	}
 	char[] chars = in.toCharArray();
 	in = "";
 	boolean firstNL = true;
@@ -99,9 +102,10 @@ public class ArticleSpec {
 
 	    // Else
 	    firstNL = true;
-	    if (((byte) c) == -3) {
-		c = '\'';
-	    }
+//	    byte b = (byte)c;
+//	    switch (b) {
+//
+//	    }
 	    in += c;
 	}
 	return in;

@@ -2,7 +2,7 @@
 	"name" : "Bloodletter",
 	
 	"content" : "The Lesser Daemons of Khorne are known as Bloodletters,
-and it is they who form the core of Khorne’s vast battle forces.
+and it is they who form the core of Khorne's vast battle forces.
 Bloodletters are amongst the deadliest warriors in the galaxy,
 possessing immense strength in their sinewy limbs and savage
 in the ferocity of their brutal charge into battle. Their skin is
@@ -22,7 +22,7 @@ Weapons, Natural Weapons (Claws), Strange Physiology,
 Unnatural Strength (x2), Warp Instability.
 
 <b>Daemonic Presence:</b> All enemies within 10 metres of
-a Bloodletter suffer a –10 penalty to Willpower Tests in
+a Bloodletter suffer a -10 penalty to Willpower Tests in
 the area."],
 		["Armor", "Reinforced structure and armor plate (All 7)"],
 		["Weapons", "Hellblades (1d10+12 R; Balanced, Warp

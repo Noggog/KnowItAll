@@ -3,9 +3,9 @@
 	
 	"content" : "The opposite of Good Reputation, the character is particularly
 despised by a specific social group or organisation. The
-character suffers an additional –10 penalty to Fellowship
+character suffers an additional -10 penalty to Fellowship
 Tests when dealing with this group. This Talent is cumulative
-with the Rival talent, for a total –20 penalty.  The GM and player may agree to award this talent when
+with the Rival talent, for a total -20 penalty.  The GM and player may agree to award this talent when
 appropriate to the adventure or campaign. This Talent can
 be removed with an Elite Advance, and the approval of the
 GM, if the character has redeemed himself with the group
@@ -24,4 +24,4 @@ Rogue Trader, Schola Progenium, Scholastica Psykana."]
 	"GMOnly" : false,
 	
 	"pageNumber" : 116
-}-
+}

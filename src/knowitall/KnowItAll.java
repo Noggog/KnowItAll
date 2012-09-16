@@ -14,6 +14,7 @@ import javax.swing.WindowConstants;
 import knowitall.KIASave.Settings;
 import knowitall.gui.GUI;
 import knowitall.gui.MainFrame;
+import skyproc.SPGlobal;
 
 /**
  *
@@ -33,6 +34,10 @@ public class KnowItAll {
     public static void main(String[] args) throws IOException {
 	try {
 	    Debug.init();
+	    if (handleArgs(args)) {
+		Debug.log.close();
+		return;
+	    }
 	    save.init();
 	    createFrame();
 	    Database.reloadArticles();
@@ -40,6 +45,17 @@ public class KnowItAll {
 	    Debug.log.logException(e);
 	    Debug.log.close();
 	}
+    }
+
+    public static boolean handleArgs(String[] args) {
+	String cleanFiles = "CLEANFILES";
+	for (String s : args) {
+	    if (s.contains(cleanFiles)) {
+		Tools.cleanFiles();
+		return true;
+	    }
+	}
+	return false;
     }
 
     public static void createFrame() throws IOException {

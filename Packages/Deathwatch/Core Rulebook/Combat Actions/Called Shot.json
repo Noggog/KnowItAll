@@ -6,8 +6,8 @@
 	"content" : "The active character attempts to attack a specific or vulnerable
 area on his target. The attacker declares a location on his
 target (Head, Body, Left Arm, Right Arm, Left Leg, or Right
-Leg) and makes a Hard (–20) Weapon Skill Test or a
-Hard (–20) Ballistic Skill Test. If he succeeds, he skips the
+Leg) and makes a Hard (-20) Weapon Skill Test or a
+Hard (-20) Ballistic Skill Test. If he succeeds, he skips the
 Determine Hit Location step of the attack and instead hits the
 declared location.",
 

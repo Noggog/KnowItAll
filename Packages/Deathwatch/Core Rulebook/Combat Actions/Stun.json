@@ -5,12 +5,12 @@
 	
 	"content" : "If the active character is unarmed or armed with a melee weapon,
 he can strike to Stun instead of attempting to land a killing blow.
-The attacker makes a Hard (–20) Weapon Skill Test. If the
-attack succeeds, roll 1d10 and add the attacker’s Strength Bonus.
+The attacker makes a Hard (-20) Weapon Skill Test. If the
+attack succeeds, roll 1d10 and add the attacker's Strength Bonus.
 The target then rolls 1d10 and adds his Toughness Bonus +1 per
 Armour Point protecting his head (if the attack is unarmed, or if
 the attacking weapon is Primitive, the Armour Points are doubled).
-If the attacker’s roll is equal or higher, the target is Stunned for a
+If the attacker's roll is equal or higher, the target is Stunned for a
 number of Rounds equal to the difference between the rolls, and
 he gains one level of Fatigue.",
 

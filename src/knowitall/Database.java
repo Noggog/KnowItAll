@@ -19,7 +19,7 @@ import lev.gui.LSwingTreeNode;
  */
 public class Database {
 
-    private static String packages = "Packages";
+    public final static String packages = "Packages";
     private static String categoryIndexPath = "KIA Category Index";
     private static CategoryIndex indexTree;
     private static Map<String, CategoryIndex> categoryIndex = new TreeMap<>();

@@ -14,15 +14,15 @@ The active character then specifies either Full Auto
 Burst, Semi-Auto Burst, or Suppressing Fire, along with the
 conditions under which he will perform the chosen attack.
 At any time the specified conditions are met before the start
-of the character’s next Turn, he can perform that attack. If
-this attack occurs at the same time as another character’s
+of the character's next Turn, he can perform that attack. If
+this attack occurs at the same time as another character's
 Action, the character with the higher Agility Bonus acts first.
 If both characters have the same Agility Bonus, they make an
 Opposed Agility Test to see who acts first.
 
 
 Additionally, targets caught in the kill zone must make a
-Hard (–20) Pinning Test or become Pinned (see Pinning on
+Hard (-20) Pinning Test or become Pinned (see Pinning on
 page 248). If a character on Overwatch performs any Actions
 or Reaction, such as Dodge, his Overwatch immediately ends.
 Note this does not include Free Actions, such as speech.",

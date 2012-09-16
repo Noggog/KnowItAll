@@ -3,10 +3,10 @@
 	
 	"shortContent" : "Called Shots the character makes are at -10 instead of -20.",
 	
-	"content" : "The character’s rock-steady hand and hawk-like eyesight
+	"content" : "The character's rock-steady hand and hawk-like eyesight
 make him a dreaded marksman. No target, however precise,
 can escape his crosshairs. When making a called shot, the
-character suffers a –10 penalty instead of –20.",
+character suffers a -10 penalty instead of -20.",
 
 	"extraSubCategories" : 
 	[ 

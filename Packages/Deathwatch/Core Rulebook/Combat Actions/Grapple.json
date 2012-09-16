@@ -23,8 +23,8 @@ Controller Grapple Options:
 attempt to damage his opponent with brute force by making
 an Opposed Strength Test with the Grappled opponent.
 If the active character wins, he inflicts unarmed Damage
-(1d5–3+SB with Armour Points counting double) to his
-opponent’s body location and one level of Fatigue. If the
+(1d5-3+SB with Armour Points counting double) to his
+opponent's body location and one level of Fatigue. If the
 Grappled opponent wins the Opposed Strength Test, no
 Damage is dealt, but he is still Grappled. This action can
 benefit from Assistance.
@@ -43,7 +43,7 @@ with an Opposed Strength Test, which can benefit from
 Assistance. If the active character succeeds, he pushes his
 opponent one meter in a direction of his choice, plus one
 additional metre for each Degree of Success. This pushed
-distance cannot exceed the active character’s Half Move
+distance cannot exceed the active character's Half Move
 distance. The active character must move with his Grappled
 opponent in order to maintain the Grapple, or he can
 choose to let go of his opponent, which ends the Grapple,

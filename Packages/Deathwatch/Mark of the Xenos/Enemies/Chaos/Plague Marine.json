@@ -1,14 +1,14 @@
 {
 	"name" : "Plague Marine",
 	
-	"content" : "A Space Marine’s body is hardened against every conceivable
+	"content" : "A Space Marine's body is hardened against every conceivable
 form of attack, not least against deadly biological weapons and
 engineered plagues of all kinds. Nonetheless a Space Marine can
 be laid low by certain warp-spawned infections and diseases,
 their fantastic constitution betraying them and trapping them
 in a fevered nightmare between life and death. Lingering in the
 wracking torture of their own ravaged bodies can force even a
-Battle-Brother’s resolve to weaken enough to make him cry out to
+Battle-Brother's resolve to weaken enough to make him cry out to
 the Chaos God Nurgle, the Plague Lord, for succour.",
 
 	"extraSubCategories" : 
@@ -27,13 +27,13 @@ Unnatural Toughness (x3)"],
 		["Armor", "Astartes power armour (Head 8, Arms 8, Body 10,
 Legs 8)."],
 		["Weapons", "Astartes Chainsword (1d10+14 R; Pen 4;
-Balanced, Tearing), Astartes Bolt Pistol (30m; S/3/–;
+Balanced, Tearing), Astartes Bolt Pistol (30m; S/3/-;
 2d10+5 X; Pen 5; Clip12; Reload Full; Tearing), Astartes
-Bolter (100m; S/3/–; 2d10+5 X; Pen 5; Clip 28; Reload
+Bolter (100m; S/3/-; 2d10+5 X; Pen 5; Clip 28; Reload
 Full; Tearing), Plague Knife (1d10+10 R; Pen 2; Toxic)."],
 		["Equipment", "2 bolt pistol magazines, 4 bolter magazines, 3
 Blight grenades."],
-		["Special Rules", "<b>Cloud of Flies:</b> All those within 5 metres take a –10 penalty
+		["Special Rules", "<b>Cloud of Flies:</b> All those within 5 metres take a -10 penalty
 to Weapon Skill and Ballistic Skill Tests as choking clouds of
 buzzing, biting flies attack every exposed inch of flesh.
 <br>

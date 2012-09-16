@@ -32,11 +32,11 @@ I; Pen 6; Felling, Unwieldy)."],
 		["Special Rules", "<b>Aura of Despair and Death:</b> The Daemon Prince is
 surrounded by an unholy aura which saps the will from their
 enemies. The aura has a range of 75 metres. All opponents of
-the Daemon Prince within this area suffer a –10 penalty to
+the Daemon Prince within this area suffer a -10 penalty to
 their Willpower. In addition, the first time any member of a
 Kill-team finds himself within the Aura of Despair and Death,
 he must take a Challenging (+0) Willpower Test, taking
-the –10 penalty imposed by the aura into account. If he fails,
+the -10 penalty imposed by the aura into account. If he fails,
 the squad takes 1 point of cohesion damage. This means that
 the potential cohesion damage from the Aura of Despair and
 Death is equal to the number of Battle-Brothers making up
@@ -48,7 +48,7 @@ powers will apply.
 
 <b>Slaves to Darkness:</B> Those lesser beings who serve a Daemon
 Prince in war are enslaved by fear and bound by terrible oaths
-to do the Prince’s bidding. They would slay themselves at his
+to do the Prince's bidding. They would slay themselves at his
 command and fear him more than the weapons of the enemy.
 Any Horde that accompanies the Daemon Prince regains 1d5
 Magnitude at the start of their turn as the places of the dead

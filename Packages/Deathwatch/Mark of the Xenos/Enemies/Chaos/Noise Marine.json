@@ -1,8 +1,8 @@
 {
 	"name" : "Noise Marine",
 	
-	"content" : "A Space Marine’s senses are vastly more acute than an ordinary
-human’s, their bodies and minds honed to perfection for
+	"content" : "A Space Marine's senses are vastly more acute than an ordinary
+human's, their bodies and minds honed to perfection for
 waging war. The very intensity of the experience of battle
 can break down the indoctrination and conditioning of
 some Battle-Brothers. They can become lost in an orgiastic
@@ -32,11 +32,11 @@ Perception (x2), Unnatural Fellowship (x2)."],
 Legs 8)."],
 		["Weapons", "Astartes Chainsword (1d10+14 R; Pen 4;
 Balanced, Tearing), or Astartes Chain Axe (1d10+18 R;
-Pen 4), Astartes Bolt Pistol (30m; S/3/–; 2d10+5 X; Pen
+Pen 4), Astartes Bolt Pistol (30m; S/3/-; 2d10+5 X; Pen
 5; Clip12; Reload Full; Tearing), Noise Marine Blastmaster
-(150m; S/2/–; 1d10+12 E; Pen 6; Clip —; Rld —;
+(150m; S/2/-; 1d10+12 E; Pen 6; Clip —; Rld —;
 Devastating [1], Storm), or Noise Marine Doom Siren (30m;
-S/–/–; 1d10+12 E; Pen 9; Clip —; Rld —, Flame), or Noise
+S/-/-; 1d10+12 E; Pen 9; Clip —; Rld —, Flame), or Noise
 Marine Sonic Blaster (100m; S/2/4; 1d10+9 E; Pen 4; Clip
 —; Rld —; Storm, Tearing)."],
 		["Equipment", "2 bolt pistol magazines, hallucinogen grenades."],
@@ -44,10 +44,10 @@ Marine Sonic Blaster (100m; S/2/4; 1d10+9 E; Pen 4; Clip
 created Noise Marines affects enemies within 75 metres (the
 GM may increase of decrease this range to account for special
 circumstances). All opponents of the Chaos God Slaanesh
-within range automatically suffer a –10 penalty to their
+within range automatically suffer a -10 penalty to their
 Willpower and must take a Willpower Test at the beginning
 of each of their turns. If the test is passed no further effects
-occur that turn. If the test is failed, the individual suffers a –10
+occur that turn. If the test is failed, the individual suffers a -10
 penalty to all other tests made that turn due to distraction,
 bleeding ears and the like. If the test is failed by two degrees or
 more, the victim also suffers one level of Fatigue. Individuals
