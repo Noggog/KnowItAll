@@ -5,11 +5,13 @@
 package knowitall;
 
 import com.google.gson.Gson;
+import java.awt.Dimension;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.io.IOException;
 import java.util.Random;
 import javax.swing.WindowConstants;
+import knowitall.KIASave.Settings;
 import knowitall.gui.MainFrame;
 
 /**
@@ -20,8 +22,9 @@ public class KnowItAll {
 
     static MainFrame frame;
     static Random rand = new Random();
-    public static String internalFiles = "Internal Files/";
+    final public static String internalFiles = "Internal Files/";
     public static Gson gson = new Gson();
+    public static KIASave save = new KIASave(internalFiles);
 
     /**
      * @param args the command line arguments
@@ -29,6 +32,7 @@ public class KnowItAll {
     public static void main(String[] args) throws IOException {
 	try {
 	    Debug.init();
+	    save.init();
 	    createFrame();
 	    Database.reloadArticles();
 	} catch (Exception e) {
@@ -74,6 +78,8 @@ public class KnowItAll {
     }
 
     public static void exitProgram() {
+	saveWindowSize();
+	save.saveToFile();
 	if (Debug.log.logging()) {
 	    Debug.log.newLog("All Words.txt");
 	    for (String s : Parsing.allWords) {
@@ -82,5 +88,11 @@ public class KnowItAll {
 	}
 	Debug.log.close();
 	System.exit(0);
+    }
+    
+    public static void saveWindowSize() {
+	Dimension size = frame.getSize();
+	save.setInt(Settings.StartWidth, size.width);
+	save.setInt(Settings.StartHeight, size.height);
     }
 }

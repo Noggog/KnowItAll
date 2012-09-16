@@ -8,6 +8,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.io.IOException;
+import knowitall.KIASave.Settings;
 import knowitall.KnowItAll;
 import lev.gui.LFrame;
 import lev.gui.LPanel;
@@ -56,9 +57,14 @@ public class MainFrame extends LFrame {
     }
 
     public Dimension defaultSize() {
-	Dimension screen = Toolkit.getDefaultToolkit().getScreenSize();
-	Dimension max = new Dimension(1980, 2600);
-	return Lg.calcSize(max.getWidth(), max.getHeight(), screen.width - 5, screen.height - 40);
+	Dimension saved = new Dimension(KnowItAll.save.getInt(Settings.StartWidth), KnowItAll.save.getInt(Settings.StartHeight));
+	if (saved.width < 100 || saved.height < 100) {
+	    Dimension screen = Toolkit.getDefaultToolkit().getScreenSize();
+	    Dimension max = new Dimension(1980, 2600);
+	    return Lg.calcSize(max.getWidth(), max.getHeight(), screen.width - 5, screen.height - 40);
+	} else {
+	    return saved;
+	}
     }
 
     @Override
