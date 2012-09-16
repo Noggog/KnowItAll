@@ -90,7 +90,7 @@ public class GUI {
 
     public static void regenerateTree() {
 	tree.setRoot(Database.getTree());
-//	tree.expand(true);
+	tree.expandToDepth(2);
     }
 
     public static int dividerLocation() {
