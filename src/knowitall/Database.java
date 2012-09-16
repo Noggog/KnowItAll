@@ -91,21 +91,25 @@ public class Database {
 	@Override
 	protected Integer doInBackground() throws Exception {
 	    File seeds = new File(packages);
-	    File categoryIndices = new File(packages + "/" + categoryIndexPath);
-	    if (categoryIndices.isDirectory()) {
-		// Load Category Indices
-		indexTree = new CategoryIndex(categoryIndices);
-		loadCategoryIndex(indexTree, categoryIndices);
-		// Load sources and articles
-		for (File sourceDir : seeds.listFiles()) {
-		    if (sourceDir.isDirectory() && !sourceDir.getName().equalsIgnoreCase(categoryIndexPath)) {
-			Source src = new Source(sourceDir);
-			articleTree.add(src);
-			for (File categoryDir : sourceDir.listFiles()) {
-			    loadCategoryFolder(src, categoryDir);
+	    for (File packageF : seeds.listFiles()) {
+		articleTree = new CategoryIndex(packageF.getName());
+		File categoryIndices = new File(packageF.getPath() + "/" + categoryIndexPath);
+		if (categoryIndices.isDirectory()) {
+		    // Load Category Indices
+		    indexTree = new CategoryIndex(categoryIndices);
+		    loadCategoryIndex(indexTree, categoryIndices);
+		    // Load sources and articles
+		    for (File sourceDir : packageF.listFiles()) {
+			if (sourceDir.isDirectory() && !sourceDir.getName().equalsIgnoreCase(categoryIndexPath)) {
+			    Source src = new Source(sourceDir);
+			    articleTree.add(src);
+			    for (File categoryDir : sourceDir.listFiles()) {
+				loadCategoryFolder(src, categoryDir);
+			    }
 			}
 		    }
 		}
+		break;
 	    }
 	    return 0;
 	}
@@ -177,5 +181,4 @@ public class Database {
 	    articleTree.print(0);
 	}
     }
-
 }

@@ -5,15 +5,8 @@
 package knowitall.gui;
 
 import java.awt.Dimension;
-import java.awt.Frame;
-import java.io.IOException;
-import java.net.URL;
-import javax.swing.JEditorPane;
-import javax.swing.JOptionPane;
-import javax.swing.SwingUtilities;
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
-import javax.swing.text.Document;
 import javax.swing.text.html.StyleSheet;
 import knowitall.Article;
 import lev.gui.LHTMLPane;
