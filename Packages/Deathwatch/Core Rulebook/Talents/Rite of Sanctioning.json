@@ -1,0 +1,30 @@
+{
+	
+	
+	"shortContent" : "Choose one
+result on the Psychic Phenomena chart on page (other than
+Perils of the Warp). When rolling for Psychic Phenomena,
+the character may substitute the specified result for the effect
+rolled on the table, so long as the character did not roll Perils
+of the Warp.",
+	
+	"content" : "The character has been trained to resist the dangers of the
+warp: his resistance has been weighed and measured and
+found to be sufficient for his power to be sanctioned. This
+ceremony changes a psyker, and the character bears these
+physical changes along with a Sanctioning Mark. Choose one
+result on the Psychic Phenomena chart on page (other than
+Perils of the Warp). When rolling for Psychic Phenomena,
+the character may substitute the specified result for the effect
+rolled on the table, so long as the character did not roll Perils
+of the Warp.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "Psy Rating"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 125
+}

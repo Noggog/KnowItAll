@@ -1,33 +1,23 @@
 {
-	"name" : "Abhor The Witch",
 	
-	"shortContent" : "Spend fate point pre-mission.  Willpower test to negate psychic, daemonic, or warp-based power's affect on himself.  Powers will still affect others.",
+	"shortContent" : "",
 	
-	"content" : "The Battle-Brother spends the time before battle armouring
-himself against the power of the warp by reciting canticles
-and litanies of hate and contempt against the unclean powers.
-This Talent may be used in the Oath Making phase before
-undertaking a mission. The Battle-Brother spends a Fate
-Point in the Oath Making phase and counts as having spent
-this Fate Point for the duration of the mission. During the
-mission, the Battle-Brother must take a Challenging (+0)
-Willpower Test whenever he is the subject of the effects of
-a Psychic Power, daemonic power other warp-based power.
-If the Willpower Test succeeds, then the Battle-Brother is
-unaffected by the power. If the Test fails, then the power
-affects him as normal. The effects of this Talent also apply to
-powers that cause Damage indirectly such as blasts, and those
-used by friendly psykers which might be beneficial to the
-Battle-Brother. A power that is resisted by a Battle-Brother
-using this Talent is not nullified if others will be affected by
-it as normal.",
+	"content" : "The character’s infrasonic dirges cause terror in the weak. All
+humans, regardless of their ability to hear, within a 50-meter
+radius treat the character as if he had a Fear Rating of 1. While
+incanting the dirge, the character may not communicate in
+any other way. The rite requires one-Half Action chanting
+in Techna-Lingua, and most would not consider halting
+the incantations prior to their completion. Humans without
+auditory augmentation cannot hear infrasonic sounds, and
+though still affected do not know the character is speaking.",
 
 	"extraSubCategories" : 
 	[ 
-		["Prerequisites", "Adeptus Astartes, may not be taken by characters with a Psy Rating"]
+		["Prerequisites", "Mechanicus or Techmarine Implants"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 113
+	"pageNumber" : 125
 }

@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.util.Random;
 import javax.swing.WindowConstants;
 import knowitall.KIASave.Settings;
+import knowitall.gui.GUI;
 import knowitall.gui.MainFrame;
 
 /**
@@ -78,7 +79,7 @@ public class KnowItAll {
     }
 
     public static void exitProgram() {
-	saveWindowSize();
+	saveGUIsetup();
 	save.saveToFile();
 	if (Debug.log.logging()) {
 	    Debug.log.newLog("All Words.txt");
@@ -89,10 +90,11 @@ public class KnowItAll {
 	Debug.log.close();
 	System.exit(0);
     }
-    
-    public static void saveWindowSize() {
+
+    public static void saveGUIsetup() {
 	Dimension size = frame.getSize();
 	save.setInt(Settings.StartWidth, size.width);
 	save.setInt(Settings.StartHeight, size.height);
+	save.setInt(Settings.DividerLocation, GUI.dividerLocation());
     }
 }

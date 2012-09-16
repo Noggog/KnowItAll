@@ -1,33 +1,27 @@
 {
-	"name" : "Abhor The Witch",
 	
-	"shortContent" : "Spend fate point pre-mission.  Willpower test to negate psychic, daemonic, or warp-based power's affect on himself.  Powers will still affect others.",
 	
-	"content" : "The Battle-Brother spends the time before battle armouring
-himself against the power of the warp by reciting canticles
-and litanies of hate and contempt against the unclean powers.
-This Talent may be used in the Oath Making phase before
-undertaking a mission. The Battle-Brother spends a Fate
-Point in the Oath Making phase and counts as having spent
-this Fate Point for the duration of the mission. During the
-mission, the Battle-Brother must take a Challenging (+0)
-Willpower Test whenever he is the subject of the effects of
-a Psychic Power, daemonic power other warp-based power.
-If the Willpower Test succeeds, then the Battle-Brother is
-unaffected by the power. If the Test fails, then the power
-affects him as normal. The effects of this Talent also apply to
-powers that cause Damage indirectly such as blasts, and those
-used by friendly psykers which might be beneficial to the
-Battle-Brother. A power that is resisted by a Battle-Brother
-using this Talent is not nullified if others will be affected by
-it as normal.",
+	"shortContent" : "",
+	
+	"content" : "The character is implanted with anti-grav coils throughout his
+lower body, allowing him to hover just off the ground. Using
+a Half Action, the character may hover 20–30 centimetres
+off the ground for a number of minutes equal to 1d10 plus
+the character’s Toughness Bonus. The character must employ
+a Half Action each Round to maintaining the rite, and may
+use the other actions to move normally. The character may
+activate this rite to slow his rate of descent when falling,
+reducing all falling Damage to 1d10+3 Impact. Each use of
+Maglev Grace exhausts the power stored in the character’s
+Potentia Coil, and so this Talent cannot be reused until the
+Coil has been recharged (usually 1d5 hours).",
 
 	"extraSubCategories" : 
 	[ 
-		["Prerequisites", "Adeptus Astartes, may not be taken by characters with a Psy Rating"]
+		["Prerequisites", "Mechanicus Implants"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 113
+	"pageNumber" : 122
 }

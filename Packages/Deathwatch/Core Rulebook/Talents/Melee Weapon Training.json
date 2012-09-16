@@ -1,26 +1,20 @@
 {
-	"name" : "Abhor The Witch",
 	
-	"shortContent" : "Spend fate point pre-mission.  Willpower test to negate psychic, daemonic, or warp-based power's affect on himself.  Powers will still affect others.",
+	"shortContent" : "When a
+character attempts to use a weapon he does not have the
+correct Weapon Training Talent for, he suffers a –20 penalty
+to any relevant Weapon Skill or Ballistic Skill Test",
 	
-	"content" : "The Battle-Brother spends the time before battle armouring
-himself against the power of the warp by reciting canticles
-and litanies of hate and contempt against the unclean powers.
-This Talent may be used in the Oath Making phase before
-undertaking a mission. The Battle-Brother spends a Fate
-Point in the Oath Making phase and counts as having spent
-this Fate Point for the duration of the mission. During the
-mission, the Battle-Brother must take a Challenging (+0)
-Willpower Test whenever he is the subject of the effects of
-a Psychic Power, daemonic power other warp-based power.
-If the Willpower Test succeeds, then the Battle-Brother is
-unaffected by the power. If the Test fails, then the power
-affects him as normal. The effects of this Talent also apply to
-powers that cause Damage indirectly such as blasts, and those
-used by friendly psykers which might be beneficial to the
-Battle-Brother. A power that is resisted by a Battle-Brother
-using this Talent is not nullified if others will be affected by
-it as normal.",
+	"content" : "The character has trained extensively with hand-to-hand
+weaponry, becoming proficient in the use of virtually all
+hand-held close combat arms. The “Universal” group includes
+the Primitive, Chain, Shock and Power groups. When a
+character attempts to use a weapon he does not have the
+correct Weapon Training Talent for, he suffers a –20 penalty
+to any relevant Weapon Skill or Ballistic Skill Test.
+<br>
+<br>
+<b>Talent Groups:</b> Chain, Shock, Power, Primitive, Universal",
 
 	"extraSubCategories" : 
 	[ 
@@ -29,5 +23,5 @@ it as normal.",
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 113
+	"pageNumber" : 123
 }

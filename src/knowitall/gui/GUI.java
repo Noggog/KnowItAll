@@ -92,4 +92,8 @@ public class GUI {
 	tree.setRoot(Database.getTree());
 //	tree.expand(true);
     }
+
+    public static int dividerLocation() {
+	return mainPanel.split.getDividerLocation();
+    }
 }

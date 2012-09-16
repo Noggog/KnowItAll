@@ -15,20 +15,23 @@ public class KIASave extends LSaveFile {
     KIASave (String in) {
 	super(in);
     }
-    
+
     @Override
     protected void initSettings() {
 	Add(Settings.StartWidth,		0,	    false);
 	Add(Settings.StartHeight,		0,	    false);
+	Add(Settings.DividerLocation,		250,	    false);
     }
 
     @Override
     protected void initHelp() {
     }
-    
+
     public static enum Settings {
 	StartWidth,
-	StartHeight;
+	StartHeight,
+	DividerLocation
+	;
     }
-    
+
 }

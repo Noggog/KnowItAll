@@ -20,6 +20,8 @@ import javax.swing.tree.TreeSelectionModel;
 import knowitall.Article;
 import knowitall.Database;
 import knowitall.Debug;
+import knowitall.KIASave.Settings;
+import knowitall.KnowItAll;
 import lev.gui.*;
 import skyproc.gui.SPDefaultGUI;
 
@@ -122,7 +124,7 @@ public class MainPanel extends LPanel {
 		});
 	    }
 	});
-	split.setDividerLocation(250);
+	split.setDividerLocation(KnowItAll.save.getInt(Settings.DividerLocation));
 	add(split, 0);
     }
 
