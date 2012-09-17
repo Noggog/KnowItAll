@@ -5,6 +5,7 @@
 package knowitall.gui;
 
 import java.awt.MouseInfo;
+import java.awt.Point;
 import javax.swing.SwingUtilities;
 import knowitall.Article;
 import knowitall.Database;
@@ -23,6 +24,7 @@ public class GUI {
     static SearchBar search;
     static ArticleTooltip tooltip;
     static LSwingTree tree;
+    static int mouseXoffset = 350;
 
     public static void displayArticles(boolean on) {
 	if (contentPanel != null) {
@@ -57,16 +59,23 @@ public class GUI {
 	search.setFocusable(false);
 	tooltip.load(a);
 	tooltip.setSize(mainPanel.getWidth() - 50);
-	tooltip.setLocation(25, MouseInfo.getPointerInfo().getLocation().y);
+	Point mouse = MouseInfo.getPointerInfo().getLocation();
+	tooltip.setLocation(mouse.x - mouseXoffset, mouse.y);
+
+	// Bump tooltip on screen if it's off
 	SwingUtilities.invokeLater(new Runnable() {
 
 	    @Override
 	    public void run() {
 		if (tooltip.getY() + tooltip.getHeight() > mainPanel.getHeight()) {
-		    tooltip.setLocation(25, MouseInfo.getPointerInfo().getLocation().y - tooltip.getHeight() - 65);
+		    tooltip.setLocation(tooltip.getX(), MouseInfo.getPointerInfo().getLocation().y - tooltip.getHeight() - 65);
+		}
+		if (tooltip.getX() + tooltip.getWidth() > mainPanel.getWidth()) {
+		    tooltip.setLocation(mainPanel.getWidth() - tooltip.getWidth() - 30, tooltip.getY());
 		}
 	    }
 	});
+	// Make dimmer and tooltip visible.
 	SwingUtilities.invokeLater(new Runnable() {
 	    @Override
 	    public void run() {
