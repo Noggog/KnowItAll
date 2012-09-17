@@ -24,7 +24,6 @@ public class GUI {
     static SearchBar search;
     static ArticleTooltip tooltip;
     static LSwingTree tree;
-    static int mouseXoffset = 350;
 
     public static void displayArticles(boolean on) {
 	if (contentPanel != null) {
@@ -60,7 +59,7 @@ public class GUI {
 	tooltip.load(a);
 	tooltip.setSize(mainPanel.getWidth() - 50);
 	Point mouse = MouseInfo.getPointerInfo().getLocation();
-	tooltip.setLocation(mouse.x - mouseXoffset, mouse.y);
+	tooltip.setLocation(mouse.x - mainPanel.getLocationOnScreen().x, mouse.y);
 
 	// Bump tooltip on screen if it's off
 	SwingUtilities.invokeLater(new Runnable() {
