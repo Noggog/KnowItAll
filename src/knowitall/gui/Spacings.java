@@ -12,6 +12,7 @@ public class Spacings {
 
     public static int mainPanel = 10;
     public static int contentPanel = 10;
-    public static int articleDispay = 10;
+    public static int tooltip = 15;
+    public static int article = 5;
 
 }

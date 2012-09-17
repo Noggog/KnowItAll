@@ -16,6 +16,7 @@ import java.awt.geom.Ellipse2D;
 import knowitall.Article;
 import lev.gui.LHTMLPane;
 import lev.gui.LPanel;
+import lev.gui.resources.LFonts;
 
 /**
  *
@@ -30,7 +31,9 @@ public class ArticleTooltip extends LPanel {
 
     ArticleTooltip() {
 	pane = new LHTMLPane();
-	pane.setLocation(Spacings.articleDispay, Spacings.articleDispay);
+	pane.setLocation(Spacings.tooltip, Spacings.tooltip);
+	pane.honorDisplayProperties();
+	pane.setFont(LFonts.MyriadPro(16));
 	pane.setOpaque(false);
 	add(pane);
 	setVisible(false);
@@ -54,10 +57,10 @@ public class ArticleTooltip extends LPanel {
     }
 
     public void setSize(int x) {
-	int margin = 2 * Spacings.articleDispay;
+	int margin = 2 * Spacings.tooltip;
 	pane.compactContent(x - margin);
 	pane.setSize(pane.getWidth(), pane.getHeight() + 5);
-	super.setSize(pane.getWidth() + margin, pane.getBottom() + Spacings.articleDispay + 15);
+	super.setSize(pane.getWidth() + margin, pane.getBottom() + Spacings.tooltip + 5);
     }
 
     private AlphaComposite makeComposite(float alpha) {

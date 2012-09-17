@@ -13,6 +13,8 @@ import org.apache.ecs.html.*;
  */
 public class ArticleHTML {
 
+    static int smallFontSize = 3;
+
     public static String load(Article a, boolean full) {
 	Html html = new Html().addElement(new Head());
 	Body body = new Body();
@@ -28,12 +30,12 @@ public class ArticleHTML {
 
 	// Short Content
 	if (!a.getShort().equals("")) {
-	    body.addElement(new Font(3).addElement(new B().addElement(a.getShort())).addElement(new BR()));
+	    body.addElement(new Font(smallFontSize).addElement(new B().addElement(a.getShort())).addElement(new BR()));
 	}
 
 	// Content
 	if (full || a.getShort().equals("")) {
-	    body.addElement(new Font(3).addElement(a.getContent()));
+	    body.addElement(new Font(smallFontSize).addElement(a.getContent()));
 	}
 	html.addElement(body);
 
@@ -44,7 +46,7 @@ public class ArticleHTML {
 	ArrayList<String[]> subCategoriesList = a.getSubcategories();
 	if (!subCategoriesList.isEmpty()) {
 	    for (String[] sc : subCategoriesList) {
-		body.addElement(new Font(3).addElement(new B().addElement(sc[0] + " : ") + sc[1] + new BR()));
+		body.addElement(new Font(smallFontSize).addElement(new B().addElement(sc[0] + " : ") + sc[1] + new BR()));
 	    }
 	    body.addElement(new BR());
 	}
@@ -56,7 +58,7 @@ public class ArticleHTML {
 	    if (single) {
 		Table grid = new Table();
 		grid.addAttribute("border", "1");
-		body.addElement(grid);
+		body.addElement(new Font(smallFontSize).addElement(grid));
 		TR gridLabels = new TR();
 		grid.addElement(gridLabels);
 		TR gridItems = new TR();

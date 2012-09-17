@@ -4,6 +4,7 @@
  */
 package knowitall.gui;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
@@ -12,6 +13,7 @@ import knowitall.Article;
 import lev.gui.LHTMLPane;
 import lev.gui.LPanel;
 import lev.gui.LTextArea;
+import lev.gui.resources.LFonts;
 
 /**
  *
@@ -26,7 +28,7 @@ public class ArticleDisplay extends LPanel {
 
     public ArticleDisplay() {
 	htmlContent = new LHTMLPane();
-	htmlContent.setLocation(0, 0);
+	htmlContent.setLocation(0, Spacings.article);
 	htmlContent.setVisible(true);
 	StyleSheet ss = htmlContent.getStyleSheet();
 	ss.addRule("body {"
@@ -36,8 +38,11 @@ public class ArticleDisplay extends LPanel {
 		+ "margin-left: 10px;}");
 	ss.addRule("table { border-style: hidden; }");
 	htmlContent.addHyperLinkListener(listener);
+	htmlContent.honorDisplayProperties();
+	htmlContent.setFont(LFonts.MyriadPro(16));
 	add(htmlContent);
 	setOpaque(true);
+	this.setBackground(Color.WHITE);
     }
 
     public void load(Article a) {
@@ -52,7 +57,7 @@ public class ArticleDisplay extends LPanel {
     public void remeasure(Dimension size) {
 	if (article != null) {
 	    htmlContent.setSize(size.width - 2);
-	    setSize(size.width, htmlContent.getBottom());
+	    setSize(size.width, htmlContent.getBottom() + Spacings.article);
 	} else {
 	    setSize(1, 1);
 	}
@@ -60,8 +65,8 @@ public class ArticleDisplay extends LPanel {
 
     int position(LTextArea area, Dimension size, int y) {
 	if (area.isVisible()) {
-	    area.setLocation(Spacings.articleDispay, y);
-	    area.setSize(size.width - 2 * Spacings.articleDispay, 30);
+	    area.setLocation(Spacings.tooltip, y);
+	    area.setSize(size.width - 2 * Spacings.tooltip, 30);
 	    area.setSize(area.getPreferredSize());
 	    y = area.getBottom();
 	}

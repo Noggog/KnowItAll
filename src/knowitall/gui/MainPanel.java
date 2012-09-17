@@ -23,6 +23,7 @@ import knowitall.Debug;
 import knowitall.KIASave.Settings;
 import knowitall.KnowItAll;
 import lev.gui.*;
+import lev.gui.resources.LFonts;
 import skyproc.gui.SPDefaultGUI;
 
 /**
