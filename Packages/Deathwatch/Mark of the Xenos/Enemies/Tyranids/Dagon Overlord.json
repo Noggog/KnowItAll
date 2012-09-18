@@ -1,49 +1,178 @@
 {
-	"content" : "There are a number of heavy industrial and mining servitors still
-in operation around the Pyroclast-Gamma-9 facility. These are
-huge, hulking brutes, with a vaguely simian form, far more heavily
-augmented than most servitor drones, with armoured hydraulic
-exoskeletons fused into their once-human flesh and a plethora of
-implanted machine-tools. Most are still operating on emergency
-orders to defend their assigned posts, asking for the security signal
-in a strained guttural voice to any human that approaches and
-attacking remorselessly until the intruder is dead or driven away if
-the watchword is not spoken within ten seconds. While slow and
-not designed for combat, they are nerveless extremely strong and
-well-protected, and more than able to obliterate a human being
-into a bloody smear with a single blow.",
+	"content" : "From the edge of the galactic rim, the first tendrils of Hive Fleet
+Dagon have coiled around the edge of the Jericho Reach, choking
+the life from worlds and feeding on the Imperium itself. Among
+this new hive fleet, ancient and now all too familiar horrors
+have arisen, creatures spawned and unleashed in dozens of other
+sectors and across countless other battlefields. Alongside the
+familiar, however, come new and disturbing Tyranid variations,
+proving once again that as soon as the Imperium believes it
+understands the Tyranid, the Tyranid changes and adapts once
+more. For the Jericho Reach, the force of the Tyranid assault
+was like a mighty hammer blow, catching the Achilus Crusade
+off balance and forcing Imperial Commanders to scramble to
+face this new and encroaching threat before too much ground
+was lost and too many worlds had fallen. Meeting the swarms
+head-on, millions died in those first desperate years of Dagon’s
+arrival, and many planets could not be saved, disappearing
+forever under a tide of chitin and claws.<br>
+It was also during this dark time that Hive Fleet Dagon took
+on its own identity among the dozens of other major hive fleet
+incursions from the Eastern Fringe. Commanders and soldiers
+alike came to know the signs and character of the swarm,
+the nature of its beasts and the unique hunger it seemed to
+possess for the Jericho Reach, as if it had a taste for that sector
+specifically and the worlds that lay within it. They also noted
+how it adapted and changed with each world it consumed, each
+battle it won (or lost) and with each light year it came closer to
+the Iron Collar and the Warp Gate. This kind of rapid adaption
+had been observed in other fleets of course, however in Hive
+Fleet Dagon it seemed to take on an even more sinister slant, as
+if the fleet were aware of the pain and suffering it was inflicting
+and the terror in the hearts of the soldiers trying to stop it. In the
+space of a few short years, this evolution and mutation within
+Dagon led to a number of unique bio-constructs and weapons
+never seen before by Imperial scholars; the most terrible of them
+all being the Overlord.<br>
+The rise of the Dagon Overlord, or simply the Overlord as
+it became known, seemed to occur in conjunction with those
+first victories scored by the hive fleet, as if the Hive Mind had
+taken the measure of the foes it has faced and chose to evolve a
+specific tool for their eradication. Other theories speculate that
+the Overlord was a genus specific to the hive fleet that existed
+long before its arrival in the Imperium, and that it was simply
+a superior warrior construct, brought out of storage to face a
+more stubborn than excepted adversary. Whatever the case, the
+Overlord first appeared during the opening days of the battle for
+Castobel, leading a mighty swarm against the amethyst spires of
+the Trimalov Hive, rending through its walls and dispatching
+its defenders in a month-long orgy of carnage and slaughter.
+Those fortunate enough to escape the fall of the hive city with
+their lives took with them tales of terror and the memory of a
+beast which stood apart from even the worst horrors the swarm
+has to offer.<br>
+The Dagon Overlord is in appearance similar to a Hive Tyrant,
+a creature of terrible and horrific majesty all on its own, but is
+different enough to stand apart from its lesser brethren and be
+remembered by those that see it looming across the battlefield.
+Covered in slimy plates of chitin which constantly drip and leak
+fluid, the Overlord projects an aura of horror and menace like
+nothing else within the swarm. Its importance and power are also
+readily apparent when it strides alongside other Tyranid creatures,
+its powerful presence emboldening and maddening the lesser
+creatures more so than would be expected by any link to the Hive
+Mind. It is almost as if the Overlord is the embodiment of Hive
+Fleet Dagon’s ire toward the Jericho Reach and its alien hatred
+infects creatures with a personal desire to murder, maim, and kill
+all those in their path. It has been suggested that this notion of the
+beast’s personal vendetta is just the fanciful imagining of terrified
+Imperial Guardsmen, though only by those who have not seen
+the Overlord beast in the flesh themselves.<br>
+Since its first appearance, the Dagon Overlord has been
+sighted in almost all of the major combat zones of the Orpheus
+Salient, leading swarm after swarm into the ranks of Imperial
+defenders. This has led many to believe that the Overlord is just
+one of many, and not a unique creature at all. However such
+notions of individuality are hard to determine when dealing
+with the Hive Mind, as it is constantly recycling its troops and
+adding to them by consuming worlds. This means the Overlord
+may well be a veteran of many wars, and may have even fallen
+countless times to the foe, only to be re-spawned by the Hive
+Mind with a fresh body and a will for vengeance. Both the Ordo
+Xenos and the Deathwatch have made attempts to find the truth 
+behind the Overlord, if for no other reason than to catalogue a
+new and deadly variation of the Tyranid race. Neither has met
+with much success, and both agents and Battle-Brothers have
+been lost during the process. Even when the Dagon Overlord
+seems defeated, it invariably rises again in another place or
+another time.",
 
 	"extraSubCategories" : 
 	[ 
-		["Skills", "Awareness (Per) +10, Climb (S)"],
-		["Talents", "Heightened Senses (Vision), Melee Weapon Training
-(Primitive), Thrown Weapon Training (Primitive)"],
-		["Traits", "Armour Plating, Dark Sight, Machine (5), Improved
-Natural Weapon (Implanted Tools), Size (hulking), Sturdy,
-Unnatural Strength (x2)"],
-		["Armor", "Reinforced structure and armor plate (All 7)"],
-		["Weapons", "Implanted machine tools, i.e. saws, drills, grinders and servo claws (1D10+12 R or I, Pen 4)"],
-		["Equipment", "Internal micro-bead (to relay data and receive instruction only), in-built respirator."]
+		["Skills", "Awareness (Per), Climb (S), Swim (S)."],
+		["Talents", "Ambidextrous, Combat Master, Crushing Blow,
+Fearless, Heightened Senses (All), Psy Rating (8), Two-
+Weapon wielder (Melee), Swift Attack, Lightning Attack."],
+		["Traits", "Brutal Charge, Dark Sight, Fear 4 (Terrifying), Natural
+Armour (Bonded Exoskeleton), Multiple Arms, Unnatural
+Strength (x3), Unnatural Toughness (x3), Unnatural Willpower
+(x2), Improved Natural Weapons (Scything Talons), Shadow
+in the Warp, Size (Massive), Synapse Creature, Tyranid."],
+		["Armor", "Bonded Exoskeleton (All 10)."],
+		["Weapons", "Scything Talons (1d10+22 R; Pen 3), two
+Boneswords (1d10+20 R; Pen 6, Drain Life), Twin-linked
+Devourer (30m, –/–/6; 1d10+6 R; Pen 0; Clip —; Rld —;
+Living Ammunition, Storm, Tearing, Twin-linked)."],
+		["Equipment", "None"],
+		["Special Rules", "
+<b>Biomorphs:</b> At the GM’s discretion, the Dagon Overlord may
+have Acid Blood (when wounded in melee combat all non-
+Tyranid creatures in melee with it must make a Challenging
+(+0) Agility Test or suffer 2d10 Damage with a Pen of 5),
+Adrenal Glands (gaining the Furious Assault Talent), Toxin
+Sacs (gaining the Toxic (1d10) Trait on all melee and ranged
+attacks, which stacks with the Miasma of the Depths Trait), or
+Regeneration (5) (gaining the Regeneration Trait).
+<br><b>Tyranid Psyker:</b> The Dagon Overlord is a Tyranid Psyker
+and follow the rules for Tyranid Psychic Powers on page 34.
+It has access to all the standard Tyranid psychic powers.
+<br><b>Death Shock:</b> When the Dagon Overlord is slain, its death
+sends a shockwave through the Hive Mind. All Tyranid
+creatures that do not have the Fearless Talent or Synapse
+creature Trait will automatically break and flee as quickly
+as they can (this effect overrides the effects of Instinctive
+Behaviour in this instance). Any Tyranid creature with the
+Fearless or Synapse Creature Trait must pass a Challenging
+(+0) Willpower Test or be stunned for one round.
+<br><b>Old Adversary:</b> The Overlord is an ancient Hive Tyrant
+and a veteran of countless battles within the Jericho Reach.
+Even when it is slain, the Hive Mind resurrects it anew with
+memories of its past deeds and a hatred for its foes. The
+Dagon Overlord gains the Hatred (Deathwatch) Talent when
+facing members of the Deathwatch.
+<br><b>Blood of Dagon:</b> When the Overlord leads a swarm of
+Tyranid creatures it can spur them on to greater acts of fury
+and force them to fight on even when grievously wounded.
+Any Horde of Tyranid creatures which fights alongside the
+Dagon Overlord benefits from its presence and regenerates
+1d5 points of Magnitude at the start of each of its turns.
+<br><b>Miasma of the Depths:</b> The Dagon Overlord has a cloud
+of toxins constantly oozing from its joints and creates a
+virulent haze of haemotoxins, neurotoxins, and deadly
+phage organisms all around it much in the same way as a
+Venomthrope. It counts as having the Toxic Trait, but the
+damage is 2d10, ignoring Toughness and Armour. The
+Toughness Test to resist the poison is Very Hard (–30).
+<br><b>Body Collector:</b> The Overlord is selective about those it
+chooses to devour, and picks only the strongest and most
+powerful of its adversaries to consume. Often it will task lesser
+Tyranid creatures with gathering together these bodies after,
+or even during a battle, and piling them at its feet so it may
+feast on them and grow stronger. A Dagon Overlord which
+devours the body of a creature with 15 or more wounds and
+a Toughness of 40 or more, heals 1d10 points of damage. At
+the GM’s discretion, the Overlord may also over time take on
+traits of those it devours as it assimilates their flesh."]
 	],
 	
 	"grid" :
 	[
-		["Wounds", "20"],
-		["Movement", "1/2/3/6"],
-		["Weapon Skill", "25"],
-		["Ballistic Skill", 10"],
-		["Strength",  "<sup>10</sup>50"],
-		["Toughness", "<sup>5</sup>50"],
-		["Agility", "15"],
-		["Intelligence", "10"],
-		["Perception", "20"],
-		["Will Power", "30"],
-		["Fellowship", "5"]
+		["Wounds", "180"],
+		["Movement", "7/14/21/42"],
+		["Weapon Skill", "81"],
+		["Ballistic Skill", 35"],
+		["Strength",  "<sup>18</sup>65"],
+		["Toughness", "<sup>18</sup>63"],
+		["Agility", "45"],
+		["Intelligence", "45"],
+		["Perception", "49"],
+		["Will Power", "<sup>14</sup>70"],
+		["Fellowship", "-"]
 	],
 	
 	"aka" : 
 	[
-		"Industrial Servitor",
-		"Mining Servitor"
+		"overlord",
+		""
 	]
 }

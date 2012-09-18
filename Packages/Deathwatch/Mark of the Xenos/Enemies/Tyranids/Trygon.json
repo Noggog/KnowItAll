@@ -1,17 +1,86 @@
 {
-	"content" : "There are a number of heavy industrial and mining servitors still
-in operation around the Pyroclast-Gamma-9 facility. These are
-huge, hulking brutes, with a vaguely simian form, far more heavily
-augmented than most servitor drones, with armoured hydraulic
-exoskeletons fused into their once-human flesh and a plethora of
-implanted machine-tools. Most are still operating on emergency
-orders to defend their assigned posts, asking for the security signal
-in a strained guttural voice to any human that approaches and
-attacking remorselessly until the intruder is dead or driven away if
-the watchword is not spoken within ten seconds. While slow and
-not designed for combat, they are nerveless extremely strong and
-well-protected, and more than able to obliterate a human being
-into a bloody smear with a single blow.",
+	"content" : "The largest Tyranid creatures can become hard to accurately
+categorise as they increasingly appear as strange aggregations
+of symbiotes and parasites on a colossal scale. This is not the
+case with the Tyranid Trygon however, a distinct genus of vast
+serpentine creatures that tower above even the mighty Carnifex.
+Adepts have postulated a link between the Trygon and the
+smaller but equally ophidian Ravener, but it remains unclear
+whether Trygons are massively mutated Raveners or Raveners
+are underdeveloped, perhaps even immature, Trygons. Certainly
+adult Trygons can reach truly monstrous proportions, with
+examples of up to thirty metres in length on record, although
+twelve to fifteen metres is more common.<br>
+Trygons are extremely heavily armoured by a coat of
+overlapping scales that covers them from jaws to tail. In addition
+to offering excellent protection, these specialised scales form
+an essential part of the Trygon’s natural weaponry. The thick
+armour plates include high concentrations of silicates and as the
+Trygon moves they become agitated, generating a powerful biostatic
+charge that is captured by subdermal platelet stacks. The
+Trygon directs this energy by exhaling an ionised spray from its
+gills, to prompt a deadly, high-voltage discharge.<br>
+Trygons have two sets of diamond-hard scything talons folded
+beneath their hood-like carapace that they use with lethal effect in
+close combat. Driven by a Trygon’s size and strength, these wicked
+blades can easily impale an armoured vehicle or cut an armoured
+man in two. However, the primary purpose of the Trygon’s claws is
+to allow it to burrow though practically any material at a terrifying
+rate. These creatures have shown themselves capable of detecting
+an enemy from below and seem to have a singular fondness
+for bursting out of the ground beneath them with shocking
+suddenness. Tanks and troops surprised in this way seldom have
+a chance to reply to the barrage of sweeping claw strikes and biostatic
+lightning unleashed upon them.<br>
+Seismic detectors have been used with some success to provide
+early warning of a Trygon’s approach. Unfortunately, on many
+worlds, natural seismic activity can mask a Trygon’s motion and
+in some instances Tyranid swarm activity seems to have been
+deliberately coordinated to cover the approach of burrowing
+Trygons. Trygons have forced tunnels through just about every
+material known to man, although they are considerably slowed
+by adamantium plating.<br>
+It appears that Trygons use their bio-static charge to assist with
+tunnelling, as their tunnels have been found coated with a fused,
+glass-like silicate layer on the inside. This effect stabilises the tunnel
+walls and prevents them from collapsing behind a burrowing
+Trygon. Other Tyranid organisms will take advantage of these
+tunnels to move around unseen and follow up on Trygon attacks.
+The emergence of a burrowing Trygon is often just the harbinger
+of a tidal wave of nightmarish horrors.<br>
+Commanders have found static defences become virtually
+useless once Trygons are operating in the area, unless tunnel
+torpedoes or mole mortars can be brought to bear to keep
+them at bay. Over an extended period, Tyrgons are capable of
+excavating a network of underground tunnels covering a huge
+area, which makes it difficult to wipe out Tyranid forces even
+with saturation bombardment. Clearing out Trygon sub-surface
+tunnel networks is dangerous work even for a Deathwatch Killteam
+and is a duty given only to the most experienced and wellequipped
+Battle-Brothers.<br>
+Trygons have also been known to dig deadfall traps by
+leaving a thin crust over a deep conical hole. Sufficient weight
+in troops and armour will collapse the roof of the sinkhole and
+deposit the victims into the Trygon’s waiting claws. A Trygon’s
+greatest weakness is probably that it can be baited or misdirected
+while burrowing by the first tasty morsel to cross its path. Under
+the direction of the Hive Mind, a Trygon becomes even more
+dangerous, as it will tunnel deep into the heart of the defences
+before bursting forth.<br>
+Unfortunately, a mutation now dubbed the Trygon Prime
+has been confirmed, that appears to have the relevant synapse
+development to make it a conduit for the influence of the Hive
+Mind. A Trygon Prime can be easily spotted by their elongated
+jaws and the containment spines running the length of their
+bodies. These are extended platelet stacks that enable the Trygon
+Prime to store up even greater charges of bio-electricity. A Trygon
+Prime is swathed in sheets of lightning whenever it moves, and
+when it opens its jaws, searing arcs of energy leap forth that
+leave only charred corpses in their wake. The strong synaptic
+link a Trygon Prime shares with the Hive Mind allows it to
+dominate lesser Tyranid creatures, including other Trygons, and
+it will rarely be found without an attendant horde of Termagants
+and Hormagaunts.",
 
 	"extraSubCategories" : 
 	[ 
@@ -22,28 +91,43 @@ into a bloody smear with a single blow.",
 Natural Weapon (Implanted Tools), Size (hulking), Sturdy,
 Unnatural Strength (x2)"],
 		["Armor", "Reinforced structure and armor plate (All 7)"],
-		["Weapons", "Implanted machine tools, i.e. saws, drills, grinders and servo claws (1D10+12 R or I, Pen 4)"],
-		["Equipment", "Internal micro-bead (to relay data and receive instruction only), in-built respirator."]
+		["Weapons", "Scything Talons (1d10+20 R; Pen 3), Bio-Electric
+pulse (Basic; 30m; –/–/12; 2d10+2 E; Pen 4; Clip —; Rld
+—; Storm, Living Ammunition)."],
+		["Equipment", "None."],
+		["Special Rules", "
+<b>Biomorphs:</b> At the GM’s discretion, a Trygon may be
+given the following changes to represent a Trygon Prime.
+<br><b>Trygon Prime:</b> +10 Int, +15 Per, +5 WP. Replace the
+Trait Instinctive Behaviour (Feed) with Synapse Creature and
+Shadow in the Warp. Upgrade Bio-Electric pulse to (Basic;
+60m; –/–/12; 2d10+6 E; Pen 4; Clip —; Rld —; Storm,
+Living Ammunition).<br>
+<b>†Ground Sense:</b> A Trygon can detect enemies while
+burrowed, through the vibrations they make. It can easily
+detect anything in contact with the ground within 15 metres
+and receives a +10 bonus to tracking prey in constant motion.
+Large vehicles and similar give greater bonuses."]
 	],
 	
 	"grid" :
 	[
-		["Wounds", "20"],
-		["Movement", "1/2/3/6"],
-		["Weapon Skill", "25"],
-		["Ballistic Skill", 10"],
-		["Strength",  "<sup>10</sup>50"],
-		["Toughness", "<sup>5</sup>50"],
-		["Agility", "15"],
-		["Intelligence", "10"],
-		["Perception", "20"],
-		["Will Power", "30"],
-		["Fellowship", "5"]
+		["Wounds", "160"],
+		["Movement", "4/8/12/24"],
+		["Weapon Skill", "50"],
+		["Ballistic Skill", 30"],
+		["Strength",  "<sup>18</sup>60"],
+		["Toughness", "<sup>12</sup>60"],
+		["Agility", "40"],
+		["Intelligence", "15"],
+		["Perception", "25"],
+		["Will Power", "45"],
+		["Fellowship", "-"]
 	],
 	
 	"aka" : 
 	[
-		"Industrial Servitor",
-		"Mining Servitor"
+		"",
+		""
 	]
 }

@@ -1,51 +1,102 @@
 {
-	"name" : "Industrial/Mining Servitor",
 	
-	"content" : "There are a number of heavy industrial and mining servitors still
-in operation around the Pyroclast-Gamma-9 facility. These are
-huge, hulking brutes, with a vaguely simian form, far more heavily
-augmented than most servitor drones, with armoured hydraulic
-exoskeletons fused into their once-human flesh and a plethora of
-implanted machine-tools. Most are still operating on emergency
-orders to defend their assigned posts, asking for the security signal
-in a strained guttural voice to any human that approaches and
-attacking remorselessly until the intruder is dead or driven away if
-the watchword is not spoken within ten seconds. While slow and
-not designed for combat, they are nerveless extremely strong and
-well-protected, and more than able to obliterate a human being
-into a bloody smear with a single blow.",
+	"content" : "Flying at the head of the swarm, Gargoyles are often the first
+sign of the onrushing wave of Tyranids, as they blot out the
+sun and choke the sky with their leathery wings and infernal
+screeching. Not dissimilar in appearance to a Termagant, albeit
+with the addition of wings, a Gargoyle is individually weak,
+and relies as much on its speed and ranged weapons as it does
+tooth and claw. However, in great numbers (as Gargoyles are
+almost always encountered) they can make as fearsome a foe
+as any Tyranid. The primary goal of Gargoyles, in their role
+as part of the Tyranid vanguard, is, it seems, to sow confusion.
+They achieve this by peppering foes with their fleshborers
+and then darting away before retaliatory fire can find them,
+always staying out of arm’s reach and using their speed to
+move from target to target before they can be outmatched.<br>
+This command of the air and their agility makes Gargoyles
+a particularly fearsome foe to fight, especially as they often
+descend on enemies from hundreds of metres, swooping down
+to strike lethal blows. This forces foes to constantly scan the
+skies and be alert for any shadow or flicking form that could
+be the first sign of a descending Gargoyle brood. Gargoyles
+are also a menace for aircraft and can make air travel across a
+Tyranid-contested world extremely dangerous, as they hunt
+ceaselessly for prey, often supported by other, more massive
+Tyranid bio-forms such as Harpies and Harridans. Fast and
+manoeuvrable, it is not unheard of for Gargoyles to ambush
+craft many times their own size, latching onto the hulls in
+large numbers and chewing through power cables, couplings
+and other vital components to bring them down in flames.<br>
+Dangerous when beyond the range of Tyranid synapse
+creatures, they become even more so when driven forward by
+the implacable will of the Hive Mind, pouring down from the
+sky upon their foes like clawed rain, forcing their way through
+small openings and blanketing sensors and observation
+towers with their bat-like wings. Under the direction of the
+Hive Mind, Gargoyles will even throw themselves into vents,
+exhausts and exposed gears, fouling machinery and weapons
+with their bodies. In this way Gargoyles are very difficult to
+defend against or trap in a bottleneck, as their ability to fly
+allows them to come at their foes from all angles and exploit
+any opening they can find. A Gargoyle which becomes
+trapped in an enclosed space (as sometime happens when
+they force their way through openings) is deadly indeed as
+it goes into a frenzy to escape, fighting as only a cornered
+beast can.",
 
 	"extraSubCategories" : 
 	[ 
-		["Skills", "Awareness (Per) +10, Climb (S)"],
-		["Talents", "Heightened Senses (Vision), Melee Weapon Training
-(Primitive), Thrown Weapon Training (Primitive)"],
-		["Traits", "Armour Plating, Dark Sight, Machine (5), Improved
-Natural Weapon (Implanted Tools), Size (hulking), Sturdy,
-Unnatural Strength (x2)"],
-		["Armor", "Reinforced structure and armor plate (All 7)"],
-		["Weapons", "Implanted machine tools, i.e. saws, drills, grinders and servo claws (1D10+12 R or I, Pen 4)"],
-		["Equipment", "Internal micro-bead (to relay data and receive instruction only), in-built respirator."]
+		["Skills", "Acrobatics (Ag), Awareness (Per), Climb (S),
+Contortionist (Ag), Dodge (Ag)."],
+		["Talents", "Death from Above, Leap Up."],
+		["Traits", "Dark Sight, Flyer (20), Natural Armour (Chitinous
+Carapace), Natural Weapons (Teeth and Claws), Instinctive
+Behaviour (Lurk), Tyranid."],
+		["Armor", "Chitinous Carapace (All 3)."],
+		["Weapons", "Fleshborer (20m; S/–/– , 1d10+5 R; Pen 3, Clip
+—, Rld —; Living Ammunition, Tearing), Teeth and Claws
+(1d10+3 R; Pen 3, Primitive)."],
+		["Equipment", "None."],
+		["Special Rules", "
+<b>Biomorphs:</b> At the GM’s discretion a Gargoyle may have
+Adrenal Glands (gaining the Furious Assault Talent) and/or
+Toxin Sacs (gaining the Toxic (1d10) Trait on all melee and
+ranged attacks).
+<br><b>Blinding Venom:</b> Attacks in melee from a Gargoyle have a
+chance of blinding its foes. If a blow from a Gargoyle with its
+Teeth and Claws strikes an opponent’s head, they must make
+an Easy (+20) Toughness Test or become Blinded for 1d5
+turns. Enclosed helmets (such as those on a suit of power
+armour, negate this ability).
+<br><b>Enclosed Spaces:</b> Gargoyles are feral creatures and sometime
+become trapped in places where they cannot fly, and go crazy
+in an effort to escape. A Gargoyle which becomes trapped in
+an enclosed space (i.e., where it cannot spread its wings or
+use its Flyer movement) gains the Frenzy and Furious Assault
+Talents until it escapes or dies.
+<br><b>Gargoyle Hordes:</b> Gargoyles make ideal horde creatures and
+can use the Horde rules (see Deathwatch page 359)."]
 	],
 	
 	"grid" :
 	[
-		["Wounds", "20"],
-		["Movement", "1/2/3/6"],
-		["Weapon Skill", "25"],
-		["Ballistic Skill", 10"],
-		["Strength",  "<sup>10</sup>50"],
-		["Toughness", "<sup>5</sup>50"],
-		["Agility", "15"],
+		["Wounds", "30"],
+		["Movement", "4/8/12/24"],
+		["Weapon Skill", "30"],
+		["Ballistic Skill", 33"],
+		["Strength",  "32"],
+		["Toughness", "30"],
+		["Agility", "40"],
 		["Intelligence", "10"],
-		["Perception", "20"],
+		["Perception", "40"],
 		["Will Power", "30"],
-		["Fellowship", "5"]
+		["Fellowship", "-"]
 	],
 	
 	"aka" : 
 	[
-		"Industrial Servitor",
-		"Mining Servitor"
+		"",
+		""
 	]
 }

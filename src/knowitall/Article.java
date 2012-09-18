@@ -69,7 +69,6 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    return true;
 	} catch (FileNotFoundException ex) {
 	} catch (com.google.gson.JsonSyntaxException ex) {
-	    Debug.log.logException(ex);
 	    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", "Skipped because it had a badly formatted spec: " + specF);
 	}
 	return false;
@@ -217,15 +216,21 @@ public class Article extends LSwingTreeNode implements Comparable {
 	return false;
     }
 
-    public static ArrayList<Integer> getStringLocations(String content, String in) {
+    public ArrayList<Integer> getStringLocations(String content, String in) {
 	in = in.toUpperCase();
 	String contentUp = content.toUpperCase();
+//	if (in.equals("CHARGE") && getName().equalsIgnoreCase("TRYGON")) {
+//	    int wer = 23;
+//	}
 
 	ArrayList<Integer> locations = new ArrayList<>();
 	int pos = 0;
 	int index = contentUp.indexOf(in);
 	while (index != -1) {
-	    locations.add(index + pos);
+	    // Make sure the string isn't a suffix of a different word
+	    if (index == 0 || !Character.isAlphabetic(contentUp.charAt(index - 1))) {
+		locations.add(index + pos);
+	    }
 	    pos = pos + index + in.length();
 	    contentUp = contentUp.substring(index + in.length());
 	    index = contentUp.indexOf(in);

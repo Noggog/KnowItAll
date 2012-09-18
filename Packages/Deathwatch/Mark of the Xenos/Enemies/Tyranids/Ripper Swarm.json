@@ -1,49 +1,113 @@
 {
-	"content" : "There are a number of heavy industrial and mining servitors still
-in operation around the Pyroclast-Gamma-9 facility. These are
-huge, hulking brutes, with a vaguely simian form, far more heavily
-augmented than most servitor drones, with armoured hydraulic
-exoskeletons fused into their once-human flesh and a plethora of
-implanted machine-tools. Most are still operating on emergency
-orders to defend their assigned posts, asking for the security signal
-in a strained guttural voice to any human that approaches and
-attacking remorselessly until the intruder is dead or driven away if
-the watchword is not spoken within ten seconds. While slow and
-not designed for combat, they are nerveless extremely strong and
-well-protected, and more than able to obliterate a human being
-into a bloody smear with a single blow.",
+	"content" : "One of the most terrifying aspects of a Tyranid hive fleet is the
+speed and scale of its operations in stripping a planet. Even
+while the Tyranids are overrunning a world’s defences, they are
+in the process of rapidly assimilating the genetic imprint and
+biomass of every living thing on the planet. Eventually, once
+all resistance has been eliminated and everything consumed,
+the world will be stripped down to its bedrock, as all of its
+moisture, atmosphere and nutrients are absorbed by the hive
+ships. By the time the hive fleet moves on, nothing but a lifeless
+ball of rock will be left in their wake.<br>
+In the initial phases, billions of voracious Tyranid organisms
+are released all over the planet. Vast waves of these creatures
+move across the surface of the world, constantly multiplying
+and consuming everything in their path. The empty deserts left
+behind are devoid of even the bones of their former inhabitants,
+thanks to the relentless efforts of the ravenous hordes.<br>
+Eventually these organisms will be reabsorbed by the Hive
+Mind and in some cases evolved to perform higher functions
+depending on the genetic material they have absorbed. The
+majority become biomass to be rendered down to their base
+cells and reshaped by the Norn Queens to fulfill the hive fleet’s
+needs. Tyranid-held worlds have been reported to feature
+“digestion pools” at the base of impossibly tall capillary towers
+that project beyond the atmosphere. Endless streams of Tyranid
+creatures have been seen sacrificing themselves in the searing
+acids of the pools so that their biomass can be sucked up in to
+the hive ships orbiting high above.<br>
+These small harvesting organisms are extremely varied but
+the most numerous are those known to Adepts as the Tyranicus
+Omniphagea, more commonly known to Imperial forces as
+Rippers. Rippers have serpentine bodies, around half a metre
+long, that terminate in a broad head above a set of vestigial
+gripping claws. The head is split by a wide maw filled with
+rows of exceedingly sharp ripping hooks and razor-edged
+boney ridges. The Ripper’s powerful jaws can bite through
+flesh and bone with alarming ease, and they have been known
+to gnaw their way through plasteel to reach food.<br>
+Rippers are energetic and fearless organisms, quite capable
+of pulling down creatures many times their own size, from a
+rampaging Grox to an armed man. Huge swarms of Rippers
+are often seen on the battlefield, advancing behind Tyranid
+assault forces. These gorge themselves on the fallen, tearing
+apart the wounded and cannibalising the dead. It might appear
+that an armoured Space Marine would be safe from the attacks
+of individual Rippers, but en masse they can immobilise and
+drag down even the strongest Battle-Brother.<br>
+In certain instances, hive ships have been driven away
+from a world, leaving Tyranid ground forces isolated. Rippers
+appear to respond to such circumstances by burrowing below
+ground and metamorphosing into higher life forms. This has
+led many among the Magos Biologis to believe that Rippers
+are an immature form of the prime Tyrancii genus. This would
+mean they are theoretically capable of gestating into any kind
+of Tyranid creature with the right impetus from the Hive Mind,
+from Hive Tyrants to Hormagaunts. The wonder that Tyranids
+routinely produce and sacrifice their young so prodigiously
+serves only to reinforce how inhuman they truly are.",
 
 	"extraSubCategories" : 
 	[ 
-		["Skills", "Awareness (Per) +10, Climb (S)"],
-		["Talents", "Heightened Senses (Vision), Melee Weapon Training
-(Primitive), Thrown Weapon Training (Primitive)"],
-		["Traits", "Armour Plating, Dark Sight, Machine (5), Improved
-Natural Weapon (Implanted Tools), Size (hulking), Sturdy,
-Unnatural Strength (x2)"],
-		["Armor", "Reinforced structure and armor plate (All 7)"],
-		["Weapons", "Implanted machine tools, i.e. saws, drills, grinders and servo claws (1D10+12 R or I, Pen 4)"],
-		["Equipment", "Internal micro-bead (to relay data and receive instruction only), in-built respirator."]
+		["Skills", "Awareness (Per), Climb (S), Dodge (Ag), Silent Move
+(Ag), Swim (S), Tracking (Int) +10."],
+		["Talents", "Fearless, Heightened Senses (Smell)."],
+		["Traits", "Burrower (1), Crawler, Dark Sight, Improved Natural
+Weapons (Mandibles), Instinctive Behaviour (Feed), Natural
+Armour (Exoskeleton), Size (Puny), Tyranid."],
+		["Armor", "Exoskeleton (All 2, Horde 2)."],
+		["Weapons", "Mandibles (1d5+3 R; Pen 3)."],
+		["Equipment", "None."],
+		["Special Rules", "
+<b>Horde:</b> Rippers can be used as a Horde (see the Horde rules on
+page 359 of the Deathwatch Rulebook). While in a Horde,
+Rippers gain the Rampage, Relentless, and Overwhelming
+Traits, the Swift Attack Talent, and their attacks gain the
+Tearing quality. A Horde of Rippers has the Fear 1 (Disturbing)
+Trait. Alter the Size Trait as appropriate for Horde magnitude.
+<br><b>Biomorphs:</b> At the GM’s discretion, Rippers may be given
+any of the following Traits:<br>
+• Toxic (1d10)<br>
+• Flyer (3)<br>
+• Unnatural Toughness (x2)<br>
+<b>Spinespitter:</b> +30 BS and gain ranged weapon (Pistol;
+20m; –/3/–; 1d10+1 I; Pen 0; Clip —; Rld —; Living
+Ammunition).<br>
+<b>Tenacious Grappler:</b> Rippers drag down their prey by
+grappling with it so that others can latch on more easily.
+When attempting to grapple an opponent armed with a
+melee weapon, Rippers suffer a –10 to their WS instead of
+the normal –20."]
 	],
 	
 	"grid" :
 	[
-		["Wounds", "20"],
-		["Movement", "1/2/3/6"],
-		["Weapon Skill", "25"],
-		["Ballistic Skill", 10"],
-		["Strength",  "<sup>10</sup>50"],
-		["Toughness", "<sup>5</sup>50"],
-		["Agility", "15"],
+		["Wounds", "10"],
+		["Movement", "2/4/6/12"],
+		["Weapon Skill", "35"],
+		["Ballistic Skill", "-"],
+		["Strength",  "25"],
+		["Toughness", "30"],
+		["Agility", "40"],
 		["Intelligence", "10"],
-		["Perception", "20"],
+		["Perception", "30"],
 		["Will Power", "30"],
-		["Fellowship", "5"]
+		["Fellowship", "-"]
 	],
 	
 	"aka" : 
 	[
-		"Industrial Servitor",
-		"Mining Servitor"
+		"ripper",
+		""
 	]
 }
