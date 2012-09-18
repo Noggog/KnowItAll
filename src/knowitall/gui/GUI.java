@@ -59,18 +59,21 @@ public class GUI {
 	tooltip.load(a);
 	tooltip.setSize(mainPanel.getWidth() - 50);
 	Point mouse = MouseInfo.getPointerInfo().getLocation();
-	tooltip.setLocation(mouse.x - mainPanel.getLocationOnScreen().x, mouse.y);
+	tooltip.setLocation(mouse.x - mainPanel.getLocationOnScreen().x - tooltip.getWidth() / 2, mouse.y - mainPanel.getLocationOnScreen().y + 20);
 
 	// Bump tooltip on screen if it's off
 	SwingUtilities.invokeLater(new Runnable() {
-
 	    @Override
 	    public void run() {
 		if (tooltip.getY() + tooltip.getHeight() > mainPanel.getHeight()) {
 		    tooltip.setLocation(tooltip.getX(), MouseInfo.getPointerInfo().getLocation().y - tooltip.getHeight() - 65);
 		}
 		if (tooltip.getX() + tooltip.getWidth() > mainPanel.getWidth()) {
+		    // If too far right
 		    tooltip.setLocation(mainPanel.getWidth() - tooltip.getWidth() - 30, tooltip.getY());
+		} else if (tooltip.getX() < 0){
+		    // If too far left
+		    tooltip.setLocation(30, tooltip.getY());
 		}
 	    }
 	});
