@@ -10,11 +10,11 @@ import java.util.ArrayList;
  *
  * @author Justin Swanson
  */
-public class LinkableString {
+public class LinkString {
 
     ArrayList<LSObject> content = new ArrayList<>();
 
-    public LinkableString(String orig) {
+    public LinkString(String orig) {
 	content.add(new NonLink(orig));
     }
 
@@ -43,14 +43,16 @@ public class LinkableString {
     public class Link extends LSObject {
 
 	Article a;
+	String s;
 
-	Link(Article a) {
+	Link(Article a, String s) {
 	    this.a = a;
+	    this.s = s;
 	}
 
 	@Override
 	public String toString() {
-	    return a.getName();
+	    return ArticleHTML.linkTo(a, s);
 	}
     }
 
@@ -66,6 +68,10 @@ public class LinkableString {
 	    ArrayList<LSObject> out = new ArrayList<>();
 	    ArrayList<Integer> locations = getStringLocations(str, a.getName());
 	    for (Integer i : locations) {
+		if (a.getName().equals("Aim")) {
+		    int wer = 23;
+		}
+
 		// Make sure the string isn't a suffix of a different word
 		if (i != 0 && Character.isAlphabetic(str.charAt(i - 1))) {
 		    continue;
@@ -77,7 +83,7 @@ public class LinkableString {
 		}
 
 		// Link
-		out.add(new Link(a));
+		out.add(new Link(a, str.substring(i, i + a.getName().length())));
 
 		// Shave string
 		str = str.substring(i + a.getName().length());
@@ -109,5 +115,24 @@ public class LinkableString {
 	    index = contentUp.indexOf(in);
 	}
 	return locations;
+    }
+
+    @Override
+    public String toString() {
+	String out = "";
+	for (LSObject o : content) {
+	    out += o.toString();
+	}
+	return out;
+    }
+
+    public boolean contains(String in) {
+	String all = "";
+	for (LSObject o : content) {
+	    if (o instanceof NonLink) {
+		all += o.toString().toUpperCase();
+	    }
+	}
+	return all.contains(in.toUpperCase());
     }
 }

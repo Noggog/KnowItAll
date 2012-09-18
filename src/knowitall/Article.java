@@ -26,13 +26,12 @@ public class Article extends LSwingTreeNode implements Comparable {
     String html;
     String htmlShort;
     // Temporary
-    String content;
-    String shortContent;
-    ArrayList<String[]> subCategories = new ArrayList<>();
-    ArrayList<String[]> grid = new ArrayList<>();
+    LinkString content;
+    LinkString shortContent;
+    Map<String, LinkString> subCategories = new HashMap<>();
+    Map<String, LinkString> grid = new HashMap<>();
     int pageNumber;
     boolean blockLinking;
-    ArrayList<String> allContent = new ArrayList<>();
 
     Article(Category c) {
 	category = c;
@@ -58,13 +57,13 @@ public class Article extends LSwingTreeNode implements Comparable {
 		Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", error);
 		return false;
 	    }
-	    shortContent = spec.shortContent;
+	    shortContent = new LinkString(spec.shortContent);
 	    subCategories = getAttributes(spec.extraSubCategories);
 	    grid = getAttributes(spec.grid);
-	    content = spec.content;
+	    content = new LinkString(spec.content);
 	    pageNumber = spec.pageNumber;
 	    blockLinking = spec.blockLinking;
-	    reload();
+	    reloadHTML();
 	    return true;
 	} catch (FileNotFoundException ex) {
 	    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", "Skipped because its spec could not be found: " + specF);
@@ -72,22 +71,6 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", "Skipped because it had a badly formatted spec: " + specF);
 	}
 	return false;
-    }
-
-    public void reload() {
-	createAllContent();
-	reloadHTML();
-    }
-
-    public void createAllContent() {
-	allContent.add(shortContent);
-	allContent.add(content);
-	for (String[] s : grid) {
-	    allContent.add(s[1]);
-	}
-	for (String[] s : subCategories) {
-	    allContent.add(s[1]);
-	}
     }
 
     public String getName() {
@@ -100,26 +83,26 @@ public class Article extends LSwingTreeNode implements Comparable {
     }
 
     public String getContent() {
-	return content;
+	return content.toString();
     }
 
     public String getShort() {
-	return shortContent;
+	return shortContent.toString();
     }
 
-    public ArrayList<String[]> getSubcategories() {
+    public Map<String, LinkString> getSubcategories() {
 	return subCategories;
     }
 
-    public ArrayList<String[]> getGrid() {
+    public Map<String, LinkString> getGrid() {
 	return grid;
     }
 
-    ArrayList<String[]> getAttributes(String[][] strs) {
-	ArrayList<String[]> out = new ArrayList<>(strs.length);
+    Map<String, LinkString> getAttributes(String[][] strs) {
+	Map<String, LinkString> out = new HashMap<>(strs.length);
 	for (String[] sub : strs) {
 	    if (sub.length == 2) {
-		out.add(sub);
+		out.put(sub[0], new LinkString(sub[1]));
 	    }
 	}
 	return out;
@@ -150,7 +133,6 @@ public class Article extends LSwingTreeNode implements Comparable {
 	shortContent = null;
 	subCategories = null;
 	grid = null;
-	allContent = null;
     }
 
     public Set<Article> getLinks() {
@@ -159,18 +141,11 @@ public class Article extends LSwingTreeNode implements Comparable {
 
     public void linkTo(Article a) {
 	if (!equals(a) && !a.blockLinking && contentContains(a.getName())) {
-//	    if (a.getName().equalsIgnoreCase("Lord of Change") || getName().equalsIgnoreCase("Lord of Change")) {
-//		int wer = 23;
-//	    }
 	    linked.add(a);
 	}
     }
 
-    public void linkText() {
-//	if (getName().equalsIgnoreCase("Lord of change")) {
-//	    int wer = 23;
-//	}
-
+    public void createLinks() {
 	// Sort articles from longest to shortest
 	LMergeMap<Integer, Article> lengthSort = new LMergeMap<>(false, true);
 	for (Article a : linked) {
@@ -178,7 +153,9 @@ public class Article extends LSwingTreeNode implements Comparable {
 	}
 
 	for (Article a : lengthSort.valuesFlat()) {
-	    linkStrings(a.getName());
+	    for (LinkString s : allLinkable()) {
+		s.addLink(a);
+	    }
 	}
 	reloadHTML();
     }
@@ -188,46 +165,27 @@ public class Article extends LSwingTreeNode implements Comparable {
 	htmlShort = ArticleHTML.load(this, false);
     }
 
-    public void linkStrings(String in) {
-	content = linkStringHTML(content, in);
-	shortContent = linkStringHTML(shortContent, in);
-	for (String[] s : subCategories) {
-	    s[1] = linkStringHTML(s[1], in);
-	}
-	for (String[] s : grid) {
-	    s[1] = linkStringHTML(s[1], in);
-	}
-    }
-
-    public String linkStringHTML(String content, String in) {
-	ArrayList<Integer> locations = getStringLocations(content, in);
-	int index;
-	for (int i = locations.size() - 1; i >= 0; i--) {
-	    index = locations.get(i);
-	    content = content.substring(0, index)
-		    + ArticleHTML.linkTo(in)
-		    + content.substring(index, index + in.length())
-		    + "</a>"
-		    + content.substring(index + in.length(), content.length());
-	}
-	return content;
-    }
-
     public boolean contentContains(String in) {
-	for (String s : allContent) {
-	    if (!getStringLocations(s, in).isEmpty()) {
+	for (LinkString s : allLinkable()) {
+	    if (s.contains(in)) {
 		return true;
 	    }
 	}
 	return false;
     }
 
+    public ArrayList<LinkString> allLinkable() {
+	ArrayList<LinkString> out = new ArrayList<>();
+	out.add(content);
+	out.add(shortContent);
+	out.addAll(subCategories.values());
+	out.addAll(grid.values());
+	return out;
+    }
+
     public ArrayList<Integer> getStringLocations(String content, String in) {
 	in = in.toUpperCase();
 	String contentUp = content.toUpperCase();
-//	if (in.equals("CHARGE") && getName().equalsIgnoreCase("TRYGON")) {
-//	    int wer = 23;
-//	}
 
 	ArrayList<Integer> locations = new ArrayList<>();
 	int pos = 0;
@@ -245,12 +203,6 @@ public class Article extends LSwingTreeNode implements Comparable {
     }
 
     public static void link(Article a, Article b) {
-//	String f = "Lord of Change";
-//	String s = "Combat Master";
-//	if ((a.getName().equalsIgnoreCase(f) || b.getName().equalsIgnoreCase(f))
-//		&& (a.getName().equalsIgnoreCase(s) || b.getName().equalsIgnoreCase(s))) {
-//	    int wer = 23;
-//	}
 	a.linkTo(b);
 	b.linkTo(a);
     }

@@ -58,7 +58,12 @@ public class Database {
 
     public static void doneLoading() {
 	for (Article a : articles.values()) {
-	    a.linkText();
+	    try {
+		a.createLinks();
+	    } catch (Exception e) {
+		Debug.log.logError("Database Create Links", "Error creating links for " + a);
+		Debug.log.logException(e);
+	    }
 	    a.clean();
 	}
 	printArticles();
@@ -140,9 +145,14 @@ public class Database {
 		    for (File f : categoryDir.listFiles()) {
 			if (f.isFile()
 				&& Ln.isFileType(f, "JSON")) {
-			    Article a = new Article(curCategory);
-			    if (a.load(f)) {
-				publishArticle(curCategory, a);
+			    try {
+				Article a = new Article(curCategory);
+				if (a.load(f)) {
+				    publishArticle(curCategory, a);
+				}
+			    } catch (Exception e) {
+				Debug.log.logError("Load Article", "Error loading " + f);
+				Debug.log.logException(e);
 			    }
 			} else if (f.isDirectory()) {
 			    loadCategoryFolder(curCategory, f);
@@ -152,6 +162,7 @@ public class Database {
 		    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Category", "Blocked because it didn't have a matching category index: " + categoryDir);
 		}
 	    } catch (Exception e) {
+		Debug.log.logError("Load Category Folder", "Error loading " + categoryDir);
 		Debug.log.logException(e);
 	    }
 	}
