@@ -1,17 +1,21 @@
 {
 	
-	"content" : "As a Half Action, the Hive Tyrant
-may send out a signal from the Hive Mind that infuses lesser
-Tyranid creatures with an unnatural vitality. This power may
-be used on a single Tyranid Horde within 75 metres: until
-the beginning of the Hive Tyrant's next turn, the Horde gains
-10+1d10 Magnitude.",
+	"content" : "As a Half Action, the
+Hive Tyrant may let forth a terrible silent scream that echoes
+in the mind as a crippling shriek. All those sentient, living
+creatures (not soulless machines or daemons) within 20
+metres suffer a hit that deals 1d10+8 Impact Damage to their
+head with the Shocking quality (see page Weapon Special
+Qualities on page 142 in Chapter V: Armoury). The victims
+suffers a –30 penalty to their Toughness Test to resist Stunning.
+If the Toughness Test is failed, the victim is stunned for 1d5
+rounds.",
 
 	"extraSubCategories" : 
 	[ 
 		["Action", "Half Action"],
 		["Opposed", "No"],
-		["Range", "75 meters"],
+		["Range", "20 meters"],
 		["Sustained", "No"]
 	]
 }

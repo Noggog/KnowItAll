@@ -1,17 +1,22 @@
 {
 	
-	"content" : "As a Half Action, the Hive Tyrant
-may send out a signal from the Hive Mind that infuses lesser
-Tyranid creatures with an unnatural vitality. This power may
-be used on a single Tyranid Horde within 75 metres: until
-the beginning of the Hive Tyrant's next turn, the Horde gains
-10+1d10 Magnitude.",
+	"content" : "Summoning the power of the Hive Mind, the
+creature assails its foes with crippling pain, tearing at their nerve
+endings and filling their minds with agony that makes it difficult
+for them to stand let alone fight. The Tyranid creature chooses
+a number of foes within range equal to its Psy Rating (or a
+single Horde of any Magnitude). Those that fail their Opposed
+Test reduce both their Weapon Skill and Ballistic Skill to 10
+while they remain affected by the power. The pain is also quite
+distracting when trying to concentrate and therefore targets under
+the effects of Paroxysm suffer a –10 to all Intelligence, Perception,
+Willpower and Fellowship Characteristic and Skill Tests.",
 
 	"extraSubCategories" : 
 	[ 
 		["Action", "Half Action"],
-		["Opposed", "No"],
-		["Range", "75 meters"],
-		["Sustained", "No"]
+		["Opposed", "Yes"],
+		["Range", "25 meters x PR"],
+		["Sustained", "Yes"]
 	]
 }

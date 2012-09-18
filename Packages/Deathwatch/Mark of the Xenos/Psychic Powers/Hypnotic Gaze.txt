@@ -1,17 +1,20 @@
 {
 	
-	"content" : "As a Half Action, the Hive Tyrant
-may send out a signal from the Hive Mind that infuses lesser
-Tyranid creatures with an unnatural vitality. This power may
-be used on a single Tyranid Horde within 75 metres: until
-the beginning of the Hive Tyrant's next turn, the Horde gains
-10+1d10 Magnitude.",
+	"content" : "The Broodlord can use its powerful gaze to
+snare the mind of a nearby warrior, holding it immobile and
+helpless as long as its stare remains unbroken. The Broodlord
+can affect a single enemy with this power, provided it can make
+eye contact with its intended target. If the target succumbs to
+the power, it is then held immobile (counts as being Helpless)
+until it can break free by winning an Opposed Willpower
+Test at the start of any of its turns, or the Broodlord’s gaze is
+somehow broken.",
 
 	"extraSubCategories" : 
 	[ 
 		["Action", "Half Action"],
-		["Opposed", "No"],
-		["Range", "75 meters"],
-		["Sustained", "No"]
+		["Opposed", "Yes"],
+		["Range", "10 meters"],
+		["Sustained", "Yes"]
 	]
 }

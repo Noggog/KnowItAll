@@ -1,11 +1,14 @@
 {
 	
-	"content" : "As a Half Action, the Hive Tyrant
-may send out a signal from the Hive Mind that infuses lesser
-Tyranid creatures with an unnatural vitality. This power may
-be used on a single Tyranid Horde within 75 metres: until
-the beginning of the Hive Tyrant's next turn, the Horde gains
-10+1d10 Magnitude.",
+	"content" : "As a Half Action, the Hive
+Tyrant may unleash a wave of horror that gnaws at the resolve of
+its enemies. This power may be used to target a Kill-team within
+75 metres. Each member of the Kill-team within the range of this
+power must take a Willpower test with a –30 modifier. The Killteam
+takes one point of cohesion damage per member that fails
+this test. All other non-Tyranid (and non-Space Marine) NPC’s
+within range of the Hive Tyrant must pass a fear-based Willpower
+Test with a –30 modifier or flee in panic.",
 
 	"extraSubCategories" : 
 	[ 

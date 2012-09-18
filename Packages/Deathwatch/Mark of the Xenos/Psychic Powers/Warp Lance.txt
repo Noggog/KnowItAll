@@ -1,17 +1,20 @@
 {
 	
-	"content" : "As a Half Action, the Hive Tyrant
-may send out a signal from the Hive Mind that infuses lesser
-Tyranid creatures with an unnatural vitality. This power may
-be used on a single Tyranid Horde within 75 metres: until
-the beginning of the Hive Tyrant's next turn, the Horde gains
-10+1d10 Magnitude.",
+	"content" : "More focused than a Warp Blast, the Warp
+Lance is primarily used against heavily armoured targets
+and vehicles. Taking the form of a single concentrated
+beam of energy, it can strike a single target within range.
+The Zoanthrope does not need to hit with the Warp Lance,
+though its Focus Power Test is modified as if it were making
+a ranged attack at the target, taking into account such things
+as range and concealment. Warp Lance inflicts 2d10 Energy
+Damage x PR, with a Penetration of 5 x PR.",
 
 	"extraSubCategories" : 
 	[ 
 		["Action", "Half Action"],
 		["Opposed", "No"],
-		["Range", "75 meters"],
+		["Range", "30 meters x PR"],
 		["Sustained", "No"]
 	]
 }

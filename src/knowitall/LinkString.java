@@ -67,13 +67,14 @@ public class LinkString {
 	public ArrayList<LSObject> link(Article a) {
 	    ArrayList<LSObject> out = new ArrayList<>();
 	    ArrayList<Integer> locations = getStringLocations(str, a.getName());
+	    int offset = 0;
 	    for (Integer i : locations) {
-		if (a.getName().equals("Aim")) {
-		    int wer = 23;
-		}
+
+		i += offset;
 
 		// Make sure the string isn't a suffix of a different word
 		if (i != 0 && Character.isAlphabetic(str.charAt(i - 1))) {
+		    offset += i + a.getName().length();
 		    continue;
 		}
 

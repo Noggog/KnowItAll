@@ -1,7 +1,7 @@
 {
 	"name" : "Aim",
 	
-	"shortContent" : "+10/+20 BS on next attack.  Other (re)actions break aim.",
+	"shortContent" : "+10/+20 BS on next attack.  Doing other (re)actions before attacking will break aim.",
 	
 	"content" : "The active character patiently takes extra time to make a more
 precise attack. Aiming as a Half Action grants a +10 bonus

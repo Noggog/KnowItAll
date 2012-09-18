@@ -1,17 +1,20 @@
 {
 	
-	"content" : "As a Half Action, the Hive Tyrant
-may send out a signal from the Hive Mind that infuses lesser
-Tyranid creatures with an unnatural vitality. This power may
-be used on a single Tyranid Horde within 75 metres: until
-the beginning of the Hive Tyrant's next turn, the Horde gains
-10+1d10 Magnitude.",
+	"content" : "The Tyranid creature reaches into the depths
+of the Hive Mind and strengthens its links to the indomitable
+alien will, projecting a blanket of control and purpose
+through its synapse to all Tyranid bio-forms nearby. While
+this power is in effect, the Tyranid creature’s Synapse range
+(see Deathwatch page 135) is doubled. In addition, the
+hardened resolve of the Hive Mind gives both the creature
+and all other creatures with the Tyranid Trait affected by the
+power +10 to all Willpower test for its duration.",
 
 	"extraSubCategories" : 
 	[ 
 		["Action", "Half Action"],
 		["Opposed", "No"],
-		["Range", "75 meters"],
-		["Sustained", "No"]
+		["Range", "Special"],
+		["Sustained", "Yes"]
 	]
 }

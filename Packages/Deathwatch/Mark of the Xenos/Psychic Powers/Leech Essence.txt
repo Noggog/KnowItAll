@@ -1,17 +1,23 @@
 {
 	
-	"content" : "As a Half Action, the Hive Tyrant
-may send out a signal from the Hive Mind that infuses lesser
-Tyranid creatures with an unnatural vitality. This power may
-be used on a single Tyranid Horde within 75 metres: until
-the beginning of the Hive Tyrant's next turn, the Horde gains
-10+1d10 Magnitude.",
+	"content" : "Using the raw power of the Hive Mind,
+the Tyranid creature tears the life-force from a nearby foe,
+devouring its essence and healing its own wounds. The target (which may be a Horde) suffers 1d5 damage (or Magnitude),
+plus an additional 1d5 damage for each degree it fails the
+Opposed Test, not reduced for either armour or Toughness.
+The Tyranid creature is then immediately healed by an
+amount equal to the damage inflicted, up to its total number
+of starting wounds. When working out the effects of Leech
+Essence, the GM should calculate each 1d5 damage roll
+separately, because if the target dies (or burns a Fate Point)
+before all the damage is applied, no further wounds can be
+drained from their desiccated corpse.",
 
 	"extraSubCategories" : 
 	[ 
 		["Action", "Half Action"],
-		["Opposed", "No"],
-		["Range", "75 meters"],
+		["Opposed", "Yes"],
+		["Range", "10 meters x PR"],
 		["Sustained", "No"]
 	]
 }

@@ -1,17 +1,21 @@
 {
 	
-	"content" : "As a Half Action, the Hive Tyrant
-may send out a signal from the Hive Mind that infuses lesser
-Tyranid creatures with an unnatural vitality. This power may
-be used on a single Tyranid Horde within 75 metres: until
-the beginning of the Hive Tyrant's next turn, the Horde gains
-10+1d10 Magnitude.",
+	"content" : "By sending out a burning bolt of warp energy,
+the Zoanthrope blasts an area with power. The Zoanthrope
+must choose a single creature within range as the target,
+through others nearby may be affected. The Zoanthrope
+does not need to hit with the Warp Blast, though its Focus
+Power Test is modified as if it were making a ranged attack
+at the target, taking into account such things as range and
+concealment. Warp Blast inflicts 1d10 Energy Damage x PR,
+with a Penetration of 2 x PR. Creatures within 1m x PR of
+the target are also affected and suffer damage as well.",
 
 	"extraSubCategories" : 
 	[ 
 		["Action", "Half Action"],
 		["Opposed", "No"],
-		["Range", "75 meters"],
+		["Range", "50 meters x PR"],
 		["Sustained", "No"]
 	]
 }

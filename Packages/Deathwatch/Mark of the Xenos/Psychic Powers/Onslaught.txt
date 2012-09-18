@@ -1,17 +1,19 @@
 {
 	
-	"content" : "As a Half Action, the Hive Tyrant
-may send out a signal from the Hive Mind that infuses lesser
-Tyranid creatures with an unnatural vitality. This power may
-be used on a single Tyranid Horde within 75 metres: until
-the beginning of the Hive Tyrant's next turn, the Horde gains
-10+1d10 Magnitude.",
+	"content" : "The Tyranid creature infuses a nearby brood
+with burning energy and the pitiless drive of the Hive Mind
+to devour all in its path. The creature chooses a single Master,
+Elite or Troop Horde within range, allowing it to either make
+a Full Move, Standard Attack (Ranged or Melee), or Charge
+Action as a Free Action once per Round. The warrior or
+brood continues to benefit from the effects of this power as
+long as the creature sustains it and they remain in range.",
 
 	"extraSubCategories" : 
 	[ 
 		["Action", "Half Action"],
 		["Opposed", "No"],
-		["Range", "75 meters"],
-		["Sustained", "No"]
+		["Range", "25 meters x PR"],
+		["Sustained", "Yes"]
 	]
 }
