@@ -7,6 +7,7 @@ package knowitall.gui;
 import java.awt.MouseInfo;
 import java.awt.Point;
 import java.util.Collection;
+import javax.swing.JProgressBar;
 import javax.swing.SwingUtilities;
 import knowitall.Article;
 import knowitall.Database;
@@ -27,6 +28,7 @@ public class GUI {
     static BackTabManager backTabManager;
     static ArticleTooltip tooltip;
     static LSwingTree tree;
+    static JProgressBar progress;
 
     public static void displayArticles(boolean on) {
 	if (contentPanel != null) {
@@ -109,8 +111,8 @@ public class GUI {
 	    public void run() {
 		search.setFocusable(true);
 		search.requestFocus();
-		dimmer.setVisible(false);
 		tooltip.setVisible(false);
+		dimmer.setVisible(false);
 	    }
 	});
     }
@@ -126,5 +128,45 @@ public class GUI {
 
     public static void finalizeArticles(Collection<Article> articles) {
 	search.suggestions(articles);
+    }
+
+    public static void loaded() {
+	GUI.regenerateTree();
+	GUI.updateContentDisplay();
+	mainPanel.setVisible(true);
+	hideProgress();
+    }
+
+    public static void hideProgress() {
+	mainPanel.setVisible(true);
+	progress.setVisible(false);
+	dimmer.setVisible(false);
+    }
+
+    public static void showProgress() {
+	mainPanel.setVisible(false);
+	progress.setVisible(true);
+	dimmer.setVisible(true);
+    }
+
+    public static void setProgressMax(final int max) {
+	SwingUtilities.invokeLater(new Runnable() {
+
+	    @Override
+	    public void run() {
+		progress.setValue(0);
+		progress.setMaximum(max);
+	    }
+	});
+    }
+
+    public static void incrementProgress() {
+	SwingUtilities.invokeLater(new Runnable() {
+
+	    @Override
+	    public void run() {
+		progress.setValue(progress.getValue() + 1);
+	    }
+	});
     }
 }

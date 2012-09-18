@@ -14,7 +14,6 @@ import javax.swing.WindowConstants;
 import knowitall.KIASave.Settings;
 import knowitall.gui.GUI;
 import knowitall.gui.MainFrame;
-import skyproc.SPGlobal;
 
 /**
  *

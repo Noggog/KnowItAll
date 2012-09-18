@@ -20,7 +20,7 @@ public class Dimmer extends LPanel {
 	setOpaque(true);
 	setBackground(Color.BLACK);
 	setSize(5000,5000);
-	setVisible(false);
+	super.setVisible(false);
     }
 
     @Override
@@ -29,5 +29,10 @@ public class Dimmer extends LPanel {
 	g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.5f));
 	super.paint(g2);
 	g2.dispose();
+    }
+    
+    @Override
+    public void setVisible(boolean on) {
+	super.setVisible(GUI.topPanel.isActive());
     }
 }

@@ -20,7 +20,7 @@ public class BackTab extends LPanel {
 
     static public int height = 30;
     static public int margin = 15;
-    static Color active = Color.LIGHT_GRAY;
+    static Color active = Color.WHITE;
     static Color disabled = Color.GRAY;
     LLabel title;
     Article a;

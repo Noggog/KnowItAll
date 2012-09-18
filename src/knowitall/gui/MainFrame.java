@@ -35,6 +35,7 @@ public class MainFrame extends LFrame {
 	background.setImage(KnowItAll.internalFiles + "background.jpg");
 	GUI.mainPanel = new MainPanel();
 	mainPanel = GUI.mainPanel;
+	mainPanel.setVisible(false);
 	add(mainPanel, 0);
 
 	GUI.dimmer = new Dimmer();

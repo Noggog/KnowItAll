@@ -4,6 +4,8 @@
  */
 package knowitall.gui;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.util.ArrayList;
@@ -37,7 +39,7 @@ public class SearchBar extends JAutoTextField {
 	    @Override
 	    public void caretUpdate(CaretEvent arg0) {
 		if (caretListener == 0) {
-		    updateContent();
+		    updateContent(false);
 		}
 	    }
 	});
@@ -49,9 +51,14 @@ public class SearchBar extends JAutoTextField {
 
 	    @Override
 	    public void focusLost(FocusEvent arg0) {
-		setCaretPosition(getText().length());
-		updateContent();
-		transferFocusUpCycle();
+		updateContent(true);
+	    }
+	});
+	addActionListener(new ActionListener() {
+
+	    @Override
+	    public void actionPerformed(ActionEvent arg0) {
+		updateContent(true);
 	    }
 	});
 	setSize(5, 30);
@@ -64,11 +71,20 @@ public class SearchBar extends JAutoTextField {
 	caretListener--;
     }
 
-    void updateContent() {
+    void updateContent(boolean all) {
 	if (!fireSearches) {
 	    return;
 	}
-	String s = getTypedString().toUpperCase();
+	String s;
+	if (all) {
+	    s = getText().toUpperCase();
+	    caretListener++;
+	    setCaretPosition(s.length());
+	    caretListener--;
+	} else {
+	    s = getTypedString().toUpperCase();
+	}
+
 	if (Database.hasArticle(s)) {
 	    GUI.setArticle(Database.getArticle(s));
 	}
@@ -109,7 +125,7 @@ public class SearchBar extends JAutoTextField {
 	public void insertString(int i, String s, AttributeSet attributeset) throws BadLocationException {
 	    caretListener++;
 	    super.insertString(i, s, attributeset);
-	    updateContent();
+	    updateContent(false);
 	    caretListener--;
 	}
 
@@ -117,7 +133,7 @@ public class SearchBar extends JAutoTextField {
 	public void remove(int i, int j) throws BadLocationException {
 	    caretListener++;
 	    super.remove(i, j);
-	    updateContent();
+	    updateContent(false);
 	    caretListener--;
 	}
     }

@@ -5,6 +5,7 @@
 package knowitall;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
 import javax.swing.SwingWorker;
@@ -48,6 +49,7 @@ public class Database {
     }
 
     public static void loadLooseFiles(Runnable run) {
+	GUI.showProgress();
 	LooseFileLoader load = new LooseFileLoader(run);
 	load.execute();
     }
@@ -68,8 +70,7 @@ public class Database {
 	}
 	GUI.finalizeArticles(articles.values());
 	printArticles();
-	GUI.regenerateTree();
-	GUI.updateContentDisplay();
+	GUI.loaded();
 	int wer = 23;
     }
 
@@ -96,6 +97,11 @@ public class Database {
 	protected Integer doInBackground() throws Exception {
 	    File seeds = new File(packages);
 	    for (File packageF : seeds.listFiles()) {
+		// Set up progress
+		ArrayList<File> files = Ln.generateFileList(packageF, false);
+		GUI.setProgressMax(files.size());
+		
+		// Start importing
 		articleTree = new CategoryIndex(packageF.getName());
 		File categoryIndices = new File(packageF.getPath() + "/" + categoryIndexPath);
 		if (categoryIndices.isDirectory()) {
@@ -123,6 +129,7 @@ public class Database {
 	    for (File f : dir.listFiles()) {
 		if (f.isDirectory()) {
 		    CategoryIndex cat = new CategoryIndex(f);
+		    GUI.incrementProgress();
 		    if (!categoryIndex.containsKey(cat.getName().toUpperCase())) {
 			cat.inherit(parent);
 			parent.add(cat);
@@ -155,6 +162,7 @@ public class Database {
 				Debug.log.logError("Load Article", "Error loading " + f);
 				Debug.log.logException(e);
 			    }
+			    GUI.incrementProgress();
 			} else if (f.isDirectory()) {
 			    loadCategoryFolder(curCategory, f);
 			}
