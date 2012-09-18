@@ -1,6 +1,6 @@
 {
 	
-	"shortContent" : "Spend fate point pre-mission.  Willpower test to negate psychic, daemonic, or warp-based power's affect on himself.  Powers will still affect others.",
+	"shortContent" : "+10 bonus to all Fellowship Tests when interacting with chosen group.",
 	
 	"content" : "The character knows how to deal with a particular social
 group or organisation. He gains a +10 bonus to all Fellowship
@@ -23,5 +23,8 @@ Rogue Trader, Schola Progenium, Scholastica Psykana",
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 124
+	"pageNumber" : 124,
+	
+	"blockLinking" : true
+	
 }

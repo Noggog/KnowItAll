@@ -1,6 +1,4 @@
 {
-	
-	
 	"shortContent" : "When fighting opponents of
 that group in close combat, the character gains a +10 bonus
 to all Weapon Skill Tests made against them.",
@@ -8,16 +6,13 @@ to all Weapon Skill Tests made against them.",
 	"content" : "A group, organisation, or race has wronged the character in
 the past, fuelling this animosity. When fighting opponents of
 that group in close combat, the character gains a +10 bonus
-to all Weapon Skill Tests made against them.
-<br>
-<br>
-<b>Talent Groups:</b>Chaos Space Marines, Daemons, Mutants,
-Psykers, Xenos (specific), other
-",
+to all Weapon Skill Tests made against them.",
 
 	"extraSubCategories" : 
 	[ 
 		["Prerequisites", ""]
+		["Talent Groups", "Chaos Space Marines, Daemons, Mutants,
+Psykers, Xenos (specific), other"]
 	],
 	
 	"GMOnly" : false,

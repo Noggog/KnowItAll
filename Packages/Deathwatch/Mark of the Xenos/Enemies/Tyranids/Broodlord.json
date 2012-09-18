@@ -15,48 +15,19 @@ presence and infecting more and more of the population until
 the time to strike arrives, usually coinciding with the arrival
 of the hive fleet and the wholesale invasion and consumption
 of the world itself.<br>
-Few Tyranid creatures have earned such a terrible
-reputation or caused as much damage to the Imperium as the
-Genestealer. Detected long before the first tendrils of the hive
-fleets reached the galaxy, they were thought to be little more
-than another unusual and deadly alien xeno-form. It was
-only after the horrors of Behemoth and Leviathan that the
-Imperium came to realise their true purpose as advanced
-scouts for the Hive Mind and infiltrators of the most insidious
-kind. Hiding away on void ships and in the depths of space
-hulks, the Genestealer menace has travelled across the length
-and breadth of the Imperium of Man, seeding themselves
-onto worlds and subverting their populations. This perhaps is
-the greatest horror the Genestealers bring, as they can infect
-almost any life form with a “kiss,” implanting some of their
-own genetic material into the host and taking complete control
-of it. When the host gives birth to offspring, these carry with
-them the Genestealer's genes and over a few generations a
-new Genestealer is born, albeit with some genetic traits
-taken from its host—such as the human-like hands many
-Genestealers encountered in the Imperium possess.<br>
-Purestrain Genestealers are Genestealers which have been
-spawned not through the process of infecting hosts but
-rather by the hive ships themselves in great bio-factories and
-birthing vats. Not polluted or altered by “inferior” genetic
-material, they are markedly stronger and faster than a normal
-Genestealer and possess a wider variety of adaptive biomorphs.
-This is intentional, as Purestrain Genestealers are
-the creatures from which all other Genestealers are born, and
-even a single Purestrain Genestealer can create a vast brood
-from a local population given time and enough raw material.",
+Genestealer broods are often led by ancient and powerful
+Genestealers know as Broodlords.",
 
 	"extraSubCategories" : 
 	[ 
 		["Skills", "Awareness (Per) +10, Climb (S) +10, Dodge (Ag)
 +10, Swim (S) +10."],
 		["Talents", "Ambidextrous, Fearless, Hard Target, Leap Up,
-Lightning Attack, Lightning Reflexes, Step Aside, Swift Attack."],
+Lightning Attack, Lightning Reflexes, Step Aside, Swift Attack, Psy Rating 5."],
 		["Traits", "Dark Sight, Fear 2 (Frightening), Improved Natural
-Weapons (Rending Claws), Multiple Arms, Natural Armour
-(Reinforced Chitin), Unnatural Agility (x2), Unnatural Speed,
+Weapons (Rending Claws), Multiple Arms, Natural Armour (Hardened Carapace), Unnatural Agility (x2), Unnatural Speed,
 Unnatural Strength (x2), Unnatural Toughness (x2), Tyranid."],
-		["Armor", "Reinforced Chitin (All 4)"],
+		["Armor", "Hardened Carapace (All 6)"],
 		["Weapons", "Rending Claws (1d10+12 R; Pen 5, Razor Sharp)"],
 		["Equipment", "Internal micro-bead (to relay data and receive instruction only), in-built respirator."]
 		["Special Rules", "<b>Biomorphs:</b> At the GM's discretion, a Purestrain Genstealer
@@ -81,27 +52,30 @@ the host become beholden to the Genestealer which infected
 it and loves the hybrid offspring it carries as if it was its own
 progeny. Special Deathwatch treatments and a Space Marine's
 own physiology ensure that Deathwatch Space Marines are
-immune to this effect."]
+immune to this effect.<br>
+<b>Tyranid Psyker:</b> Broodlords are also psykers with a Psy Rating of 5 and access
+to the Tyranid Psychic Powers (select two). In addition, they have
+their own unique psychic power: Hypnotic Gaze"]
 	],
 	
 	"grid" :
 	[
-		["Wounds", "20"],
+		["Wounds", "50"],
 		["Movement", "8/16/24/48"],
-		["Weapon Skill", "65"],
+		["Weapon Skill", "75"],
 		["Ballistic Skill", -"],
-		["Strength",  "<sup>8</sup>45"],
-		["Toughness", "<sup>8</sup>40"],
-		["Agility", "<sup>8</sup>40"],
-		["Intelligence", "35"],
+		["Strength",  "<sup>12</sup>45"],
+		["Toughness", "<sup>12</sup>40"],
+		["Agility", "<sup>10</sup>50"],
+		["Intelligence", "45"],
 		["Perception", "60"],
-		["Will Power", "45"],
+		["Will Power", "55"],
 		["Fellowship", "-"]
 	],
 	
 	"aka" : 
 	[
-		"Genestealer",
+		"",
 		""
 	]
 }

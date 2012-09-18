@@ -9,6 +9,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.*;
 import knowitall.Debug.Logs;
+import lev.LMergeMap;
 import lev.Ln;
 import lev.gui.LSwingTreeNode;
 
@@ -31,7 +32,7 @@ public class Article extends LSwingTreeNode implements Comparable {
     ArrayList<String[]> grid = new ArrayList<>();
     int pageNumber;
     boolean blockLinking;
-    Set<String> words = new TreeSet<>();
+    ArrayList<String> allContent = new ArrayList<>();
 
     Article(Category c) {
 	category = c;
@@ -57,13 +58,13 @@ public class Article extends LSwingTreeNode implements Comparable {
 		Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", error);
 		return false;
 	    }
-	    words = spec.getWords();
 	    shortContent = spec.shortContent;
 	    subCategories = getAttributes(spec.extraSubCategories);
 	    grid = getAttributes(spec.grid);
 	    content = spec.content;
 	    pageNumber = spec.pageNumber;
 	    blockLinking = spec.blockLinking;
+	    createAllContent();
 	    reloadHTML();
 	    return true;
 	} catch (FileNotFoundException ex) {
@@ -72,6 +73,17 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", "Skipped because it had a badly formatted spec: " + specF);
 	}
 	return false;
+    }
+
+    public void createAllContent() {
+	allContent.add(shortContent);
+	allContent.add(content);
+	for (String[] s : grid) {
+	    allContent.add(s[1]);
+	}
+	for (String[] s : subCategories) {
+	    allContent.add(s[1]);
+	}
     }
 
     public String getName() {
@@ -130,11 +142,11 @@ public class Article extends LSwingTreeNode implements Comparable {
     }
 
     public void clean() {
-	words = null;
 	content = null;
 	shortContent = null;
 	subCategories = null;
 	grid = null;
+	allContent = null;
     }
 
     public Set<Article> getLinks() {
@@ -142,18 +154,25 @@ public class Article extends LSwingTreeNode implements Comparable {
     }
 
     public void linkTo(Article a) {
-	if (!equals(a) && words.contains(a.getName().toUpperCase()) && !a.blockLinking) {
+	if (!equals(a) && !a.blockLinking && contentContains(a.getName())) {
+//	    if (a.getName().equalsIgnoreCase("Lord of Change") || getName().equalsIgnoreCase("Lord of Change")) {
+//		int wer = 23;
+//	    }
 	    linked.add(a);
 	}
     }
 
     public void linkText() {
-	Map<Integer, Article> lengthSort = new TreeMap<>();
+//	if (getName().equalsIgnoreCase("Lord of change")) {
+//	    int wer = 23;
+//	}
+
+	LMergeMap<Integer, Article> lengthSort = new LMergeMap<>(false, true);
 	for (Article a : linked) {
-	    lengthSort.put(a.getName().length(), a);
+	    lengthSort.put(Integer.MAX_VALUE - a.getName().length(), a);
 	}
 
-	for (Article a : lengthSort.values()) {
+	for (Article a : lengthSort.valuesFlat()) {
 	    linkStrings(a.getName());
 	}
 	reloadHTML();
@@ -165,17 +184,40 @@ public class Article extends LSwingTreeNode implements Comparable {
     }
 
     public void linkStrings(String in) {
-	content = linkString(content, in);
-	shortContent = linkString(shortContent, in);
+	content = linkStringHTML(content, in);
+	shortContent = linkStringHTML(shortContent, in);
 	for (String[] s : subCategories) {
-	    s[1] = linkString(s[1], in);
+	    s[1] = linkStringHTML(s[1], in);
 	}
 	for (String[] s : grid) {
-	    s[1] = linkString(s[1], in);
+	    s[1] = linkStringHTML(s[1], in);
 	}
     }
 
-    public String linkString(String content, String in) {
+    public String linkStringHTML(String content, String in) {
+	ArrayList<Integer> locations = getStringLocations(content, in);
+	int index;
+	for (int i = locations.size() - 1; i >= 0; i--) {
+	    index = locations.get(i);
+	    content = content.substring(0, index)
+		    + ArticleHTML.linkTo(in)
+		    + content.substring(index, index + in.length())
+		    + "</a>"
+		    + content.substring(index + in.length(), content.length());
+	}
+	return content;
+    }
+
+    public boolean contentContains(String in) {
+	for (String s : allContent) {
+	    if (!getStringLocations(s, in).isEmpty()) {
+		return true;
+	    }
+	}
+	return false;
+    }
+
+    public static ArrayList<Integer> getStringLocations(String content, String in) {
 	in = in.toUpperCase();
 	String contentUp = content.toUpperCase();
 
@@ -188,20 +230,16 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    contentUp = contentUp.substring(index + in.length());
 	    index = contentUp.indexOf(in);
 	}
-
-	for (int i = locations.size() - 1; i >= 0; i--) {
-	    index = locations.get(i);
-	    content = content.substring(0, index)
-		    + ArticleHTML.linkTo(in)
-		    + content.substring(index, index + in.length())
-		    + "</a>"
-		    + content.substring(index + in.length(), content.length());
-	}
-
-	return content;
+	return locations;
     }
 
     public static void link(Article a, Article b) {
+//	String f = "Lord of Change";
+//	String s = "Combat Master";
+//	if ((a.getName().equalsIgnoreCase(f) || b.getName().equalsIgnoreCase(f))
+//		&& (a.getName().equalsIgnoreCase(s) || b.getName().equalsIgnoreCase(s))) {
+//	    int wer = 23;
+//	}
 	a.linkTo(b);
 	b.linkTo(a);
     }
