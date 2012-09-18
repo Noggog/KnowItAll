@@ -144,7 +144,7 @@ public class Database {
 		    node.add(curCategory);
 		    for (File f : categoryDir.listFiles()) {
 			if (f.isFile()
-				&& Ln.isFileType(f, "JSON")) {
+				&& (Ln.isFileType(f, "JSON") || Ln.isFileType(f, "TXT"))) {
 			    try {
 				Article a = new Article(curCategory);
 				if (a.load(f)) {

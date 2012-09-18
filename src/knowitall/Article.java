@@ -46,7 +46,7 @@ public class Article extends LSwingTreeNode implements Comparable {
 		return false;
 	    }
 	    if (spec.name == null || spec.name.equals("")) {
-		spec.name = specF.getName().substring(0, specF.getName().length() - 5);
+		spec.name = specF.getName().substring(0, specF.getName().indexOf('.'));
 	    }
 	    spec.src = specF;
 	    spec.clean(category);
