@@ -23,7 +23,6 @@ import knowitall.Debug;
 import knowitall.KIASave.Settings;
 import knowitall.KnowItAll;
 import lev.gui.*;
-import lev.gui.resources.LFonts;
 import skyproc.gui.SPDefaultGUI;
 
 /**
@@ -82,7 +81,7 @@ public class MainPanel extends LPanel {
 
 	backTabManager = new BackTabManager();
 	GUI.backTabManager = backTabManager;
-	backTabManager.setLocation(0, search.getBottom());
+	backTabManager.setLocation(0, search.getY() + search.getHeight());
 	add(backTabManager);
 
 	tree = new LSwingTree();
@@ -114,7 +113,7 @@ public class MainPanel extends LPanel {
 
 	split = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, treeScroll, articleScroll);
 	split.setOpaque(false);
-	split.setLocation(0, search.getBottom() + BackTab.height);
+	split.setLocation(0, search.getY() + search.getHeight() + BackTab.height);
 	split.setBorder(BorderFactory.createEmptyBorder());
 	split.addPropertyChangeListener(new PropertyChangeListener() {
 

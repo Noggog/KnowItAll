@@ -6,6 +6,7 @@ package knowitall.gui;
 
 import java.awt.MouseInfo;
 import java.awt.Point;
+import java.util.Collection;
 import javax.swing.SwingUtilities;
 import knowitall.Article;
 import knowitall.Database;
@@ -17,6 +18,7 @@ import lev.gui.LSwingTree;
  */
 public class GUI {
 
+    public static MainFrame frame;
     static MainPanel mainPanel;
     static Dimmer dimmer;
     static TopPanel topPanel;
@@ -39,12 +41,17 @@ public class GUI {
     public static void setArticle(String name) {
 	if (Database.hasArticle(name)) {
 	    Article a = Database.getArticle(name);
-	    search.setText(a.getName());
 	    setArticle(a);
 	}
     }
 
     public static void setArticle(Article a) {
+	if (a.equals(contentPanel.target)) {
+	    return;
+	}
+	if (!search.getText().equals(a.getName())) {
+	    search.setText(a.getName());
+	}
 	hideTooltip();
 	backTabManager.remove(a);
 	if (contentPanel.target != null) {
@@ -69,6 +76,7 @@ public class GUI {
 
 	// Bump tooltip on screen if it's off
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		if (tooltip.getY() + tooltip.getHeight() > mainPanel.getHeight()) {
@@ -85,6 +93,7 @@ public class GUI {
 	});
 	// Make dimmer and tooltip visible.
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		dimmer.setVisible(true);
@@ -95,6 +104,7 @@ public class GUI {
 
     public static void hideTooltip() {
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		search.setFocusable(true);
@@ -112,5 +122,9 @@ public class GUI {
 
     public static int dividerLocation() {
 	return mainPanel.split.getDividerLocation();
+    }
+
+    public static void finalizeArticles(Collection<Article> articles) {
+	search.suggestions(articles);
     }
 }

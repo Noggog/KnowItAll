@@ -66,6 +66,7 @@ public class Database {
 	    }
 	    a.clean();
 	}
+	GUI.finalizeArticles(articles.values());
 	printArticles();
 	GUI.regenerateTree();
 	GUI.updateContentDisplay();

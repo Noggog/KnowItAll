@@ -4,56 +4,71 @@
  */
 package knowitall.gui;
 
-import javax.swing.JTextField;
-import javax.swing.event.DocumentEvent;
-import javax.swing.event.DocumentListener;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
+import java.util.ArrayList;
+import java.util.Collection;
+import javax.swing.event.CaretEvent;
+import javax.swing.event.CaretListener;
+import javax.swing.text.AttributeSet;
+import javax.swing.text.BadLocationException;
+import knowitall.Article;
 import knowitall.Database;
-import lev.gui.LComponent;
+import lev.gui.JAutoTextField;
 import lev.gui.resources.LFonts;
 
 /**
  *
  * @author Justin Swanson
  */
-public class SearchBar extends LComponent {
+public class SearchBar extends JAutoTextField {
 
-    JTextField field;
     boolean fireSearches = true;
+    int caretListener = 0;
 
     public SearchBar() {
-	init();
-    }
-
-    final void init() {
-	field = new JTextField();
-	field.setFont(LFonts.MyriadProBold(20));
-	addDocumentListener(new DocumentListener() {
-	    @Override
-	    public void insertUpdate(DocumentEvent e) {
-		updateContent();
-	    }
+	super(new ArrayList<>(0));
+	setCaseSensitive(false);
+	setStrict(false);
+	setFont(LFonts.MyriadProBold(20));
+	setDocument(new SearchDocument());
+	addCaretListener(new CaretListener() {
 
 	    @Override
-	    public void removeUpdate(DocumentEvent e) {
-		updateContent();
-	    }
-
-	    @Override
-	    public void changedUpdate(DocumentEvent e) {
-		updateContent();
+	    public void caretUpdate(CaretEvent arg0) {
+		if (caretListener == 0) {
+		    updateContent();
+		}
 	    }
 	});
-	add(field);
+	addFocusListener(new FocusListener() {
+
+	    @Override
+	    public void focusGained(FocusEvent arg0) {
+	    }
+
+	    @Override
+	    public void focusLost(FocusEvent arg0) {
+		setCaretPosition(getText().length());
+		updateContent();
+		transferFocusUpCycle();
+	    }
+	});
 	setSize(5, 30);
-	field.setVisible(true);
-	setVisible(true);
+    }
+
+    @Override
+    public void replaceSelection(String s) {
+	caretListener++;
+	super.replaceSelection(s);
+	caretListener--;
     }
 
     void updateContent() {
 	if (!fireSearches) {
 	    return;
 	}
-	String s = field.getText().toUpperCase();
+	String s = getTypedString().toUpperCase();
 	if (Database.hasArticle(s)) {
 	    GUI.setArticle(Database.getArticle(s));
 	}
@@ -62,33 +77,48 @@ public class SearchBar extends LComponent {
 //	}
     }
 
+    public String getTypedString() {
+	String text = getText();
+	int start = getSelectionStart();
+	int end = getSelectionEnd();
+	int length = text.length();
+	if (getSelectionEnd() == text.length()) {
+	    return text.substring(0, getSelectionStart());
+	}
+	return text;
+    }
+
     @Override
-    final public void setSize(int x, int y) {
-	super.setSize(x, y);
-	field.setSize(x, y);
-    }
-
-    public void addDocumentListener(DocumentListener d) {
-	field.getDocument().addDocumentListener(d);
-    }
-
-    public String getText() {
-	return field.getText();
-    }
-
     public void setText(String s) {
 	fireSearches = false;
-	field.setText(s);
+	super.setText(s);
 	fireSearches = true;
     }
 
-    @Override
-    public void setFocusable(boolean in) {
-	field.setFocusable(in);
+    public void suggestions(Collection<Article> articles) {
+	ArrayList<String> list = new ArrayList<>(articles.size());
+	for (Article a : articles) {
+	    list.add(a.getName());
+	}
+	setDataList(list);
     }
 
-    @Override
-    public void requestFocus() {
-	field.requestFocus();
+    class SearchDocument extends AutoDocument {
+
+	@Override
+	public void insertString(int i, String s, AttributeSet attributeset) throws BadLocationException {
+	    caretListener++;
+	    super.insertString(i, s, attributeset);
+	    updateContent();
+	    caretListener--;
+	}
+
+	@Override
+	public void remove(int i, int j) throws BadLocationException {
+	    caretListener++;
+	    super.remove(i, j);
+	    updateContent();
+	    caretListener--;
+	}
     }
 }

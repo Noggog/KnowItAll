@@ -22,7 +22,6 @@ import skyproc.SPGlobal;
  */
 public class KnowItAll {
 
-    static MainFrame frame;
     static Random rand = new Random();
     final public static String internalFiles = "Internal Files/";
     public static Gson gson = new Gson();
@@ -59,10 +58,10 @@ public class KnowItAll {
     }
 
     public static void createFrame() throws IOException {
-	frame = new MainFrame();
-	frame.createGUI();
-	frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
-	frame.addWindowListener(new WindowListener() {
+	GUI.frame = new MainFrame();
+	GUI.frame.createGUI();
+	GUI.frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
+	GUI.frame.addWindowListener(new WindowListener() {
 	    @Override
 	    public void windowOpened(WindowEvent e) {
 	    }
@@ -102,7 +101,7 @@ public class KnowItAll {
     }
 
     public static void saveGUIsetup() {
-	Dimension size = frame.getSize();
+	Dimension size = GUI.frame.getSize();
 	save.setInt(Settings.StartWidth, size.width);
 	save.setInt(Settings.StartHeight, size.height);
 	save.setInt(Settings.DividerLocation, GUI.dividerLocation());
