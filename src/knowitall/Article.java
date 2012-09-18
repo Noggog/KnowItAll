@@ -64,14 +64,19 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    content = spec.content;
 	    pageNumber = spec.pageNumber;
 	    blockLinking = spec.blockLinking;
-	    createAllContent();
-	    reloadHTML();
+	    reload();
 	    return true;
 	} catch (FileNotFoundException ex) {
+	    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", "Skipped because its spec could not be found: " + specF);
 	} catch (com.google.gson.JsonSyntaxException ex) {
 	    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", "Skipped because it had a badly formatted spec: " + specF);
 	}
 	return false;
+    }
+
+    public void reload() {
+	createAllContent();
+	reloadHTML();
     }
 
     public void createAllContent() {
@@ -166,6 +171,7 @@ public class Article extends LSwingTreeNode implements Comparable {
 //	    int wer = 23;
 //	}
 
+	// Sort articles from longest to shortest
 	LMergeMap<Integer, Article> lengthSort = new LMergeMap<>(false, true);
 	for (Article a : linked) {
 	    lengthSort.put(Integer.MAX_VALUE - a.getName().length(), a);
