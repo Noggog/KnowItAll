@@ -4,10 +4,13 @@
  */
 package knowitall.gui;
 
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import knowitall.Article;
 import lev.gui.LPanel;
+import lev.gui.resources.LImages;
 
 /**
  *
@@ -18,6 +21,8 @@ public class BackTabManager extends LPanel {
     static private int history = 25;
     LinkedList<Article> articles = new LinkedList<>();
     ArrayList<BackTab> tabs = new ArrayList<>(history);
+    BufferedImage img;
+    static private int xOffset = 20;
 
     public BackTabManager() {
 	super();
@@ -26,6 +31,7 @@ public class BackTabManager extends LPanel {
 	    tabs.add(b);
 	    add(b);
 	}
+	img = LImages.arrow(true);
     }
 
     public void putOnArticle(Article a) {
@@ -47,7 +53,7 @@ public class BackTabManager extends LPanel {
 	    tabs.get(i++).setVisible(false);
 	}
 
-	int x = 0;
+	int x = xOffset;
 	for (BackTab t : tabs) {
 	    if (t.isVisible()) {
 		t.setLocation(x, 0);
@@ -58,7 +64,15 @@ public class BackTabManager extends LPanel {
 	}
     }
 
-    public void remove (Article a) {
+    public void remove(Article a) {
 	articles.remove(a);
+    }
+
+    @Override
+    public void paint(Graphics g) {
+	if (!articles.isEmpty()) {
+	    g.drawImage(img, 10, 0, null);
+	}
+	super.paint(g);
     }
 }
