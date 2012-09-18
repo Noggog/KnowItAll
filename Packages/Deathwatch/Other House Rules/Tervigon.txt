@@ -1,0 +1,54 @@
+{
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Skills", "Awareness (Per), Climb (S), Swim (S)."],
+		["Talents", "Ambidextrous, Combat Master, Crushing Blow,
+Fearless, Heightened Senses (All), Psy Rating (6), Two
+Weapon Wielder (Melee), Swift Attack, Lightning Attack."],
+		["Traits", "Brutal Charge, Dark Sight, Fear 3 (Horrifying), Natural
+Armour (Bonded Exoskeleton), Multiple Arms, Unnatural
+Strength (×3), Unnatural Toughness (×3), Improved Natural
+Weapons (Scything Talons), Shadow in the Warp, Size
+(Massive), Synapse Creature, Tyranid."],
+		["Armor", "Bonded Exoskeleton (All 10)."],
+		["Weapons", "Scything Talons (1d10+22 R; Pen 3), Stinger Spines (80m, S/2/-; 2D10+6 I; Pen 6; Tearing, Living Ammunition."],
+		["Equipment", "None."],
+		["Special Rules", "
+
+<b>Biomorph:</b> At the GM’s discretion, a Tervigon may be
+given the Toxic (1d10) Trait. This Trait will also apply to
+the Tervigon’s Natural Weapon and Ranged attacks. It may also be given the Regeneration (5) Trait.<br>
+<b>Monstrous Tyranid Psyker:</b> The Tervigon is a psyker
+but their powers drawn upon the power of the Hive Mind
+rather than direct manipulation of the Warp. Because of this
+and the monstrous power of the Hive Mind they do not need
+to test to use their psychic powers and never suffer Psychic
+Phenomena or Perils of the Warp. A Tervigon may only
+use a single psychic power during its turn. Tervigons have the Onslaught and Catalyst psychic powers.<br>
+<b>Spawn Termigants:</b> Instead of making any Move Action or any melee or ranged attack, a Tervigon may choose to release a clutch of gestating Termagants from within its body cavity as a Termigant Horde as a Half Action. The Magnitude of the Horde spawned is 10+4D10 and if the Tervigon possesses the Toxis Trait, the spawned Termigant Horde does as well. The Horde spills out onto the battlefield in proximity to the Tervigon in direct contact next to the monstrous creature in any direction it chooses. If the appearance of the Horde places player characters in direct contact, they immediately count as being in melee combat. The Termigant Horde spawned is awakening from its hibernating state by a flood of neurochemicals and is fully alert and combat capable as it spills from its birthing sac; determine the Initiative of the Horde as normal and the Horde may act on the turn in which it was spawned. It acts immediately is its Initiatie is greater than the Tervigon. The act of spawning Termigants depletes the Tervigon's immediate reserves. Once used, the Spawn Termagants ability cannot be used again for 1D10+2 rounds. Note that a Tervigon that uses this ability may also use a psychic power as normal, though it cannot target a Termagant Horde during the round it is spawned.<br>
+<b>Psychic Backlash:</b> When a Tervigon is slain, its death sends a shockwave through its Synapse connection with its Termagant offspring. When a Tervigon is slain, all Termigana Hordes within its Synapse Range (WP x 10m) suffer a loss to their Magnitude equal to 5+2D10 as their neural network is fried by psychic backlash. This loss affects all Termigant Hordes within range, not just those that were spawned."]
+	],
+	
+	"grid" :
+	[
+		["Wounds", "120"],
+		["Movement", "6/12/18/36"],
+		["Weapon Skill", "45"],
+		["Ballistic Skill", 33"],
+		["Strength",  "<sup>18</sup>60"],
+		["Toughness", "<sup>15</sup>56"],
+		["Agility", "10"],
+		["Intelligence", "45"],
+		["Perception", "57"],
+		["Will Power", "<sup>14</sup>70"],
+		["Fellowship", "-"]
+	],
+	
+	"aka" : 
+	[
+		"",
+		""
+	]
+}

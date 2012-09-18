@@ -1,27 +1,59 @@
 {
-	"name" : "Awareness",
 	
 	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"content" : "Characters with the Contortionist Skill can make use of their
+innate flexibility, double joints, or even selective dislocation
+of joints, to allow them to escape bonds, squeeze through
+openings normally too small for passage, or fit into an
+area normally too small for their body. It also provides an
+alternative to brute strength in grappling.<br><br>
+
+<b>Special uses<br>
+Escape Bonds<br></b>
+The character can make a Contortionist Test to slip free
+of bonds. This is an Opposed Test, using the character’s
+Contortionist Skill against his opponent’s Characteristic Test
+using Intelligence.<br>
+The quality of the bonds and the time used to employ
+them affects the difficulty of the test. It may be impossible to
+escape adamantine manacles properly employed by a bounty
+hunter, but far easier to slip out of the crude ropes hastily
+applied by a feral tribesman—especially after applying grox
+fat to one’s wrists. Escaping bonds requires 1 minute, with
+each Degree of Success reducing this time by 10 seconds.<br>
+<b>Escape Grapple</b><br>
+After an opponent has grappled the character in combat, he
+may escape using the Contortionist Skill. Make an Opposed
+Test with the character’s Contortionist Skill against the
+grappler’s Strength Characteristic. Success indicates the
+character has slipped out of his enemy’s hands and is free.
+Failure means he remains grappled.<br>
+<b>Squeeze Through</b><br>
+The character can make a Contortionist Test to squeeze
+through a tight space, such as through a maintenance conduit
+aboard a ship or a gap in damaged blast doors. The character
+can also use this aspect of the Skill to cram himself into a space
+normally too small to fit his body. The GM sets the difficulty
+of the test according to the size of the passage or opening,
+is well within his rights to rule that some spaces are simply
+too small to allow use of this Skill. A successful Skill Test
+indicates that the character has managed to squirm through
+the gap or into the crate. Failure means that he cannot pass
+the area or fit into the space. Four or more Degrees of Failure
+means the character has become stuck until he can succeed
+in another Contortionist Test or someone else pulls him free
+of the embarrassing predicament. Squeeze Through takes 1
+minute, with each Degree of Success reducing this time by
+10 seconds.",
 
 	"extraSubCategories" : 
 	[ 
-		["Characteristic", "Perception"],
-		["Skill Use", "Free Action"]
+		["Characteristic", "Agility"],
+		["Skill Use", "Full Action unless otherwise noted below"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 97
 }

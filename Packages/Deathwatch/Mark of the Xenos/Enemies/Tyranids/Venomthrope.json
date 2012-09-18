@@ -80,7 +80,7 @@ a –30 penalty to all shooting attacks made against it."]
 		["Wounds", "40"],
 		["Movement", "6/12/18/36"],
 		["Weapon Skill", "48"],
-		["Ballistic Skill", -"],
+		["Ballistic Skill", "-"],
 		["Strength",  "<sup>10</sup>55"],
 		["Toughness", "<sup>10</sup>55"],
 		["Agility", "40"],

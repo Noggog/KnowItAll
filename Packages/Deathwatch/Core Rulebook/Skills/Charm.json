@@ -1,24 +1,35 @@
 {
-	"name" : "Awareness",
+
 	
-	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
+	"shortContent" : "Charm is used to improve the disposition of others towards the character and may be used to Inspire. Fellowship",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"content" : "The character can use Charm Skill to improve the disposition
+of others towards him, making a Charm Test whenever he
+wishes to change the minds of an individual or small group.
+The character need not make a Charm Test each time he speaks
+with others in a pleasant manner, but only when he wishes
+to change their opinion or disposition, or convince them to
+do something. All Charm Tests are opposed by Willpower
+and can affect a number of targets equal to the character’s
+Fellowship Bonus. The targets must be able to see and hear
+the character clearly, and share a common language.
+<br>
+<br>
+<b>Special uses</b><br>
+<b>Inspire</b><br>
+Those in a position of authority can use the Charm Skill to
+inspire a group-related test, either with positive or negative
+reinforcement. Success provides a +10 bonus to the next
+Characteristic Test of the motivated group, such as passing a
+Willpower Test to resist Fear or recover from Pinning. Thus, a
+Battle-Brother might inspire lesser Imperial troopers to fight
+harder, or the Kill-team’s Brother-Chaplain might rouse his
+brothers with an impassioned prayer to the Emperor.",
 
 	"extraSubCategories" : 
 	[ 
-		["Characteristic", "Perception"],
-		["Skill Use", "Free Action"]
+		["Characteristic", "Fellowship"],
+		["Skill Use", "1 Minute"]
 	],
 	
 	"GMOnly" : false,

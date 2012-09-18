@@ -70,7 +70,7 @@ and Warp Lance."]
 		["Wounds", "32"],
 		["Movement", "3/6/9/18"],
 		["Weapon Skill", "30"],
-		["Ballistic Skill", 45"],
+		["Ballistic Skill", "45"],
 		["Strength",  "<sup>8</sup>45"],
 		["Toughness", "<sup>8</sup>45"],
 		["Agility", "10"],

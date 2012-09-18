@@ -23,5 +23,7 @@ Rogue Trader, Schola Progenium, Scholastica Psykana."]
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 116
+	"pageNumber" : 116,
+	
+	"blockLinking" : true
 }

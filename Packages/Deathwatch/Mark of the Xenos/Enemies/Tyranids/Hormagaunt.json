@@ -37,7 +37,7 @@ to the Hormagaunt's Natural Weapon attacks."]
 		["Wounds", "9"],
 		["Movement", "10/20/30/60"],
 		["Weapon Skill", "45"],
-		["Ballistic Skill", 20"],
+		["Ballistic Skill", "20"],
 		["Strength",  "35"],
 		["Toughness", "30"],
 		["Agility", "55"],

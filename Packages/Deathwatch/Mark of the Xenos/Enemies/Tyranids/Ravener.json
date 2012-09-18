@@ -110,7 +110,7 @@ Rulebook) over its enemies."]
 		["Wounds", "40"],
 		["Movement", "7/14/21/42"],
 		["Weapon Skill", "60"],
-		["Ballistic Skill", -"],
+		["Ballistic Skill", "-"],
 		["Strength",  "<sup>8</sup>45"],
 		["Toughness", "<sup>8</sup>40"],
 		["Agility", "50"],

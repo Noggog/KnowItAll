@@ -1,27 +1,65 @@
 {
-	"name" : "Awareness",
+	
 	
 	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"content" : "The character can use the Demolition Skill to employ
+explosives in the proper quantity to achieve a desired effect,
+from cutting through the hatch of a Land Raider to destroying
+a plasma conduit without significantly damaging the reactor
+behind it. It can also be used to defuse explosives left by
+others or to manufacture demolition materials, from slow
+fuses to blasting caps to the explosives themselves. This Skill
+pertains to set charges rather than grenades and other devices
+intended for use against the enemy in combat.
+<br>
+<br>
+<b>Special uses<br>
+Manufacture Explosives</b><br>
+Much like the Trade Skills, Demolition Skill allows the
+character to make explosive materials from basic components.
+This use of the Demolition Skill is an Extended Test, and
+the GM assigns a difficulty and duration in accordance with
+the complexity of the compound and the materials at hand.
+Constructing breaching charges in a well-stocked munitorum
+warehouse is far easier than making a fuse from dried vines
+and droppings.<br>
+<b>Place Explosives</b><br>
+The effectiveness of explosive devices is greatly dependent
+upon the skill with which they are placed. Success on a
+Demolitions Test indicates the character has successfully
+planted the explosive charge, set with his trigger of choice.
+Possible triggers are only limited by the imagination, and
+can include trip wires, timers, proximity sensors, or remote
+activators. Failure indicates that the explosives fail to go off
+when triggered, though the character will not know this until
+the time of activation. Four or more Degrees of Failure indicate
+the device explodes as the character is manipulating it, with
+suitably lethal results. Some tasks, such as rigging a building
+for demolition or bringing down a massive suspension bridge,
+require an Extended Test. The GM sets difficulty and duration
+depending on the extent of the undertaking. When placing
+explosives, make sure to note the total Degrees of Success and
+the die roll, as it may be used in an Opposed Test if someone
+attempts to defuse the character’s hard work.
+<br><b>Defuse Explosives</b><br>
+Defusing charges also falls under the Demolition Skill. Make
+an Opposed Test against the Demolition Skill of the individual
+who sets the explosives. Winning the test indicates that the
+bomb has been defused. Simple failure means that while the
+charge has not been disarmed, neither has it gone off. Four or
+more Degrees of Failure indicate the character has set off the
+device, suffering the consequences of the explosion. Defusing
+multiple charges or complex trigger mechanisms may require
+an Extended Test as determined by the GM.",
 
 	"extraSubCategories" : 
 	[ 
-		["Characteristic", "Perception"],
-		["Skill Use", "Free Action"]
+		["Characteristic", "Intelligence"],
+		["Skill Use", "Full Action unless otherwise noted"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 97
 }

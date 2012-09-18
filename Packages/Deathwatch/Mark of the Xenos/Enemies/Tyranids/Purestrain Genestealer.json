@@ -89,7 +89,7 @@ immune to this effect."]
 		["Wounds", "20"],
 		["Movement", "8/16/24/48"],
 		["Weapon Skill", "65"],
-		["Ballistic Skill", -"],
+		["Ballistic Skill", "-"],
 		["Strength",  "<sup>8</sup>45"],
 		["Toughness", "<sup>8</sup>40"],
 		["Agility", "<sup>8</sup>40"],

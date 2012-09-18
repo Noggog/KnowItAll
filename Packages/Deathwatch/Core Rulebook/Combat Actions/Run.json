@@ -15,7 +15,7 @@ bonus to Weapon Skill Tests.",
 	[ 
 		["Type", "Full Action"],
 		["Subtype", "Movement"]
-	]
+	],
 	
-	"blockLinking" : true;
+	"blockLinking" : true
 }

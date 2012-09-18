@@ -31,7 +31,7 @@ Combat Blade (1d10+14 R; Pen 2), Astartes Chainsword
 		["Wounds", "29"],
 		["Movement", "5/10/15/30"],
 		["Weapon Skill", "50"],
-		["Ballistic Skill", 50"],
+		["Ballistic Skill", "50"],
 		["Strength",  "<sup>14</sup>65"],
 		["Toughness", "<sup>8</sup>45"],
 		["Agility", "40"],

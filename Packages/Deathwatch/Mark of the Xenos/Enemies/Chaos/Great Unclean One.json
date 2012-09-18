@@ -51,7 +51,7 @@ Toughness Damage."]
 		["Wounds", "273"],
 		["Movement", "4/8/12/24"],
 		["Weapon Skill", "64"],
-		["Ballistic Skill", 42"],
+		["Ballistic Skill", "42"],
 		["Strength",  "<sup>18</sup>65"],
 		["Toughness", "<sup>21</sup>77"],
 		["Agility", "40"],

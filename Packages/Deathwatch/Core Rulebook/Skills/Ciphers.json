@@ -1,27 +1,65 @@
 {
-	"name" : "Awareness",
+
 	
-	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
+	"shortContent" : "Use Ciphers to understand the
+signals, physical markings, or other subtle signs employed to
+express different concepts. Intelligence.",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"content" : "Many groups and organisations employ ciphers as a secret
+shorthand code in communicating basic ideas, warnings, or
+information rapidly. The character can use and understand the
+signals, physical markings, or other subtle signs employed to
+express these concepts. Ciphers tend to express simple concepts
+or messages, such as warning of danger, marking a target, or
+indicating ownership. Skill Tests are not required to either
+leave or read basic messages but are necessary to communicate
+or decipher complicated meanings or signs obscured by the
+passage of time.
+<br>
+<br>
+<b>Skill Groups<br>
+Xenos Markings:</b> Many aliens, such as Orks, make
+extensive use of symbolism and icons. Understanding these
+markings allows a broad understanding of their meaning, such
+as where a tribe has marked its boundaries or areas they have
+marked as dangerous.<br>
+<b>Deathwatch:</b> Kill-teams often develop their own shorthand
+communication to allow them to converse quickly and
+secretively in the presence of others. This is especially useful
+when dealing with other arms of the Imperial war machine,
+where the goals of the Deathwatch may not coincide with
+those of the Imperial Guard or Navy.<br>
+<b>Chapter Runes:</b> Each Chapter of the Adeptus Astartes has
+its own form of ciphers used to communicate between its Battle-
+Brothers. These closely guarded secrets are almost never taught
+to those outside the Chapter and constitute a reliable way for
+those within the Chapter to quickly identify each other.
+<br><b>Imperial Codes:</b> Both the Imperial Navy and the Imperial
+Guard employ a battle language which comprises mostly of
+numbers and acronyms. Incomprehensible to those who do
+not know its meaning, it allows them to quickly signal for
+reinforcements, identify enemies, and call down fire support.
+<br><b>Inquisition:</b> Used to communicate a private and prearranged
+code between given agents of the Inquisition. Note
+that these codes are unique to specific Ordos within the
+Inquisition. This Skill Group applies to all ciphers used by
+acolytes and throne agents of the Inquisition.
+<br><b>Mercenary Cant:</b> Many mercenary companies operate
+in the Imperium, and each has an abbreviated, clipped battle
+language for orders and commands. Though there are some
+commonalities, each is essentially unique.
+<br><b>Underworld:</b> Crime lords have used ciphers since before
+the time of the Emperor, and their sophistication has only
+increased over time. Each organisation uses its own to deter
+competition.",
 
 	"extraSubCategories" : 
 	[ 
-		["Characteristic", "Perception"],
-		["Skill Use", "Free Action"]
+		["Characteristic", "Intelligence"],
+		["Skill Use", "Full Action"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 96
 }

@@ -52,7 +52,7 @@ at any given time and can fire a heavy weapon single-handed."]
 		["Wounds", "40"],
 		["Movement", "4/8/12/24"],
 		["Weapon Skill", "45"],
-		["Ballistic Skill", 50"],
+		["Ballistic Skill", "50"],
 		["Strength",  "<sup>10</sup>50"],
 		["Toughness", "<sup>10</sup>55"],
 		["Agility", "35"],

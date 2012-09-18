@@ -1,27 +1,26 @@
 {
-	"name" : "Awareness",
 	
-	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
+	"shortContent" : "The Concealment Skill is used to hide things, from small
+objects to vehicles to starships, even oneself. Agility.",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"content" : "The Concealment Skill is used to hide things, from small
+objects to vehicles to starships, even oneself. Use of the Skill
+requires an appropriate environment to mask the item in
+question, such as buildings and trees for a small shuttle or an
+asteroid field or a space anomaly for a starship. Concealment is
+always an Opposed Test, pitting the character’s Concealment
+against his opponent’s Awareness or Scrutiny. Thus, the
+character only makes the test when someone looks for him.
+If the character or the object he intends to hide remains
+perfectly still, he gains a +10 bonus to the Skill Test.",
 
 	"extraSubCategories" : 
 	[ 
-		["Characteristic", "Perception"],
-		["Skill Use", "Free Action"]
+		["Characteristic", "Agility"],
+		["Skill Use", "Half Action"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 97
 }

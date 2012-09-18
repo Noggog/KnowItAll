@@ -93,7 +93,7 @@ Possessed would have a Movement of 10/20/30/60)."]
 		["Wounds", "40"],
 		["Movement", "5/10/15/30"],
 		["Weapon Skill", "43"],
-		["Ballistic Skill", 43"],
+		["Ballistic Skill", "43"],
 		["Strength",  "<sup>12</sup>55"],
 		["Toughness", "<sup>8</sup>45"],
 		["Agility", "40"],

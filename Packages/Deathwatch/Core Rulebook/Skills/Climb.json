@@ -1,27 +1,29 @@
 {
-	"name" : "Awareness",
 	
-	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
+	"shortContent" : "The Climb Skill is used to ascend or descend
+ropes, pipes, scaffolding, and both natural and man-made
+walls.",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"content" : "With the Climb Skill the character can ascend or descend
+ropes, pipes, scaffolding, and both natural and man-made
+walls. This Skill is not used for ladders or other easily ascended
+ways, but for climbs without ready handholds or other poor
+climbing conditions. The condition of the surface or item
+and the environmental conditions can impose additional
+bonuses or penalties. It is far more difficult to ascend an icy
+rock face in a blizzard than the outer shell of a hive that is
+crisscrossed with pipes and conduits. A successful test allows
+the character to ascend or descend at one-half his half move
+rate. See Climbing in Chapter VII: Playing the Game for
+more details.",
 
 	"extraSubCategories" : 
 	[ 
-		["Characteristic", "Perception"],
-		["Skill Use", "Free Action"]
+		["Characteristic", "Strength"],
+		["Skill Use", "Half Action"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 96
 }

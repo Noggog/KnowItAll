@@ -123,7 +123,7 @@ victim does not remember well, it must make an Easy (+20) Intelligence Test."]
 		["Wounds", "40"],
 		["Movement", "6/12/18/36"],
 		["Weapon Skill", "65"],
-		["Ballistic Skill", -"],
+		["Ballistic Skill", "-"],
 		["Strength",  "<sup>12</sup>65"],
 		["Toughness", "<sup>8</sup>40"],
 		["Agility", "<sup>8</sup>40"],

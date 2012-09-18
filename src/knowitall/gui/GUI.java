@@ -22,6 +22,7 @@ public class GUI {
     static TopPanel topPanel;
     static ContentPanel contentPanel;
     static SearchBar search;
+    static BackTabManager backTabManager;
     static ArticleTooltip tooltip;
     static LSwingTree tree;
 
@@ -35,7 +36,7 @@ public class GUI {
 	contentPanel.update();
     }
 
-    public static void loadArticle(String name) {
+    public static void setArticle(String name) {
 	if (Database.hasArticle(name)) {
 	    Article a = Database.getArticle(name);
 	    search.setText(a.getName());
@@ -45,6 +46,11 @@ public class GUI {
 
     public static void setArticle(Article a) {
 	hideTooltip();
+	backTabManager.remove(a);
+	if (contentPanel.target != null) {
+	    backTabManager.putOnArticle(contentPanel.target);
+	}
+	backTabManager.readjust();
 	contentPanel.updateContent(a);
     }
 
@@ -71,7 +77,7 @@ public class GUI {
 		if (tooltip.getX() + tooltip.getWidth() > mainPanel.getWidth()) {
 		    // If too far right
 		    tooltip.setLocation(mainPanel.getWidth() - tooltip.getWidth() - 30, tooltip.getY());
-		} else if (tooltip.getX() < 0){
+		} else if (tooltip.getX() < 0) {
 		    // If too far left
 		    tooltip.setLocation(30, tooltip.getY());
 		}

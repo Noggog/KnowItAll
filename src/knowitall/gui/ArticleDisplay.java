@@ -81,7 +81,7 @@ public class ArticleDisplay extends LPanel {
 	    if (type == HyperlinkEvent.EventType.ENTERED) {
 		GUI.setTooltip(h.getDescription());
 	    } else if (type == HyperlinkEvent.EventType.ACTIVATED) {
-		GUI.loadArticle(h.getDescription());
+		GUI.setArticle(h.getDescription());
 	    } else if (type == HyperlinkEvent.EventType.EXITED) {
 		GUI.hideTooltip();
 	    }

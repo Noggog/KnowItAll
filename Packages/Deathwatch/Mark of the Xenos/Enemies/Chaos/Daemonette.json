@@ -36,7 +36,7 @@ the area."]
 		["Wounds", "20"],
 		["Movement", "5/10/15/30"],
 		["Weapon Skill", "45"],
-		["Ballistic Skill", 30"],
+		["Ballistic Skill", "30"],
 		["Strength",  "43"],
 		["Toughness", "<sup>6</sup>35"],
 		["Agility", "<sup>10</sup>50"],

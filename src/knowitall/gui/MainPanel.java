@@ -38,6 +38,7 @@ public class MainPanel extends LPanel {
     LScrollPane treeScroll;
     LScrollPane articleScroll;
     JSplitPane split;
+    BackTabManager backTabManager;
     ContentPanel articleContent;
 
     MainPanel() throws IOException {
@@ -79,6 +80,11 @@ public class MainPanel extends LPanel {
 	    Debug.log.logException(ex);
 	}
 
+	backTabManager = new BackTabManager();
+	GUI.backTabManager = backTabManager;
+	backTabManager.setLocation(0, search.getBottom());
+	add(backTabManager);
+
 	tree = new LSwingTree();
 	tree.getSelectionModel().setSelectionMode(TreeSelectionModel.SINGLE_TREE_SELECTION);
 	tree.addTreeSelectionListener(new TreeSelectionListener() {
@@ -90,7 +96,7 @@ public class MainPanel extends LPanel {
 		    return;
 		}
 		if (node instanceof Article) {
-		    GUI.loadArticle(node.toString());
+		    GUI.setArticle(node.toString());
 		}
 	    }
 	});
@@ -108,7 +114,7 @@ public class MainPanel extends LPanel {
 
 	split = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, treeScroll, articleScroll);
 	split.setOpaque(false);
-	split.setLocation(0, search.getBottom() + Spacings.mainPanel);
+	split.setLocation(0, search.getBottom() + BackTab.height);
 	split.setBorder(BorderFactory.createEmptyBorder());
 	split.addPropertyChangeListener(new PropertyChangeListener() {
 
@@ -141,7 +147,8 @@ public class MainPanel extends LPanel {
     public void remeasure(final Dimension size) {
 	super.setSize(size);
 	search.setSize(getWidth() - Spacings.mainPanel * 3 - 87, search.getHeight());
-	split.setSize(getWidth(), getHeight() - search.getBottom() - Spacings.mainPanel);
+	backTabManager.setSize(getWidth(), BackTab.height);
+	split.setSize(getWidth(), getHeight() - split.getY());
 	remeasureContents();
     }
 

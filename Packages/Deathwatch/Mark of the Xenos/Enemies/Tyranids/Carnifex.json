@@ -132,7 +132,7 @@ metres of the Bile-Beast."]
 		["Wounds", "100"],
 		["Movement", "5/10/15/30"],
 		["Weapon Skill", "35"],
-		["Ballistic Skill", 25"],
+		["Ballistic Skill", "25"],
 		["Strength",  "<sup>21</sup>70"],
 		["Toughness", "<sup>18</sup>65"],
 		["Agility", "22"],
