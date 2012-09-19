@@ -53,10 +53,8 @@ public class MainFrame extends LFrame {
 
     @Override
     public void remeasure() {
-	if (topPanel != null) {
-	    mainPanel.remeasure(getRealSize());
-	    topPanel.remeasure(getRealSize());
-	}
+	mainPanel.remeasure(getRealSize());
+	topPanel.remeasure(getRealSize());
     }
 
     public Dimension defaultSize() {
@@ -73,6 +71,8 @@ public class MainFrame extends LFrame {
     @Override
     public void validate() {
 	super.validate();
-	remeasure();
+	if (isVisible()) {
+	    remeasure();
+	}
     }
 }

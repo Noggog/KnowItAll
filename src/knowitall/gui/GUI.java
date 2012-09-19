@@ -28,7 +28,7 @@ public class GUI {
     static BackTabManager backTabManager;
     static ArticleTooltip tooltip;
     static LSwingTree tree;
-    static JProgressBar progress;
+    static KIAProgressPane progressPane;
 
     public static void displayArticles(boolean on) {
 	if (contentPanel != null) {
@@ -139,23 +139,33 @@ public class GUI {
 
     public static void hideProgress() {
 	mainPanel.setVisible(true);
-	progress.setVisible(false);
+	progressPane.setVisible(false);
 	dimmer.setVisible(false);
     }
 
     public static void showProgress() {
 	mainPanel.setVisible(false);
-	progress.setVisible(true);
+	progressPane.setVisible(true);
 	dimmer.setVisible(true);
     }
 
-    public static void setProgressMax(final int max) {
+    public static void setProgressMax(final int max, final String title) {
 	SwingUtilities.invokeLater(new Runnable() {
 
 	    @Override
 	    public void run() {
-		progress.setValue(0);
-		progress.setMaximum(max);
+		progressPane.reset();
+		progressPane.setMax(max, title);
+	    }
+	});
+    }
+
+    public static void updateProcessed(final String title) {
+	SwingUtilities.invokeLater(new Runnable() {
+
+	    @Override
+	    public void run() {
+		progressPane.processed(title);
 	    }
 	});
     }
@@ -165,7 +175,17 @@ public class GUI {
 
 	    @Override
 	    public void run() {
-		progress.setValue(progress.getValue() + 1);
+		progressPane.increment();
+	    }
+	});
+    }
+
+    public static void incrementProgress(final String title) {
+	SwingUtilities.invokeLater(new Runnable() {
+
+	    @Override
+	    public void run() {
+		progressPane.increment(title);
 	    }
 	});
     }

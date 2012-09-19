@@ -96,23 +96,27 @@ public class Database {
 	@Override
 	protected Integer doInBackground() throws Exception {
 	    File seeds = new File(packages);
+	    // For the first package
 	    for (File packageF : seeds.listFiles()) {
 		// Set up progress
 		ArrayList<File> files = Ln.generateFileList(packageF, false);
-		GUI.setProgressMax(files.size());
-		
-		// Start importing
+		GUI.setProgressMax(files.size(), "Loading Package: " + packageF.getName());
+
+		// Start importing Category Index Files
 		articleTree = new CategoryIndex(packageF.getName());
 		File categoryIndices = new File(packageF.getPath() + "/" + categoryIndexPath);
+		// If category index exists
 		if (categoryIndices.isDirectory()) {
 		    // Load Category Indices
 		    indexTree = new CategoryIndex(categoryIndices);
 		    loadCategoryIndex(indexTree, categoryIndices);
-		    // Load sources and articles
+		    // Load content
 		    for (File sourceDir : packageF.listFiles()) {
+			// For every Source
 			if (sourceDir.isDirectory() && !sourceDir.getName().equalsIgnoreCase(categoryIndexPath)) {
 			    Source src = new Source(sourceDir);
 			    articleTree.add(src);
+			    // For every category in source
 			    for (File categoryDir : sourceDir.listFiles()) {
 				loadCategoryFolder(src, categoryDir);
 			    }
@@ -121,15 +125,15 @@ public class Database {
 		}
 		break;
 	    }
+	    GUI.updateProcessed("Finishing Up");
 	    return 0;
 	}
 
 	void loadCategoryIndex(CategoryIndex parent, File dir) {
-	    // Load children categories
 	    for (File f : dir.listFiles()) {
 		if (f.isDirectory()) {
 		    CategoryIndex cat = new CategoryIndex(f);
-		    GUI.incrementProgress();
+		    GUI.incrementProgress(cat.getName());
 		    if (!categoryIndex.containsKey(cat.getName().toUpperCase())) {
 			cat.inherit(parent);
 			parent.add(cat);
@@ -146,17 +150,22 @@ public class Database {
 
 	void loadCategoryFolder(LSwingTreeNode node, File categoryDir) {
 	    try {
+		// Find matching category index
 		CategoryIndex index = Database.categoryIndex.get(categoryDir.getName().toUpperCase());
 		if (index != null) {
 		    Category curCategory = new Category(index);
 		    node.add(curCategory);
+		    GUI.updateProcessed("Processing: " + curCategory.getName());
 		    for (File f : categoryDir.listFiles()) {
 			if (f.isFile()
 				&& (Ln.isFileType(f, "JSON") || Ln.isFileType(f, "TXT"))) {
+			    // If article
 			    try {
 				Article a = new Article(curCategory);
 				if (a.load(f)) {
 				    publishArticle(curCategory, a);
+				    GUI.incrementProgress();
+				    continue;
 				}
 			    } catch (Exception e) {
 				Debug.log.logError("Load Article", "Error loading " + f);
@@ -164,6 +173,7 @@ public class Database {
 			    }
 			    GUI.incrementProgress();
 			} else if (f.isDirectory()) {
+			    // If nested category
 			    loadCategoryFolder(curCategory, f);
 			}
 		    }
