@@ -1,27 +1,64 @@
 {
-	"name" : "Awareness",
 	
-	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
+	"shortContent" : "Forbidden Lore skills represent knowledge usually hidden,
+veiled, or proscribed by an organisation or society.",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"content" : "Forbidden Lore skills represent knowledge usually hidden,
+veiled, or proscribed by an organisation or society. Mere
+possession of this knowledge may cause difficulties for those
+not associated with the group in question. Excessive knowledge
+of the hidden truths of the Traitor Legions, for example, can
+be decidedly bad for one’s health for those outside (or even
+inside) the Adeptus Astartes. A successful Forbidden Lore Test
+indicates the character recalls basic information about the
+subject. The GM reveals additional information as appropriate
+to the Degree of Success on the roll.<br>
+<b>Adeptus Astartes:</b> Extensive knowledge of the practices,
+organisation, and homeworlds of the Imperial Space Marines
+and their Chapters, including hints and rumours of their myriad
+of secret rituals and methods of recruitment and training.
+<b>Adeptus Mechanicus:</b> An in-depth understanding of
+followers of the Machine God, including such things as their
+rituals, observances, common beliefs, core philosophies, and
+specific knowledge of the Universal Laws.
+<br><b>Archeotech:</b> Knowledge of the great, lost tech devices
+of past times and clues to their mysterious functions
+and purposes.<br>
+<b>The Black Library:</b> Secret knowledge concerning the
+Black Library, its forbidden contents, horrific guardians, and
+the unspeakable xenos that toil within its confines.<br>
+<b>Daemonology:</b> The crawling information about some of
+the most infamous warp entities and their twisted physical
+manifestations.<br>
+<b>Heresy:</b> Wisdom concerning acts and practices deemed
+heretical by the Imperium, the most contemptible heretics of
+history, and their acts.<br>
+<b>The Inquisition:</b> An understanding of the secretive
+organisation of the Imperium, its common tenets, and
+famous Inquisitors.<br>
+<b>Mutants:</b> The study of stable and unstable mutations
+within humanity, their cancerous development over time, and
+some of the studies and books on the topic.<br>
+<b>Pykers:</b> Skill in identifying psykers, the physical effects
+of their powers, the danger they cause, and the general extent
+of their capabilities.<br>
+<b>The Traitor Legions:</b> The secrets of the lost Space Marine
+Legions, their names, and the sad tale of their fall from grace.
+<b>The Warp:</b> An understanding of the energy of the warp, its
+interaction and interrelation with realspace, and how its tides
+and eddies affect travel between the stars.<br>
+<b>Xenos:</b> Knowledge of the minor and major alien species
+known to the Imperium, the threat they pose, and their
+general appearance.",
 
 	"extraSubCategories" : 
 	[ 
-		["Characteristic", "Perception"],
-		["Skill Use", "Free Action"]
+		["Characteristic", "Intelligence"],
+		["Skill Use", "Free Action…although the consequences of
+knowing such things can last a lifetime"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 100
 }

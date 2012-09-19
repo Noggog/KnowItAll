@@ -1,24 +1,44 @@
 {
-	"name" : "Awareness",
 	
 	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"content" : "Tech-Use allows the character to use or repair complex
+mechanical items or fathom the workings of unknown
+technical artefacts. Using a basic piece of equipment under
+typical circumstances requires no test, such as using a voxcaster
+or opening a shuttle hatch. Tech-Use Tests are necessary
+for unusual or unfamiliar gear, malfunctioning or broken
+items, and any situation where conditions are less than ideal,
+such as attempting to use the same vox-caster near a plasma
+core or coaxing the machine spirit of a strange vessel’s warp
+drive to reignite its fires. The character can also use Tech-
+Use to repair damaged or defective items, using an Extended
+Test of duration and difficulty set by the GM depending on
+the item’s complexity and the extent of the damage. Tech-
+Use does not include building an item from scratch, which
+requires the relevant Trade Skill.<br>
+A Tech-Use Test to determine the function of a complex
+system takes 1 minute, but the GM may adjust this
+depending on the complexity. Tests made to repair items are
+Extended Tests, the duration of which depends upon its size
+and complexity.
+<br>
+<br>
+<b>Special uses<br>
+Security Systems<br></b>
+The Security Skill covers mechanical security systems,
+but many systems may have both physical and electronic
+components, and certain examples may be entirely controlled
+by cogitators and machine spirits. The GM determines the
+necessary Skill Tests required for a particular system, which
+may include a combination of both Skills, or may involve a
+single roll with an appropriate modifier for possessing both
+Skills, or lacking one or the other.",
 
 	"extraSubCategories" : 
 	[ 
-		["Characteristic", "Perception"],
-		["Skill Use", "Free Action"]
+		["Characteristic", "Intelligence"],
+		["Skill Use", "1 minute, or more for more complex systems"]
 	],
 	
 	"GMOnly" : false,

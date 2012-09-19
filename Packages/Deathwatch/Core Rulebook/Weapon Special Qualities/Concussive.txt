@@ -1,0 +1,12 @@
+{
+	
+	"content" : "The weapon causes a barrage of sound and force upon impact.
+When you strike an opponent with a Concussive weapon, he
+must make a Toughness Test at a Difficulty of –10 per degree
+of success by which the attack succeeded or be Stunned for
+1 Round. Auditory protection confers a +10 bonus to this
+Test, but does not negate the kinetic energy of the blast.
+Additionally, any target taking Damage greater than his
+Strength Bonus from a Concussive weapon is automatically
+knocked down."
+}

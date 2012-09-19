@@ -1,13 +1,10 @@
 {
 	"name" : "Standard Attack",
 	
-	"shortContent" : "+10/+20 BS on next attack.  Other (re)actions break aim.",
-	
 	"content" : "The active character makes either one melee attack by testing
 Weapon Skill, or one ranged attack by testing Ballistic Skill. If
 the attacking character is unarmed, he can attempt to Grapple
-his opponent instead of inflicting damage. See Grappling,
-page 246.",
+his opponent instead of inflicting damage.",
 
 	"extraSubCategories" : 
 	[ 

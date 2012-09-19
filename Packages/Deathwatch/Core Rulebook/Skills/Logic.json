@@ -1,0 +1,27 @@
+{
+	
+	
+	"shortContent" : "The character uses Logic to solve problems, decipher puzzles,
+and deal with other situations involving demonstration and
+inference.",
+	
+	"content" : "The character uses Logic to solve problems, decipher puzzles,
+and deal with other situations involving demonstration and
+inference. A Logic Test might infer the missing symbol in
+a series or solve a particularly troublesome mathematical
+equation. The character can also use the Skill to prepare a
+reasoned argument for debate or philosophical exchange. The
+preparations of complex reasoning or complicated problems
+are Extended Tests.",
+
+	"extraSubCategories" : 
+	[ 
+		["Characteristic", "Intelligence"],
+		["Skill Use", "1 minute, or longer for particularly
+complex problems"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 100
+}

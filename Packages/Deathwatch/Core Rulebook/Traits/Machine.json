@@ -1,19 +1,25 @@
 {
-	"name" : "Amorphous",
 	
-	"shortContent" : "Change size one step in either direction.  Movement based on half their agility bonus.",
 	
-	"content" : "An amorphous creature has a malleable form, capable of
-squeezing its body or expanding it. It can change size by one
-step in either direction, though doing so does not change
-its speed. Creatures with this trait determine their movement
-rates using one-half their Agility Bonus (rounding up).
-Amorphous creatures are often missing senses and so rely on
-the Unnatural Senses Trait to perceive their surroundings.",
+	"shortContent" : "Machines do not breathe, are immune to the effects of a
+vacuum, extremes of cold, any mind-influencing psychic
+effect, and their Armour Points apply toward fire damage.
+Machines are also resilient to injury, having 1 to 5 Armour
+Points for each location. This number is indicated next to
+the trait.",
+	
+	"content" : "A creature with the Machine trait is fashioned from inorganic
+materials and is generally more rigourous then fleshy folks.
+Machines do not breathe, are immune to the effects of a
+vacuum, extremes of cold, any mind-influencing psychic
+effect, and their Armour Points apply toward fire damage.
+Machines are also resilient to injury, having 1 to 5 Armour
+Points for each location. This number is indicated next to
+the trait.",
 
 	"extraSubCategories" : [],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 130
+	"pageNumber" : 133
 }

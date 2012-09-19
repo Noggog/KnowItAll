@@ -1,0 +1,10 @@
+{
+	
+	"content" : "Designed to puncture and to mangle, this weapon is capable
+of toppling even the mightiest foes. If the weapon hits, it
+ignores a number of levels of Unnatural Toughness possessed
+by the target equal to the number in parenthesis. For instance,
+a Felling (1) weapon ignores the benefits of Unnatural
+Toughness (x2) and would reduce the benefits of Unnatural
+Toughness (x3) by one multiplier."
+}

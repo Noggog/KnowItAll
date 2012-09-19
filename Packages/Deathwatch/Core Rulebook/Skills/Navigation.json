@@ -1,27 +1,34 @@
 {
-	"name" : "Awareness",
 	
-	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"shortContent" : "The character uses the Navigation Skill to plot a course
+between two points.",
+	
+	"content" : "The character uses the Navigation Skill to plot a course
+between two points. The course might be across a continent or
+across a star system. A successful Navigation Test also provides
+an estimated travel time based on geography, cosmography,
+prevailing conditions, weather, and solar winds. Surface
+navigation is used to navigate across a planet’s surface, using
+logi-compasses, map readouts, and geographical knowledge.
+Stellar navigation is used to navigate in space between planets,
+using star-charts, and carto-mantic rituals. A Navigation Test
+represents several hours of charting courses, consulting maps,
+and making necessary trajectory corrections. However, 1
+minute is adequate for the purpose of finding the character’s
+current location.
+<br>
+<br>
+<b>Skill Groups:</b> Surface, Stellar",
 
 	"extraSubCategories" : 
 	[ 
 		["Characteristic", "Perception"],
-		["Skill Use", "Free Action"]
+		["Skill Use", "1 minute for simple location; 1d5 hours for
+plotting courses or routes"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 103
 }

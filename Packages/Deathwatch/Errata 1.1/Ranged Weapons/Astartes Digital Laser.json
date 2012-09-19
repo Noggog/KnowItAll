@@ -1,0 +1,23 @@
+{
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Exotic - Pistol"],
+		["Range", "4m"],
+		["Rate of Fire", "S/-/-"],
+		["Damage", "1D10+4 E"],
+		["Penetration", "7"],
+		["Clip", "1"],
+		["Reload", "Special"],
+		["Special", "Reliable"],
+		["Weight", "0.1"],
+		["Requisition", "35"],
+		["Renown", "Famed"]
+	],
+	
+	"GMOnly" : false
+}

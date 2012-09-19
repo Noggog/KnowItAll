@@ -1,0 +1,76 @@
+{
+	"shortContent" : "The Common Lore skill allows the character to recall general
+information, procedures, divisions, traditions, famed individuals,
+and superstitions of a particular world, group, organisation, or
+race.",
+	
+	"content" : "The Common Lore skill allows the character to recall general
+information, procedures, divisions, traditions, famed individuals,
+and superstitions of a particular world, group, organisation, or
+race. This skill differs from Scholastic Lore, which represents
+scholarly learning, and Forbidden Lore, which involves hidden
+or proscribed knowledge, in that it deals with basic information
+learned from prolonged exposure to a culture or area.
+Success in a Common Lore Test indicates the character recalls
+general information about the subject. The GM determines
+what extra information to provide for additional Degrees
+of Success.<br>
+<b>Adeptus Arbites:</b> Knowledge of the various arms and
+sub-sects of the Adeptus Arbites, including such things as
+rank structure, common procedures, and the basic tenets of
+Imperial justice.<br>
+<b>Adeptus Astartes:</b> An understanding of the role, function,
+and nature of the famed Imperial Space Marines, as well as
+a knowledge of the commonly known Chapters and their
+practices and areas of operation.<b>
+<br>Adeptus Mechanicus:</b> A general understanding of the
+symbols and practices of the Adeptus Mechanicus as well as
+their hierarchy, identifiable ranks, and the existence of the
+Sixteen Universal Laws.<br>
+<b>Administratum:</b> Broad knowledge of the labyrinthine
+workings, rules, traditions, and dictates of the Adeptus
+Administratum.<br>
+<b>Deathwatch:</b> Knowledge of the function and organisation
+of the Deathwatch, including its primary mandates and
+favoured practices.<br>
+<b>Ecclesiarchy:</b> Understanding of the structure of the Adeptus
+Ministorum and its role in the worship of the God-Emperor as
+divine, its organisation, greetings, and general practices.
+Imperial Creed: Knowledge of the rites and practices of
+the Imperial Cult, the most common observances, festivals,
+and holidays in honour of the Emperor, and the most
+well-known saints.<br>
+<b>Imperial Guard:</b> Basic information about the ranking
+system, logistics, structure, and basic tactical and strategic
+practices of the Imperial Guard, as well as particularly famed
+regiments.<br>
+<b>Imperial Navy:</b> Basic information about the ranks, customs,
+uniforms, and particular traditions of the Imperial Navy, as well
+as famous admirals and ships.<br>
+<b>Imperium:</b> Knowledge of the segmentums, sectors, and
+most well-known worlds of the Imperium.<br>
+<b>Jericho Reach:</b> Information concerning the general
+astrography of the Reach, including known worlds, recorded
+inhabitants, and theatres of conflict.<br>
+<b>Tech:</b> An understanding of simple litanies and rituals to
+soothe and appease machine spirits.<br>
+<b>War:</b> Knowledge of great battles, notable and notorious
+commanders, heroes, and famous stratagems employed by the
+Imperium in its many campaigns.
+<br>
+<br>
+<b>Skill Groups:</b> Adeptus Arbites, Adeptus Astartes, Adeptus
+Mechanicus, Administratum, Deathwatch, Ecclesiarchy,
+Imperial Creed, Imperial Guard, Imperial Navy, Imperium,
+Jericho Reach, Tech, War",
+
+	"extraSubCategories" : 
+	[ 
+		["Characteristic", "Intelligence"],
+		["Skill Use", "Free Action"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" :100
+}

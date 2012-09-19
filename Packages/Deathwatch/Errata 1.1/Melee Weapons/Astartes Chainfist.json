@@ -1,0 +1,22 @@
+{
+
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Mounted"],
+		["Damage", "2D10* E"],
+		["Penetration", "10"],
+		["Special", "Power Field, Tearing, Unwieldy"],
+		["Weight", "48"],
+		["Requisition", "40"],
+		["Renown", "Famed"]
+	],
+	
+	"GMOnly" : false
+	
+
+}

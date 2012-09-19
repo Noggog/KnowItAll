@@ -1,27 +1,30 @@
 {
-	"name" : "Awareness",
 	
-	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
+	"shortContent" : "With the Tracking Skill, the character can follow the
+signs left by his quarry, allowing him to hunt them down.",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"content" : "With the Tracking Skill, the character can follow the
+signs left by his quarry, allowing him to hunt them down.
+Following obvious tracks does not require a Skill Test, and is
+considered part of a character’s movement. In instances where
+the time or elements have eroded the signs or where the very
+environment makes seeing them difficult, such as darkness
+or fog, Tracking Tests are required. The difficulty depends
+on the condition of the traces and the tracker’s surroundings.
+When following any tracks where the difficulty of the test
+is more than Challenging (+0), the tracker’s Movement rate
+drops to half. Cunning or devious quarry may attempt to
+conceal or erase their tracks. In any case where an opponent
+has attempted to do this, make an Opposed Test made against
+the prey’s Concealment.",
 
 	"extraSubCategories" : 
 	[ 
-		["Characteristic", "Perception"],
-		["Skill Use", "Free Action"]
+		["Characteristic", "Intelligence"],
+		["Skill Use", "Free Action made as part of Movement"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 106
 }

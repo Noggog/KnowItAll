@@ -1,0 +1,21 @@
+{
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Pistol"],
+		["Range", "10m"],
+		["Rate of Fire", "S/-/-"],
+		["Damage", "1D10+7 E"],
+		["Penetration", "4"],
+		["Special", "Flame"],
+		["Weight", "6"],
+		["Requisition", "10"],
+		["Renown", "-"]
+	],
+	
+	"GMOnly" : false
+}

@@ -1,0 +1,25 @@
+{
+	
+	
+	"shortContent" : "Though something of a lost skill to much of the Imperium,
+the uncharted fringes require its use far more frequently.",
+	
+	"content" : "Though something of a lost skill to much of the Imperium,
+the uncharted fringes require its use far more frequently. The
+Swim Skill allows the character to swim through various
+liquid mediums. Under normal conditions swimming does
+not require a test. More difficult waters, unusual circumstances
+or long distances call for a Skill Test. For more information
+on the Swim Skill, see the Swimming section on page 207 of
+Chapter VII: Playing the Game.",
+
+	"extraSubCategories" : 
+	[ 
+		["Characteristic", "Strength"],
+		["Skill Use", "Full Action"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 105
+}

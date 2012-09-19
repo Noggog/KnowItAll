@@ -1,15 +1,26 @@
 {
-	"name" : "Amorphous",
 	
-	"shortContent" : "Change size one step in either direction.  Movement based on half their agility bonus.",
+	"shortContent" : "Creatures with this trait multiply
+their Toughness Bonus against all damage by the number
+indicated in parentheses after the trait in the same manner
+as an Unnatural Characteristic (see page 136). The effects of
+this trait stack with the effects of the Unnatural Characteristic
+trait. The effects of this trait are ignored for damage inflicted
+by force weapons, psychic powers, holy attacks, or other
+creatures with this trait. Daemonic creatures are also immune
+to poison and disease.",
 	
-	"content" : "An amorphous creature has a malleable form, capable of
-squeezing its body or expanding it. It can change size by one
-step in either direction, though doing so does not change
-its speed. Creatures with this trait determine their movement
-rates using one-half their Agility Bonus (rounding up).
-Amorphous creatures are often missing senses and so rely on
-the Unnatural Senses Trait to perceive their surroundings.",
+	"content" : "Daemonic creatures are creatures of the Warp, but can
+manifest in realspace either through sheer strength of will,
+hunger, or occult rituals. Creatures with this trait multiply
+their Toughness Bonus against all damage by the number
+indicated in parentheses after the trait in the same manner
+as an Unnatural Characteristic (see page 136). The effects of
+this trait stack with the effects of the Unnatural Characteristic
+trait. The effects of this trait are ignored for damage inflicted
+by force weapons, psychic powers, holy attacks, or other
+creatures with this trait. Daemonic creatures are also immune
+to poison and disease.",
 
 	"extraSubCategories" : [],
 	

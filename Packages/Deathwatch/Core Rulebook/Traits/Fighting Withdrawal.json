@@ -1,19 +1,20 @@
 {
-	"name" : "Amorphous",
 	
-	"shortContent" : "Change size one step in either direction.  Movement based on half their agility bonus.",
+	"shortContent" : "When a Horde with this trait breaks, it does
+not flee moving at its Sprint rate of movement, but instead
+withdraws at any movement rate that is appropriate. The Horde
+will also continue to make ranged attacks as it withdraws.",
 	
-	"content" : "An amorphous creature has a malleable form, capable of
-squeezing its body or expanding it. It can change size by one
-step in either direction, though doing so does not change
-its speed. Creatures with this trait determine their movement
-rates using one-half their Agility Bonus (rounding up).
-Amorphous creatures are often missing senses and so rely on
-the Unnatural Senses Trait to perceive their surroundings.",
+	"content" : "Though broken, the horde does not simply flee, but makes
+a fighting withdrawal that prevents its enemies from simply
+overwhelming it. When a Horde with this trait breaks, it does
+not flee moving at its Sprint rate of movement, but instead
+withdraws at any movement rate that is appropriate. The Horde
+will also continue to make ranged attacks as it withdraws.",
 
 	"extraSubCategories" : [],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 130
+	"pageNumber" : 132
 }

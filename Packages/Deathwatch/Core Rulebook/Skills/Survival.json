@@ -1,27 +1,36 @@
 {
-	"name" : "Awareness",
 	
-	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"shortContent" : "The Survival Skill allows the character to endure prolonged
+periods in unusual or alien environments.",
+	
+	"content" : "The Survival Skill allows the character to endure prolonged
+periods in unusual or alien environments. Space Marines
+do not die of exposure to the elements, and their implants
+allow them to survive on even the most inedible of flora and
+fauna. Thus, the Survival Skill most often applies to normal
+humans or those Space Marines who learned this skill before
+becoming an Initiate in their Chapter. A skilled outdoorsman,
+the character can find edible plants, hunt for game, and
+determine if food is safe for consumption. He can also
+construct viable shelters from native materials or improvised
+substances and ensure they’re located away from flood chutes
+or the territory of predators. The difficulty of these tests
+depends on the location: barren deserts provide much greater
+challenge than the verdant tropical forests. This skill can also
+apply to man-made environments, such as artificial worlds,
+the depths of the underhive, or the belly of massive starships.
+In this case, the Skill can provide safe resting areas away from
+plasma venting and knowledge about which sacred unguents
+also provide minimal nutrition.",
 
 	"extraSubCategories" : 
 	[ 
-		["Characteristic", "Perception"],
-		["Skill Use", "Free Action"]
+		["Characteristic", "Intelligence"],
+		["Skill Use", "Various"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 105
 }

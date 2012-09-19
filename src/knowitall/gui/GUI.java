@@ -98,8 +98,8 @@ public class GUI {
 
 	    @Override
 	    public void run() {
-		dimmer.setVisible(true);
 		tooltip.setVisible(true);
+		dimmer.setVisible(true);
 	    }
 	});
     }

@@ -1,27 +1,55 @@
 {
-	"name" : "Awareness",
 	
-	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
+	"shortContent" : "Trade Skills allow the character to create things, from guns
+to starships. Characters with this Skill can earn money or
+reputation plying a trade.",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"content" : "Trade Skills allow the character to create things, from guns
+to starships. Characters with this Skill can earn money or
+reputation plying a trade. They can identify the works of
+particularly famous or infamous craftsmen, or recall information
+concerning items of their trade.<br>
+Trade Tests can represent the work of an hour, week, or
+month depending on the complexity of the task at hand.
+However, tests that involve the examination of an item to recall
+information require a Full Action.
+<br><b>Archaeologist:</b> Used to locate, examine and analyse ancient
+ruins and artefacts.
+<br><b>Armourer:</b> Used to design, upgrade and forge weaponry,
+from personal to starship sized.
+<br><b>Astrographer:</b> Used to create two and three-dimensional
+representations of stellar locations and warp routes.
+<br><b>Chymist:<b> Used to create poisons, drugs, and a wide variety
+of other compounds.
+<br><b>Cryptographer:</b> Used to create or decode ciphers, codes,
+and other puzzles.
+<br><b>Explorator:</b> Used in the exploration of unknown stellar
+regions.
+<br><b>Linguist:</b> Used to learn or decipher new languages, both
+spoken and written.
+<br><b>Remembrancer:</b> Used to recount events in a variety of art
+forms, from sculpture to poetry.
+<br><b>Shipwright:</b> Used to design, upgrade, and create voidcapable
+vessels.
+<br><b>Soothsayer: Used to foretell the future by a number of
+interpretive arts, though its effectiveness is suspect.
+<br><b>Technomat:</b> Used to maintain and repair technological
+devices, but through rote memorisation rather than true
+understanding.
+<br>
+<br>
+<b>Skill Groups:</b> Archaeologist (Int), Armourer (Ag), Astrographer
+(Ag), Chymist (Int), Cryptographer (Int), Explorator (Int),
+Linguist (Int), Remembrancer (Ag or Int), Shipwright (Int),
+Soothsayer (Fel), Technomat (Int), Trader (Fel)",
 
 	"extraSubCategories" : 
 	[ 
-		["Characteristic", "Perception"],
-		["Skill Use", "Free Action"]
+		["Characteristic", "Various"],
+		["Skill Use", "Variable depending on task and complexity"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 106
 }

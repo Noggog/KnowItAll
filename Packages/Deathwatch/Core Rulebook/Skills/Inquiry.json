@@ -1,0 +1,29 @@
+{
+
+	
+	"shortContent" : "The character can use the Inquiry Skill to gain information
+by asking questions, making conversation, or simple
+eavesdropping.",
+	
+	"content" : "The character can use the Inquiry Skill to gain information
+by asking questions, making conversation, or simple
+eavesdropping. Inquiry allows the character to pick up general
+information about an area: its news, recent events, and more.
+Additional Degrees of Success reveal more detailed or more
+secretive tidings. Inquiry can also be used as an Investigation
+Skill, allowing the character to hunt after a particular item of
+information from either individuals or resources, such as the
+Chapter’s librarium. This use is virtually always an Extended
+Test, with difficulty and duration set by the GM.
+",
+
+	"extraSubCategories" : 
+	[ 
+		["Characteristic", "Fellowship"],
+		["Skill Use", "1 hour or more"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 99
+}

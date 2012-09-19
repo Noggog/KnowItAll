@@ -1,0 +1,7 @@
+{
+	
+	"content" : "Damage inflicted by a Sanctified weapon counts as Holy
+Damage, which has certain effects on some Daemonic and
+warp creatures. All weapons with this special Quality must be
+either Exceptionally or Master-Crafted."
+}

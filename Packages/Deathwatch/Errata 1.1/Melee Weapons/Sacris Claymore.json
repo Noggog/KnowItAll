@@ -1,0 +1,22 @@
+{
+
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Melee"],
+		["Damage", "2D10+2 R"],
+		["Penetration", "2"],
+		["Special", "Unbalanced"],
+		["Weight", "10"],
+		["Requisition", "3"],
+		["Renown", "-"]
+	],
+	
+	"GMOnly" : false
+	
+	
+}

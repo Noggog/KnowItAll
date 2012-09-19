@@ -1,0 +1,23 @@
+{
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Heavy"],
+		["Range", "45m"],
+		["Rate of Fire", "S/-/-"],
+		["Damage", "Special"],
+		["Penetration", "-"],
+		["Clip", "5"],
+		["Reload", "3 Full"],
+		["Special", "Blast (5)"],
+		["Weight", "65"],
+		["Requisition", "45"],
+		["Renown", "Distinguished"]
+	],
+	
+	"GMOnly" : false
+}

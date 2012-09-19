@@ -1,19 +1,18 @@
 {
-	"name" : "Amorphous",
+
 	
-	"shortContent" : "Change size one step in either direction.  Movement based on half their agility bonus.",
+	"shortContent" : "The NPC has a number of Fate Points shown in parentheses
+after the trait, used exactly like regular Fate Points.",
 	
-	"content" : "An amorphous creature has a malleable form, capable of
-squeezing its body or expanding it. It can change size by one
-step in either direction, though doing so does not change
-its speed. Creatures with this trait determine their movement
-rates using one-half their Agility Bonus (rounding up).
-Amorphous creatures are often missing senses and so rely on
-the Unnatural Senses Trait to perceive their surroundings.",
+	"content" : "The NPC has a number of Fate Points shown in parentheses
+after the trait. He may use these Fate Points in exactly the
+same way as Player Characters and may even ‘burn’ a Fate
+Point to survive death and destruction at the GM’s discretion.
+The rules for Righteous Fury also apply to this NPC.",
 
 	"extraSubCategories" : [],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 130
+	"pageNumber" : 135
 }

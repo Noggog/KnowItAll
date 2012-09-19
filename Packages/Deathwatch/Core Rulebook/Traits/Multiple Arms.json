@@ -1,19 +1,24 @@
 {
-	"name" : "Amorphous",
 	
-	"shortContent" : "Change size one step in either direction.  Movement based on half their agility bonus.",
 	
-	"content" : "An amorphous creature has a malleable form, capable of
-squeezing its body or expanding it. It can change size by one
-step in either direction, though doing so does not change
-its speed. Creatures with this trait determine their movement
-rates using one-half their Agility Bonus (rounding up).
-Amorphous creatures are often missing senses and so rely on
-the Unnatural Senses Trait to perceive their surroundings.",
+	"shortContent" : "It increases its
+Toughness Characteristic by +10 and gains a +10 bonus on
+Strength Tests involving movement such as Climb and Swim. The creature may use the Multiple Attack action to
+gain two attacks on its turn. If the creature also has the Swift
+or Lightening Attack Talent, this trait increases the number of
+attacks they make with a multiple attack action by +1.",
+	
+	"content" : "This creature has more than one pair of arms. It increases its
+Toughness Characteristic by +10 and gains a +10 bonus on
+Strength Tests involving movement such as Climb and Swim.
+Finally, the creature may use the Multiple Attack action to
+gain two attacks on its turn. If the creature also has the Swift
+or Lightening Attack Talent, this trait increases the number of
+attacks they make with a multiple attack action by +1.",
 
 	"extraSubCategories" : [],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 130
+	"pageNumber" : 133
 }

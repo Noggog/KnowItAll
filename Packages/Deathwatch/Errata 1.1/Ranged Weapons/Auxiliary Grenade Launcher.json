@@ -1,0 +1,23 @@
+{
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "N/A"],
+		["Range", "45m"],
+		["Rate of Fire", "S/-/-"],
+		["Damage", "By Missile"],
+		["Penetration", "By Missile"],
+		["Clip", "4"],
+		["Reload", "2 Full"],
+		["Special", "By Missile"],
+		["Weight", "+3"],
+		["Requisition", "15"],
+		["Renown", "Respected"]
+	],
+	
+	"GMOnly" : false
+}

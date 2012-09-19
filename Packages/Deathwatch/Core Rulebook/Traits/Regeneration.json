@@ -1,19 +1,18 @@
 {
-	"name" : "Amorphous",
+
 	
-	"shortContent" : "Change size one step in either direction.  Movement based on half their agility bonus.",
+	"shortContent" : "Each round, at the
+start of its turn, the creature tests Toughness to removes an
+amount of damage indicated in the parenthesis after the trait. Does not affect slain creatures.",
 	
-	"content" : "An amorphous creature has a malleable form, capable of
-squeezing its body or expanding it. It can change size by one
-step in either direction, though doing so does not change
-its speed. Creatures with this trait determine their movement
-rates using one-half their Agility Bonus (rounding up).
-Amorphous creatures are often missing senses and so rely on
-the Unnatural Senses Trait to perceive their surroundings.",
+	"content" : "Creatures with this trait heal very quickly. Each round, at the
+start of its turn, the creature tests Toughness to removes an
+amount of damage indicated in the parenthesis after the trait.
+It loses this trait when slain.",
 
 	"extraSubCategories" : [],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 130
+	"pageNumber" : 134
 }

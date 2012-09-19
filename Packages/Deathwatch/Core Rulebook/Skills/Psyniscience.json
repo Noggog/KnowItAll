@@ -1,27 +1,35 @@
 {
-	"name" : "Awareness",
 	
 	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"content" : "Those with the Psyniscience Skill sense the currents and eddies
+of the warp. The character can use the Skill to detect the presence
+or absence of daemons, and the use of psychic powers. The
+Skill also allows detection of psychic phenomena, disturbances,
+voids, or other areas where the flow of the immaterium has
+been unsettled or disrupted. The general results of Psyniscience
+Tests are summarised on Table 3–4: Psyniscience.
+<br>
+<br>
+<b>Table 3–4: Psyniscience<br>
+Degrees of Success Result</b><br>
+Standard Success: Awareness of warp disruption or
+number of entities present
+<br>One: Approximate direction of the
+phenomena or creatures
+<br>Two: Rough location of the warp
+creatures or beings affecting the
+Immaterium.
+<br>Three or more: Exact position of the creatures or
+psykers present",
 
 	"extraSubCategories" : 
 	[ 
 		["Characteristic", "Perception"],
-		["Skill Use", "Free Action"]
+		["Skill Use", "Full Action"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 103
 }

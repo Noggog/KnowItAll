@@ -1,0 +1,23 @@
+{
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Basic"],
+		["Range", "50m"],
+		["Rate of Fire", "S/3/-"],
+		["Damage", "1D10+9 X"],
+		["Penetration", "4"],
+		["Clip", "28"],
+		["Reload", "Full"],
+		["Special", "Tearing, Accurate, Reliable"],
+		["Weight", "15"],
+		["Requisition", "Ultramarines Only, By Roleplaying"],
+		["Renown", "Special"]
+	],
+	
+	"GMOnly" : false
+}

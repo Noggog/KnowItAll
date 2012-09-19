@@ -1,0 +1,22 @@
+{
+
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Thrown"],
+		["Range", "SB x 3"],
+		["Rate of Fire", "S/-/-"],
+		["Damage", "-"],
+		["Penetration", "0"],
+		["Special", "Blast (5)"],
+		["Weight", "0.8"],
+		["Requisition", "10"],
+		["Renown", "-"]
+	],
+	
+	"GMOnly" : false
+}

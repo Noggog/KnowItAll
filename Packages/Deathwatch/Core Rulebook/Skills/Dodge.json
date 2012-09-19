@@ -1,0 +1,20 @@
+{
+	
+	"shortContent" : "Use the Dodge skill as a Reaction to nullify a successful handto-
+hand or ranged attack.",
+	
+	"content" : "Use the Dodge skill as a Reaction to nullify a successful handto-
+hand or ranged attack. Success on the Skill Test means the
+attack has been avoided and deals no damage. See Chapter
+VIII: Combat for more information on Dodge.",
+
+	"extraSubCategories" : 
+	[ 
+		["Characteristic", "Agility"],
+		["Skill Use", "Reaction"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 98
+}

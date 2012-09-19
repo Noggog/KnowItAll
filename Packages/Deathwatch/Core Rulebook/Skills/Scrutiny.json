@@ -1,27 +1,33 @@
 {
-	"name" : "Awareness",
 	
-	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"shortContent" : "The Scrutiny Skill helps assess the people or objects
+encountered in the game. The character uses it to determine
+an individual’s truthfulness, his motives, personality, and
+temperament.",
+	
+	"content" : "The Scrutiny Skill helps assess the people or objects
+encountered in the game. The character uses it to determine
+an individual’s truthfulness, his motives, personality, and
+temperament. It can also be used to examine an object in
+detail, noticing small details and characteristics that might
+pass unseen in a casual inspection. Scrutiny is an Opposed
+Test against the target’s Deceive when trying to perceive
+falsehoods, or some other deceptions. However, Scrutiny
+does not reveal hidden secrets or a target’s carefully concealed
+intent, and should never replace good roleplaying in an
+interactive situation. This skill counters the Opposed Tests of
+many manipulative Interaction skills, such as Charm, Deceive,
+and Intimidate.",
 
 	"extraSubCategories" : 
 	[ 
 		["Characteristic", "Perception"],
-		["Skill Use", "Free Action"]
+		["Skill Use", "Full Action though special uses may require
+more time"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 103
 }

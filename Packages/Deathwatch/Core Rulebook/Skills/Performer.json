@@ -1,27 +1,39 @@
 {
-	"name" : "Awareness",
 	
-	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
+	"shortContent" : "The character can use the Performer Skill to entertain and
+enthral groups of spectators.",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"content" : "The character can use the Performer Skill to entertain and
+enthral groups of spectators. The Performer Skill may also be
+used to earn money and wealth, much like the Trade Skills.
+Performer Tests take an amount of time dependent on the art
+form involved.<br>
+<br>
+<b>Special uses<br>
+Charming Performance</b><br>
+A character may make a Difficult (–10) Performer (Storyteller)
+or Performer (Singer) Test instead of a Charm test, to win
+round an audience, causing their disposition to improve by
+one level (see page 276).
+<br><b>Enthralling Performance</b><br>
+A character may make a Difficult (–10) Performer (Musician)
+or Performer (Singer) Test instead of a Blather Test, utterly
+enthralling and distracting an audience for a moment. When
+used in place of the Blather Skill, it is subject to the same
+rules and conditions.
+<br><b>Rousing Tale</b><br>
+A character may make a Challenging (+0) Performer
+(Storyteller) or Performer (Singer) Test instead of a Command
+test to raise the moral of troops under his command or get them
+to undertake a difficult duty, such as making a last stand.",
 
 	"extraSubCategories" : 
 	[ 
-		["Characteristic", "Perception"],
+		["Characteristic", "Variable"],
 		["Skill Use", "Free Action"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 103
 }

@@ -1,19 +1,21 @@
 {
-	"name" : "Amorphous",
 	
-	"shortContent" : "Change size one step in either direction.  Movement based on half their agility bonus.",
+	"shortContent" : "",
 	
-	"content" : "An amorphous creature has a malleable form, capable of
-squeezing its body or expanding it. It can change size by one
-step in either direction, though doing so does not change
-its speed. Creatures with this trait determine their movement
-rates using one-half their Agility Bonus (rounding up).
-Amorphous creatures are often missing senses and so rely on
-the Unnatural Senses Trait to perceive their surroundings.",
+	"content" : "Whenever a creature with this trait fails a Willpower Test, it
+automatically stampedes, charging in a straight line forwards
+for as far as possible, overrunning anything in its path until
+the source of danger is escaped or crushed under hoof, taking
+damage equal to the creature’s Natural Weapon damage (or
+1d5+SB I if it doesn’t have one). One stampeding creature
+automatically causes all other creatures with this Trait within
+sight to stampede. The stampede lasts until the source of
+danger is no longer visible or for 1d10 minutes, whichever
+occurs last.",
 
 	"extraSubCategories" : [],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 130
+	"pageNumber" : 135
 }

@@ -1,0 +1,54 @@
+{
+
+	
+	"shortContent" : "The character uses Evaluate to determine the approximate
+value, strength, or manufacture of an object or group of items.",
+	
+	"content" : "The character uses Evaluate to determine the approximate
+value, strength, or manufacture of an object or group of items.
+Thus, the Skill can be used on anything from a single power
+sword to a fortified bunker. Before evaluating an object,
+the character must specify what he is trying to determine:
+its approximate monetary value, its quality and strength, or
+its origin. Success on the Evaluate Test reveals the relevant
+information in a broad sense, such as its value in Throne Gelt,
+its Craftsmanship (see page 140) and structural integrity,
+or its make or model. Additional Degrees of Success gives
+additional information about the object. A failed test results
+in false information about the object, with the degree of error
+increasing with each Degree of Failure. The GM should roll
+Evaluate Tests and only reveal what the character believes to
+be true. The difficulty of the test should be adjusted for the
+character’s access to the item and any relevant Lore or Trade
+Skills related to the item. Using Evaluate on large or numerous
+objects requires an Extended Test, though the character can
+appraise a single item in about a minute.
+<br>
+<br>
+<b>Special uses<br>
+Weak Points</b><br>
+When making an attack against a heavily armoured stationary
+target such as a bunker or pillbox, a character may use
+Evaluate to determine weak points by making a Challenging
+(+0) Evaluate Test. Success adds an additional +4 to the Pen
+of the character’s weapon for his next attack if it is made
+against the target. Each additional Degree of Success adds a
+further +4 points of Pen. This is a Full Action.
+<br><b>Solid Cover</b><br>
+When in cover, a character can make a Challenging (+0)
+Evaluate Test to find the cover’s strongest point. Success adds
+an additional +4 AP to the cover (for the character only) with
+each additional Degree of Success adding another +4 AP.
+This is a Half Action.
+",
+
+	"extraSubCategories" : 
+	[ 
+		["Characteristic", "Intelligence"],
+		["Skill Use", "1 minute or more"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 98
+}

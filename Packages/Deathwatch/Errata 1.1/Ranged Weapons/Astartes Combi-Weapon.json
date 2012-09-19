@@ -1,0 +1,23 @@
+{
+	
+	"shortContent" : "",
+	
+	"content" : "Profile is for the primary bolter. Secondary weapon has RoF: S/–/– and Clip: 1, with all other statistics as per the weapon’s entry.",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Basic"],
+		["Range", "100m"],
+		["Rate of Fire", "S/4/-"],
+		["Damage", "1D10+9 X"],
+		["Penetration", "4"],
+		["Clip", "28"],
+		["Reload", "Full"],
+		["Special", "Tearing"],
+		["Weight", "25"],
+		["Requisition", "15"],
+		["Renown", "Respected"]
+	],
+	
+	"GMOnly" : false
+}

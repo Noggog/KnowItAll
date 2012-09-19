@@ -1,27 +1,71 @@
 {
-	"name" : "Awareness",
 	
-	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
+	"shortContent" : "The Medicae Skill helps diagnose and treat injuries by suturing
+wounds, applying counterseptic, and use of medical devices such
+as the narthecium.",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"content" : "The Medicae Skill helps diagnose and treat injuries by suturing
+wounds, applying counterseptic, and use of medical devices such
+as the narthecium. On individual patients, Medicae provides first
+aid and extended care, for short and long-term treatment. On
+larger groups of wounded, Medicae can help save the lives of
+those that can be saved and apply the Emperor’s grace to those
+who cannot, resulting in fewer overall deaths. It can also help
+diagnose widespread medical problems and apply the ounce of
+prevention before the pound of cure becomes necessary.
+<br>
+<br>
+<b>Special uses<br>
+First Aid</b><br>
+The Medicae Skill performs first aid for the injured, removing
+a small amount of damage by suturing lacerations, bandaging
+abrasions, and plugging punctures. A successful Medicae Test
+removes Damage equal to the character’s Intelligence Bonus
+on lightly damaged characters, or 1 Damage from heavily or
+critically damaged characters. Performing First Aid is a full
+round action. First Aid may only be applied to each wound
+once and is a full round action by you and your patient.
+<br><b>Extended Care</b><br>
+Using the Medicae Skill for extended care speeds the
+healing process. The character can properly treat a number
+of patients equal to his Intelligence Bonus. Each additional
+patient imposes a cumulative –10 penalty to Medicae Tests
+to provide extended care. For lightly damaged patients,
+make one test at the end of each day. For heavily or critically
+damaged patients, test once at the end of each week. Success
+allows each patient to remove twice the normal Damage—
+removing Critical Damage first—plus 1 additional Damage
+for each Degree of Success. Failure does not adversely affect
+the character’s patients, who heal at the normal rate. Two or
+three Degrees of Failure indicates that all lightly and heavily
+damaged patients take 1 Damage each, using sudden death
+to resolve any Critical Damage (see page 250). Four or more
+Degrees of Failure indicates all patients take 1d10 Damage,
+using sudden death to resolve Critical Damage.
+For additional information on Healing, see Chapter VIII:
+Combat.
+<br><b>Diagnose</b><br>
+The Medicae Skill can also be used to diagnose disease and
+other ailments, both on one’s fellow characters and also
+on the crew at large. On individuals, a successful Skill Test
+yields the name of the ailment and basic treatments. When
+used on groups, a successful Skill Test prevents casualties to
+the Crew Population due to disease or malnutrition due to
+extended voyages.
+<br><b>Harvest Gene-Seed</b><br>
+As part of an Apothecary’s battlefield duties, he trains in the
+use of harvesting the gene-seeds of his fallen brothers. An
+Apothecary may use this Skill to extract the gene-seed from
+a fallen Space Marine with the use of a narthecium (See page
+271 for details).",
 
 	"extraSubCategories" : 
 	[ 
-		["Characteristic", "Perception"],
-		["Skill Use", "Free Action"]
+		["Characteristic", "Intelligence"],
+		["Skill Use", "Full Action"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 102
 }

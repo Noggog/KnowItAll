@@ -1,0 +1,23 @@
+{
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Basic"],
+		["Range", "120m"],
+		["Rate of Fire", "S/3/5"],
+		["Damage", "1D10+9 E"],
+		["Penetration", "10"],
+		["Clip", "30"],
+		["Reload", "4 Full"],
+		["Special", "Overheats, Volatile"],
+		["Weight", "30"],
+		["Requisition", "28"],
+		["Renown", "Distinguished"]
+	],
+	
+	"GMOnly" : false
+}

@@ -1,0 +1,23 @@
+{
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Basic"],
+		["Range", "30m"],
+		["Rate of Fire", "S/-/-"],
+		["Damage", "2D10+14 E"],
+		["Penetration", "12"],
+		["Clip", "6"],
+		["Reload", "2 Full"],
+		["Special", "-"],
+		["Weight", "14"],
+		["Requisition", "20"],
+		["Renown", "Respected"]
+	],
+	
+	"GMOnly" : false
+}

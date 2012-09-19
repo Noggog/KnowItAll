@@ -53,7 +53,7 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    specFile = specF;
 	    name = spec.name;
 	    if (Database.hasArticle(name)) {
-		String error = "Skipped because an article already existed with that name: " + name + "  | File: " + specF;
+		String error = "Skipped because an article already existed with that name: " + name + " (Orig: " + Database.getArticle(name).specFile + " | Conflict File: " + specF + ")";
 		Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", error);
 		return false;
 	    }

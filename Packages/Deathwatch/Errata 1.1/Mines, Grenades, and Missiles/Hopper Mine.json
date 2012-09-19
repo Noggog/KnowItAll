@@ -1,0 +1,22 @@
+{
+
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Placed Explosive"],
+		["Range", "2m"],
+		["Rate of Fire", "S/-/-"],
+		["Damage", "3D10 +9 I"],
+		["Penetration", "3"],
+		["Special", "Blast"],
+		["Weight", "2"],
+		["Requisition", "5"],
+		["Renown", "-"]
+	],
+	
+	"GMOnly" : false
+}

@@ -1,19 +1,20 @@
 {
-	"name" : "Amorphous",
 	
-	"shortContent" : "Change size one step in either direction.  Movement based on half their agility bonus.",
+	"shortContent" : "attacks made by a creature
+with this trait ignore physical armour unless it is created from
+psychoactive materials or carries the holy quality. Force fields
+still work against these attacks normally.",
 	
-	"content" : "An amorphous creature has a malleable form, capable of
-squeezing its body or expanding it. It can change size by one
-step in either direction, though doing so does not change
-its speed. Creatures with this trait determine their movement
-rates using one-half their Agility Bonus (rounding up).
-Amorphous creatures are often missing senses and so rely on
-the Unnatural Senses Trait to perceive their surroundings.",
+	"content" : "Creatures with this trait have weapons that are partially
+insubstantial, able to ignore such mundane things as armour
+or cover. Natural weapons and attacks made by a creature
+with this trait ignore physical armour unless it is created from
+psychoactive materials or carries the holy quality. Force fields
+still work against these attacks normally.",
 
 	"extraSubCategories" : [],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 130
+	"pageNumber" : 136
 }

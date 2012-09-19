@@ -1,0 +1,23 @@
+{
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Mounted"],
+		["Range", "150m"],
+		["Rate of Fire", "-/-/10"],
+		["Damage", "2D10+12 I"],
+		["Penetration", "6"],
+		["Clip", "200"],
+		["Reload", "3 Full"],
+		["Special", "Devastating (1), Tearing"],
+		["Weight", "80"],
+		["Requisition", "30"],
+		["Renown", "Famed"]
+	],
+	
+	"GMOnly" : false
+}

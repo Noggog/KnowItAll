@@ -1,27 +1,29 @@
 {
-	"name" : "Awareness",
+
 	
-	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
+	"shortContent" : "Characters utilise the Pilot Skill to fly anything from personal
+jump packs, to small atmospheric craft such as landers or guncutters,
+to void-capable fighters, bombers, and capital vessels.",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"content" : "Characters utilise the Pilot Skill to fly anything from personal
+jump packs, to small atmospheric craft such as landers or guncutters,
+to void-capable fighters, bombers, and capital vessels.
+Under normal conditions, piloting does not require a test,
+but unusual or difficult conditions such as storms, obstacles
+or dangerous manoeuvres do require a Skill Test. When
+chasing another vehicle or ship or contesting for position, the
+character makes an opposed Pilot Test against his opponent.
+<br>
+<br>
+<b>Skill Groups:</b> Personal, Flyers, Space Craft",
 
 	"extraSubCategories" : 
 	[ 
-		["Characteristic", "Perception"],
-		["Skill Use", "Free Action"]
+		["Characteristic", "Agility"],
+		["Skill Use", "Half Action"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 103
 }

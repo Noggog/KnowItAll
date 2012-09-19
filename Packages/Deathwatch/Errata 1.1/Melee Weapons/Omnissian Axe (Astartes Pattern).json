@@ -1,0 +1,21 @@
+{
+
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Melee"],
+		["Damage", "1D10+11 E"],
+		["Penetration", "6"],
+		["Special", "Power Field, Unbalanced"],
+		["Weight", "14"],
+		["Requisition", "30 - Only Techmarines"],
+		["Renown", "Distinguished"]
+	],
+	
+	"GMOnly" : false
+	
+}

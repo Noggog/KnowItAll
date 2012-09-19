@@ -1,27 +1,30 @@
 {
-	"name" : "Awareness",
+
 	
-	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
+	"shortContent" : "For the duration of the
+Round, the character clears his mind of external influence and
+focuses his will more intently.",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"content" : "For the duration of the
+Round, the character clears his mind of external influence and
+focuses his will more intently. This may be through recitation
+of mantras, use of psychic foci, or meditation. A successful
+test indicates that the character’s mind is ready to channel a
+greater amount of the warp than usual, while still limiting his
+exposure. On the next Round, the character adds +1 to the
+final Psy Rating of any Fettered Power Test.
+Failure on the Invocation Test indicates that the character’s
+attempts to focus have backfired, and he must take a –1
+penalty to the final Psy Rating of a Fettered Power Test. If this
+reduces the Psy Rating to zero, the power fails to activate.",
 
 	"extraSubCategories" : 
 	[ 
-		["Characteristic", "Perception"],
-		["Skill Use", "Free Action"]
+		["Characteristic", "Willpower"],
+		["Skill Use", "Full Action"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 99
 }

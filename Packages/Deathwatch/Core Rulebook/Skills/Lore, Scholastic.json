@@ -1,27 +1,104 @@
 {
-	"name" : "Awareness",
 	
-	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
+	"shortContent" : "Scholastic Lore grants the character knowledge of a
+particularly complex or esoteric subject.",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"content" : "Scholastic Lore grants the character knowledge of a
+particularly complex or esoteric subject. A successful Skill
+Test allows the character to recall necessary information or
+research a particular subject if appropriate reference material is
+readily available. Scholastic Lore grants a depth of knowledge
+far beyond that of Common Lore, requiring both experience
+and study to obtain. Scholastic Lore Tests can identify things
+that fall within the character’s area of expertise, such as a
+person, book, starship, or machine spirit. A successful Skill
+Test within the realm of the character’s speciality reveals basic
+information about the object in question in accordance with Table 3–3: Scholastic Lore.
+<br>
+<br>
+<b>Table 3–3: Scholastic Lore.
+Scholastic Lore Degrees of Success</b>
+Standard Success: Reveals basic information known
+to scholars on the topic.<br>
+One: Reveals uncommon information,
+known to few dedicated academics.<br>
+Two: Reveals obscure information,
+known to only serious scholars.<br>
+Three or more: Reveals extremely obscure
+information, known only to true
+experts in the field.
+<br>
+<br>
+Scholastic Lore can overlap with Common Lore and
+Forbidden Lore in some areas, but it represents more indepth—
+and academic—information. A character with
+Common Lore (Imperial Creed) might know conventional
+information about the Cult of the Emperor and its various
+organisations and their practices within the Imperium, but
+one with Scholastic Lore (Imperial Creed) would be able to
+name the various cults within a subsector and their varying
+levels of divergence from the Ministorum. Scholastic Lore
+Tests require no time, as the character either knows the fact
+or not. Researching, however, requires an Extended Test of a
+duration and difficulty appropriate to the task at hand.
+<br><b>Archaic:</b> An understanding of the Imperium’s dark past,
+its proscribed eras, and how the long millennia have changed
+the face of mankind.
+<br><b>Astromancy:</b> A knowledge of stars, singularities, and the
+worlds around them, as well as theoretical understanding of
+how to use telescopes, astrolithic charts, and the like.
+<br><b>Beasts:</b> An understanding of the genus and families of
+animals and familiarity with the characteristics and appearance
+of many semi-sentient creatures.
+<br><b>Bureaucracy:</b> A familiarity with the rules and regulations
+involved with governments, particularly the Adeptus
+Administratum, and their many and varied departments,
+bureaus, and policies.
+<br><b>Chymistry:</b> A knowledge of chemicals, their alchemical
+applications in a number of uses, and their prevalence or
+scarcity throughout the Imperium.
+<br><b>Codex Astartes:</b> Understanding and interpreting the
+sacred Codex Astartes and how it relates to the organisation,
+deployment, and tactics of the Space Marine Chapters.
+<br><b>Cryptology:</b> An understanding of codes, ciphers,
+cryptographs, secret languages, and numerical keys. This may
+be used to either create or decipher encryptions.
+<br><b>Heraldry:</b> A grasp of the principles and devices of
+heraldry, as well as a knowledge of the most common seals
+and heraldic devices used by the Imperium’s most noble houses
+and families.
+<br><b>Imperial Creed:</b> An understanding of the specific
+rituals and practices of the Ecclesiarchy, from the traditional
+construction of their temples to specific points from its
+texts. This information may be used to conduct the rituals
+for others.
+<br><b>Judgement:</b> Knowledge of the proper punishments for the
+myriad of crimes and heresies punishable by Imperial law.
+<br><b>Legend:</b> Going beyond archaic knowledge, this
+encompasses the most secretive portions of Imperial history,
+such as the Dark Age of Technology, the Age of Strife, the
+Great Crusade, and the Horus Heresy.
+<br><b>Numerology:</b> An understanding of the mysterious link
+between numbers and the physical universe, from Catastrophe
+theory to the Sadleirian litany.
+<br><b>Occult:</b> An understanding of occult rituals, theories, and
+superstitions, as well as the better-known mystical uses of
+occult items.
+<br><b>Philosophy:</b> Knowledge concerning the theories of
+thought, belief, existence, and other intangibles. As it also
+includes logic and debate, it may be used for argument or
+creating philosophical works.
+<br><b>Tactica Imperialis:</b> The theories of the Tactica Imperialis,
+as well as other systems of war, troop deployment, and battle
+techniques used by the Imperium.",
 
 	"extraSubCategories" : 
 	[ 
-		["Characteristic", "Perception"],
+		["Characteristic", "Intelligence"],
 		["Skill Use", "Free Action"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 101
 }

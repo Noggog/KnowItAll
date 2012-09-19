@@ -1,0 +1,22 @@
+{
+
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Melee"],
+		["Damage", "1D10 I"],
+		["Penetration", "0"],
+		["Special", "Primitive"],
+		["Weight", "-"],
+		["Requisition", "N/A"],
+		["Renown", "-"]
+	],
+	
+	"GMOnly" : false
+	
+	
+}

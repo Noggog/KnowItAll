@@ -1,0 +1,23 @@
+{
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Exotic - Heavy"],
+		["Range", "100m"],
+		["Rate of Fire", "S/-/-"],
+		["Damage", "Varies"],
+		["Penetration", "Varies"],
+		["Clip", "4"],
+		["Reload", "2 Full"],
+		["Special", "-"],
+		["Weight", "85"],
+		["Requisition", "40 - Techmarines Only"],
+		["Renown", "Hero"]
+	],
+	
+	"GMOnly" : false
+}

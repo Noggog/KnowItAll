@@ -1,27 +1,47 @@
 {
-	"name" : "Awareness",
+
 	
-	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
+	"shortContent" : "The Speak Language Skill is used to communicate with others
+using the same language.",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"content" : "The Speak Language Skill is used to communicate with others
+using the same language. The Imperium has nearly as many
+languages as it has star systems, but for all this variety, most
+can speak or understand a variation of Low Gothic. In most
+situations, Skill Tests are unnecessary so long as those involved
+all speak a common tongue. However, communication with
+those using obscure dialects or cryptic, complex concepts
+requires a test at an appropriate difficulty.
+<br><b>Eldar:</b> Though no human can hope to capture the subtle
+nuances and sub-tones of this extremely complex and ancient
+language, it is enough to make one’s meaning clear.
+<br><b>High Gothic:</b> The official language of the Imperium, used
+by Imperial officials, nobility, members of the Ecclesiarchy,
+and those involved in high-level negotiations.
+<br><b>Kroot:</b> The native chirping language of the Kroot is
+almost impossible for a human to emulate, however, with
+training and a good ear, it can be understood.
+<br><b>Low Gothic:</b> The common tongue of the Imperium, used
+by the countless millions of ordinary citizens.
+<br><b>Ork:</b> More grunts and physical violence than an actual
+language, it is possible for humans to speak and understand
+it, though it is doubtful they would be able to survive a
+conversation.
+<br><b>Techna-Lingua:</b> The official language of the Adeptus
+Mechanicus, this binary language has been optimised for rapid
+communication of technical data and servitor commands.
+<br><b>Tau:</b> The language of the Tau Empire, spoken by the Tau
+themselves and shared by their multitude of alien subjects.
+<br><b>Skill Groups:</b> Eldar, High Gothic, Kroot, Low Gothic, Ork,
+Techna-Lingua, Tau",
 
 	"extraSubCategories" : 
 	[ 
-		["Characteristic", "Perception"],
+		["Characteristic", "Intelligence"],
 		["Skill Use", "Free Action"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 104
 }

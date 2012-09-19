@@ -1,27 +1,27 @@
 {
-	"name" : "Awareness",
 	
-	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"shortContent" : "The Drive Skill allows the character to control land-based,
+hover, or skimmer-type vehicles.",
+	
+	"content" : "The Drive Skill allows the character to control land-based,
+hover, or skimmer-type vehicles. Vehicles include Cargo-8s,
+Rhinos, Land Speeders, Sentinels, and other ground-based
+transports. Normal driving does not require a test, but a test
+is required for hazardous conditions, excessive speed, or
+dangerous manoeuvres.
+<br>
+<br>
+<b>Skill Groups:</b><br>
+Ground Vehicle, Skimmer/Hover, Walker",
 
 	"extraSubCategories" : 
 	[ 
-		["Characteristic", "Perception"],
-		["Skill Use", "Free Action"]
+		["Characteristic", "Agility"],
+		["Skill Use", "Half Action"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 98
 }

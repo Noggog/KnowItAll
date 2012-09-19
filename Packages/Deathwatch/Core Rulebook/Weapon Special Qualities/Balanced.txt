@@ -1,0 +1,7 @@
+{
+	
+	"content" : "Some weapons, such as swords and knives, are designed so
+that the weight of the hilt balances the weight of the blade,
+making the weapon easier to wield. Balanced weapons grant
+a +10 bonus to Weapon Skill Tests made to Parry."
+}

@@ -1,0 +1,23 @@
+{
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Exotic - Basic"],
+		["Range", "200m"],
+		["Rate of Fire", "S/-/-"],
+		["Damage", "1D10 R"],
+		["Penetration", "0"],
+		["Clip", "6"],
+		["Reload", "2 Full"],
+		["Special", "Accurate, Felling (1), Toxic"],
+		["Weight", "4"],
+		["Requisition", "20"],
+		["Renown", "-"]
+	],
+	
+	"GMOnly" : false
+}

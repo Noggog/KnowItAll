@@ -1,0 +1,23 @@
+{
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Basic"],
+		["Range", "250m"],
+		["Rate of Fire", "S/-/-"],
+		["Damage", "1D10+4 R"],
+		["Penetration", "2"],
+		["Clip", "5"],
+		["Reload", "Full"],
+		["Special", "Accurate, Felling (1), Toxic"],
+		["Weight", "4"],
+		["Requisition", "25"],
+		["Renown", "-"]
+	],
+	
+	"GMOnly" : false
+}

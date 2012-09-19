@@ -1,0 +1,22 @@
+{
+
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Melee"],
+		["Damage", "1D10+8 E"],
+		["Penetration", "7"],
+		["Special", "Power Field, Unbalanced"],
+		["Weight", "10"],
+		["Requisition", "20"],
+		["Renown", "Respected"]
+	],
+	
+	"GMOnly" : false
+	
+	
+}

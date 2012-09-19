@@ -1,0 +1,24 @@
+{
+	
+	"shortContent" : "The character uses the Search Skill to attempt to discover things
+that are physically hidden, from a secreted holdout pistol to a
+bunker keyplate.",
+	
+	"content" : "The character uses the Search Skill to attempt to discover things
+that are physically hidden, from a secreted holdout pistol to a
+bunker keyplate. Search involves active investigation, whereas
+Awareness deals with passive or subconscious detection. Each
+Search Test covers a small room or area. When an object or
+individual has been deliberately hidden, the Search Test is an
+Opposed Test against your target’s Concealment.",
+
+	"extraSubCategories" : 
+	[ 
+		["Characteristic", "Perception"],
+		["Skill Use", "1 minute"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 104
+}

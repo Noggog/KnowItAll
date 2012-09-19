@@ -1,19 +1,26 @@
 {
-	"name" : "Amorphous",
 	
-	"shortContent" : "Change size one step in either direction.  Movement based on half their agility bonus.",
 	
-	"content" : "An amorphous creature has a malleable form, capable of
-squeezing its body or expanding it. It can change size by one
-step in either direction, though doing so does not change
-its speed. Creatures with this trait determine their movement
-rates using one-half their Agility Bonus (rounding up).
-Amorphous creatures are often missing senses and so rely on
-the Unnatural Senses Trait to perceive their surroundings.",
+	"shortContent" : "If a creature with this trait takes damage and does not
+deal damage or Insanity Points on other creatures by the end
+of its next turn, it must make a Willpower Test. The creature
+takes 1 damage for failure, plus 1 damage for each degree of
+failure. If this would deal damage equal to or in excess of the
+creature’s Wounds, it is cast back into the warp.",
+	
+	"content" : "Most warp-entities have a tenuous hold on our reality, often
+maintained only by horror and bloodshed, and may be
+disrupted if sufficient harm can be done to their manifested
+forms. If a creature with this trait takes damage and does not
+deal damage or Insanity Points on other creatures by the end
+of its next turn, it must make a Willpower Test. The creature
+takes 1 damage for failure, plus 1 damage for each degree of
+failure. If this would deal damage equal to or in excess of the
+creature’s Wounds, it is cast back into the warp.",
 
 	"extraSubCategories" : [],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 130
+	"pageNumber" : 136
 }

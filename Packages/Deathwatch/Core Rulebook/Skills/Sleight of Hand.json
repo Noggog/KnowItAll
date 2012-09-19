@@ -1,27 +1,29 @@
 {
-	"name" : "Awareness",
+
 	
-	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
+	"shortContent" : "Characters use Sleight of Hand for any task requiring a
+combination of deception and dexterity.",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"content" : "Characters use Sleight of Hand for any task requiring a
+combination of deception and dexterity. Examples include
+palming small objects, picking pockets, or performing tricks.
+The GM sets the difficulty for the test according to the size of
+the object and the intensity of observation. Sleight of Hand
+is always an Opposed Test against the opponent’s Awareness
+or Scrutiny.<br>
+The character can use Sleight of Hand instead of Gamble
+to employ deception and alter the odds in games of chance.
+See the Gamble Skill for more information. Though Sleight
+of Hand usually requires a Half Action, the character may
+make a test as a Free Action with a –10 penalty.",
 
 	"extraSubCategories" : 
 	[ 
-		["Characteristic", "Perception"],
-		["Skill Use", "Free Action"]
+		["Characteristic", "Agility"],
+		["Skill Use", "Half Action"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 104
 }

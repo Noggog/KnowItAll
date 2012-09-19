@@ -1,0 +1,46 @@
+{
+
+	
+	"shortContent" : "The Security Skill is used to bypass mechanical locks and other
+physical security systems.",
+	
+	"content" : "The Security Skill is used to bypass mechanical locks and other
+physical security systems. This differs from many systems that
+employ codes or cogitators that are more suited to the Tech-
+Use Skill. The GM sets the difficulty of the test according to
+the complexity of the mechanism. In most cases one test is
+sufficient, but large, intricate systems may require Extended
+Tests. See the Tech-Use Skill for systems that combine both
+mechanical and technical challenges. Using this Skill without
+proper tools or equipment is extremely challenging, and any
+attempt to bypass a lock or other security system without
+using a multikey or other set of appropriate tools suffers a
+–20 penalty.
+<br>
+<br>
+<b>Special uses<br>
+Strategic Entry<br></b>
+Although the Security Skill generally focuses on the tactical
+aspects of defeating a system, it also has its uses in finding
+weak points in the defensive system involved. Careful study of
+a building might reveal that one of the locks is of substandard
+quality or that sensors fail to cover the weed-choked culvert
+behind the facility. The skill can help determine where to
+strike instead of just how. This can also be used to find the
+weak spot in one’s own defences.<br>
+Security Tests made in this manner should test against
+Awareness rather than Agility, and requires 1d5 hours. The
+GM can adjust the time necessary upward in increments of 1d5
+additional hours for particularly large or complex systems.",
+
+	"extraSubCategories" : 
+	[ 
+		["Characteristic", "Agility"],
+		["Skill Use", "1 minute, reduced by 10 seconds for each Degree
+of Success"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 104
+}

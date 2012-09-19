@@ -1,19 +1,19 @@
 {
-	"name" : "Amorphous",
 	
-	"shortContent" : "Change size one step in either direction.  Movement based on half their agility bonus.",
 	
-	"content" : "An amorphous creature has a malleable form, capable of
-squeezing its body or expanding it. It can change size by one
-step in either direction, though doing so does not change
-its speed. Creatures with this trait determine their movement
-rates using one-half their Agility Bonus (rounding up).
-Amorphous creatures are often missing senses and so rely on
-the Unnatural Senses Trait to perceive their surroundings.",
+	"shortContent" : "Other creatures within
+range, and that succeed on a Difficult (–10) Awareness
+Test, may detect the curious keening.",
+	
+	"content" : "A creature with this trait perceives its surroundings by emitting
+a frequency noise, allowing the creature to locate the position
+of any solid object within 30 metres. Other creatures within
+range, and that succeed on a Difficult (–10) Awareness
+Test, may detect the curious keening.",
 
 	"extraSubCategories" : [],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 130
+	"pageNumber" : 135
 }

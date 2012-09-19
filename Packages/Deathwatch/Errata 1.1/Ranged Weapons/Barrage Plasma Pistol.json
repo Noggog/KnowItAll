@@ -1,0 +1,22 @@
+{
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Pistol"],
+		["Rate of Fire", "S/3/-"],
+		["Damage", "1D10+8 E"],
+		["Penetration", "8"],
+		["Clip", "9"],
+		["Reload", "3 Full"],
+		["Special", "Overheats, Volatile"],
+		["Weight", "7"],
+		["Requisition", "32"],
+		["Renown", "Famed"]
+	],
+	
+	"GMOnly" : false
+}

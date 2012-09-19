@@ -1,0 +1,22 @@
+{
+
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Melee"],
+		["Damage", "1D10+4 E"],
+		["Penetration", "6"],
+		["Special", "Power Field, Razor Sharp"],
+		["Weight", "7"],
+		["Requisition", "25"],
+		["Renown", "Distinguished"]
+	],
+	
+	"GMOnly" : false
+	
+	
+}

@@ -1,0 +1,10 @@
+{
+	
+	"content" : "Shocking weapons can stun their opponents with a powerful
+surge of energy. A target that takes at least 1 point of Damage
+from a Shocking weapon after Armour and Toughness Bonus
+must make a Toughness Test. He receives a +10 bonus for
+every Armour Point on the location hit. If he fails, he is
+Stunned for a number of Rounds equal to half the Damage
+he suffered."
+}

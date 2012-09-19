@@ -1,15 +1,15 @@
 {
-	"name" : "Amorphous",
 	
-	"shortContent" : "Change size one step in either direction.  Movement based on half their agility bonus.",
 	
-	"content" : "An amorphous creature has a malleable form, capable of
-squeezing its body or expanding it. It can change size by one
-step in either direction, though doing so does not change
-its speed. Creatures with this trait determine their movement
-rates using one-half their Agility Bonus (rounding up).
-Amorphous creatures are often missing senses and so rely on
-the Unnatural Senses Trait to perceive their surroundings.",
+	"shortContent" : "Never needs Survival tests in natural habitat. Pass WP test when scared or injured or flee.",
+	
+	"content" : "A creature with this trait is animalistic, tending to behave
+instinctively rather than rationally. No matter how high its
+Intelligence score is, it is still bestial. A creature with this
+trait never needs to make a Survival Test whilst in its natural
+habitat. Unless starving or desperate, a bestial creature must
+make a Willpower Test when frightened, startled or injured.
+On a failed test, the creature flees.",
 
 	"extraSubCategories" : [],
 	

@@ -1,0 +1,31 @@
+{
+
+	
+	"shortContent" : "The character uses the Gamble Skill when participating in
+games of chance and the countless other games popular
+amongst soldiers across the Imperium.",
+	
+	"content" : "The character uses the Gamble Skill when participating in
+games of chance and the countless other games popular
+amongst soldiers across the Imperium. Each participant wagers
+an amount, though these are typically the same, and makes
+an Opposed Test with the Gamble Skill. The player with the
+most Degrees of Success or fewest Degrees of Failure wins
+the pot. The character may choose to lose against any player
+with a worse result as part of a Deceive attempt.
+Those with both Skills may use Sleight of Hand instead
+of Gamble to hide cards or alter dice rolls. Success gives this
+character a +20 bonus to his tests, but four or more Degrees
+of Failure indicates he has been caught in the act.
+",
+
+	"extraSubCategories" : 
+	[ 
+		["Characteristic", "Agility"],
+		["Skill Use", "Full Action to an entire day of gaming"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 99
+}

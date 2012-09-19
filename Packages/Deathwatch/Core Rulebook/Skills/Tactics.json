@@ -1,27 +1,62 @@
 {
-	"name" : "Awareness",
 	
-	"shortContent" : "Opposed test to sense another's actions (ambushes, traps), or standard test to sense environmental factors (scents, motion).",
 	
-	"content" : "Awareness encompasses the character's subconscious ability 
-to react to things his conscious mind may not perceive. 
-He can use this Skill to notice threats—such as ambushes, 
-traps or cleverly hidden objects—or slight changes in the 
-environment—such as a faint vibration of a far off Ork 
-Squiggoth or the foul smell of a Daemonhost. When using 
-Awareness against an opponent, the test is always opposed. 
-This use includes noticing ambushes, spotting traps, and 
-other things involving another's actions. However, noticing 
-environmental factors is a standard test. This use includes 
-perceiving trace scents, motion, or similar things.",
+	"shortContent" : "Tactics is the practical application of military knowledge in
+the field of battle. It differs from the various Lore Skills in
+that it relates directly to on the ground combat manoeuvres
+and actions rather than a broad theoretical or strategic view
+of warfare.",
+	
+	"content" : "Tactics is the practical application of military knowledge in
+the field of battle. It differs from the various Lore Skills in
+that it relates directly to on the ground combat manoeuvres
+and actions rather than a broad theoretical or strategic view
+of warfare. It also differs from the Command Skill in that
+Command allows the direction of troops but does not grant
+any special knowledge in how best to use them. A character
+can use Tactics at any time when he wants to determine the
+best military course of action in a combat. This could be
+anything from the best position to suppress an entrenched
+enemy before an assault to picking a good landing zone
+when coming in under fire. Failing a Tactics (Assault) Test, for
+example, might mean facing a concentration of a defending
+force or hitting a stronger line of fortifications.
+<br><b>Air Combat:<b> Covers atmosphere and near-orbit
+engagements with air superiority fighters as well as close
+support and bombing with ground attack aircraft.
+<br><b>Armoured Tactics:<b> An understanding of armoured
+warfare, how best to use armour, as well as how best to
+exploit the weaknesses of such vehicles.
+<br><b>Assault Doctrine:<b> Covers all kinds of assaults, from
+charging a bunker to opposed amphibious landings.
+<br><b>Defensive Doctrine:<b> How to set up a good defensive
+line, including layering units, creating areas of enfilading fire,
+and good clear kill zones.
+<br><b>Orbital Drop Procedures:<b> A knowledge of orbital drop
+doctrine and how to use it to maximise troop concentration
+and ensure shock and awe in the enemy.
+<br><b>Recon and Stealth:<b> An understanding of the best methods
+of recon and stealth, such as how to approach a defensive
+position unseen or quietly destroy sentry positions.
+<br><b>Void Combat:<b> Covers starship combat between anything
+from lightly armoured escorts up to battle barges and space
+hulks. It is also includes knowledge of high orbit fire support
+doctrines and the best way to use ships in orbit to aid
+ground troops.
+<br><br><b>Special uses
+<br>Ambush</b><br>
+A character in the role of Kill-team leader may use Tactics
+(Recon and Stealth) in the place of an opposed Concealment
+for himself or any member of his squad provided they are in
+Support Range (see page 213).",
 
 	"extraSubCategories" : 
 	[ 
-		["Characteristic", "Perception"],
+		["Characteristic", "Intelligence"],
 		["Skill Use", "Free Action"]
 	],
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 95
+	"pageNumber" : 105
 }

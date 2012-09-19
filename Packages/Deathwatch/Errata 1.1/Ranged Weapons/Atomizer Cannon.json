@@ -1,0 +1,23 @@
+{
+	
+	"shortContent" : "",
+	
+	"content" : "",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Heavy"],
+		["Range", "80m"],
+		["Rate of Fire", "S/-/-"],
+		["Damage", "2D10+14 E"],
+		["Penetration", "8"],
+		["Clip", "25"],
+		["Reload", "3 Full"],
+		["Special", "Blast (5), Devastating (4), Volatile"],
+		["Weight", "80"],
+		["Requisition", "50"],
+		["Renown", "Famed"]
+	],
+	
+	"GMOnly" : false
+}

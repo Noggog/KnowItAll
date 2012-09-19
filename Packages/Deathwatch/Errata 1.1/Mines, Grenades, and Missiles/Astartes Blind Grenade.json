@@ -1,0 +1,28 @@
+{
+	"name" : "Astartes Blind Grenade",
+	
+	"shortContent" : "Blocks eyesight and sensors for 1d10 rounds.",
+	
+	"content" : "Blind grenades explode with a burst of dense dark
+grey smoke including IR bafflers and broad-band
+EM spectrum chaff, all designed to block eyesight and even
+advanced visual detection. The effect is short-lived, but
+while it lasts provides excellent cover for advancing forces.
+The effects of this grenade last for 1d10 Rounds (shorter in
+conditions such as prevailing winds or industrial ventilation).",
+
+	"extraSubCategories" : 
+	[ 
+		["Class", "Thrown"],
+		["Range", "SB x 3"],
+		["Rate of Fire", "S/-/-"],
+		["Damage", "None"],
+		["Penetration", "0"],
+		["Special", "Smoke"],
+		["Weight", "0.8"],
+		["Requisition", "10"],
+		["Renown", "None"]
+	],
+	
+	"GMOnly" : false
+}
