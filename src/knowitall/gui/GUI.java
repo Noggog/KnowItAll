@@ -134,33 +134,43 @@ public class GUI {
 	GUI.regenerateTree();
 	GUI.updateContentDisplay();
 	mainPanel.setVisible(true);
-	hideProgress();
+	progressHide();
     }
 
-    public static void hideProgress() {
+    public static void progressHide() {
 	mainPanel.setVisible(true);
 	progressPane.setVisible(false);
 	dimmer.setVisible(false);
     }
 
-    public static void showProgress() {
+    public static void progressShow() {
 	mainPanel.setVisible(false);
 	progressPane.setVisible(true);
 	dimmer.setVisible(true);
     }
 
-    public static void setProgressMax(final int max, final String title) {
+    public static void progressSetMax(final int max) {
 	SwingUtilities.invokeLater(new Runnable() {
 
 	    @Override
 	    public void run() {
 		progressPane.reset();
-		progressPane.setMax(max, title);
+		progressPane.setMax(max);
 	    }
 	});
     }
 
-    public static void updateProcessed(final String title) {
+    public static void progressSetTitle(final String title) {
+	SwingUtilities.invokeLater(new Runnable() {
+
+	    @Override
+	    public void run() {
+		progressPane.setTitle(title);
+	    }
+	});
+    }
+
+    public static void progressProcessed(final String title) {
 	SwingUtilities.invokeLater(new Runnable() {
 
 	    @Override
@@ -170,7 +180,7 @@ public class GUI {
 	});
     }
 
-    public static void incrementProgress() {
+    public static void progressIncrement() {
 	SwingUtilities.invokeLater(new Runnable() {
 
 	    @Override
@@ -180,12 +190,32 @@ public class GUI {
 	});
     }
 
-    public static void incrementProgress(final String title) {
+    public static void progressIncrement(final String title) {
 	SwingUtilities.invokeLater(new Runnable() {
 
 	    @Override
 	    public void run() {
 		progressPane.increment(title);
+	    }
+	});
+    }
+
+    public static void progressSetValue(final int value) {
+	SwingUtilities.invokeLater(new Runnable() {
+
+	    @Override
+	    public void run() {
+		progressPane.setValue(value);
+	    }
+	});
+    }
+
+    public static void progressSetValueRemaining(final int value) {
+	SwingUtilities.invokeLater(new Runnable() {
+
+	    @Override
+	    public void run() {
+		progressPane.setValue(progressPane.progress.getMaximum() - value);
 	    }
 	});
     }

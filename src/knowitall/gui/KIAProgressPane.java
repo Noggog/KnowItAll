@@ -45,9 +45,12 @@ public class KIAProgressPane extends LComponent {
 	setLocation(progressMargin, size.height / 2 - getHeight() / 2);
     }
 
-    public void setMax(int max, String title) {
-	setTitle(title);
+    public void setMax(int max) {
 	progress.setMaximum(max);
+    }
+
+    public void setValue(int value) {
+	progress.setValue(value);
     }
 
     public void setTitle(String str) {
