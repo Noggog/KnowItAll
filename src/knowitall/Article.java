@@ -22,6 +22,7 @@ public class Article extends LSwingTreeNode implements Comparable {
     public Category category;
     File specFile;
     String name;
+    ArrayList<String> aka = new ArrayList<>();
     Set<Article> linked = new TreeSet<>();
     String html;
     String htmlShort;
@@ -47,8 +48,8 @@ public class Article extends LSwingTreeNode implements Comparable {
 	}
 	// If Database already has article with the name
 	// We need to merge or block
-	if (Database.hasArticle(name)) {
-	    Article orig = Database.getArticle(name);
+	if (Database.hasArticle(this)) {
+	    Article orig = Database.getArticle(this);
 	    Logs log;
 	    String srcs = "";
 	    if (Debug.log.logging()) {
@@ -91,6 +92,7 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    shortContent = new LinkString(spec.shortContent);
 	    subCategories = getAttributes(spec.extraSubCategories);
 	    grid = getAttributes(spec.grid);
+	    aka = getAKA(spec.aka);
 	    content = new LinkString(spec.content);
 	    sources.get(0).page = spec.pageNumber;
 	    blockLinking = spec.blockLinking;
@@ -123,6 +125,13 @@ public class Article extends LSwingTreeNode implements Comparable {
 	return name;
     }
 
+    public ArrayList<String> getNames() {
+	ArrayList<String> out = new ArrayList<>(aka.size() + 1);
+	out.add(name);
+	out.addAll(aka);
+	return out;
+    }
+
     @Override
     public String toString() {
 	return getName();
@@ -149,6 +158,33 @@ public class Article extends LSwingTreeNode implements Comparable {
 	for (String[] sub : strs) {
 	    if (sub.length == 2) {
 		out.put(sub[0], new LinkString(sub[1]));
+	    }
+	}
+	return out;
+    }
+
+    ArrayList<String> getAttributes(String[] strs) {
+	ArrayList<String> out = new ArrayList<>(strs.length);
+	for (String s : strs) {
+	    s = s.trim();
+	    if (!"".equals(s)) {
+		out.add(s);
+	    }
+	}
+	return out;
+    }
+
+    public ArrayList<String> getAKA(String[] strs) {
+	ArrayList<String> tmp = getAttributes(strs);
+	ArrayList<String> out = new ArrayList<>();
+	for (String s : tmp) {
+	    Article a = Database.getArticle(s);
+	    if (a == null) {
+		out.add(s);
+	    } else if (!a.name.equalsIgnoreCase(name)) {
+		Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "AKA", "AKA blocked: " + s);
+		Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "AKA", "   Orig: " + a);
+		Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "AKA", "    New: " + this);
 	    }
 	}
 	return out;

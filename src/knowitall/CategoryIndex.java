@@ -35,7 +35,7 @@ public class CategoryIndex extends LSwingTreeNode implements Comparable {
 	    }
 	}
     }
-    
+
     public CategoryIndex(String name) {
 	this.name = name;
     }

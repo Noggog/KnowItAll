@@ -118,7 +118,6 @@ public class Database {
 	    }
 	    break;
 	}
-	GUI.progressProcessed("Finishing Up");
     }
 
     static void loadCategoryIndex(CategoryIndex parent, File dir) {
@@ -215,7 +214,12 @@ public class Database {
 	    Article a = new Article(s, c);
 	    if (a.load(articleF)) {
 		c.add(a);
-		articles.put(a.getName().toUpperCase(), a);
+		for (String name : a.getNames()) {
+		    articles.put(name.toUpperCase(), a);
+		}
+		for (Article rhs : Database.articles.values()) {
+		    Article.link(a, rhs);
+		}
 	    }
 	} catch (Exception e) {
 	    Debug.log.logError("Load Article", "Error loading " + articleF);
@@ -225,22 +229,17 @@ public class Database {
     }
 
     public static void doneLoading() {
-	GUI.progressSetTitle("Linking");
+	GUI.progressSetTitle("Finishing Up");
+	GUI.progressProcessed("");
 	Collection<Article> allArticles = articles.values();
-	GUI.progressSetValueRemaining(allArticles.size());
 	for (Article a : allArticles) {
 	    try {
-		for (Article rhs : allArticles) {
-		    a.linkTo(rhs);
-		}
 		a.createLinks();
 	    } catch (Exception e) {
 		Debug.log.logError("Database Create Links", "Error creating links for " + a);
 		Debug.log.logException(e);
 	    }
 	    a.clean();
-	    GUI.progressIncrement();
-	    GUI.progressProcessed("Linked " + a.getName());
 	}
 	GUI.finalizeArticles(articles.values());
 	printArticles();
@@ -252,8 +251,22 @@ public class Database {
 	return articles.get(name.toUpperCase());
     }
 
+    public static Article getArticle(Article in) {
+	for (String s : in.getNames()) {
+	    Article a = getArticle(s);
+	    if (a != null) {
+		return a;
+	    }
+	}
+	return null;
+    }
+
     public static boolean hasArticle(String name) {
-	return articles.containsKey(name.toUpperCase());
+	return getArticle(name) != null;
+    }
+
+    public static boolean hasArticle(Article a) {
+	return getArticle(a) != null;
     }
 
     public static void printArticles() {

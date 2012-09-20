@@ -56,5 +56,5 @@ public class Category extends LSwingTreeNode {
 	}
 	return true;
     }
-    
+
 }

@@ -16,7 +16,7 @@ public class Debug {
 
     public static void init() {
 	log = new LLogger("Debug/");
-	log.addSpecial(Logs.BLOCKED_ARTICLES, "Blocked Articles.txt");
+	log.addSpecial(Logs.BLOCKED_ARTICLES, "Blocked Items.txt");
 	log.addSpecial(Logs.MERGED_ARTICLES, "Merged Articles.txt");
     }
 

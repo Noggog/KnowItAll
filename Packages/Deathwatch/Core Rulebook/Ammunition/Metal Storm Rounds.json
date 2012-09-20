@@ -10,8 +10,8 @@ armoured enemies.",
 
 	"extraSubCategories" : 
 	[ 
-		["Requisition", "N/A"],
-		["Renown", "15+5 for Heavy Bolters"],
+		["Requisition", "15+5 for Heavy Bolters"],
+		["Renown", "-"],
 		["Used With", "All bolt weapons."],
 		["Effects", "The weapon’s Damage and Penetration are each
 reduced by 2, but it gains the Blast (2) Quality."]
