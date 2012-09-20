@@ -18,10 +18,12 @@ public class Debug {
 	log = new LLogger("Debug/");
 	log.addSpecial(Logs.BLOCKED_ARTICLES, "Blocked Items.txt");
 	log.addSpecial(Logs.MERGED_ARTICLES, "Merged Articles.txt");
+	log.addSpecial(Logs.ACCEPTED_AKA, "Accepted AKA.txt");
     }
 
     public static enum Logs {
 	BLOCKED_ARTICLES,
-	MERGED_ARTICLES;
+	MERGED_ARTICLES,
+	ACCEPTED_AKA;
     }
 }

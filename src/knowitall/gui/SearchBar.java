@@ -114,7 +114,7 @@ public class SearchBar extends JAutoTextField {
     public void suggestions(Collection<Article> articles) {
 	ArrayList<String> list = new ArrayList<>(articles.size());
 	for (Article a : articles) {
-	    list.add(a.getName());
+	    list.addAll(a.getNames());
 	}
 	setDataList(list);
     }

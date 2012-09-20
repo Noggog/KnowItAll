@@ -21,8 +21,7 @@ public class Article extends LSwingTreeNode implements Comparable {
 
     public Category category;
     File specFile;
-    String name;
-    ArrayList<String> aka = new ArrayList<>();
+    ArrayList<String> names = new ArrayList<>(1);
     Set<Article> linked = new TreeSet<>();
     String html;
     String htmlShort;
@@ -65,7 +64,7 @@ public class Article extends LSwingTreeNode implements Comparable {
 		log = Logs.BLOCKED_ARTICLES;
 	    }
 	    if (Debug.log.logging()) {
-		Debug.log.logSpecial(log, "Article", name + " - An article already existed under that name.");
+		Debug.log.logSpecial(log, "Article", getName() + " - An article already existed under that name.");
 		Debug.log.logSpecial(log, "Article", "    Orig sources:  " + srcs);
 		Debug.log.logSpecial(log, "Article", "    Orig: " + orig.specFile);
 		Debug.log.logSpecial(log, "Article", "     New: " + specF);
@@ -88,11 +87,11 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    }
 	    spec.src = specF;
 	    spec.clean(category);
-	    name = spec.name;
+	    names.add(spec.name);
 	    shortContent = new LinkString(spec.shortContent);
 	    subCategories = getAttributes(spec.extraSubCategories);
 	    grid = getAttributes(spec.grid);
-	    aka = getAKA(spec.aka);
+	    names.addAll(getAKA(spec.aka));
 	    content = new LinkString(spec.content);
 	    sources.get(0).page = spec.pageNumber;
 	    blockLinking = spec.blockLinking;
@@ -122,14 +121,11 @@ public class Article extends LSwingTreeNode implements Comparable {
     }
 
     public String getName() {
-	return name;
+	return names.get(0);
     }
 
     public ArrayList<String> getNames() {
-	ArrayList<String> out = new ArrayList<>(aka.size() + 1);
-	out.add(name);
-	out.addAll(aka);
-	return out;
+	return names;
     }
 
     @Override
@@ -179,9 +175,11 @@ public class Article extends LSwingTreeNode implements Comparable {
 	ArrayList<String> out = new ArrayList<>();
 	for (String s : tmp) {
 	    Article a = Database.getArticle(s);
+	    // If no article exists already with AKA
 	    if (a == null) {
 		out.add(s);
-	    } else if (!a.name.equalsIgnoreCase(name)) {
+		Debug.log.logSpecial(Logs.ACCEPTED_AKA, "AKA", "AKA " + s + " accepted for: " + this);
+	    } else if (Debug.log.logging() && !equals(a)) {
 		Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "AKA", "AKA blocked: " + s);
 		Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "AKA", "   Orig: " + a);
 		Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "AKA", "    New: " + this);

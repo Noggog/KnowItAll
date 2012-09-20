@@ -11,6 +11,7 @@ import javax.swing.JProgressBar;
 import javax.swing.SwingUtilities;
 import knowitall.Article;
 import knowitall.Database;
+import lev.Ln;
 import lev.gui.LSwingTree;
 
 /**
@@ -51,7 +52,7 @@ public class GUI {
 	if (a.equals(contentPanel.target)) {
 	    return;
 	}
-	if (!search.getText().equals(a.getName())) {
+	if (!Ln.containsIgnoreCase(a.getNames(), search.getText())) {
 	    search.setText(a.getName());
 	}
 	hideTooltip();
