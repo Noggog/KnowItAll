@@ -45,18 +45,30 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    // Bad Spec
 	    return false;
 	}
+	// If Database already has article with the name
+	// We need to merge or block
 	if (Database.hasArticle(name)) {
 	    Article orig = Database.getArticle(name);
 	    Logs log;
+	    String srcs = "";
+	    if (Debug.log.logging()) {
+		for (SourcePair s : orig.sources) {
+		    srcs += s.src.getName() + "  |  ";
+		}
+	    }
+	    // If in the same category, merge.
 	    if (orig.category.equals(category)) {
 		orig.mergeIn(this);
 		log = Logs.MERGED_ARTICLES;
 	    } else {
 		log = Logs.BLOCKED_ARTICLES;
 	    }
-	    Debug.log.logSpecial(log, "Article", "An article already existed with that name: " + name);
-	    Debug.log.logSpecial(log, "Article", "          Orig: " + orig.specFile);
-	    Debug.log.logSpecial(log, "Article", "          Merged in: " + specF);
+	    if (Debug.log.logging()) {
+		Debug.log.logSpecial(log, "Article", name + " - An article already existed under that name.");
+		Debug.log.logSpecial(log, "Article", "    Orig sources:  " + srcs);
+		Debug.log.logSpecial(log, "Article", "    Orig: " + orig.specFile);
+		Debug.log.logSpecial(log, "Article", "     New: " + specF);
+	    }
 	    return false;
 	}
 	return true;
@@ -282,9 +294,9 @@ public class Article extends LSwingTreeNode implements Comparable {
     public class SourcePair {
 
 	SourcePair(Source src) {
-	    s = src;
+	    this.src = src;
 	}
-	Source s;
+	Source src;
 	int page = 0;
     }
 }

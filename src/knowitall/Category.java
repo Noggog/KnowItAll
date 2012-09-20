@@ -4,6 +4,7 @@
  */
 package knowitall;
 
+import java.util.Objects;
 import lev.Ln;
 import lev.gui.LSwingTreeNode;
 
@@ -33,4 +34,27 @@ public class Category extends LSwingTreeNode {
 	Debug.log.log(getName(), Ln.getNAmount(depth, "   ") + "Category: " + getName() + " ==============");
 	super.print(depth);
     }
+
+    @Override
+    public int hashCode() {
+	int hash = 7;
+	hash = 97 * hash + Objects.hashCode(this.index);
+	return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+	if (obj == null) {
+	    return false;
+	}
+	if (getClass() != obj.getClass()) {
+	    return false;
+	}
+	final Category other = (Category) obj;
+	if (!Objects.equals(this.index, other.index)) {
+	    return false;
+	}
+	return true;
+    }
+    
 }
