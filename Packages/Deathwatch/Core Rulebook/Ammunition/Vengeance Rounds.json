@@ -1,0 +1,32 @@
+{
+	
+	"content" : "Vengeance rounds were originally created to combat the
+Adeptus Astartes’ most bitter foe: Chaos Space Marines.
+Designed to breach power armour of Space Marine calibre,
+the core of each round contains a spark of unstable matter
+that creates a micro-fission explosion upon detonation. Each
+delicately engineered bolt is supremely effective at thwarting
+armour and eradicating even the most resilient target, but the
+technology needed to imbue a bolt shell with such power
+carries great risks.",
+
+	"extraSubCategories" : 
+	[ 
+		["Requisition", "25"],
+		["Renown", "Famed"],
+		["Used With", "All bolt weapons."],
+		["Effects", "The weapon gains the Felling (1) Quality, and
+its Penetration increases to 9. Vengeance rounds detonate
+prematurely on an attack roll of 91–100. When this happens,
+the firer suffers explosive damage equal to the weapon’s
+damage with a Penetration of 5 to an arm location (the arm
+holding the weapon if it was fired one-handed, or a random
+arm if fired with two hands). This automatically causes the
+weapon to Jam, and happens too quickly to avoid the damage
+by dropping the weapon."]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 160
+}

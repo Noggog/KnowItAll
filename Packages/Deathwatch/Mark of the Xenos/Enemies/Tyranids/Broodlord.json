@@ -55,7 +55,7 @@ own physiology ensure that Deathwatch Space Marines are
 immune to this effect.<br>
 <b>Tyranid Psyker:</b> Broodlords are also psykers with a Psy Rating of 5 and access
 to the Tyranid Psychic Powers (select two). In addition, they have
-their own unique psychic power: Hypnotic Gaze"]
+their own unique psychic power: Hypnotic Gaze."]
 	],
 	
 	"grid" :
@@ -72,7 +72,5 @@ their own unique psychic power: Hypnotic Gaze"]
 		["Will Power", "55"],
 		["Fellowship", "-"]
 	]
-	
-	
 	
 }

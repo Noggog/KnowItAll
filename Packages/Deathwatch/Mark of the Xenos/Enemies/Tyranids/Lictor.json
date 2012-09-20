@@ -84,7 +84,7 @@ Natural Weapons (Scything Talons), Size
 		["Weapons", "Scything Talons (1d10+14 R; Pen 3; Toxic), Rending
 Claws (1d10+12 R; Pen 5; Razor
 Sharp, Toxic)."],
-		["Equipment", "None."]
+		["Equipment", "None."],
 		["Special Rules", "<b>Flesh
 Hooks:</b> Lictors have dozens of
 tiny hooks which they can fire from
@@ -131,6 +131,6 @@ victim does not remember well, it must make an Easy (+20) Intelligence Test."]
 		["Perception", "<sup>8</sup>45"],
 		["Will Power", "45"],
 		["Fellowship", "-"]
-	],
+	]
 	
 }

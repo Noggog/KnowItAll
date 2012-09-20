@@ -1,0 +1,28 @@
+{
+	
+	"content" : "The result of early experiments with alternative krak
+technology, an implosion shell replaces its explosive core
+with an infinitesimal amount of antimatter; this creates a
+violently decompressing vacuum when exposed to matter.
+Like the standard bolt shell, these rounds activate via their
+mass-reactive core, meaning they embed partially in their
+target before the implosion takes effect. The round’s force
+is therefore not directed at cracking open armour, but to
+collapsing the unfortunate victim’s body from the inside
+out—enough to debilitate even a Space Marine.",
+
+	"extraSubCategories" : 
+	[ 
+		["Requisition", "27+5 for Heavy Bolters"],
+		["Renown", "Respected"],
+		["Used With", "All bolt weapons."],
+		["Effects", "In addition to taking normal damage, a target
+who takes one or more points of Damage (after Armour and
+Toughness) from an implosion shell suffers 1d5 points of
+Agility Damage."]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 159
+}

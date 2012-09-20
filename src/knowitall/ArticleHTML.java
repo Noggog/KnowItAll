@@ -109,7 +109,7 @@ public class ArticleHTML {
 	t.addAttribute("align", "right");
 	// Page Number and Icon cells
 	TR pageIconTR = new TR();
-	pageIconTR.addElement(new TD().addElement(a.getPageNum().toString()));
+	pageIconTR.addElement(new TD().addElement(a.getSources().toString()));
 	pageIconTR.addElement(new TD().addElement(a.getIcon()));
 	t.addElement(pageIconTR);
 	// Vertical image cell

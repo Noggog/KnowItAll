@@ -1,0 +1,23 @@
+{
+	
+	"content" : "Metal storm rounds are tipped with proximity
+triggers, causing them to detonate sooner than
+standard bolt shells and release their payload
+of explosive frag before fully penetrating the
+target. When employed in a bolter with a high
+rate of fire, they can decimate groups of lightly
+armoured enemies.",
+
+	"extraSubCategories" : 
+	[ 
+		["Requisition", "N/A"],
+		["Renown", "15+5 for Heavy Bolters"],
+		["Used With", "All bolt weapons."],
+		["Effects", "The weapon’s Damage and Penetration are each
+reduced by 2, but it gains the Blast (2) Quality."]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 159
+}

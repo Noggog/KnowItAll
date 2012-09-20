@@ -1,0 +1,28 @@
+{
+	
+	"content" : "Many weapons require larger ammunition sources to function
+during extended battles. A backpack supply fits over the standard
+backpack power unit on Astartes power armour. For energy
+weapons, the supply is a massive battery or charge-unit. For
+flame and plasma weapons, it consists of volatile fuel tanks or
+canisters. Other ammunition packs are simply stacks of regular
+rounds with a feeder line that links into the weapon. Backpack
+supplies hold 100 rounds of ammunition for Plasma, Melta, and
+Las weapons, 250 rounds of ammunition for SP or Bolt weapons,
+and 75 shots for Flame weapons. A weapon connected to a
+backpack supply uses that supply for its ammunition and ignores
+its normal clip size. Backpack Ammo/Power supplies weigh 40
+kg and are automatically issued with any heavy weapon.",
+
+	"extraSubCategories" : 
+	[ 
+		["Requisition", "N/A"],
+		["Renown", "-"],
+		["Used With", "Any Heavy"],
+		["Effects", ""]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 159
+}

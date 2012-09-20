@@ -88,6 +88,8 @@ public class LinkString {
 
 		// Shave string
 		str = str.substring(i + a.getName().length());
+
+		offset = 0;
 	    }
 	    // If there is text remaining after the last link, add it.
 	    if (str.length() > 0) {
@@ -125,6 +127,10 @@ public class LinkString {
 	    out += o.toString();
 	}
 	return out;
+    }
+
+    public boolean isEmpty() {
+	return "".equals(toString());
     }
 
     public boolean contains(String in) {

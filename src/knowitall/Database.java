@@ -106,7 +106,7 @@ public class Database {
 			articleTree.add(src);
 			// For every category in source
 			for (File categoryDir : sourceDir.listFiles()) {
-			    loadCategoryFolder(src, categoryDir);
+			    loadCategoryFolder(src, src, categoryDir);
 			}
 		    }
 		}
@@ -135,7 +135,7 @@ public class Database {
 	}
     }
 
-    static void loadCategoryFolder(LSwingTreeNode node, File categoryDir) {
+    static void loadCategoryFolder(Source source, LSwingTreeNode node, File categoryDir) {
 	try {
 	    // Find matching category index
 	    CategoryIndex index = Database.categoryIndex.get(categoryDir.getName().toUpperCase());
@@ -146,9 +146,9 @@ public class Database {
 		for (File f : categoryDir.listFiles()) {
 		    if (f.isFile()
 			    && (Ln.isFileType(f, "JSON") || Ln.isFileType(f, "TXT"))) {
-			loadArticle(curCategory, f);
+			loadArticle(source, curCategory, f);
 		    } else if (f.isDirectory()) {
-			loadCategoryFolder(curCategory, f);
+			loadCategoryFolder(source, curCategory, f);
 		    }
 		}
 	    } else {
@@ -160,9 +160,9 @@ public class Database {
 	}
     }
 
-    static void loadArticle(Category c, File articleF) {
+    static void loadArticle(Source s, Category c, File articleF) {
 	try {
-	    Article a = new Article(c);
+	    Article a = new Article(s, c);
 	    if (a.load(articleF)) {
 		c.add(a);
 		articles.put(a.getName().toUpperCase(), a);

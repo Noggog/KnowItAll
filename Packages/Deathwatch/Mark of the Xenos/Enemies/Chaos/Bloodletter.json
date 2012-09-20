@@ -49,11 +49,7 @@ Traits."]
 		["Perception", "30"],
 		["Will Power", "30"],
 		["Fellowship", "10"]
-	],
-	
-	"aka" : 
-	[
-		"Industrial Servitor",
-		"Mining Servitor"
 	]
+	
+	
 }

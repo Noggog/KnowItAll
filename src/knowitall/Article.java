@@ -31,56 +31,80 @@ public class Article extends LSwingTreeNode implements Comparable {
     Map<String, LinkString> subCategories = new HashMap<>();
     Map<String, LinkString> grid = new HashMap<>();
     String allContent = "";
-    int pageNumber;
+    ArrayList<SourcePair> sources = new ArrayList<>(1);
     boolean blockLinking;
 
-    Article(Category c) {
+    Article(Source s, Category c) {
+	sources.add(new SourcePair(s));
 	category = c;
     }
 
     public boolean load(File specF) {
 	specFile = specF;
-	ArticleSpec spec = loadSpec(specF);
-	if (spec == null) {
+	if (loadSpec(specF)) {
+	    // Bad Spec
 	    return false;
 	}
-	name = spec.name;
 	if (Database.hasArticle(name)) {
-	    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", "Skipped because an article already existed with that name: " + name);
-	    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", "          Orig: " + Database.getArticle(name).specFile);
-	    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", "          Conflict: " + specF);
+	    Article orig = Database.getArticle(name);
+	    Logs log;
+	    if (orig.category.equals(category)) {
+		orig.mergeIn(this);
+		log = Logs.MERGED_ARTICLES;
+	    } else {
+		log = Logs.BLOCKED_ARTICLES;
+	    }
+	    Debug.log.logSpecial(log, "Article", "An article already existed with that name: " + name);
+	    Debug.log.logSpecial(log, "Article", "          Orig: " + orig.specFile);
+	    Debug.log.logSpecial(log, "Article", "          Merged in: " + specF);
 	    return false;
 	}
-	shortContent = new LinkString(spec.shortContent);
-	subCategories = getAttributes(spec.extraSubCategories);
-	grid = getAttributes(spec.grid);
-	content = new LinkString(spec.content);
-	pageNumber = spec.pageNumber;
-	blockLinking = spec.blockLinking;
-	reloadHTML();
 	return true;
     }
 
-    public ArticleSpec loadSpec(File specF) {
+    public boolean loadSpec(File specF) {
 	try {
 	    ArticleSpec spec = KnowItAll.gson.fromJson(new FileReader(specF), ArticleSpec.class);
 	    if (spec == null) {
 		String error = "Skipped because it had a null spec: " + specF;
 		Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", error);
-		return null;
+		return true;
 	    }
 	    if (spec.name == null || spec.name.equals("")) {
 		spec.name = specF.getName().substring(0, specF.getName().indexOf('.'));
 	    }
 	    spec.src = specF;
 	    spec.clean(category);
-	    return spec;
+	    name = spec.name;
+	    shortContent = new LinkString(spec.shortContent);
+	    subCategories = getAttributes(spec.extraSubCategories);
+	    grid = getAttributes(spec.grid);
+	    content = new LinkString(spec.content);
+	    sources.get(0).page = spec.pageNumber;
+	    blockLinking = spec.blockLinking;
+	    return false;
 	} catch (FileNotFoundException ex) {
 	    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", "Skipped because its spec could not be found: " + specF);
 	} catch (com.google.gson.JsonSyntaxException ex) {
 	    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", "Skipped because it had a badly formatted spec: " + specF);
 	}
-	return null;
+	return true;
+    }
+
+    public void mergeIn(Article a) {
+	if (!a.content.isEmpty()) {
+	    content = a.content;
+	}
+	if (!a.shortContent.isEmpty()) {
+	    shortContent = a.shortContent;
+	}
+	for (String s : a.subCategories.keySet()) {
+	    subCategories.put(s, a.subCategories.get(s));
+	}
+	for (String s : a.grid.keySet()) {
+	    grid.put(s, a.grid.get(s));
+	}
+	sources.add(a.getSources().get(0));
     }
 
     public String getName() {
@@ -118,8 +142,8 @@ public class Article extends LSwingTreeNode implements Comparable {
 	return out;
     }
 
-    public Integer getPageNum() {
-	return pageNumber;
+    public ArrayList<SourcePair> getSources() {
+	return sources;
     }
 
     public String getIcon() {
@@ -161,6 +185,10 @@ public class Article extends LSwingTreeNode implements Comparable {
 	LMergeMap<Integer, Article> lengthSort = new LMergeMap<>(false, true);
 	for (Article a : linked) {
 	    lengthSort.put(Integer.MAX_VALUE - a.getName().length(), a);
+	}
+
+	if (getName().equals("Carouse")) {
+	    int wer = 23;
 	}
 
 	for (Article a : lengthSort.valuesFlat()) {
@@ -253,5 +281,14 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    return 0;
 	}
 	return this.getName().compareTo(b.getName());
+    }
+
+    public class SourcePair {
+
+	SourcePair(Source src) {
+	    s = src;
+	}
+	Source s;
+	int page = 0;
     }
 }
