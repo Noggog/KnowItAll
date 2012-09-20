@@ -5,10 +5,13 @@
 package knowitall;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.SwingWorker;
 import knowitall.Debug.Logs;
 import knowitall.gui.GUI;
@@ -27,6 +30,7 @@ public class Database {
     private static Map<String, CategoryIndex> categoryIndex = new TreeMap<>();
     private static LSwingTreeNode articleTree;
     private static Map<String, Article> articles = new TreeMap<>();
+    private static ArrayList<Source> loadOrder = new ArrayList<>();
 
     public static void reloadArticles(Runnable run) {
 	GUI.displayArticles(false);
@@ -42,6 +46,7 @@ public class Database {
 	categoryIndex.clear();
 	articles.clear();
 	articleTree = new LSwingTreeNode();
+	loadOrder.clear();
 	GUI.regenerateTree();
     }
 
@@ -83,32 +88,32 @@ public class Database {
 
     static void loadPackage() {
 	File seeds = new File(packages);
+
 	// For the first package
-	for (File packageF : seeds.listFiles()) {
+	for (File packageDir : seeds.listFiles()) {
+
 	    // Set up progress
-	    ArrayList<File> files = Ln.generateFileList(packageF, false);
+	    ArrayList<File> files = Ln.generateFileList(packageDir, false);
 	    GUI.progressSetMax(files.size());
-	    GUI.progressSetTitle("Loading Package: " + packageF.getName());
+	    GUI.progressSetTitle("Loading Package: " + packageDir.getName());
 
 	    // Start importing Category Index Files
-	    articleTree = new CategoryIndex(packageF.getName());
-	    File categoryIndices = new File(packageF.getPath() + "/" + categoryIndexPath);
+	    articleTree = new CategoryIndex(packageDir.getName());
+	    File categoryIndices = new File(packageDir.getPath() + "/" + categoryIndexPath);
+
 	    // If category index exists
 	    if (categoryIndices.isDirectory()) {
+
 		// Load Category Indices
 		indexTree = new CategoryIndex(categoryIndices);
 		loadCategoryIndex(indexTree, categoryIndices);
+
+		// Obtain Load Order
+		loadOrder = loadOrder(packageDir);
+
 		// Load content
-		for (File sourceDir : packageF.listFiles()) {
-		    // For every Source
-		    if (sourceDir.isDirectory() && !sourceDir.getName().equalsIgnoreCase(categoryIndexPath)) {
-			Source src = new Source(sourceDir);
-			articleTree.add(src);
-			// For every category in source
-			for (File categoryDir : sourceDir.listFiles()) {
-			    loadCategoryFolder(src, src, categoryDir);
-			}
-		    }
+		for (Source s : loadOrder) {
+		    loadSource(s);
 		}
 	    }
 	    break;
@@ -132,6 +137,51 @@ public class Database {
 		    Debug.log.logSpecial(Debug.Logs.BLOCKED_ARTICLES, "Category", error);
 		}
 	    }
+	}
+    }
+
+    static ArrayList<Source> loadOrder(File packageDir) {
+	ArrayList<Source> tmp = new ArrayList<>();
+	ArrayList<Source> out = new ArrayList<>();
+	for (File src : packageDir.listFiles()) {
+	    if (src.isDirectory() && !src.getName().equalsIgnoreCase(categoryIndexPath)) {
+		tmp.add(new Source(src));
+	    }
+	}
+
+	// Get string order
+	ArrayList<String> order = new ArrayList<>();
+	File loadOrder = new File(packageDir.getPath() + "/loadorder.txt");
+	if (loadOrder.exists()) {
+	    try {
+		order = Ln.loadFileToStrings(loadOrder, true);
+	    } catch (IOException ex) {
+		Debug.log.logException(ex);
+	    }
+	}
+
+	// Put sources in order on the out list
+	for (String s : order) {
+	    for (Source src : tmp) {
+		if (src.name.equalsIgnoreCase(s)) {
+		    out.add(src);
+		    tmp.remove(src);
+		    break;
+		}
+	    }
+	}
+
+	// Add the rest
+	out.addAll(tmp);
+
+	return out;
+    }
+
+    static void loadSource(Source source) {
+	articleTree.add(source);
+	// For every category in source
+	for (File categoryDir : source.src.listFiles()) {
+	    loadCategoryFolder(source, source, categoryDir);
 	}
     }
 

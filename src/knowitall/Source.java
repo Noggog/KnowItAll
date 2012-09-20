@@ -5,6 +5,7 @@
 package knowitall;
 
 import java.io.File;
+import java.util.ArrayList;
 import lev.Ln;
 import lev.gui.LSwingTreeNode;
 
@@ -14,8 +15,16 @@ import lev.gui.LSwingTreeNode;
  */
 public class Source extends LSwingTreeNode {
     String name;
+    File src;
+    ArrayList<String> overrides = new ArrayList<>();
+
     Source (File src) {
 	name = src.getName();
+	this.src = src;
+    }
+
+    public void load(File specF) {
+	
     }
 
     @Override

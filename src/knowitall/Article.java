@@ -187,10 +187,6 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    lengthSort.put(Integer.MAX_VALUE - a.getName().length(), a);
 	}
 
-	if (getName().equals("Carouse")) {
-	    int wer = 23;
-	}
-
 	for (Article a : lengthSort.valuesFlat()) {
 	    for (LinkString s : allLinkable()) {
 		s.addLink(a);
