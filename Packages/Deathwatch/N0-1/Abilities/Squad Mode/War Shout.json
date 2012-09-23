@@ -1,0 +1,27 @@
+{
+	
+	"content" : "The Howling Banshees employ a variety of
+carefully-designed war-cries that are intended to take advantage
+of their Banshee Masks and more effectively disable
+their foes. The Exarch activates this ability during a
+Charge Attack, leading her students in a song of desolation
+and doom that leaves enemies incapacitated and vulnerable.
+Until the start of the Exarch?s next turn, any creature
+affected by the squad?s Banshee Masks is rendered
+Helpless for one round, instead of Stunned.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Free Action"],
+		["Cost", "3"],
+		["Sustained", "No"],
+		["Chapter", ""],
+		["Required Rank", ""],
+		["Stance", "Attack"]
+		
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 
+}

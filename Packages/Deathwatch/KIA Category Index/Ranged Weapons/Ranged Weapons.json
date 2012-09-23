@@ -1,7 +1,0 @@
-{
-	"name" : "Ranged Weapons",
-	"extraSubCategories" : 
-	[ 
-		"Class", "Range", "Rate of Fire", "Damage", "Penetration", "Clip", "Reload", "Special", "Weight", "Requisition", "Renown"
-	]
-}

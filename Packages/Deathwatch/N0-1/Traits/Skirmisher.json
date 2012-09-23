@@ -1,0 +1,28 @@
+{
+
+	
+	"shortContent" : "Suffers no penalties to
+Concealment Tests, nor does it grant any bonuses to
+hit to attackers, due to the Horde's size. In addition,
+the Horde may use the Dodge and Parry reactions to
+defend itself, with a successful Dodge or Parry reducing
+the number of enemy attacks scored against
+it by 1, +1 per Degree of Success.",
+	
+	"content" : "These warriors are trained to fight in a dispersed
+formation, relying on mobility and stealth
+more than weight of numbers to endure enemy attacks.
+A Horde with this trait suffers no penalties to
+Concealment Tests, nor does it grant any bonuses to
+hit to attackers, due to the Horde's size. In addition,
+the Horde may use the Dodge and Parry reactions to
+defend itself, with a successful Dodge or Parry reducing
+the number of enemy attacks scored against
+it by 1, +1 per Degree of Success.",
+
+	"extraSubCategories" : [],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 
+}

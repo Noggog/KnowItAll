@@ -1,0 +1,66 @@
+{
+	"content" : "Lacking as they do the numbers of mankind or the greenskins, the Eldar must take drastic measures to achieve their goals. Amongst these is the use of a citizen militia, known collectively
+as Guardians, formed of any Eldar not currently upon a Path that has direct military applications. Many of the most commonly-called Guardians are pilots, trading civilian passenger craft for
+jetbikes and grav-tanks, or former Aspect Warriors.",
+
+	"extraSubCategories" : 
+	[ 
+		["Skills", "Acrobatics (Ag), Awareness (Per), Climb (S), Dodge (Ag), Forbidden Lore (Xenos) (Int), Silent Move (Ag), Speak Language (Eldar) (Int)"],
+		["Talents", "Catfall, Exotic Weapon Proficiency (Shuriken Catapult, Shuriken Pistol), Foresight, Hard Target, Heightened Senses
+(Sight, Hearing), Hipshooting, Melee Weapon Training (Primitive), Pistol Training (Las), Sprint"],
+		["Traits", "Dark Sight, Fire Drill (Horde), Fighting Withdrawal (Horde), Skirmishers (Horde), Unnatural Agility (x2)"],
+		["Armor", "Guardian Bodysuit (All 5, Horde 5)"],
+		["Weapons", "Shuriken Catapult (60m; S/3/10; 1d10+4 R; Pen 6; Clip 100; Rld 2 Full; Reliable), Eldar Laspistol (35m; S/2/-; 1d10+3
+E; Pen 2; Clip 35; Rld Full; Reliable), Best Craftsmanship Mono-blade (1d5+5, Pen 2)"],
+		["Equipment", "3x Shuriken Catapult magazines, Soulstone."],
+		["Special Rules", "
+Guardians commonly fill a number of different roles in Eldar forces, a few of which are detailed below:
+<br>o A minority of Eldar Guardians serve in another role, supporting close assault troops such as Howling Banshees. These
+Storm Guardians are more likely than most to be former Aspect Warriors. A Storm Guardian replaces his Shuriken Pistol
+and Eldar Laspistol with a Shuriken Pistol (20m; S/3/5; 1d10+2 R; Pen 4; Clip 40; Reload 2 Full; Reliable) and a Best
+Craftsmanship Mono-Sword (1d10+4 R; Pen 2; Balanced), and gains the Ambidextrous and Two-Weapon Wielder (Ballistic, Melee) Talents.
+<br>o Alternatively, a Guardian Pilot can be created by removing the warrior?s Shuriken Catapult and adding one of Drive (Skimmers) (Ag) +10, Drive (Walkers) (Ag) +10 or Pilot (Military
+Craft) (Ag) +10. This pilot profile should be used in conjunction with the vehicle rules later in this document.
+<br>o Finally, some Guardians operate in pairs controlling a floating heavy or support weapon, providing additional firepower for their kin. A Guardian Weapon Team consists of two Eldar
+Guardians with an appropriate Exotic Weapon Proficiency for the weapon they are operating, and Awareness +10. The weapon itself is mounted upon a remotely-controlled platform
+which moves with the Guardian with the Controller (the other Guardian gains a device equivalent to an Auspex, and serves as a spotter), remaining within 5m where possible, and
+which counts as having the Auto-Stabilised Trait. The weapon may only be fired if the platform is within 5m of the Guardian controlling it, and both the Guardian and the weapon platform
+must have line of sight to the target. Heavy Weapons, which are mounted on an Average sized platform, may be chosen from the following list:
+<br>o Shuriken Cannon (110m; –/–/10; 2d10+6 R; Pen 6; Clip 150; Rld 3 Full; Razor-Sharp, Reliable, Tearing)
+<br>o Scatter Laser (180m; –/–/6; 3d10+10 E; Pen 2; Clip 400; Rld 3 Full; Reliable, Storm)
+<br>o Starcannon (180m; –/–/5; 3d10+10 E; Pen 10; Clip 100; Rld 4 Full; Volatile)
+<br>o Bright Lance (200m; S/–/–; 4d10+15 E; Pen 20; Clip 100; Rld 3 Full; Accurate)
+<br>o Eldar Missile Launcher (250m; S/–/–; Clip 15; Rld 2 Full; Damage, Pen and Qualities by Missile – Plasma (2d10+5 E; Pen 6; Blast (6), Concussive, Volatile) or Krak (4d10+6 X;
+Pen 10; Blast (1))
+<br><br>Support Weapons, which are mounted on a Hulking platform, may be chosen from the following list. All Support Weapons require a Full Action to fire.
+<br>o Distort Cannon (100m; S/–/–; 4d10+20 R; Clip 100; Rld 10 Full; Blast (5), Devastating (2), Felling (3), Recharge, Volatile, Warp Weapon; If 1 or more of the damage dice score a
+natural 10, then the target is slain instantly, dragged into the Warp; if the target is not slain outright and two or more damage dice show the same number, then the target is
+teleported that many metres in a random direction instead of dealing damage)
+<br>o Shadow Weaver (250m; S/–/–; 4d10+5 R; Pen 3; Clip 300; Rld 10 Full; Blast (6), Devastating (1), Deadly Snare, Razor-Sharp, Tearing)
+<br>o Vibro-Cannon (500m; S/–/–; Special; Clip 100; Rld 10 Full; Concussive, Devastating (1), Felling (2); No roll to hit required – the weapon projects a line of effect out to the listed
+range value, and all those within 1m of the line must pass an Agility Test or suffer 1d10 damage per point of Toughness Bonus they possess, after adjustment for Felling (2), or
+an immediate Righteous Fury Critical Hit if the target was a vehicle)
+<br><br>Usage: Eldar Guardians are the least capable of Eldar warriors, though far from feeble. Individually no match for the Adeptus Astartes, Guardians make for unusual Hordes, being quick, agile,
+elusive and stealthy, and capable of producing an extremely high volume of fire. Guardian Hordes should reasonably be about 10-20 magnitude in size – larger seems inappropriate for Eldar of
+any type – and should employ hit-and-run attacks where possible, using the Sprint, Hard Target and Catfall Talents and the Acrobatics, Dodge and Silent Move skills to elude their enemies. In
+their role as pilots, they command considerable firepower, speed and armour in close support of their brethren, while Weapon Teams provide heavy firepower of their own to cull infantry or
+fell heavy vehicles, with their Support Weapons proving particularly deadly against anything and everything they are directed towards.
+
+"]
+	],
+	
+	"grid" :
+	[
+		["Wounds", "15"],
+		["Movement", "5/10/15/30"],
+		["Weapon Skill", "55"],
+		["Ballistic Skill", "55"],
+		["Strength",  "38"],
+		["Toughness", "35"],
+		["Agility", "<sup>10</sup>56"],
+		["Intelligence", "38"],
+		["Perception", "40"],
+		["Will Power", "52"],
+		["Fellowship", "34"]
+	]
+}

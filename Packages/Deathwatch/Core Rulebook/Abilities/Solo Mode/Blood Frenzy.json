@@ -1,0 +1,33 @@
+{
+	
+	"content" : "Blood Angels possess a savagery in combat that has
+its roots deep in the history of their Chapter. It is, however,
+a trait that can serve them well in close quarters combat
+where strength and speed are vital. Once per combat, a
+Battle-Brother of the Blood Angels Chapter may summon up
+a Blood Frenzy. While under the effects of this ability, the
+Battle-Brother may re-roll Damage dice with melee weapons.
+In the case of melee weapons that inflict multiple dice of
+Damage, all dice or none must be re-rolled. In addition, such
+is the brutality of his attacks that he scores Righteous Fury
+(see page 245) on a dice result of 9 or 10 rather than just
+10. This ability lasts a number of rounds equal to the Battle-
+Brother’s Rank, divided by 2 (rounding up).<br>
+<br>
+<b>Improvement:</b> At Rank 3 and above the Penetration of any
+melee weapon attacks by the Battle-Brother are increased
+by +2. At Rank 5 and above this additional melee weapon
+Penetration rises to +4. At Rank 7 and above the chance
+of scoring Righteous Fury increases to a dice result of 8, 9,
+or 10.",
+
+	"extraSubCategories" : 
+	[ 
+		["Required Rank", "1"],
+		["Chapter", "Blood Angels"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 217
+}

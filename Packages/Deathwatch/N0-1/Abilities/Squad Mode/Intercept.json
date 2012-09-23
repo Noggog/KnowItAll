@@ -1,0 +1,29 @@
+{
+	
+	"content" : "Swooping Hawks are perhaps the swiftest
+of Aspect Warriors, capable of crossing great distances
+quickly to attack, able even to intercept the advance of
+swift-moving enemy vehicles like Land Speeders. When
+the Exarch activates this ability, all Swooping Hawks in
+his squad may make an immediate Charge Move and
+then either fire their Grenade Pack or throw a grenade.
+<br><br><b>Improvements:</b> If the Exarch spends an additional
+point of Cohesion to activate this Attack Pattern, then
+the squad adds +20 to their rolls to hit with the grenades
+and grenade packs.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Free Action"],
+		["Cost", "1"],
+		["Sustained", "No"],
+		["Chapter", ""],
+		["Required Rank", ""],
+		["Stance", "Attack"]
+		
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 
+}

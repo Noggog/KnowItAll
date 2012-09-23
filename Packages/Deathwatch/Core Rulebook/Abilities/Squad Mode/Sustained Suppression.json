@@ -1,0 +1,27 @@
+{
+	
+	"content" : "Dark Angels are masters of holding their ground and
+have a keen understanding of the tactics of overlapping fields
+of fire and kill zones. While this ability is in effect, the Battle-
+Brother and those in Support Range of him may take actions
+normally while maintaining Overwatch, such
+as moving and making attacks.<br>
+<br>
+<b>Improvement:</b> If the Battle-Brother is Rank 4 or more, the
+test to avoid Pinning when caught in a kill zone created by
+him or those supporting him increases from Hard (–20) to
+Very Hard (–30).",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Free Action"],
+		["Chapter", "Dark Angels"],
+		["Cost", "2"],
+		["Sustained", "Yes"],
+		["Stance", "Attack"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 222
+}

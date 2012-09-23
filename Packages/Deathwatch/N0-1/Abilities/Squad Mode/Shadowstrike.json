@@ -1,0 +1,30 @@
+{
+	
+	"content" : "At an unspoken command from their Exarch,
+the squad strikes, appearing from the darkness to
+butcher their foes. This Attack Pattern may only be activated
+if the squad is hidden from their enemies, and when
+activated, allows the Exarch and his squad to make a
+Charge Attack action immediately.<br
+<br><b>
+Improvements:</b> If the Exarch spends an additional
+point of Cohesion when activating this ability, all members
+of the squad deal an additional +5 damage on any
+strikes they make against Unaware enemies until the start
+of the Exarch?s next turn.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Free Action"],
+		["Cost", "2"],
+		["Sustained", "No"],
+		["Chapter", ""],
+		["Required Rank", ""],
+		["Stance", "Attack"]
+		
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 
+}

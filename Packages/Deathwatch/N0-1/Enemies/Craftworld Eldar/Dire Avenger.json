@@ -1,0 +1,45 @@
+{
+	"content" : "The first and most common form of Aspect Warrior, Dire Avengers are extremely skilled combatants, easily a match for
+the Astartes in terms of combat prowess, and while not as strong or resilient as the Emperor's Finest, they are far swifter and
+more agile. Their principle weapon is an exotic form of Shuriken Catapult, more deadly than those carried by Guardians and
+fitted with an array of targeting devices. Dire Avengers are valued for their tactical flexibility, swiftly adapting their approach as
+the situation changes with a combat awareness that seems almost supernatural.",
+
+	"extraSubCategories" : 
+	[ 
+		["Skills", "Acrobatics (Ag), Awareness (Per) +10, Climb (S), Command (Fel), Dodge (Ag) +10, Forbidden Lore (Xenos) (Int), Forbidden
+Lore (Warp) (Int), Medicae (Int), Silent Move (Ag), Speak Language (Eldar) (Int) +10, Tactics (Assault Doctrine or Defensive
+Doctrine) (Int)"],
+		["Talents", "Ambidextrous, Catfall, Exotic Weapon Proficiency (Avenger Shuriken Catapult, Shuriken Pistol), Foresight, Hard Target,
+Heightened Senses (Sight, Hearing), Hipshooting, Jaded, Leap Up, Lightning Reflexes, Melee Weapon Training (Primitive),
+Mighty Shot, Nerves of Steel, Pistol Training (Las), Quick Draw, Rapid Reaction, Sprint, Step Aside, Unarmed Warrior"],
+		["Traits", "Dark Sight, Unnatural Agility (x2)"],
+		["Armor", "Dire Avenger Aspect Armour (All 6)"],
+		["Weapons", "Shuriken Catapult (80m; S/3/10; 1d10+6 R; Pen 6; Clip 100; Rld 2 Full; Reliable, Tearing), Shuriken Pistol
+(20m; S/3/5; 1d10+4 R; Pen 4; Clip 40; Rld 2 Full; Reliable), Best Craftsmanship Mono-blade (1d5+5 R; Pen 2)"],
+		["Equipment", "4x Avenger Shuriken Catapult magazines, Soulstone, Targeting Array (counts as Signum Link)"],
+		["Special Rules", "
+
+<b>Usage:</b> Dire Avengers are in many ways the archetypal Eldar warrior – swift on offence, difficult to pin down, and capable of
+unleashing a hail of startlingly precise fire at a moment?s notice. Their light armour and low toughness make them fragile warriors,
+particularly as Elites, but their ability to avoid harm and cross distances quickly allows them a considerable amount of control
+over when and where a fight occurs. Dire Avengers are best used in small groups, with individuals cooperating closely to
+achieve their goals.
+"]
+	],
+	
+	"grid" :
+	[
+		["Wounds", "15"],
+		["Movement", "5/10/15/30"],
+		["Weapon Skill", "55"],
+		["Ballistic Skill", "55"],
+		["Strength",  "38"],
+		["Toughness", "35"],
+		["Agility", "<sup>10</sup>56"],
+		["Intelligence", "38"],
+		["Perception", "40"],
+		["Will Power", "52"],
+		["Fellowship", "34"]
+	]
+}

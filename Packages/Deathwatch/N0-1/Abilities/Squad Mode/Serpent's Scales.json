@@ -1,0 +1,27 @@
+{
+	
+	"content" : "The armour of the Fire Dragons is adorned
+with many spines and overlapping plates designed to
+help turn aside enemy attacks. At a psychic imperative
+from their Exarch, the squad?s movements shift subtly to
+take best advantage of their armour, increasing their AP
+by +4 while this power remains in effect.
+<br><br><b>Improvements:</b> If the Exarch spends an additional
+point of Cohesion to activate this Defensive Stance, the
+bonus AP increases to +8.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Free Action"],
+		["Cost", "1"],
+		["Sustained", "Yes"],
+		["Chapter", ""],
+		["Required Rank", ""],
+		["Stance", "Defensive"]
+		
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 
+}

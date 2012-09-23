@@ -1,0 +1,48 @@
+{
+	"content" : "Representing Khaine's aspect as the destroyer, Fire Dragons prove that not even the toughest armour or the strongest fortifications
+are proof against the ire of the Eldar. Destruction and desolation are the gifts of the Fire Dragon, and there is little that
+can withstand their onslaught.
+<br>
+<br>
+<b>Usage:</b> Fire Dragons specialise in breaking open hard targets such as battle tanks and fortified bunkers, though their powerful
+Fusion Guns also serve them well against heavy infantry such as Astartes Terminators and Tau Crisis Battlesuits. Their effectiveness
+in such a role is considerable, with a few Fire Dragons easily able to overcome extraordinarily tough adversaries in a relatively
+short space of time thanks to the variety of tools at their disposal. In particular, their Evaluate skill allows them to cut
+through static defences in almost no time at all",
+
+	"extraSubCategories" : 
+	[ 
+		["Skills", "Acrobatics (Ag), Awareness (Per) +10, Climb (S), Command (Fel), Demolitions (Int) +10, Dodge (Ag) +10, Evaluate (Int)
++10, Forbidden Lore (Xenos) (Int), Forbidden Lore (Warp) (Int), Medicae (Int), Silent Move (Ag), Speak Language (Eldar) (Int)
++10, Tactics (Armoured Tactics or Assault Doctrine) (Int)"],
+		["Talents", "Ambidextrous, Catfall, Crack Shot, Exotic Weapon Proficiency (Fusion Gun, Shuriken Pistol), Foresight, Hard Target,
+Heightened Senses (Sight, Hearing), Hipshooting, Jaded, Last Man Standing, Leap Up, Lightning Reflexes, Melee Weapon Training
+(Primitive), Mighty Shot, Nerves of Steel, Pistol Training (Las), Quick Draw, Rapid Reaction, Sprint, Step Aside, Unarmed
+Warrior"],
+		["Traits", "Dark Sight, Unnatural Agility (x2)"],
+		["Armor", "Fire Dragon Aspect Armour (All 6, +2 against Heat-based weaponry)"],
+		["Weapons", "Fusion Gun (40m; S/–/–; 3d10+8 E; Pen 13; Clip 12; Rld 3 Full; Reliable, Felling (1), +2 Pen per Degree of Success on
+attack roll), Shuriken Pistol (20m; S/3/5; 1d10+4 R; Pen 4; Clip 40; Rld 2 Full; Reliable), Best Craftsmanship Mono-blade (1d5+5
+R; Pen 2)"],
+		["Equipment", "4x Fusion Gun magazines, Soulstone, 3x Meltabombs"],
+		["Special Rules", "
+
+
+"]
+	],
+	
+	"grid" :
+	[
+		["Wounds", "15"],
+		["Movement", "5/10/15/30"],
+		["Weapon Skill", "51"],
+		["Ballistic Skill", "58"],
+		["Strength",  "38"],
+		["Toughness", "35"],
+		["Agility", "<sup>10</sup>51"],
+		["Intelligence", "44"],
+		["Perception", "48"],
+		["Will Power", "52"],
+		["Fellowship", "34"]
+	]
+}

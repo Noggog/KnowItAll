@@ -1,0 +1,32 @@
+{
+	
+	"content" : "The Exarch?s keen eye and carefully-honed
+skill allow him to find the weaknesses in any armour or
+fortification in an instant, and within seconds, this insight
+is spread to his squad, whose attacks are all the deadlier
+for it. The Exarch nominates a single enemy vehicle or
+fortification he can see. Until that target is destroyed, the
+squad gains a bonus to their Pen values equal to the Exarch?
+s Perception Bonus against that target.
+<br><br><b>Improvements:</b> If the Exarch spends an additional
+point of Cohesion to activate this Attack Pattern, then any
+Fusion Gun fired by a member of the squad (including the
+Exarch?s Fire Pike, if he has one) gain an additional +1d10
+of damage against the chosen target if their attack roll
+succeeds by two or more Degrees of Success.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Half Action"],
+		["Cost", "2"],
+		["Sustained", "No"],
+		["Chapter", ""],
+		["Required Rank", ""],
+		["Stance", "Attack"]
+		
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 
+}

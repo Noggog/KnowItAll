@@ -2,6 +2,6 @@
 	"name" : "Ammunition",
 	"extraSubCategories" : 
 	[ 
-		"Requisition", "Renown", "Used With", "Effects"
+		"Used With", "Effects"
 	]
 }

@@ -1,0 +1,26 @@
+{
+	
+	"content" : "No jump pack infantry can match the
+Swooping Hawks for speed in the air, and the Aspect
+Warriors regard the skies as their domain, secure from
+the aggression of their earth-bound enemies. When the
+Exarch activates this ability, he and all Swooping Hawks
+in his Squad immediately move to High Altitude, disengaging
+from melee without provoking attacks if necessary.
+<br><br><b>Improvements:</b> This ability cannot be Improved.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Full Action"],
+		["Cost", "2"],
+		["Sustained", "No"],
+		["Chapter", ""],
+		["Required Rank", ""],
+		["Stance", "Defensive"]
+		
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 
+}

@@ -1,0 +1,29 @@
+{
+	
+	"content" : "The Howling Banshees are amongst the
+most agile and acrobatic of Aspect Warriors, moving at
+bewildering speed towards and amongst their enemies.
+With intense training from their Exarchs, this speed and
+agility can be honed even further, allowing them to move
+seamlessly from the fury of combat even as they avoid the
+clumsily-swung blades of the young races. Whilst this
+Defensive Stance is in effect, any member of the squad
+who successfully passes a Dodge Test in melee may move
+up to her normal Half Move rate away from the attacker.
+Each Howling Banshee may only do this once per round.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Free Action"],
+		["Cost", "2"],
+		["Sustained", "Yes"],
+		["Chapter", ""],
+		["Required Rank", ""],
+		["Stance", "Defensive"]
+		
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 
+}

@@ -1,0 +1,25 @@
+{
+	
+	"content" : "Often the only way to break a foe is to charge into
+their midst and hack them down. Using this ability, the Battle-
+Brother and those in Support Range of him may make an
+immediate Charge Move and a Standard Attack with a melee
+weapon. In addition, such is the fury of such an attack that all
+Battle-Brothers involved may re-roll Damage for their attacks.<br>
+<br>
+<b>Improvement:</b> If the Battle-Brother is Rank 5 or more then
+both he and the Kill-team can make Multiple Attacks instead
+of a Standard Attack with their melee weapons.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Free Action"],
+		["Cost", "3"],
+		["Sustained", "No"],
+		["Stance", "Attack"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 221
+}

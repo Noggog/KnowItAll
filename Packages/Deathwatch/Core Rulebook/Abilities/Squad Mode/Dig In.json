@@ -1,0 +1,29 @@
+{
+	
+	"content" : "Against fearsome weapons like plasma cannons
+and meltaguns, even Space Marines will use cover to their
+advantage. A Battle-Brother may order his squad to Dig In,
+seeking out the most defensible firing positions. While this
+ability is in effect, the Battle-Brother and those in Support
+Range of him can double the Armour Points provided by any
+cover they are currently using. This bonus to
+cover only applies to each individual Battle-Brother so long
+as they remain stationary.<br>
+<br>
+<b>Improvement:</b> If the Battle-Brother is Rank 5 or more, both
+he and those supporting him may move freely. The benefits
+of doubled Armour Points applying to all cover they use for
+the duration of the ability.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Full Action"],
+		["Cost", "3"],
+		["Sustained", "Yes"],
+		["Stance", "Defensive"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 223
+}

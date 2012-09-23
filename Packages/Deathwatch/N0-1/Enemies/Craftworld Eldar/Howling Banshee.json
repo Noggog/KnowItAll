@@ -1,0 +1,52 @@
+{
+	"content" : "Named for the creature of Eldar myth that could draw the souls from mortals with its hellish shriek, Howling Banshees
+represent the inescapable nature of death, and strive to bring swift oblivion to the enemies of the Eldar. For many who would
+oppose the Children of Isha, the last thing they ever hear is the terrible psychic wail of the Howling Banshees as they charge,
+rendering them senseless in the moments before they die.
+<br><br>
+<b>Usage:</b> Howling Banshees are potent shock troops, their Banshee Masks and power weapons allowing them to overpower most
+adversaries, and their agility and acrobatic nature allowing them to easily disengage and withdraw should the fighting threaten
+to bog them down. Howling Banshees operate best in small groups, attempting to disable several opponents quickly to avoid
+being trapped and overwhelmed by enemy reprisals.",
+
+	"extraSubCategories" : 
+	[ 
+		["Skills", "Acrobatics (Ag) +10, Awareness (Per) +10, Climb (S), Command (Fel), Dodge (Ag) +20, Forbidden Lore (Xenos) (Int), Forbidden
+Lore (Warp) (Int), Medicae (Int), Silent Move (Ag), Speak Language (Eldar) (Int) +10, Tactics (Assault Doctrine) (Int)"],
+		["Talents", "Ambidextrous, Catfall, Crippling Strike, Exotic Weapon Proficiency (Eldar Power Sword, Shuriken Pistol), Foresight,
+Hard Target, Heightened Senses (Sight, Hearing), Hipshooting, Jaded, Leap Up, Lightning Reflexes, Melee Weapon Training
+(Power, Primitive), Nerves of Steel, Pistol Training (Las), Preternatural Speed, Quick Draw, Rapid Reaction, Sprint, Swift Attack,
+Step Aside, Two Weapon Wielder (Ballistic, Melee), Unarmed Warrior"],
+		["Traits", "Dark Sight, Unnatural Agility (x2)"],
+		["Armor", "Howling Banshee Aspect Armour (All 6)"],
+		["Weapons", "Eldar Power Sword (1d10+8 E; Pen 8; Balanced, Power Field, extra +10 to Parry), Shuriken Pistol (20m; S/3/5; 1d10+2
+R; Pen 4; Clip 40; Rld 2 Full; Reliable), Best Craftsmanship Mono-blade (1d5+6 R; Pen 2)"],
+		["Equipment", "2x Shuriken Pistol magazines, Soulstone, Banshee Mask"],
+		["Special Rules", "
+<b>Banshee Mask:</b> The signature wargear of the Howling Banshee Aspect, the Banshee Mask is a helm capable of amplifying
+a warrior?s war-cries into a powerful psycho-sonic shriek that overloads their victims? nervous systems, leaving them incapable
+of defending themselves for a few moments – just long enough for the Banshees to strike. When a Howling Banshee performs
+a Charge Attack action, the target of that charge must attempt a Hard (–20) Willpower Test or be Stunned for 1 round.
+Usage: Howling Banshees are potent shock troops, their Banshee Masks and power weapons allowing them to overpower most
+adversaries, and their agility and acrobatic nature allowing them to easily disengage and withdraw should the fighting threaten
+to bog them down. Howling Banshees operate best in small groups, attempting to disable several opponents quickly to avoid
+being trapped and overwhelmed by enemy reprisals.
+
+"]
+	],
+	
+	"grid" :
+	[
+		["Wounds", "15"],
+		["Movement", "6/12/18/36"],
+		["Weapon Skill", "62"],
+		["Ballistic Skill", "48"],
+		["Strength",  "43"],
+		["Toughness", "35"],
+		["Agility", "<sup>12</sup>63"],
+		["Intelligence", "38"],
+		["Perception", "40"],
+		["Will Power", "52"],
+		["Fellowship", "34"]
+	]
+}

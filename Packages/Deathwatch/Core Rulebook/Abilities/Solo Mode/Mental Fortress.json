@@ -1,0 +1,22 @@
+{
+	
+	"content" : "The Adeptus Astartes are as strong of mind as they
+are of body, their training and devotion to the Emperor
+hardening their wills against the perils of a deadly universe.
+Once per game session, a Battle-Brother may use the Mental
+Fortress ability to re-roll a failed Willpower Test to resist a
+Psychic Power or an attempt to subvert his will.<br>
+<br>
+<b>Improvement:</b> At Rank 7 the Battle-Brother may add +20
+to the result of the re-roll.",
+
+	"extraSubCategories" : 
+	[ 
+		["Required Rank", "5"],
+		["Chapter", "All"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 216
+}

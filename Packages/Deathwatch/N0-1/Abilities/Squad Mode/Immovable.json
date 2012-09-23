@@ -1,0 +1,27 @@
+{
+	
+	"content" : "Dark Reapers embody the supernatural
+prowess of their forebear, Maugan Ra, with their skills
+and their wargear, and just as Maugan Ra is immovable
+in the face of his enemies, so too do Dark Reapers stand
+firm when confronted with their foes, their deeds resonating
+with the psychic echoes of the first of their kind.
+While this ability remains in effect, all members of the
+squad gain Unnatural Toughness (x2).
+<br><br><b>Improvements:</b> This ability may not be improved.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Free Action"],
+		["Cost", "3"],
+		["Sustained", "Yes"],
+		["Chapter", ""],
+		["Required Rank", ""],
+		["Stance", "Defensive"]
+		
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 
+}

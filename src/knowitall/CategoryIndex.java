@@ -29,7 +29,7 @@ public class CategoryIndex extends LSwingTreeNode implements Comparable {
     public CategoryIndex(File src) {
 	name = src.getName();
 	for (File specF : src.listFiles()) {
-	    if (Ln.isFileType(specF, "JSON")) {
+	    if (Ln.isFileType(specF, "JSON") || Ln.isFileType(specF, "TXT")) {
 		load(specF);
 		break;
 	    }
@@ -52,8 +52,8 @@ public class CategoryIndex extends LSwingTreeNode implements Comparable {
 		    return false;
 		}
 		// Get Category Name
-		if (spec.name != null && !spec.name.equals("")) {
-		    name = spec.name;
+		if (spec.name == null || spec.name.equals("")) {
+		    spec.name = specF.getName().substring(0, specF.getName().indexOf('.'));
 		}
 		// Load specfile in
 		merge(spec.extraSubCategories, subCategorySet, subCategoryOrder);

@@ -1,0 +1,64 @@
+{
+	"content" : "Fiannathail has served his Craftworld for more than four centuries as Autarch, leading Warhosts into battle across all manner of battlefields and against countless foes. His own blades
+have tasted the blood of hundreds, perhaps even thousands of enemies over the long ages of his existence, and he has walked the Warrior Path no fewer than three times, and fought in the open
+skies at the controls of everything from a Jetbike to a Nightwing Interceptor. Fiannathail?s wealth of experience has taught him the value of aerial supremacy, and he typically takes to the skies
+to oversee and direct a battle from far above, descending only to lend his considerable prowess to the front lines when absolutely necessary.
+<br>
+<br>
+<b>Usage:</b> Fiannathail is typical of many Eldar Autarchs – a skilled and well-equipped warrior certainly, but a leader and a strategist before that. Much of his deadliness is his ability to direct a
+force of other Eldar, enhancing their abilities rather than standing at the front lines leading the charge. This is not to say that he is incapable of doing so – quite the contrary: his skill and wargear
+allows him to fight at short ranges or in melee as the situation requires, dropping from the skies to strike when the time is right and the need is greatest. As with most Eldar, Fiannathail is inherently
+fragile, particularly for a Master adversary, reliant more on swift movement, his innate skill and agility, and the potency of his Forceshield to keep himself safe from harm. Because of this,
+and because his usefulness as a leader is potentially greater than his use as a warrior, Fiannathail is better used carefully, his direct intervention used only very sparingly.",
+
+	"extraSubCategories" : 
+	[ 
+		["Skills", "Acrobatics (Ag)+10, Awareness (Per) +20, Climb (S), Command (Fel) +20, Demolition (Int) +20, Dodge (Ag) +20, Drive (Skimmer) (Ag) +10, Evaluate (Int) +10, Forbidden Lore (Xenos)
+(Int) +10, Forbidden Lore (Warp) (Int), Medicae (Int), Pilot (Personal) (Ag) +10, Pilot (Military Craft) (Ag) +10, Scholastic Lore (Eldar Military Lore) (Int) +20, Silent Move (Ag), Speak Language
+(Eldar) (Int) +20, Tactics (Air Combat) (Int) +10, Tactics (Armoured Tactics) +10, Tactics (Assault Doctrine) (Int) +20, Tactics (Recon and Stealth) (Int) +10"],
+		["Talents", "Air of Authority, Ambidextrous, Blademaster, Catfall, Counter Attack, Crushing Blow, Exotic Weapon Proficiency (Eldar Power Sword, Forearm Powerblade, Fusion Gun, Shuriken
+Pistol), Foresight, Hard Target, Heightened Senses (Sight, Hearing), Hipshooting, Iron Discipline, Jaded, Leap Up, Lightning Attack, Lightning Reflexes, Master Orator, Melee Weapon Training
+(Power, Primitive), Mighty Shot, Nerves of Steel, Pistol Training (Las), Preternatural Speed, Quick Draw, Rapid Reaction, Sprint, Step Aside, Swift Attack, Talented (Command), Two-Weapon
+Wielder (Ballistic, Melee), Wall of Steel, Unarmed Warrior"],
+		["Traits", "Dark Sight, Master Strategist, Unnatural Agility (x2), Touched by the Fates (3)"],
+		["Armor", "Autarch Armour (All 8), Eldar Forceshield (Force Field, Protection 75, Overload 1)"],
+		["Weapons", "Master-crafted Eldar Power Sword (1d10+12 E; Pen 8; Balanced, Extra +10 to Parry, Power Field), Master-crafted Forearm Powerblade (1d10+9 E; Pen 4; Balanced, Defensive, Power
+Field), Master-Crafted Fusion Gun (40m; S/–/–; 3d10+10 E; Pen 13; Clip 12; Rld 3 Full;, Felling (1), Never Jams, +2 Pen per Degree of Success on attack roll) Master-crafted Shuriken Pistol (20m;
+S/3/5; 1d10+6 R; Pen 4; Clip 40; Rld 2Full; Never Jams), Best Craftsmanship Mono-blade (1d5+6 R; Pen 2)"],
+		["Equipment", ""],
+		["Special Rules", "
+<b>Master Strategist:</b> Autarchs are ancient and possess extensive and broad experience of the ways of war, giving them an insight into battle that eclipses the narrow focus of most Exarchs.
+Their many centuries of study and training in several disciplines of the warrior?s art give them a balanced perspective ideal for overseeing and commanding Warhosts in the field. Whether
+working to an intricate strategy that account for countless thousands of variables, or allowing finely-tuned instincts to adapt his command at a moment?s notice, an Autarch?s mind is keen
+and swift and pure of focus. An Autarch may, as a Half Action, attempt to confer one of the benefits listed below upon his allies. The affected Eldar must be a single group (a squad or Horde)
+consisting of no more than the sum of his Intelligence and Fellowship Bonuses, or twice that amount of Magnitude for a Horde, that he is able to see and which is able to hear his commands
+(either directly, or over a communications link of some kind). Each benefit requires a Challenging (+0) Command Test to successfully confer upon a group of allies, and each one lasts until the
+start of the Autarch?s next Turn. The possible benefits are as follows:
+<br>* Gain a single Re-roll which may be used on any failed Test, plus an additional Re-Roll for every two Degrees of Success.
+<br>* Grant a +10 bonus to a Test, which must be applied before any dice are rolled. The Autarch may grant this bonus to an additional Test for every two Degrees of Success.
+<br>* Grant the group of Eldar a collective „pool? of Degrees of Success equal to 1+ the number of Degrees of Success scored, which may be spent on any successful Tests those Eldar make.
+<br>* Grant an Eldar squad in Squad Mode a number of bonus points of Cohesion equal to equal to 1+ the number of Degrees of Success scored. These additional points of Cohesion remain
+until used, rather than lasting only until the Autarch?s next Turn.
+<br>* Allow the group of Eldar to all act at either the Autarch?s initiative (beginning their turn immediately after his ends), or at the highest initiative of those in the group (for example, if an
+Exarch in a squad is acting significantly before the other), for their next action, whichever would allow them to act sooner.
+<br>* Allow a Horde to count its Magnitude as +10 higher for the purposes of number of attacks and damage dealt.
+<br>* Grant the group of Eldar an additional Half Action, which must be used for movement, during their next Turn.
+<br>* Confer the benefits of a successful Evaluate Test (used for the Weak Points or Solid Cover special uses) to the group.
+"]
+	],
+	
+	"grid" :
+	[
+		["Wounds", "15"],
+		["Movement", "5/10/15/30"],
+		["Weapon Skill", "55"],
+		["Ballistic Skill", "55"],
+		["Strength",  "38"],
+		["Toughness", "35"],
+		["Agility", "<sup>10</sup>56"],
+		["Intelligence", "38"],
+		["Perception", "40"],
+		["Will Power", "52"],
+		["Fellowship", "34"]
+	]
+}

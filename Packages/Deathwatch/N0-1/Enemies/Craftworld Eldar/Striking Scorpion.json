@@ -1,0 +1,56 @@
+{
+	"content" : "Striking Scorpions embody the notion of concealed strength, of potency held in check and unnoticed until the moment it
+is used. To this end, they are powerful melee combatants with considerable skill at remaining undetected, striking from their
+hidden positions with swift and startling fury. The disorienting blast of plasma grenades and Mandiblaster fire is the herald of
+their assault, followed by the whispered growl of their impossibly sharp chain-blades.
+<br>
+<br>
+<b>Usage:</b> Striking Scorpions are skilled melee combatants who excel at surprise attacks and ambushes, using dense terrain to cover their advance and tools like plasma grenades and their Mandiblaster
+Helms to disrupt enemy forces and sow confusion as they launch their attack. As with other Aspect Warriors, Striking Scorpions work best in small coordinated groups, using speed and
+stealth to attack suddenly and without warning.",
+
+	"extraSubCategories" : 
+	[ 
+		["Skills", "Acrobatics (Ag), Awareness (Per) +10, Climb (S), Command (Fel), Concealment (Ag) +20, Dodge (Ag), Forbidden Lore
+(Xenos) (Int), Forbidden Lore (Warp) (Int), Medicae (Int), Silent Move (Ag) +20, Speak Language (Eldar) (Int) +10, Tactics (Assault
+Doctrine or Recon and Stealth) (Int)"],
+		["Talents", "Ambidextrous, Catfall, Crushing Blow, Exotic Weapon Proficiency (Eldar Chainsword, Mandiblaster Helm, Shuriken
+Pistol), Foresight, Hard Target, Heightened Senses (Sight, Hearing), Hipshooting, Jaded, Leap Up, Lightning Reflexes, Melee
+Weapon Training (Chain, Primitive), Nerves of Steel, Pistol Training (Las), Quick Draw, Rapid Reaction, Sprint, Swift Attack,
+Step Aside, Two Weapon Wielder (Ballistic, Melee), Unarmed Warrior"],
+		["Traits", "Dark Sight, Unnatural Agility (x2)"],
+		["Armor", ""],
+		["Weapons", "Eldar Chainsword (1d10+10 R; Pen 3; Balanced, Razor-Sharp, Tearing), Shuriken Pistol (20m; S/3/5; 1d10+2 R; Pen 4;
+Clip 40; Rld 2 Full; Reliable), Best Craftsmanship Mono-blade (1d5+9 R; Pen 2), Mandiblaster Helm (1m; S/–/–; 2d10+2 E; Pen 5;
+Shocking, Twin-Linked), 3x Eldar Plasma Grenades (15m; S/–/–; 1d10+8 E; Pen 6; Blast (4), Concussive, Volatile)
+<br>
+<br><b>Mandiblaster Helm:</b> The signature weapon of the Striking Scorpions are devices known as Mandible Blasters, or Mandiblasters,
+mounted in pods on either side of the warrior?s helm, designed to fire at a mental impulse. Extremely short-ranged,
+Mandiblasters are employed as the Striking Scorpions charge, firing moments before the first blow is struck and spitting tiny
+metal slivers at the target. These slivers are inconsequential on their own, but fractions of a second later, they are turned into
+white-hot bursts of plasma as they are struck by the high-powered lasers that form the weapons? second stage. A Striking Scorpion
+can incapacitate, kill or disorient his enemy with a well-placed shot. When performing a Charge Attack action, a Striking
+Scorpion may fire his Mandiblaster Helm before he makes any attacks, rolling to hit as if using a ranged weapon at Short Range.
+Once hits from a Mandiblaster Helm have been resolved, the Striking Scorpion may continue to make his melee attack as normal."],
+		["Equipment", "2x Shuriken Pistol magazines, Soulstone"],
+		["Special Rules", "
+
+
+"]
+	],
+	
+	"grid" :
+	[
+		["Wounds", "15"],
+		["Movement", "5/10/15/30"],
+		["Weapon Skill", "62"],
+		["Ballistic Skill", "48"],
+		["Strength",  "51"],
+		["Toughness", "38"],
+		["Agility", "<sup>10</sup>58"],
+		["Intelligence", "38"],
+		["Perception", "46"],
+		["Will Power", "52"],
+		["Fellowship", "34"]
+	]
+}

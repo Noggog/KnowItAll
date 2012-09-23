@@ -25,5 +25,10 @@ this Talent.
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 128
+	"pageNumber" : 128,
+	
+	"aka" : 
+	[
+		"Two Weapon Wielder"
+	]
 }

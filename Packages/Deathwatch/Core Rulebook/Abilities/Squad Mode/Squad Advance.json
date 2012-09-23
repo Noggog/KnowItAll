@@ -1,0 +1,23 @@
+{
+	
+	"content" : "Kill-teams move with a deadly precision across the
+battlefield, covering each other as they advance and crossing
+ground swiftly from cover to cover. While this ability is
+in effect, the Kill-team may use their Reactions to make a
+Tactical Advance.<br>
+<br>
+<b>Improvement:</b> If the Battle-Brother is Rank 3 or more,
+calling for a Squad Advance becomes a Free Action.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Half Action"],
+		["Cost", "1"],
+		["Sustained", "Yes"],
+		["Stance", "Attack"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 221
+}

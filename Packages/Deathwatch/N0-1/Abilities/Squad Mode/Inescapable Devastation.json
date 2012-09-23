@@ -1,0 +1,28 @@
+{
+	
+	"content" : "The Exarch understands precisely when
+and how to apply firepower to achieve his ends, and
+directs his warriors to that effect. Until the start of the
+Exarch?s next turn, all warriors in his squad gain either
+the Storm or Felling (1) qualities on their ranged attacks.
+<br><br><b>Improvements:</b> If the Exarch spends an additional
+point of Cohesion to activate this Attack Pattern,
+this ability may be Sustained, and the warriors in the
+squad may choose freely between the two weapon
+qualities from turn to turn.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Free Action"],
+		["Cost", "1"],
+		["Sustained", "No"],
+		["Chapter", ""],
+		["Required Rank", ""],
+		["Stance", "Attack"]
+		
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 
+}

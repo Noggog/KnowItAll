@@ -1,0 +1,25 @@
+{
+	
+	"content" : "A Battle-Brother can call on reserves of speed when
+needed, crossing great distances to close with the foe. Once
+per game session, a Battle-Brother can perform a Burst of
+Speed. This ability increases the character’s Agility Bonus by
+2 with all the usual associated benefits for a number of
+Rounds equal to his Rank.<br>
+<br>
+<b>Improvement:</b> At Rank 3 and above Burst of Speed also
+adds a +10 to all Agility tests based on movement. At Rank
+5 the bonus to Agility Bonus increases to +4. At Rank 7 this
+ability allows the Battle-Brother to ignore the need to make
+Agility Tests when running or charging in difficult terrain.",
+
+	"extraSubCategories" : 
+	[ 
+		["Required Rank", "1"],
+		["Chapter", "All"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 216
+}

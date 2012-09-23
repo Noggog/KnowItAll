@@ -1,0 +1,33 @@
+{
+	
+	"content" : "Dark Angels are stubborn in attack and intractable in
+defence, holding their ground against even the most furious
+of assaults. Once per combat a Battle-Brother of the Dark
+Angels Chapter may enact a Stoic Defence. The Space Marine
+gains 6 Temporary Wounds and his maximum Movement
+Rate is reduced to 1/2 his Agility Bonus, rounding up (most
+Space Marines with this ability hold their chosen position
+and do not advance or retreat!). Unlike normal Wounds, these
+bonus Wounds are removed when affected by the Damage
+of any successful attack, and are always removed first before
+applying Damage to the Battle-Brother’s normal Wounds.
+These bonus Wounds will also be lost if the Battle-Brother
+leaves his chosen location either by his own choice or
+involuntarily.<br>
+<br>
+<b>Improvement:</b> At Rank 3 and above the temporary Wounds
+increase to 12. At Rank 5 and above the Battle-Brother may
+move a number of metres equal to his Agility Bonus each
+round without losing the effects of the ability. At Rank 7 and
+above the temporary Wounds increase to 18.",
+
+	"extraSubCategories" : 
+	[ 
+		["Required Rank", "1"],
+		["Chapter", "Dark Angels"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 217
+}

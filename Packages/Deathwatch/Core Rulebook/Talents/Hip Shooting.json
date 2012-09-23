@@ -17,5 +17,10 @@ This attack can only be a single shot—no automatic fire.",
 	
 	"GMOnly" : false,
 	
-	"pageNumber" : 120
+	"pageNumber" : 120,
+	
+	"aka" : 
+	[
+		"Hipshooting"
+	]
 }

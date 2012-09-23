@@ -1,0 +1,29 @@
+{
+	
+	"content" : "The holy fury of the Emperor lives in the hearts of all
+Black Templars, awaiting the time when it will be unleashed
+upon his foes. Until the start of his next Turn, whenever the
+Battle-Brother and those in Support Range of him make a
+successful Standard Attack with a melee weapon (whether
+or not Damage is inflicted) they may immediately make an
+additional Standard Attack with that same weapon, against
+the same foe, as a Free Action. If this blow also hits, then they
+may make an additional Standard Attack and so on, up to a
+total number of extra attacks equal to their Agility Bonus.<br>
+<br>
+<b>Improvement:</b> If the Battle-Brother is Rank 4 or more,
+summoning the Holy Vengeance is a Free Action.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Half Action"],
+		["Chapter", "Black Templars"],
+		["Cost", "2"],
+		["Sustained", "No"],
+		["Stance", "Attack"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 222
+}

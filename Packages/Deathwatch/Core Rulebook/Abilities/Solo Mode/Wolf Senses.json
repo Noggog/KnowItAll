@@ -1,0 +1,30 @@
+{
+	
+	"content" : "As part of the genetic gifts of their Primarch Leman
+Russ, the Space Wolves have almost preternatural senses
+that exceed even those of other Space Marines. Whenever a
+Battle-Brother of the Space Wolves Chapter is in Solo Mode
+he may re-roll any failed Perception-based Tests and counts
+as possessing the Dark Sight Trait. However, it is important
+to note that none of these bonuses apply if the Space Wolf
+is wearing a helmet for a sealed set of armour (e.g., Power
+Armour, Artificer Armour, or Terminator Armour).<br>
+<br>
+<b>Improvement:</b> At Rank 3 and above the Battle-Brother adds
++10 to all Perception-based Tests. At Rank 5 and above, he
+gains the Unnatural Perception (x2) Trait while using this
+ability. At Rank 7 and above the Battle-Brother’s senses are
+such that once per game session he can automatically pass any
+test based on Perception (for purposes of Opposed Tests the
+Battle-Brother is considered to have rolled a 01).",
+
+	"extraSubCategories" : 
+	[ 
+		["Required Rank", "1"],
+		["Chapter", "Space Wolves"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 217
+}

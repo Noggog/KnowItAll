@@ -1,0 +1,33 @@
+{
+	
+	"content" : "While a good formation covers all angles of attack,
+it also shields the squad from directed fire. This is especially
+true of Space Marines, who use their bulk and armour to shrug
+off hails of bullets, bolts, and beams. A Battle-Brother may use
+the Soak Fire ability whenever another member of his squad
+currently within his Support Range is hit by a Semi or Full
+Auto fire attack and would be eligible to make a Dodge Test to
+avoid the attack. These hits are then divided evenly between the
+original target, the Battle-Brother, and those supporting him,
+provided they would normally be eligible targets for the attack.
+Regardless of the number of Battle-Brothers soaking fire, the
+original target always takes at least one hit. Note that Battle-
+Brothers soaking fire cannot Dodge attacks allocated to them.<br>
+<br>
+<b>Improvement:</b> If the Battle-Brother is Rank 4 or more, both
+he and those supporting him may soak single-attack ranged
+weapons, such as a blast from a lascannon or a sniper’s bullet,
+dividing the Damage evenly between those involved.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Reaction"],
+		["Cost", "2"],
+		["Sustained", "No"],
+		["Stance", "Defensive"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 223
+}

@@ -1,0 +1,39 @@
+{
+	
+	"content" : "Storm Wardens often choose to prove their honour
+and bravery by facing foes in single combat and duelling to
+the death. Once per combat as a Free Action, a Battle-Brother
+of the Storm Wardens Chapter may issue a Thunder’s Call
+against any single enemy which can both see and hear him
+(though it need not be able to understand his language). As
+long as the Battle-Brother takes no Actions other than melee
+attacks against the target or moving him into melee with the
+target, and none of his allies attack the target, he gains +10
+to Weapon Skill Tests against it. In addition, as long as the
+Battle-Brother is engaged in melee combat with the target,
+it suffers –10 to make attacks against anyone but the Storm
+Warden and must pass a Challenging (+0) Agility Test to
+move away.
+his ability lasts until either the target is dead or withdraws
+from combat (i.e. it retreats and combat ends) or the Battle-
+Brother withdraws from combat.<br>
+<br>
+<b>Improvement:</b> At Rank 3 and above the Battle-Brother’s
+duelling skills mean that he may re-roll both Parry and
+Dodge Tests against attacks from the target of his Thunder’s
+Call. At Rank 5 and above the target’s penalties to attack
+anyone other than the Storm Warden increase to –20 and the
+Agility Test to move away becomes Hard (–20). At Rank 7
+and above he may issue the Thunder’s Call to a group of foes
+up to his Rank in number.",
+
+	"extraSubCategories" : 
+	[ 
+		["Required Rank", "1"],
+		["Chapter", "Storm Wardens"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 218
+}

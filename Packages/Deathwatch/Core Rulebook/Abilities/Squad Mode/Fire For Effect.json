@@ -1,0 +1,24 @@
+{
+	
+	"content" : "Working as a single well-oiled machine, the Killteam
+can snap off shots at targets as they appear. While this
+power is in effect, the Kill-team may use their Reactions to
+make a Standard Attack with a ranged weapon.<br>
+<br>
+<b>Improvement:</b> If the Battle-Brother is Rank 4 or more,
+both he and the Kill-team can make Semi Auto Bursts and
+Full Auto Bursts instead of a Standard Attack with their
+ranged weapons.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Half Action"],
+		["Cost", "2"],
+		["Sustained", "Yes"],
+		["Stance", "Attack"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 221
+}

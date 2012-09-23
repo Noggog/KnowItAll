@@ -1,0 +1,33 @@
+{
+	
+	"content" : "The Ultramarines consider themselves a pure
+expression of the Codex Astartes and among the truest of
+the Emperors sons. This pride and unshakable personal belief
+often manifests itself in their leadership abilities and the
+example they set to other members of the Adeptus Astartes.
+While in Solo Mode, a Battle-Brother of the Ultramarines
+Chapter may re-roll any Fellowship Tests when dealing with
+either Space Marines or members of the Imperial armed forces
+(i.e. Imperial Guard, Imperial Navy, etc.).
+In addition, their strength of leadership means that the
+Battle-Brother adds +1 to the Kill-team’s Cohesion if he is
+the squad leader. This bonus to Cohesion remains active even
+when the Battle-Brother is not in Solo Mode.<br>
+<br>
+<b>Improvement:</b> At Rank 3 and above once per combat the Battle-
+Brother may automatically pass one Command Skill Test. At Rank
+5 and above the Dispositions of all Imperial forces
+and agents are improved favourably by one step when dealing
+with the Battle-Brother. At Rank 7 and above the Battle-Brother
+adds +2 to his Kill-team’s Cohesion rather than +1.",
+
+	"extraSubCategories" : 
+	[ 
+		["Required Rank", "1"],
+		["Chapter", "Ultramarines"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 218
+}

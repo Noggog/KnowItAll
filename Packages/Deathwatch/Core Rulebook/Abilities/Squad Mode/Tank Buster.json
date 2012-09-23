@@ -1,0 +1,32 @@
+{
+	
+	"content" : "As small elite infantry squads, Kill-teams are well versed
+in the methods of dealing with large, hardened threats like
+armour and bunkers. When attacking such enemies, the squad
+will typically use some members to draw fire while the others
+dispatch it with heavy weapons or demo-packs. The Battle-
+Brother may nominate a member of the Kill-team armed with
+either a heavy weapon or an explosive (this could be himself)
+to initiate a Tank Buster manoeuvre as part of an Attack Action
+against an armoured vehicle or fortification. For every member of
+the Kill-team in Support Range, the nominated Battle-Brother
+may add either +5 to his Ballistic Skill to attack or move 2 metres
+closer to his target (if he is trying to plant a charge or grenade).<br>
+<br>
+<b>Improvement:</b> If the Battle-Brother is Rank 4 or more, the
+nominated Battle-Brother may add +10 to his Ballistic Skill
+or move 5 metres closer to his target for every member of the
+Kill-team in Support Range.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Free Action"],
+		["Cost", "1"],
+		["Sustained", "No"],
+		["Stance", "Attack"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 221
+}

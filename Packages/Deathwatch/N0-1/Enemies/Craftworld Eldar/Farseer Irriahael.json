@@ -1,0 +1,75 @@
+{
+	"content" : "Like many Farseers, Irriahael seldom takes to the battlefield unless the situation is dire and requires immediate
+and detailed oversight. His powers are fearsome, allowing him to direct the flow of battle in the same way a composer
+directs an orchestra, subtly altering fate and chance so as to ensure victory. Under his prophetic direction, Eldar warriors
+become deadlier and swifter, able to slay their foes and escape as if little more than murderous spectres.
+<br><br><b>Usage:</b> Irriahael is a typical Farseer in many ways, and the powers he manifests serve his role well. Rather than
+being a powerhouse in his own right, he serves as a force multiplier for the warriors under his command, maintaining
+many powers simultaneously to combine their potent effects. If attended by a group of Warlocks with
+Augment, his powers grow further still, increasing his influence over the battle. Irriahael is possibly the most fragile
+Master-level adversary around, lacking the thick armour, high toughness and copious amounts of wounds possessed
+by Hive Tyrants, Tau Commanders, Ork Warlords and Daemon Princes. However, his psychic prowess
+and the potency of his Rune Armour allow him to ignore most of the harm sent his way, as does his ability to
+Dodge attacks.",
+
+	"extraSubCategories" : 
+	[ 
+		["Skills", "Awareness (Per) +10, Climb (S), Command (Fel) +10, Dodge (Ag) +20, Forbidden Lore (The Black Library) (Int),
+Forbidden Lore (Daemonology) (Int) +10, Forbidden Lore (Psykers) (Int) +20, Forbidden Lore (Warp) (Int) +20, Forbidden
+Lore (Xenos) (Int) +10, Invocation (WP) +20, Literacy (Int) +10, Psyniscience (Per) +20, Scholastic Lore (Astromancy) (Int)
++10, Scholastic Lore (Legend) (Int) +10, Scholastic Lore (Occult) (Int) +20, Scholastic Lore (Philosophy) (Int), Speak Language
+(Eldar) (Int) +20, Speak Language (Low Gothic) (Int) +10, Speak Language (High Gothic) (Int) +10"],
+		["Talents", "Basic Weapon Training (Las), Catfall, Exotic Weapon Proficiency (Shuriken Pistol, Witchblade), Foresight, Hard
+Target, Heightened Senses (Sight, Hearing), Improved Warp Sense, Lightning Reflexes, Melee Weapon Training (Primitive),
+Pistol Training (Las), Psy Rating 8, Resistance (Psychic Powers), Sprint, Step Aside, Strong Minded, Talented (Psyniscience),
+Warp Conduit, Warp Sense
+<br><br><b>Psychic Powers (Psy Rating 8):</b> Farseer Irriahael knows all the powers from the Divination and Telepathy Disciplines,
+and four unique Farseer Powers described below. Note that, as Farseer Irriahael has Unnatural Willpower (x2), he gains a
+bonus +2 to his Psy Rating, added after determining the Power Level of a power."],
+		["Traits", "Dark Sight, Unnatural Agility (x2), Unnatural Willpower (x2), Touched by the Fates (5)"],
+		["Armor", "Mesh-woven Robes (Arms 3, Body 3, Legs 3), Ghosthelm (Head 5), Rune Armour<br>
+		<br>
+		<b>Ghosthelm:</b> The exotic construction and complex runes of this tall helm serve to protect the wearer from the
+dangers of the Immaterium. If ever the Ghosthelm's wearer is affected by Psychic Phenomena or Perils of the Warp
+(whether or not he caused them), he may attempt a Challenging (+0) Willpower Test. If he succeeds, then he is completely
+unaffected by the Psychic Phenomena/Perils of the Warp, though others nearby may still suffer those effects.<br>
+<b>Rune Armour:</b> The typical raiment of Eldar Seers in battle are layers of voluminous robes adorned with faintly-luminescent
+runes and lattices of wraithbone that flicker and pulse in time with the wearer's heartbeat. When the weapons
+of the enemy are turned upon him, the Seer's mind and soul are stronger than any corporeal armour, able to repel
+even the ravening energies of a Lascannon. Rune Armour is a Force Field with a Protection Rating equal to the wearer's Willpower Characteristic. There is no chance of Rune Armour overloading."],
+		["Weapons", "Shuriken Pistol (20m; S/3/5; 1d10+2 R; Pen 4; Clip 40; Rld 2Full; Reliable), Best Craftsmanship Witchblade
+(1d10+14 E; Pen 10; Balanced, Power Field)"],
+		["Equipment", "3x Shuriken Pistol magazines, Spirit Stones, Runes of Warding, Runes of Witnessing
+<br><br><b>Runes of Warding:</b> These trinkets and talismen flicker with a ghostly luminescence, turning aside the energies of the Immaterium when they are brought to bear against the Farseer or
+his allies. All non-Eldar psykers within 50m of the Farseer count their Psy Rating, after determining Power Level, as two lower, and must add +10 to all rolls on the Psychic Phenomena and Perils
+of the Warp tables.
+<br><br><b>Runes of Witnessing:</b> Often seen hanging in the air around a powerful Eldar Seer, these runes store and
+diffuse the power of the Warp so that it cannot so easily go out of control. Runes of Witnessing are considered to
+be a Psy Focus, and reduce all rolls the Farseer makes on the Psychic Phenomena and Perils of the Warp tables by
+–10.
+<br><br><b>Spirit Stones:</b> Similar to the Soulstones worn by all Craftworld and Exodite Eldar, Spirit Stones contain
+the waking essence of long-dead Eldar Seers, who aid and support their living kin in times of need. Once in every
+24 hour period, the Farseer may use a second Psychic Power during his turn, taking a Free Action for the Focus
+Power Test. In addition, the Farseer requires only a Free Action each turn to sustain on-going Psychic Powers.
+"],
+		["Special Rules", "
+
+
+"]
+	],
+	
+	"grid" :
+	[
+		["Wounds", "19"],
+		["Movement", "6/12/18/36"],
+		["Weapon Skill", "65"],
+		["Ballistic Skill", "60"],
+		["Strength",  "35"],
+		["Toughness", "41"],
+		["Agility", "<sup>12</sup>61"],
+		["Intelligence", "65"],
+		["Perception", "55"],
+		["Will Power", "<sup>14</sup>73"],
+		["Fellowship", "52"]
+	]
+}

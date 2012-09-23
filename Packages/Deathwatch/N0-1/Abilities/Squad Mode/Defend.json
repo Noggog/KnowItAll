@@ -1,0 +1,30 @@
+{
+	
+	"content" : "Through intricate ritual and intense training,
+the squad moves as once entity, each performing a
+fluid dance of evasive motion that perfectly complements
+the motions of their brethren. While this ability is in effect,
+each member of the squad may share their Reactions. This
+ability is identical to the Tactical Spacing defensive stance.
+<br>
+<br>
+<b>Improvements:</b> If the Exarch spends an additional
+point of Cohesion to activate this Defensive Stance, then
+every member of the squad gains the Counter Attack, Disarm
+and Wall of Steel Talents.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Free Action"],
+		["Cost", "1"],
+		["Sustained", "Yes"],
+		["Chapter", ""],
+		["Required Rank", ""],
+		["Stance", "Defensive"]
+		
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 
+}

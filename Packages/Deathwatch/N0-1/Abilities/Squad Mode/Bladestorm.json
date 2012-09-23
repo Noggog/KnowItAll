@@ -1,0 +1,31 @@
+{
+	
+	"content" : "Dire Avengers are masters of their weaponry,
+and at the direction of so deadly a warrior as an
+Exarch, can turn this mastery into a finely coordinated
+onslaught that few can withstand. When the Exarch calls a
+Bladestorm, both he and those in support range may make
+an immediate Double Move and a Full-Auto Burst attack
+with an Avenger Shuriken Catapult or Shuriken Pistol.
+<br>
+<br><b>Improvements:</b> If the Exarch spends an additional
+point of Cohesion to activate this Attack Pattern, then all
+the Shuriken weaponry used during this attack gain either
+the Storm or Razor-Sharp quality for this attack only. The
+same choice applies to all affected weapons.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Free Action"],
+		["Cost", "3"],
+		["Sustained", "No"],
+		["Chapter", ""],
+		["Required Rank", ""],
+		["Stance", "Attack"]
+		
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 
+}

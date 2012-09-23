@@ -1,0 +1,28 @@
+{
+	
+	"content" : "Space Marines are genetically gifted with great strength
+far exceeding. that or normal men. In times of need, a Battle-
+Brother can push this great brawn to its limits to perform truly
+impressive feats. Once per day of game time, a Battle-Brother
+may perform a Feat of Strength. This ability effectively increases
+his Unnatural Strength Trait by one level, so for
+instance Unnatural Strength x2 becomes Unnatural Strength
+x3. This effect lasts for a number of Rounds equal to his Rank.<br>
+<br>
+<b>Improvement:</b> At Rank 3 and above Feat of Strength also
+adds +10 to all Strength Tests and Strength-based Skill Tests
+for its duration. At Rank 5 and above Feat of Strength last for
+a number of Rounds equal to twice the character’s Rank. At
+Rank 7 and above Feat of Strength increases the character’s
+Unnatural Strength Trait by two levels.",
+
+	"extraSubCategories" : 
+	[ 
+		["Required Rank", "1"],
+		["Chapter", "All"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 216
+}

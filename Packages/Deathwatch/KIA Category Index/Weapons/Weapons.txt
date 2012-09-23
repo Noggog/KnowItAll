@@ -1,0 +1,7 @@
+{
+	"name" : "Weapons",
+	"extraSubCategories" : 
+	[ 
+		"Class", "Range", "Rate of Fire", "Damage", "Penetration", "Special", "Weight", "Requisition", "Renown", "Clip"
+	]
+}

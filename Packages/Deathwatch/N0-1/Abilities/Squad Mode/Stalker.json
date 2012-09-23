@@ -1,0 +1,30 @@
+{
+	
+	"content" : "With the guidance of their Exarch, the
+squad move flawlessly and silently through difficult terrain.
+While this ability is in effect, the squad suffers no
+penalties whatsoever for moving through difficult terrain,
+and may reroll any failed Silent Move Tests.
+<br><br><b>Improvements:</b> If the Exarch spends an additional
+two points of Cohesion when activating this ability, all
+members of the squad may attempt a Very Hard (–30)
+Concealment Test as a Reaction when targeted by a
+Ranged attack, vanishing into the shadows. Success
+means that they are hidden from sight and the attack
+fails",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Free Action"],
+		["Cost", "1"],
+		["Sustained", "Yes"],
+		["Chapter", ""],
+		["Required Rank", ""],
+		["Stance", "Defensive"]
+		
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 
+}

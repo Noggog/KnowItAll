@@ -1,0 +1,33 @@
+{
+	
+	"content" : "A Space Marine’s physiology and his training give him an
+incredible tolerance to pain, injury, and wounds. Once per game
+session, a Battle-Brother may call upon his Renewed Vigour. This
+is a Free Action that can be done at the start of any of his Turns.
+For a number of Rounds equal to his Rank, he can ignore the
+effects of a single critical hit, such as Stunning, levels of Fatigue,
+or unconsciousness. Note, however, this does not allow the use
+of limbs that have been completely blown off or critical hits that
+result in death. Also, any new critical hit effects suffered during
+the Renewed Vigour affect the Battle-Brother as normal.<br>
+<br>
+<b>Improvement:</b> At Rank 5 the Renewed Vigour also restores a
+number of Wounds to the Battle-Brother equal to his Rank. At
+Rank 7 the Battle-Brother can ignore all of the critical hit effects
+he is currently suffering from for the duration of the ability.",
+
+	"extraSubCategories" : 
+	[ 
+		["Required Rank", "3"],
+		["Chapter", "All"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 216,
+	
+	"aka" : 
+	[
+		"Renewed Vigor"
+	]
+}

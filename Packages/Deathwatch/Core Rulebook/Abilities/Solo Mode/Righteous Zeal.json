@@ -1,0 +1,33 @@
+{
+	
+	"content" : "The Black Templars are well known for their fanatical
+devotion to the Emperor and their burning hatred for psykers,
+witches, and warp spawn. Once per combat, a Battle-Brother of
+the Black Templars Chapter may call upon Righteous Zeal as a
+Free Action at the start of his Turn. While under the effects of the
+Righteous Zeal, Damage inflicted by the Battle-Brother’s melee
+attacks against creatures with the Daemonic Trait is not reduced
+by Toughness Bonus. In addition, the Battle Brother’s own
+Toughness Bonus is increased by +4 when reducing Damage
+from attacks by creatures with the Daemonic Trait or Damage
+from Psychic Powers and weapons. Righteous Zeal lasts for a
+number of Rounds equal to the Battle-Brother’s Rank.<br>
+<br>
+<b>Improvement:</b> At Rank 3 and above the Battle-Brother
+gains an additional +10 to hit and +2 to Damage rolls
+when making melee attacks against any creature with psychic
+abilities. At Rank 5 and above, the increase to Toughness
+Bonus rises to +8. At Rank 7 and above the Warp Weapons
+Trait no longer has any effect on the Battle-Brother. All of
+these improvements only apply during Righteous Zeal.",
+
+	"extraSubCategories" : 
+	[ 
+		["Required Rank", "1"],
+		["Chapter", "Black Templars"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 217
+}

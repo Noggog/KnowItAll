@@ -18,5 +18,10 @@
 		["Renown", "-"]
 	],
 	
-	"GMOnly" : false
+	"GMOnly" : false,
+	
+	"aka" : 
+	[
+		"Meltabomb"
+	]
 }
