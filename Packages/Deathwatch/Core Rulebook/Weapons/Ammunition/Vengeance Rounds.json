@@ -1,7 +1,7 @@
 {
 	
 	"content" : "Vengeance rounds were originally created to combat the
-Adeptus Astartes' most bitter foe: Chaos Space Marines.
+Adeptus Astartes’ most bitter foe: Chaos Space Marines.
 Designed to breach power armour of Space Marine calibre,
 the core of each round contains a spark of unstable matter
 that creates a micro-fission explosion upon detonation. Each
@@ -17,8 +17,8 @@ carries great risks.",
 		["Used With", "All bolt weapons."],
 		["Effects", "The weapon gains the Felling (1) Quality, and
 its Penetration increases to 9. Vengeance rounds detonate
-prematurely on an attack roll of 91-100. When this happens,
-the firer suffers explosive damage equal to the weapon's
+prematurely on an attack roll of 91–100. When this happens,
+the firer suffers explosive damage equal to the weapon’s
 damage with a Penetration of 5 to an arm location (the arm
 holding the weapon if it was fired one-handed, or a random
 arm if fired with two hands). This automatically causes the

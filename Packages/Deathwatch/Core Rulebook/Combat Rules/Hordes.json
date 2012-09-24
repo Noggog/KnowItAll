@@ -8,7 +8,7 @@ heretics, skittering Hordes, and ranked warriors. Alone,
 such enemies would stand no chance against the might of
 the Adeptus Astartes. Together in large groups, however, they can
 pose an overwhelming threat. Hordes have the potential to defeat
-the Emperor's finest by sheer weight of fire and numbers. The
+the Emperor’s finest by sheer weight of fire and numbers. The
 rules presented here are intended to help Games Masters reflect
 these massed forces that the Deathwatch may face in battle.
 It is important to note that not every enemy is suitable to form
@@ -23,7 +23,7 @@ all of the attacks for a Horde made up of that creature. However,
 the GM should use his discretion for when the Quality should
 not apply (for instance, if over half of the creatures in the Horde
 do not possess that Quality). Also, the GM should be aware that
-special Qualities for the Horde's attacks can make an encounter
+special Qualities for the Horde’s attacks can make an encounter
 with a Horde particularly dangerous for the Space Marines, and
 adjust accordingly.
 <br>
@@ -34,13 +34,13 @@ creature. The Horde has the same profile as the base creature which
 makes up its numbers. A Chaos Heretic Horde, for example, has
 the same profile as an individual Chaos Heretic on page 364,
 for example. The only exception to this is that a Horde replaces
-the individual creature's Wounds value with its Magnitude and
+the individual creature’s Wounds value with its Magnitude and
 location based armour with a single armour value.
 magniTude<br>
 A Horde is a vast number of one type of enemy or creature
 attacking in large numbers. The abstract number of enemies
-making up such a Horde are reflected in the Horde's
-Magnitude. This represents the Horde's determination and
+making up such a Horde are reflected in the Horde’s
+Magnitude. This represents the Horde’s determination and
 numbers as an abstract value: one point of Magnitude does
 not equal one individual enemy or creature.<br><b><br>
 Horde Traits</b><br>
@@ -56,13 +56,13 @@ as if they are against a single creature even though they may
 represent mowing down ranks of enemies or scything through
 many foes.<br>
 Characters must still roll to hit a Horde, but the appropriate
-size bonus should apply to these tests based on the Horde's
+size bonus should apply to these tests based on the Horde’s
 Magnitude.<br>
 Weapons that can fire on full, or semi-auto will cause additional
 hits. These hits must be allocated against the Horde and not any
 individual Lieutenants or Masters that may also be present.
 <br><br>
-<b>Table 13-1: Example Horde Magnitudes</b>
+<b>Table 13–1: Example Horde Magnitudes</b>
 <br>Magnitude 30 (Mob): Massive (+30)
 <br>Magnitude 60 (Phalanx): Immense (+40)
 <br>Magnitude 90 (Mass): Monumental (+50)
@@ -70,9 +70,9 @@ individual Lieutenants or Masters that may also be present.
 <br><br>
 <b>Damaging a Horde</b><br>
 • Each hit that causes any amount of damage reduces a
-Horde's Magnitude by one. Therefore, an attack that,
+Horde’s Magnitude by one. Therefore, an attack that,
 after accounting for armour and Toughness Bonus, causes
-15 points of damage reduces the Horde's Magnitude by
+15 points of damage reduces the Horde’s Magnitude by
 1. The deliberate consequence of this is that sustained
 fire and blast weapons are much more effective against
 Hordes than weapons which fire only one shot; a
@@ -101,14 +101,14 @@ to its Blast value. So a grenade with Blast (4) will automatically
 hit four times if successfully lobbed into the Horde.
 <br><br><b>Flame Weapons</b><br>
 A flame weapon used on a Horde will hit it a number of times
-equal to one quarter of the weapon's range (rounding up),
+equal to one quarter of the weapon’s range (rounding up),
 plus 1d5. So a flame weapon with a range of 10 will hit a
 Horde 1d5+3 times.<br>
 <br><b>Psychic Powers</b>
 <br>Psychic Powers used against a Horde will hit it a number of
 times equal to the Psy Rating used in the power, no matter
 what the power may be. If the psychic power affects an area,
-it adds an additional 1d10 hits. At the GM's discretion, if
+it adds an additional 1d10 hits. At the GM’s discretion, if
 a particular psychic power does not inflict damage (such
 as Compel), it still inflicts “hits,” meaning that portions of
 the Horde have been convinced not to attack, and so forth.
@@ -117,13 +117,13 @@ effects of certain psychic powers (such as Vortex of Doom)
 in specific situations against Hordes (such as a Horde tightly
 packed into a small space).<br>
 <br><b>Breaking a Horde</b><br>
-• When a Horde's Magnitude is reduced by 25% in a turn,
+• When a Horde’s Magnitude is reduced by 25% in a turn,
 it must make a Willpower Test when it is its turn to act
 again. If it passes, it may continue to act. If it fails, it
 breaks and flees at its highest move value.<br>
-• If the Horde's Magnitude is less than 50% of its starting
-value, it suffers a -10 to the Willpower Test. If the
-Horde's Magnitude is less than 25% of its starting value,
+• If the Horde’s Magnitude is less than 50% of its starting
+value, it suffers a –10 to the Willpower Test. If the
+Horde’s Magnitude is less than 25% of its starting value,
 it will automatically break.<br>
 • Hordes composed of enemies with the Fearless talent do
 not have to test to see if they break as their Magnitude is
@@ -142,7 +142,7 @@ from being armed with two weapons or the Swift Attack or
 Lightning Attack Talents may use its full number of attacks
 against every eligible target. Although a Horde represents a
 large number of attackers, a Horde does not gain the benefits
-of Ganging Up (see page 248). Instead, the Horde's sheer
+of Ganging Up (see page 248). Instead, the Horde’s sheer
 weight of numbers is represented by the fact that its target
 may not Dodge or Parry. Melee Attacks made by Hordes
 cannot be Parried or Dodged unless otherwise noted.
@@ -160,12 +160,12 @@ Hordes—they always have enough bullets to keep firing.
 <br><br>
 <b>Damage Caused By Hordes</b><br>
 Any attack from a Horde that hits has the damage it causes
-increased by a number of d10s equal to the Horde's Magnitude
+increased by a number of d10s equal to the Horde’s Magnitude
 divided by ten, with a maximum bonus of +2d10. This is
 in addition to the normal damage dealt by the weapon that
 the Horde is armed with. It will also include the Strength
 Bonus added to damage caused by melee weapons. The
-damage is reduced by the target's Toughness bonus and
+damage is reduced by the target’s Toughness bonus and
 armour as normal. Thus, a Magnitude 25 Horde of heretics
 armed with axes will add 2d10 to the normal damage that a
 heretic would do with its axe (1d10+5), and therefore causes

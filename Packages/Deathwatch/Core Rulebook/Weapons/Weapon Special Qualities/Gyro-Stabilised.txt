@@ -6,5 +6,5 @@ suspensor, the gyro-stabiliser helps keep the weapon levelled at
 the optimal angle for firing. A Gyro-Stabilised weapon never
 counts its target as being further than Long Range (normal
 maximum range still applies). Heavy weapons with this Quality
-reduce the penalty for firing without Bracing to -20."
+reduce the penalty for firing without Bracing to –20."
 }

@@ -9,7 +9,7 @@ single Horde of any Magnitude). Those that fail their Opposed
 Test reduce both their Weapon Skill and Ballistic Skill to 10
 while they remain affected by the power. The pain is also quite
 distracting when trying to concentrate and therefore targets under
-the effects of Paroxysm suffer a -10 to all Intelligence, Perception,
+the effects of Paroxysm suffer a –10 to all Intelligence, Perception,
 Willpower and Fellowship Characteristic and Skill Tests.",
 
 	"extraSubCategories" : 

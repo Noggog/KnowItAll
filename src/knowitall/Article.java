@@ -5,8 +5,10 @@
 package knowitall;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
 import java.util.*;
 import knowitall.Debug.Logs;
 import lev.LMergeMap;
@@ -79,7 +81,7 @@ public class Article extends LSwingTreeNode implements Comparable {
 
     public boolean loadSpec(File specF) {
 	try {
-	    ArticleSpec spec = KnowItAll.gson.fromJson(new FileReader(specF), ArticleSpec.class);
+	    ArticleSpec spec = KnowItAll.gson.fromJson(new InputStreamReader(new FileInputStream(specF), "ISO8859-1"), ArticleSpec.class);
 	    if (spec == null) {
 		String error = "Skipped because it had a null spec: " + specF;
 		Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", error);
@@ -106,6 +108,8 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", "Skipped because its spec could not be found: " + specF);
 	} catch (com.google.gson.JsonSyntaxException ex) {
 	    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", "Skipped because it had a badly formatted spec: " + specF);
+	} catch (UnsupportedEncodingException ex) {
+	    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", "Skipped because it had unsupported encoding: " + specF);
 	}
 	return true;
     }
@@ -241,7 +245,7 @@ public class Article extends LSwingTreeNode implements Comparable {
 
     public void createLinks() {
 	// Sort articles from longest to shortest
-	LMergeMap<Integer, Article> lengthSort = new LMergeMap<>(false, true);
+	LMergeMap<Integer, Article> lengthSort = new LMergeMap<>(true);
 	for (Article a : linked) {
 	    lengthSort.put(Integer.MAX_VALUE - a.getName().length(), a);
 	}
@@ -298,6 +302,10 @@ public class Article extends LSwingTreeNode implements Comparable {
     }
 
     public static void link(Article a, Article b) {
+//	if ((a.getName().equals("Plaguebearer") && b.getName().equals("Daemonic Presence"))
+//		|| a.getName().equals("Daemonic Presence") && b.getName().equals("Plaguebearer")) {
+//	    int wer = 23;
+//	}
 	a.linkTo(b);
 	b.linkTo(a);
     }

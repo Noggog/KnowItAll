@@ -1,0 +1,30 @@
+{
+	
+	"content" : "Many Battle-Brothers of the Storm Wardens Chapter
+favour storm shields and power swords and train to fight side
+by side with these heavy weapons. The Storm Wardens have
+adapted this tactic to other forms of melee combat. While this
+ability is in effect, the Battle-Brother and those in Support
+Range of him can Parry attacks directed against those by their
+side (allies within 2 metres). In addition, any time a Battle-
+Brother benefiting from this ability is struck in melee, he may
+use his Reaction to make a Standard Attack with a melee
+weapon back at the creature that attacked him.
+<br><br>
+<b>Improvement:</b> If the Battle-Brother is Rank 5 or more,
+all those affected by this ability gain a +20 bonus to
+Parry Tests.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Free Action"],
+		["Cost", "2"],
+		["Sustained", "Yes"],
+		["Chapter", "Storm Wardens"],
+		["Stance", "Defensive"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 225
+}

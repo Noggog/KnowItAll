@@ -1,0 +1,5 @@
+{
+	
+	"content" : "All enemies within 10 metres of this monster suffer a -10 penalty to Willpower Tests in the area."
+
+}

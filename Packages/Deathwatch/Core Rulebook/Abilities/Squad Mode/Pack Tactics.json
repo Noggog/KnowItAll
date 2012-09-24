@@ -1,0 +1,27 @@
+{
+	
+	"content" : "Space Wolves are skilled at baiting an opponent or
+distracting an enemy at a critical time so that another Space
+Wolf can attack unhindered. When a Space Marine attacks a
+single target, another Space Marine within support range may
+voluntarily give up an unused reaction to distract the target.
+If he does so, the first Space Marine’s melee or ranged attacks
+against that target may not be parried or dodged this turn.
+<br><br>
+<b>Improvement:</b> If the Battle-Brother is Rank 3 or more,
+Melee attack rolls against the target affected by this ability
+gain a +10 bonus.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Free Action"],
+		["Cost", "2"],
+		["Sustained", "No"],
+		["Chapter", "Space Wolves"],
+		["Stance", "Defensive"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 225
+}

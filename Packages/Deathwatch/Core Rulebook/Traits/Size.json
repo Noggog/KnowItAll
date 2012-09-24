@@ -8,17 +8,58 @@ shown on the following chart. Size affects movement and
 how easy or hard it is to strike that creature in combat. (When
 calculating movement, apply the size modifier first, and then
 other modifiers from other traits or talents.) For the purposes
-of comparison, a human is an average-sized creature.
-
-Table 4-4: Size
-Size Modifier Concealment Base Movement
-Miniscule -30 +30 Agility Bonus -3
-Puny -20 +20 Agility Bonus -2
-Scrawny -10 +10 Agility Bonus -1
-Average 0 0 Agility Bonus
-Hulking +10 -10 Agility Bonus +1
-Enormous +20 -20 Agility Bonus +2
-Massive +30 -30 Agility Bonus +3",
+of comparison, a human is an average-sized creature.<br>
+<br>
+<table border=1 width=100%>
+	<tr>
+		<td><b>Size</b></td>
+		<td><b>Modifier</b></td>
+		<td><b>Concealment</b></td>
+		<td><b>Base Movement</b></td>
+	</tr>
+	<tr>
+		<td>Miniscule</td>
+		<td>-30</td>
+		<td>+30</td>
+		<td>Agility Bonus -3</td>
+	</tr>
+	<tr>
+		<td>Puny</td>
+		<td>-20</td>
+		<td>+20</td>
+		<td>Agility Bonus -2</td>
+	</tr>
+	<tr>
+		<td>Scrawny</td>
+		<td>-10</td>
+		<td>+10</td>
+		<td>Agility Bonus -1</td>
+	</tr>
+	<tr>
+		<td>Average</td>
+		<td>0</td>
+		<td>0</td>
+		<td>Agility Bonus</td>
+	</tr>
+	<tr>
+		<td>Hulking</td>
+		<td>+10</td>
+		<td>-10</td>
+		<td>Agility Bonus +1</td>
+	</tr>
+	<tr>
+		<td>Enormous</td>
+		<td>+20</td>
+		<td>-20</td>
+		<td>Agility Bonus +2</td>
+	</tr>
+	<tr>
+		<td>Massive</td>
+		<td>+30</td>
+		<td>-30</td>
+		<td>Agility Bonus +3</td>
+	</tr>
+</table>",
 
 	"extraSubCategories" : [],
 	

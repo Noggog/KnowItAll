@@ -4,7 +4,7 @@
 	"shortContent" : "Each time this trait is gained, select a Characteristic, and
 double its bonus.",
 	
-	"content" : "One or more of the creature's Characteristics is unnatural.
+	"content" : "One or more of the creature’s Characteristics is unnatural.
 Each time this trait is gained, select a Characteristic, and
 double its bonus. For example, a creature with a Strength
 of 41 normally has a 4 Strength Bonus. With this trait, its
@@ -15,12 +15,12 @@ Each time you apply this trait to the same Characteristic, the
 Bonus multiplier increases by 1. For example, one selection
 multiplies the Characteristic Bonus by ×2, two selections by
 ×3, and three selections ×4. Note this trait does not modify
-the creature's movement.<br>
+the creature’s movement.<br>
 During Opposed Characteristic Tests, on a success, the bonus
 multiplier is added to the degree of success. Any additional
 multipliers for Unnatural Characteristics (i.e., if a Space Marine
 with Unnatural Strength (x2) uses a Powerfist, which doubles
-the user's Strength Bonus), simply improves the existing
+the user’s Strength Bonus), simply improves the existing
 multiplier by 1. For a Space Marine using a Powerfist, he
 would triple his Strength Bonus rather than doubling it and
 then doubling it again.<br>
@@ -31,9 +31,9 @@ normal (to a maximum of +30), For example: the Archmagos
 Voltaic has a Dark Age of Technology cortical implant giving
 him Unnatural Intelligence (×3). He is called on to repair a
 damaged plasma core using his Intelligence based Tech Use
-skill. Normally this would be a Very Hard (-30) Test, but
+skill. Normally this would be a Very Hard (–30) Test, but
 thanks to his Unnatural Intelligence the Difficulty is reduced
-by two stages to Difficult (-10), (-1 stage for ×2, and -1
+by two stages to Difficult (–10), (–1 stage for ×2, and –1
 for ×3).<br>
 During Opposed Characteristic Tests, where success is
 achieved, the Unnatural multiplier is added to the degrees of

@@ -2,10 +2,10 @@
 	"content" : "Raveners are horrific predators that burrow through the
 earth with frightening speed and precision. They are twisted,
 serpentine creatures whose armoured bodies are several times
-the size of a grown man's, and yet they move with a lightninglike
+the size of a grown man’s, and yet they move with a lightninglike
 speed that can see their victims slashed apart into bloody
 chunks, having never seen their assailant. Vulnerable only to
-massed firepower and heavy weapons, the Ravener's prey
+massed firepower and heavy weapons, the Ravener’s prey
 stands little chance if caught alone or off guard, as they often
 exploit their ability to burrow through almost any substance
 to surprise their victims, sensing their way by vibrations as
@@ -74,7 +74,7 @@ Multiple Arms, Unnatural Strength (x2), Unnatural Toughness
 		["Armor", "Reinforced Chitin (All 6)."],
 		["Weapons", "Scything Talons (1d10+14 R; Pen 3) or Rending
 Claws (1d10+12 R; Pen 5; Razor Sharp), or Devourer
-(30m, -/-/6; 1d10+6 R; Pen 0; Clip —; Rld —; Living Ammunition, Storm, Tearing) or Death Spitter (40m, S/3/-;
+(30m, –/–/6; 1d10+6 R; Pen 0; Clip —; Rld —; Living Ammunition, Storm, Tearing) or Death Spitter (40m, S/3/–;
 1d10+6 E; Pen 4; Clip —; Rld —; Living Ammunition,
 Tearing), or Spine Fists (20m, S/2/4; 1d10+12 R; Pen 2;
 Clip —; Rld —)."],
@@ -88,9 +88,9 @@ therefore make Awareness Tests to detect
 enemies even if they would not normally
 be able to do so due to intervening
 terrain or other conditions. In
-addition, Raveners' senses are
+addition, Raveners’ senses are
 so good that they never suffer
-more than -30 to Perception
+more than –30 to Perception
 Test regardless of modifiers.
 <br><b>Surprise
 Strike:</b> Raveners can

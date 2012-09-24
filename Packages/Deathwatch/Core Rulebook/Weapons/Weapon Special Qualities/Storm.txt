@@ -6,5 +6,5 @@ Quality doubles the number of hits inflicted on the target
 and the amount of ammunition expended. For example, when
 firing a weapon with the Storm Quality in fully automatic
 mode, each degree of success yields two additional hits (to a
-maximum of twice the weapon's Full Automatic rate of fire)."
+maximum of twice the weapon’s Full Automatic rate of fire)."
 }

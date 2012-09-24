@@ -3,5 +3,5 @@
 	"content" : "A Defensive weapon, such as a shield, is intended for blocking
 and is therefore awkward when used to make attacks.
 Defensive weapons grant a +15 bonus to tests made when
-used to Parry, but take a -10 penalty when used to attack."
+used to Parry, but take a –10 penalty when used to attack."
 }
