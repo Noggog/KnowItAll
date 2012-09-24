@@ -30,6 +30,9 @@ public class ArticleSpec {
     public String[] forceLinkTo = new String[0];
     public boolean blockLinking;
     public String source = "";
+    public String intro = "";
+    public boolean spacedSubcategories = false;
+    public boolean divideContent = false;
 
     public void clean(Category c) {
 	name = name.trim();
@@ -72,9 +75,6 @@ public class ArticleSpec {
 	if (in.equals("")) {
 	    return in;
 	}
-	if (src.getPath().contains("Core Rulebook\\Talents\\Enemy.json")) {
-	    int wer = 23;
-	}
 	char[] chars = in.toCharArray();
 	in = "";
 	boolean firstNL = true;
@@ -90,7 +90,8 @@ public class ArticleSpec {
 		    firstNL = false;
 		    // Make sure there's a space between the two chars
 		    // Between the deleted NL character
-		    if (in.charAt(in.length() - 1) != ' ') {
+		    int index = in.length() - 1;
+		    if (index > 0 && in.charAt(in.length() - 1) != ' ') {
 			in += " ";
 		    }
 		    continue;

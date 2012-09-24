@@ -10,15 +10,15 @@ calculating movement, apply the size modifier first, and then
 other modifiers from other traits or talents.) For the purposes
 of comparison, a human is an average-sized creature.
 
-Table 4–4: Size
+Table 4-4: Size
 Size Modifier Concealment Base Movement
-Miniscule –30 +30 Agility Bonus –3
-Puny –20 +20 Agility Bonus –2
-Scrawny –10 +10 Agility Bonus –1
+Miniscule -30 +30 Agility Bonus -3
+Puny -20 +20 Agility Bonus -2
+Scrawny -10 +10 Agility Bonus -1
 Average 0 0 Agility Bonus
-Hulking +10 –10 Agility Bonus +1
-Enormous +20 –20 Agility Bonus +2
-Massive +30 –30 Agility Bonus +3",
+Hulking +10 -10 Agility Bonus +1
+Enormous +20 -20 Agility Bonus +2
+Massive +30 -30 Agility Bonus +3",
 
 	"extraSubCategories" : [],
 	

@@ -10,7 +10,7 @@ it involves coercion. Though Intimidate lists Strength as its
 associated Characteristic, the character may substitute either
 Intelligence or Fellowship if the threat involves more subtle
 methods than brute force, such as blackmail or humiliation. An
-Intimidate Test affects a number of targets equal to the character’s
+Intimidate Test affects a number of targets equal to the character's
 Strength, Intelligence, or Fellowship Bonus, depending on the
 characteristic used for the test. The targets must be able to see
 and hear the character clearly, either in person or via pict or
@@ -21,11 +21,11 @@ vox-caster, and speak a common language.
 War Cry</b><br>
 As part of a Charge Action a character may use the Intimidate
 skill to make a war cry. This is a Free Action that targets the
-recipient or recipients of the character’s charge—i.e. those he
+recipient or recipients of the character's charge—i.e. those he
 will end up in combat with and make melee attacks against.
 The character then makes an Intimidate Test, based on
-Strength, opposed by the target’s Willpower. If the character
-is successful, the target suffers –10 to all Parry and Dodge
+Strength, opposed by the target's Willpower. If the character
+is successful, the target suffers -10 to all Parry and Dodge
 tests against the charging character.
 Creatures immune to the effects of Fear and other mindeffecting
 psychology are immune to the effects of a war cry.",

@@ -21,7 +21,5 @@ squad gain Unnatural Toughness (x2).
 		
 	],
 	
-	"GMOnly" : false,
-	
-	"pageNumber" : 
+	"GMOnly" : false
 }

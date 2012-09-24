@@ -23,7 +23,5 @@ Each Howling Banshee may only do this once per round.",
 		
 	],
 	
-	"GMOnly" : false,
-	
-	"pageNumber" : 
+	"GMOnly" : false
 }

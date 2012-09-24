@@ -6,17 +6,17 @@ signs left by his quarry, allowing him to hunt them down.",
 	"content" : "With the Tracking Skill, the character can follow the
 signs left by his quarry, allowing him to hunt them down.
 Following obvious tracks does not require a Skill Test, and is
-considered part of a character’s movement. In instances where
+considered part of a character's movement. In instances where
 the time or elements have eroded the signs or where the very
 environment makes seeing them difficult, such as darkness
 or fog, Tracking Tests are required. The difficulty depends
-on the condition of the traces and the tracker’s surroundings.
+on the condition of the traces and the tracker's surroundings.
 When following any tracks where the difficulty of the test
-is more than Challenging (+0), the tracker’s Movement rate
+is more than Challenging (+0), the tracker's Movement rate
 drops to half. Cunning or devious quarry may attempt to
 conceal or erase their tracks. In any case where an opponent
 has attempted to do this, make an Opposed Test made against
-the prey’s Concealment.",
+the prey's Concealment.",
 
 	"extraSubCategories" : 
 	[ 

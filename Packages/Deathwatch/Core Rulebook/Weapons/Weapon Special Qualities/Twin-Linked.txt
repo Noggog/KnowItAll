@@ -9,5 +9,5 @@ shots at the target. A weapon with the Twin-linked Quality
 gains a +20 bonus to hit when fired and uses twice as much
 ammunition. In addition, the weapon may score one additional
 hit if the attack roll succeeds by two or more degrees of success.
-Lastly, the weapon’s reload time is doubled."
+Lastly, the weapon's reload time is doubled."
 }

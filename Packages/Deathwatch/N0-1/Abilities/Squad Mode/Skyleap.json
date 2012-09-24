@@ -20,7 +20,5 @@ from melee without provoking attacks if necessary.
 		
 	],
 	
-	"GMOnly" : false,
-	
-	"pageNumber" : 
+	"GMOnly" : false 
 }

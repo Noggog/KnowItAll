@@ -2,7 +2,7 @@
 	
 	"content" : "Many missiles, grenades, and some guns create an explosion
 when they hit. When working out the effects of a Blast
-weapon, anyone within the weapon’s blast radius in metres
+weapon, anyone within the weapon's blast radius in metres
 (the number in parenthesis) is also hit. Roll Hit Location and
 Damage individually for each person affected by the blast."
 }

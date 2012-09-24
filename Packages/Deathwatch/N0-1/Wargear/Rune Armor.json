@@ -12,7 +12,5 @@
 		["Renown", ""]
 	],
 	
-	"GMOnly" : false,
-	
-	"pageNumber" : 
+	"GMOnly" : false
 }

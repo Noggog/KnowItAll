@@ -5,7 +5,7 @@
 	
 	"content" : "Blind creatures automatically fail all tests based on vision and
 automatically fail all Ballistic Skill Tests. Such creatures take
-a –30 penalty to Weapon Skill Tests and most other tests that
+a -30 penalty to Weapon Skill Tests and most other tests that
 ordinarily involve or are benefited by vision.",
 
 	"extraSubCategories" : [],

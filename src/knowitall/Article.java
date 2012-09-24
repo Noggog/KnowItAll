@@ -28,11 +28,14 @@ public class Article extends LSwingTreeNode implements Comparable {
     // Temporary
     LinkString content;
     LinkString shortContent;
+    LinkString intro;
     Map<String, LinkString> subCategories = new HashMap<>();
     Map<String, LinkString> grid = new HashMap<>();
     String allContent = "";
     ArrayList<SourcePair> sources = new ArrayList<>(1);
     boolean blockLinking;
+    public boolean divideContent;
+    public boolean spacedSubcategories;
 
     Article(Source s, Category c) {
 	sources.add(new SourcePair(s));
@@ -88,6 +91,7 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    spec.src = specF;
 	    spec.clean(category);
 	    names.add(spec.name);
+	    intro = new LinkString(spec.intro);
 	    shortContent = new LinkString(spec.shortContent);
 	    subCategories = getAttributes(spec.extraSubCategories);
 	    grid = getAttributes(spec.grid);
@@ -95,6 +99,8 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    content = new LinkString(spec.content);
 	    sources.get(0).page = spec.pageNumber;
 	    blockLinking = spec.blockLinking;
+	    divideContent = spec.divideContent;
+	    spacedSubcategories = spec.spacedSubcategories;
 	    return false;
 	} catch (FileNotFoundException ex) {
 	    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Article", "Skipped because its spec could not be found: " + specF);
@@ -110,6 +116,9 @@ public class Article extends LSwingTreeNode implements Comparable {
 	}
 	if (!a.shortContent.isEmpty()) {
 	    shortContent = a.shortContent;
+	}
+	if (!a.intro.isEmpty()) {
+	    intro = a.intro;
 	}
 	for (String s : a.subCategories.keySet()) {
 	    subCategories.put(s, a.subCategories.get(s));
@@ -198,6 +207,10 @@ public class Article extends LSwingTreeNode implements Comparable {
 
     public String getImage() {
 	return "Vert Image";
+    }
+
+    public String getIntro() {
+	return intro.toString();
     }
 
     public String getHTML(boolean full) {

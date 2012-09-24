@@ -4,7 +4,7 @@
 of poor design or because they fire unstable superheated
 ammunition. A weapon with this Quality overheats on an
 attack roll of 91 or higher. When this happens, the wielder
-suffers energy damage equal to the weapon’s damage with
+suffers energy damage equal to the weapon's damage with
 a Penetration of 0 to an arm location (the arm holding the
 weapon if it was fired one-handed, or a random arm if it
 was fired with two hands). The wielder may choose to avoid

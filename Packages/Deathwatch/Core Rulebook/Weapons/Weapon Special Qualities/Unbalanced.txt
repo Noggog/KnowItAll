@@ -1,5 +1,5 @@
 {
 	
 	"content" : "Heavy and difficult to ready after an attack, Unbalanced
-weapons impose a –10 penalty when used to Parry."
+weapons impose a -10 penalty when used to Parry."
 }

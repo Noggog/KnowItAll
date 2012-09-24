@@ -7,7 +7,7 @@ creatures (not soulless machines or daemons) within 20
 metres suffer a hit that deals 1d10+8 Impact Damage to their
 head with the Shocking quality (see page Weapon Special
 Qualities on page 142 in Chapter V: Armoury). The victims
-suffers a –30 penalty to their Toughness Test to resist Stunning.
+suffers a -30 penalty to their Toughness Test to resist Stunning.
 If the Toughness Test is failed, the victim is stunned for 1d5
 rounds.",
 

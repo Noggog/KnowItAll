@@ -7,11 +7,10 @@ package knowitall;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.SwingWorker;
 import knowitall.Debug.Logs;
 import knowitall.gui.GUI;
@@ -222,6 +221,7 @@ public class Database {
 		}
 	    }
 	} catch (Exception e) {
+		Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Category", "Blocked because an exception occured: " + articleF);
 	    Debug.log.logError("Load Article", "Error loading " + articleF);
 	    Debug.log.logException(e);
 	}
@@ -231,7 +231,7 @@ public class Database {
     public static void doneLoading() {
 	GUI.progressSetTitle("Finishing Up");
 	GUI.progressProcessed("");
-	Collection<Article> allArticles = articles.values();
+	Set<Article> allArticles = new HashSet<>(articles.values());
 	for (Article a : allArticles) {
 	    try {
 		a.createLinks();

@@ -9,6 +9,7 @@ import org.apache.ecs.html.B;
 import org.apache.ecs.html.BR;
 import org.apache.ecs.html.Body;
 import org.apache.ecs.html.Font;
+import org.apache.ecs.html.HR;
 import org.apache.ecs.html.Head;
 import org.apache.ecs.html.Html;
 import org.apache.ecs.html.TD;
@@ -31,19 +32,26 @@ public class ArticleHTML {
 
 	// Title
 	body.addElement(new Font(6).addElement(new B().addElement(a.getName()))).addElement(new BR());
+	if (!a.intro.isEmpty()) {
+	    body.addElement(a.intro.toString()).addElement(new BR()).addElement(new BR());
+	}
 
 	generateSubCategories(a, body);
 
 	generateGrid(a, body, true);
 
+	if (a.divideContent) {
+	    body.addElement(new BR()).addElement(new HR()).addElement(new BR()).addElement(new BR());
+	}
+
 	// Short Content
-	if (!a.getShort().equals("")) {
-	    body.addElement(new Font(smallFontSize).addElement(new B().addElement(a.getShort())).addElement(new BR()));
+	if (!a.shortContent.isEmpty()) {
+	    body.addElement(new B().addElement(a.shortContent.toString()).addElement(new BR()));
 	}
 
 	// Content
-	if (full || a.getShort().equals("")) {
-	    body.addElement(new Font(smallFontSize).addElement(a.getContent()));
+	if (full || a.shortContent.isEmpty()) {
+	    body.addElement(a.content.toString());
 	}
 	html.addElement(body);
 
@@ -52,10 +60,17 @@ public class ArticleHTML {
 
     static public void generateSubCategories(Article a, Body body) {
 	Map<String, LinkString> subCategoriesMap = a.getSubcategories();
+	int i = subCategoriesMap.size() - 1;
 	if (!subCategoriesMap.isEmpty()) {
-	    for (String subCat : subCategoriesMap.keySet()) {
-		String value = subCategoriesMap.get(subCat).toString();
-		body.addElement(new Font(smallFontSize).addElement(new B().addElement(subCat + " : ") + value + new BR()));
+	    for (String subCat : a.category.index.subCategoryOrder) {
+		if (subCategoriesMap.containsKey(subCat)) {
+		    String value = subCategoriesMap.get(subCat).toString();
+		    body.addElement(new B().addElement(subCat + " : ") + value + new BR());
+		    if (i > 0) {
+			i--;
+			body.addElement(new BR());
+		    }
+		}
 	    }
 	    body.addElement(new BR());
 	}

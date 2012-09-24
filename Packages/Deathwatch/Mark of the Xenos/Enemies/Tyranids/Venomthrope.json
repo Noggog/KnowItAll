@@ -30,11 +30,11 @@ these tactics, the Adeptus Mechanicus has tried repeatedly to
 study the Venonthrope and develop either more sure methods
 of protecting troops against its venoms or to discover an
 antidote to them. So far no successes have had any large or
-lasting effects on the Imperium’s efforts against the Tyranid
+lasting effects on the Imperium's efforts against the Tyranid
 swarms, and as soon as a new method or antidote is found
 to counter the Venomthrope, it seems the creature quickly
 adapts and overcomes it.<br>
-A Venomthrope’s feeding instincts means that it can
+A Venomthrope's feeding instincts means that it can
 operate quite effectively even while beyond the range of the
 Hive Mind, drifting into formations of troops and spreading
 its deadly toxins or lashing out at exposed warriors. In battle,
@@ -66,13 +66,13 @@ creature, its flesh and flailing tendrils dripping with the
 most virulent haemotoxins, neurotoxins, and deadly phage
 organisms. It counts as having the Toxic Trait, but the damage
 is 2d10, ignoring Toughness and Armour. The Toughness
-Test to resist the poison is Very Hard (–30).<br>
+Test to resist the poison is Very Hard (-30).<br>
 <b>Spore Cloud:</b> Additionally, the Venomthrope emits a thick
 and choking spore cloud from gas bladders and vents in its
 carapace that causes all non-Tyranid beings within 10m of
 the creature to suffer from the Toxic Miasma as well. This
 cloying vapour partially obscures the Venomthrope, imposing
-a –30 penalty to all shooting attacks made against it."]
+a -30 penalty to all shooting attacks made against it."]
 	],
 	
 	"grid" :

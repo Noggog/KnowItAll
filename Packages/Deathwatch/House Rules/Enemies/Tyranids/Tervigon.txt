@@ -17,9 +17,9 @@ Weapons (Scything Talons), Shadow in the Warp, Size
 		["Equipment", "None."],
 		["Special Rules", "
 
-<b>Biomorph:</b> At the GM’s discretion, a Tervigon may be
+<b>Biomorph:</b> At the GM's discretion, a Tervigon may be
 given the Toxic (1d10) Trait. This Trait will also apply to
-the Tervigon’s Natural Weapon and Ranged attacks. It may also be given the Regeneration (5) Trait.<br>
+the Tervigon's Natural Weapon and Ranged attacks. It may also be given the Regeneration (5) Trait.<br>
 <b>Monstrous Tyranid Psyker:</b> The Tervigon is a psyker
 but their powers drawn upon the power of the Hive Mind
 rather than direct manipulation of the Warp. Because of this
