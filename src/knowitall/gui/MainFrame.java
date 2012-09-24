@@ -33,7 +33,7 @@ public class MainFrame extends LFrame {
 	setSize(defaultSize());
 	setLocation(defaultLocation());
 	super.remeasure();
-	background.setImage(KnowItAll.internalFiles + "background.jpg");
+//	background.setImage(KnowItAll.internalFiles + "background.jpg");
 	GUI.mainPanel = new MainPanel();
 	mainPanel = GUI.mainPanel;
 	mainPanel.setVisible(false);
@@ -47,8 +47,8 @@ public class MainFrame extends LFrame {
 	topPanel = GUI.topPanel;
 	add(topPanel, 0);
 
-//	menu = new KIAMenu();
-//	setJMenuBar(menu);
+	menu = new KIAMenu();
+	setJMenuBar(menu);
 
 	remeasure();
 	setVisible(true);
@@ -61,10 +61,10 @@ public class MainFrame extends LFrame {
 	topPanel.remeasure(getRealSize());
     }
 
-//    @Override
-//    public Dimension getRealSize() {
-//	return new Dimension(getRealWidth(), getRealHeight() - menu.getHeight());
-//    }
+    @Override
+    public Dimension getRealSize() {
+	return new Dimension(getRealWidth(), getRealHeight() - menu.getHeight());
+    }
 
     public Dimension defaultSize() {
 	Dimension saved = new Dimension(KnowItAll.save.getInt(Settings.StartWidth), KnowItAll.save.getInt(Settings.StartHeight));

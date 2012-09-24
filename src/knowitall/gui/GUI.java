@@ -6,11 +6,15 @@ package knowitall.gui;
 
 import java.awt.MouseInfo;
 import java.awt.Point;
+import java.io.File;
 import java.util.Collection;
-import javax.swing.JProgressBar;
+import javax.swing.JFileChooser;
 import javax.swing.SwingUtilities;
 import knowitall.Article;
 import knowitall.Database;
+import knowitall.KIASave;
+import knowitall.KIASave.Settings;
+import knowitall.KnowItAll;
 import lev.Ln;
 import lev.gui.LSwingTree;
 
@@ -129,6 +133,29 @@ public class GUI {
 
     public static void finalizeArticles(Collection<Article> articles) {
 	search.suggestions(articles);
+    }
+
+    public static void openPackage() {
+	File lastPackage = new File(KnowItAll.save.getStr(KIASave.Settings.LastPackage));
+
+	if (lastPackage.getPath().equals(".")) {
+	    File packages = new File(lastPackage.getPath() + "/Packages");
+	    if (packages.isDirectory()) {
+		lastPackage = packages;
+	    }
+	}
+
+	JFileChooser fd = new JFileChooser(lastPackage);
+	fd.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+	if (fd.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+	    KnowItAll.save.setStr(Settings.LastPackage, fd.getSelectedFile().getPath());
+	    loadPackages();
+	}
+    }
+
+    public static void loadPackages() {
+	progressShow();
+	Database.loadLooseFiles();
     }
 
     public static void loaded() {

@@ -21,6 +21,8 @@ public class KIASave extends LSaveFile {
 	Add(Settings.StartWidth,		0,	    false);
 	Add(Settings.StartHeight,		0,	    false);
 	Add(Settings.DividerLocation,		250,	    false);
+	Add(Settings.LastPackage,		".",	    false);
+	Add(Settings.OpenLastOnStartup,		true,	    false);
     }
 
     @Override
@@ -30,7 +32,9 @@ public class KIASave extends LSaveFile {
     public static enum Settings {
 	StartWidth,
 	StartHeight,
-	DividerLocation
+	DividerLocation,
+	LastPackage,
+	OpenLastOnStartup
 	;
     }
 

@@ -23,6 +23,7 @@ public class TopPanel extends LPanel {
 	add(tooltip);
 
 	progressPane = new KIAProgressPane();
+	progressPane.setVisible(false);
 	GUI.progressPane = progressPane;
 	add(progressPane);
     }

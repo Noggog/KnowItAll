@@ -22,6 +22,13 @@ public class KIAMenu extends JMenuBar {
 	add(file);
 
 	JMenuItem open = new JMenuItem("Open Package");
+	open.addActionListener(new ActionListener(){
+
+	    @Override
+	    public void actionPerformed(ActionEvent arg0) {
+		GUI.openPackage();
+	    }
+	});
 	file.add(open);
 
 	JMenuItem quit = new JMenuItem("Quit");

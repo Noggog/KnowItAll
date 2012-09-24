@@ -38,7 +38,9 @@ public class KnowItAll {
 	    }
 	    save.init();
 	    createFrame();
-	    Database.reloadArticles();
+	    if (save.getBool(Settings.OpenLastOnStartup) && !save.getStr(Settings.LastPackage).equals(".")) {
+		GUI.loadPackages();
+	    }
 	} catch (Exception e) {
 	    Debug.log.logException(e);
 	    Debug.log.close();
@@ -61,6 +63,7 @@ public class KnowItAll {
 	GUI.frame.createGUI();
 	GUI.frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
 	GUI.frame.addWindowListener(new WindowListener() {
+
 	    @Override
 	    public void windowOpened(WindowEvent e) {
 	    }

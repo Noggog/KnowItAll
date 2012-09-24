@@ -6,13 +6,11 @@ package knowitall;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeMap;
+import java.util.*;
+import javax.swing.JFileChooser;
 import javax.swing.SwingWorker;
 import knowitall.Debug.Logs;
+import knowitall.KIASave.Settings;
 import knowitall.gui.GUI;
 import lev.Ln;
 import lev.gui.LSwingTreeNode;
@@ -76,46 +74,43 @@ public class Database {
 
 	@Override
 	protected Integer doInBackground() throws Exception {
-	    loadPackage();
-	    if (runAfter != null) {
-		runAfter.run();
+	    File target = new File(KnowItAll.save.getStr(Settings.LastPackage));
+	    if (target.isDirectory()) {
+		loadPackage(target);
+		if (runAfter != null) {
+		    runAfter.run();
+		}
+		doneLoading();
 	    }
-	    doneLoading();
 	    return 0;
 	}
     }
+    
+    static void loadPackage(File packageDir) {
 
-    static void loadPackage() {
-	File seeds = new File(packages);
+	// Set up progress
+	ArrayList<File> files = Ln.generateFileList(packageDir, false);
+	GUI.progressSetMax(files.size());
+	GUI.progressSetTitle("Loading Package: " + packageDir.getName());
 
-	// For the first package
-	for (File packageDir : seeds.listFiles()) {
+	// Start importing Category Index Files
+	articleTree = new CategoryIndex(packageDir.getName());
+	File categoryIndices = new File(packageDir.getPath() + "/" + categoryIndexPath);
 
-	    // Set up progress
-	    ArrayList<File> files = Ln.generateFileList(packageDir, false);
-	    GUI.progressSetMax(files.size());
-	    GUI.progressSetTitle("Loading Package: " + packageDir.getName());
+	// If category index exists
+	if (categoryIndices.isDirectory()) {
 
-	    // Start importing Category Index Files
-	    articleTree = new CategoryIndex(packageDir.getName());
-	    File categoryIndices = new File(packageDir.getPath() + "/" + categoryIndexPath);
+	    // Load Category Indices
+	    indexTree = new CategoryIndex(categoryIndices);
+	    loadCategoryIndex(indexTree, categoryIndices);
 
-	    // If category index exists
-	    if (categoryIndices.isDirectory()) {
+	    // Obtain Load Order
+	    loadOrder = loadOrder(packageDir);
 
-		// Load Category Indices
-		indexTree = new CategoryIndex(categoryIndices);
-		loadCategoryIndex(indexTree, categoryIndices);
-
-		// Obtain Load Order
-		loadOrder = loadOrder(packageDir);
-
-		// Load content
-		for (Source s : loadOrder) {
-		    loadSource(s);
-		}
+	    // Load content
+	    for (Source s : loadOrder) {
+		loadSource(s);
 	    }
-	    break;
 	}
     }
 
@@ -221,7 +216,7 @@ public class Database {
 		}
 	    }
 	} catch (Exception e) {
-		Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Category", "Blocked because an exception occured: " + articleF);
+	    Debug.log.logSpecial(Logs.BLOCKED_ARTICLES, "Category", "Blocked because an exception occured: " + articleF);
 	    Debug.log.logError("Load Article", "Error loading " + articleF);
 	    Debug.log.logException(e);
 	}
