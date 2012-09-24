@@ -5,6 +5,7 @@
 package knowitall;
 
 import java.util.Map;
+import org.apache.ecs.MultiPartElement;
 import org.apache.ecs.html.B;
 import org.apache.ecs.html.BR;
 import org.apache.ecs.html.Body;
@@ -47,9 +48,10 @@ public class ArticleHTML {
 	// Short Content
 	if (!a.shortContent.isEmpty()) {
 	    if (full) {
-		body.addElement(new B());
+		body.addElement(new B().addElement(a.shortContent.toString())).addElement(new BR());
+	    } else {
+		body.addElement(a.shortContent.toString()).addElement(new BR());
 	    }
-	    body.addElement(a.shortContent.toString()).addElement(new BR());
 	}
 
 	// Content
