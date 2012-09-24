@@ -46,7 +46,10 @@ public class ArticleHTML {
 
 	// Short Content
 	if (!a.shortContent.isEmpty()) {
-	    body.addElement(new B().addElement(a.shortContent.toString()).addElement(new BR()));
+	    if (full) {
+		body.addElement(new B());
+	    }
+	    body.addElement(a.shortContent.toString()).addElement(new BR());
 	}
 
 	// Content
@@ -66,7 +69,7 @@ public class ArticleHTML {
 		if (subCategoriesMap.containsKey(subCat)) {
 		    String value = subCategoriesMap.get(subCat).toString();
 		    body.addElement(new B().addElement(subCat + " : ") + value + new BR());
-		    if (i > 0) {
+		    if (a.spacedSubcategories && i > 0) {
 			i--;
 			body.addElement(new BR());
 		    }
