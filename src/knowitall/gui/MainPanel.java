@@ -4,6 +4,7 @@
  */
 package knowitall.gui;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -23,6 +24,7 @@ import knowitall.Debug;
 import knowitall.KIASave.Settings;
 import knowitall.KnowItAll;
 import lev.gui.*;
+import lev.gui.resources.LFonts;
 import skyproc.gui.SPDefaultGUI;
 
 /**
@@ -33,6 +35,8 @@ public class MainPanel extends LPanel {
 
     LImagePane logo;
     SearchBar search;
+    LLabel open;
+    LLabel settings;
     LSwingTree tree;
     LScrollPane treeScroll;
     LScrollPane articleScroll;
@@ -48,6 +52,63 @@ public class MainPanel extends LPanel {
 	search.setLocation(Spacings.mainPanel * 2 + 87, Spacings.mainPanel);
 	add(search);
 
+	open = new LLabel("Open", LFonts.MyriadProBold(20), Color.GRAY);
+	open.setLocation(0,search.getY() + search.getHeight() / 2 - open.getHeight() / 2);
+	open.addMouseListener(new MouseListener(){
+
+	    @Override
+	    public void mouseClicked(MouseEvent arg0) {
+		GUI.openPackagePicker();
+	    }
+
+	    @Override
+	    public void mousePressed(MouseEvent arg0) {
+	    }
+
+	    @Override
+	    public void mouseReleased(MouseEvent arg0) {
+	    }
+
+	    @Override
+	    public void mouseEntered(MouseEvent arg0) {
+		open.setFontColor(Color.LIGHT_GRAY);
+	    }
+
+	    @Override
+	    public void mouseExited(MouseEvent arg0) {
+		open.setFontColor(Color.GRAY);
+	    }
+	});
+	add(open);
+	
+	settings = new LLabel("Settings", LFonts.MyriadProBold(20), Color.GRAY);
+	settings.setLocation(0,search.getY() + search.getHeight() / 2 - settings.getHeight() / 2);
+	settings.addMouseListener(new MouseListener(){
+
+	    @Override
+	    public void mouseClicked(MouseEvent arg0) {
+	    }
+
+	    @Override
+	    public void mousePressed(MouseEvent arg0) {
+	    }
+
+	    @Override
+	    public void mouseReleased(MouseEvent arg0) {
+	    }
+
+	    @Override
+	    public void mouseEntered(MouseEvent arg0) {
+		settings.setFontColor(Color.LIGHT_GRAY);
+	    }
+
+	    @Override
+	    public void mouseExited(MouseEvent arg0) {
+		settings.setFontColor(Color.GRAY);
+	    }
+	});
+	add(settings);
+	
 	try {
 	    logo = new LImagePane(SPDefaultGUI.class.getResource("SkyProc Logo Small.png"));
 	    logo.addMouseListener(new MouseListener() {
@@ -145,7 +206,9 @@ public class MainPanel extends LPanel {
     @Override
     public void remeasure(final Dimension size) {
 	super.setSize(size);
-	search.setSize(getWidth() - Spacings.mainPanel * 3 - 87, search.getHeight());
+	settings.setLocation(size.width - settings.getWidth() - Spacings.mainPanel, settings.getY());
+	open.setLocation(settings.getX() - open.getWidth() - Spacings.mainPanel, open.getY());
+	search.setSize(open.getX() - Spacings.mainPanel - 107, search.getHeight());
 	backTabManager.setSize(getWidth(), BackTab.height);
 	split.setSize(getWidth(), getHeight() - split.getY());
 	remeasureContents();

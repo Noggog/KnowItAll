@@ -5,7 +5,6 @@
 package knowitall.gui;
 
 import java.awt.Dimension;
-import javax.swing.JProgressBar;
 import lev.gui.LPanel;
 
 /**
