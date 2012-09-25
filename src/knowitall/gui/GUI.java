@@ -10,6 +10,7 @@ import java.io.File;
 import java.util.Collection;
 import javax.swing.JFileChooser;
 import javax.swing.SwingUtilities;
+import javax.swing.SwingWorker;
 import knowitall.Article;
 import knowitall.Database;
 import knowitall.KIASave;
@@ -160,10 +161,22 @@ public class GUI {
 	    openPackage.loadPackageList();
 	}
     }
-    
+
     public static void openPackage(File p) {
 	KnowItAll.save.setStr(Settings.LastPackage, p.getPath());
 	Database.loadLooseFiles();
+    }
+
+    public static void setBackground(final File f) {
+	SwingWorker backgroundLoad = new SwingWorker() {
+
+	    @Override
+	    protected Object doInBackground() throws Exception {
+		frame.getBackgroundPane().setImage(f);
+		return null;
+	    }
+	};
+	backgroundLoad.execute();
     }
 
     public static void loadPackages() {

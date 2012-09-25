@@ -11,6 +11,7 @@ import java.io.IOException;
 import knowitall.KIASave.Settings;
 import knowitall.KnowItAll;
 import lev.gui.LFrame;
+import lev.gui.LImagePane;
 import lev.gui.LPanel;
 import lev.gui.Lg;
 
@@ -83,5 +84,9 @@ public class MainFrame extends LFrame {
 	if (isVisible()) {
 	    remeasure();
 	}
+    }
+    
+    public LImagePane getBackgroundPane() {
+	return background;
     }
 }

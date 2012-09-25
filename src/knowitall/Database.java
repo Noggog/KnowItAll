@@ -84,7 +84,7 @@ public class Database {
 	    return 0;
 	}
     }
-    
+
     static void loadPackage(File packageDir) {
 
 	// Set up progress
@@ -98,6 +98,12 @@ public class Database {
 
 	// If category index exists
 	if (categoryIndices.isDirectory()) {
+
+	    // Load Background
+	    final File backgroundF = new File(packageDir.getPath() + "/background.jpg");
+	    if (backgroundF.isFile()) {
+		GUI.setBackground(backgroundF);
+	    }
 
 	    // Load Category Indices
 	    indexTree = new CategoryIndex(categoryIndices);
