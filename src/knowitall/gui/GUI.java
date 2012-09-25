@@ -34,6 +34,8 @@ public class GUI {
     static ArticleTooltip tooltip;
     static LSwingTree tree;
     static KIAProgressPane progressPane;
+    static OpenPackage openPackage = new OpenPackage();
+    static boolean defaultPicker = false;
 
     public static void displayArticles(boolean on) {
 	if (contentPanel != null) {
@@ -135,22 +137,33 @@ public class GUI {
 	search.suggestions(articles);
     }
 
-    public static void openPackage() {
-	File lastPackage = new File(KnowItAll.save.getStr(KIASave.Settings.LastPackage));
+    public static void openPackagePicker() {
+	if (defaultPicker) {
+	    File lastPackage = new File(KnowItAll.save.getStr(KIASave.Settings.LastPackage));
 
-	if (lastPackage.getPath().equals(".")) {
-	    File packages = new File(lastPackage.getPath() + "/Packages");
-	    if (packages.isDirectory()) {
-		lastPackage = packages;
+	    if (lastPackage.getPath().equals(".")) {
+		File packages = new File(lastPackage.getPath() + "/Packages");
+		if (packages.isDirectory()) {
+		    lastPackage = packages;
+		}
 	    }
-	}
 
-	JFileChooser fd = new JFileChooser(lastPackage);
-	fd.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-	if (fd.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
-	    KnowItAll.save.setStr(Settings.LastPackage, fd.getSelectedFile().getPath());
-	    loadPackages();
+	    JFileChooser fd = new JFileChooser(lastPackage);
+	    fd.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+	    if (fd.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+		KnowItAll.save.setStr(Settings.LastPackage, fd.getSelectedFile().getPath());
+		loadPackages();
+	    }
+	} else {
+	    openPackage.setVisible(true);
+	    openPackage.setLocation(openPackage.centerScreen());
+	    openPackage.loadPackageList();
 	}
+    }
+    
+    public static void openPackage(File p) {
+	KnowItAll.save.setStr(Settings.LastPackage, p.getPath());
+	Database.loadLooseFiles();
     }
 
     public static void loadPackages() {

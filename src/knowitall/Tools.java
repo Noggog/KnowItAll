@@ -29,7 +29,7 @@ public class Tools {
     }
 
     public static void cleanFiles() {
-	ArrayList<File> files = Ln.generateFileList(new File(Database.packages), -1, -1, false);
+	ArrayList<File> files = Ln.generateFileList(Database.packages, -1, -1, false);
 	for (File f : files) {
 	    try {
 		LFileChannel in = new LFileChannel(f);

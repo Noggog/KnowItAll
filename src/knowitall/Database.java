@@ -7,7 +7,6 @@ package knowitall;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
-import javax.swing.JFileChooser;
 import javax.swing.SwingWorker;
 import knowitall.Debug.Logs;
 import knowitall.KIASave.Settings;
@@ -21,8 +20,8 @@ import lev.gui.LSwingTreeNode;
  */
 public class Database {
 
-    public final static String packages = "Packages";
-    private static String categoryIndexPath = "KIA Category Index";
+    public final static File packages = new File("Packages");
+    public final static String categoryIndexName = "KIA Category Index";
     private static CategoryIndex indexTree;
     private static Map<String, CategoryIndex> categoryIndex = new TreeMap<>();
     private static LSwingTreeNode articleTree;
@@ -95,7 +94,7 @@ public class Database {
 
 	// Start importing Category Index Files
 	articleTree = new CategoryIndex(packageDir.getName());
-	File categoryIndices = new File(packageDir.getPath() + "/" + categoryIndexPath);
+	File categoryIndices = new File(packageDir.getPath() + "/" + categoryIndexName);
 
 	// If category index exists
 	if (categoryIndices.isDirectory()) {
@@ -137,7 +136,7 @@ public class Database {
 	ArrayList<Source> tmp = new ArrayList<>();
 	ArrayList<Source> out = new ArrayList<>();
 	for (File src : packageDir.listFiles()) {
-	    if (src.isDirectory() && !src.getName().equalsIgnoreCase(categoryIndexPath)) {
+	    if (src.isDirectory() && !src.getName().equalsIgnoreCase(categoryIndexName)) {
 		tmp.add(new Source(src));
 	    }
 	}

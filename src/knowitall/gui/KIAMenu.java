@@ -26,7 +26,7 @@ public class KIAMenu extends JMenuBar {
 
 	    @Override
 	    public void actionPerformed(ActionEvent arg0) {
-		GUI.openPackage();
+		GUI.openPackagePicker();
 	    }
 	});
 	file.add(open);

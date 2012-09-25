@@ -8,12 +8,14 @@ import com.google.gson.Gson;
 import java.awt.Dimension;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
+import java.io.File;
 import java.io.IOException;
 import java.util.Random;
 import javax.swing.WindowConstants;
 import knowitall.KIASave.Settings;
 import knowitall.gui.GUI;
 import knowitall.gui.MainFrame;
+import lev.Ln;
 
 /**
  *
@@ -24,7 +26,7 @@ public class KnowItAll {
     static Random rand = new Random();
     final public static String internalFiles = "Internal Files/";
     public static Gson gson = new Gson();
-    public static KIASave save = new KIASave(internalFiles);
+    public static KIASave save;
 
     /**
      * @param args the command line arguments
@@ -36,6 +38,8 @@ public class KnowItAll {
 		Debug.log.close();
 		return;
 	    }
+	    File saveF = Ln.getMyDocuments();
+	    save = new KIASave(saveF.getPath() + "/Know It All");
 	    save.init();
 	    createFrame();
 	    if (save.getBool(Settings.OpenLastOnStartup) && !save.getStr(Settings.LastPackage).equals(".")) {
