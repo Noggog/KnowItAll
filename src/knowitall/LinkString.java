@@ -37,11 +37,23 @@ public class LinkString {
 	return linked;
     }
 
+    public void removeLink(Article a) {
+	for (LSObject o : content) {
+	    if (o instanceof Link) {
+		Link l = (Link) o;
+		if (l.a.equals(a)) {
+		    l.On(false);
+		}
+	    }
+	}
+    }
+
     public abstract class LSObject {
     }
 
     public class Link extends LSObject {
 
+	boolean on = true;
 	Article a;
 	String s;
 
@@ -52,7 +64,15 @@ public class LinkString {
 
 	@Override
 	public String toString() {
-	    return ArticleHTML.linkTo(a, s);
+	    if (on) {
+		return ArticleHTML.linkTo(a, s);
+	    } else {
+		return s;
+	    }
+	}
+
+	public void On(boolean on) {
+	    this.on = on;
 	}
     }
 

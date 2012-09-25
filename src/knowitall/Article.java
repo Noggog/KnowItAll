@@ -4,11 +4,7 @@
  */
 package knowitall;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
 import java.util.*;
 import knowitall.Debug.Logs;
 import lev.LMergeMap;
@@ -250,10 +246,15 @@ public class Article extends LSwingTreeNode implements Comparable {
 	    lengthSort.put(Integer.MAX_VALUE - a.getName().length(), a);
 	}
 
-	for (Article a : lengthSort.valuesFlat()) {
-	    for (LinkString s : allLinkable()) {
+	// Add article's own name to be the first to be matched
+	lengthSort.put(0, this);
+
+	for (LinkString s : allLinkable()) {
+	    for (Article a : lengthSort.valuesFlat()) {
 		s.addLink(a);
 	    }
+	    // Remove the links to itself
+	    s.removeLink(this);
 	}
 	reloadHTML();
     }
