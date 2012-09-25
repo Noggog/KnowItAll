@@ -23,10 +23,16 @@ public class KIASave extends LSaveFile {
 	Add(Settings.DividerLocation,		250,	    false);
 	Add(Settings.LastPackage,		".",	    false);
 	Add(Settings.OpenLastOnStartup,		true,	    false);
+	Add(Settings.SeparateSources,		false,	    false);
+	Add(Settings.LinkedArticles,		true,	    false);
+	Add(Settings.LinkDirectionUsed,		false,	    false);
+	Add(Settings.ToolTipsOn,		true,	    false);
+	Add(Settings.ShortenGrids,		true,	    false);
     }
 
     @Override
     protected void initHelp() {
+	this.helpInfo.put(Settings.OpenLastOnStartup, "Opens the last used package automatically when starting up.");
     }
 
     public static enum Settings {
@@ -34,7 +40,12 @@ public class KIASave extends LSaveFile {
 	StartHeight,
 	DividerLocation,
 	LastPackage,
-	OpenLastOnStartup
+	OpenLastOnStartup,
+	SeparateSources,
+	LinkedArticles,
+	LinkDirectionUsed,
+	ToolTipsOn,
+	ShortenGrids
 	;
     }
 

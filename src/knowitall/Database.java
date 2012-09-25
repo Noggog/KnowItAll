@@ -47,7 +47,17 @@ public class Database {
     }
 
     public static LSwingTreeNode getTree() {
-	return articleTree;
+	if (KnowItAll.save.getBool(Settings.SeparateSources)) {
+	    return articleTree;
+	} else {
+	    CategoryIndex out = new CategoryIndex(articleTree.toString());
+	    for (LSwingTreeNode source : articleTree.getAllObjects()) {
+		for (LSwingTreeNode cata : source.getAllObjects()) {
+		    out.mergeIn(cata);
+		}
+	    }
+	    return out;
+	}
     }
 
     public static void loadLooseFiles(Runnable run) {

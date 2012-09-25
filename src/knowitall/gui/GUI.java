@@ -36,6 +36,7 @@ public class GUI {
     static LSwingTree tree;
     static KIAProgressPane progressPane;
     static OpenPackage openPackage = new OpenPackage();
+    static SettingsFrame settingsFrame = new SettingsFrame();
     static boolean defaultPicker = false;
 
     public static void displayArticles(boolean on) {
@@ -127,7 +128,11 @@ public class GUI {
 
     public static void regenerateTree() {
 	tree.setRoot(Database.getTree());
-	tree.expandToDepth(2);
+	if (KnowItAll.save.getBool(Settings.SeparateSources)) {
+	    tree.expandToDepth(2);
+	} else {
+	    tree.expandToDepth(1);
+	}
     }
 
     public static int dividerLocation() {
@@ -165,6 +170,11 @@ public class GUI {
     public static void openPackage(File p) {
 	KnowItAll.save.setStr(Settings.LastPackage, p.getPath());
 	Database.loadLooseFiles();
+    }
+
+    public static void openSettingsFrame() {
+	settingsFrame.setVisible(true);
+	settingsFrame.setLocation(settingsFrame.centerScreen());
     }
 
     public static void setBackground(final File f) {

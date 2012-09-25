@@ -31,6 +31,16 @@ public class KIAMenu extends JMenuBar {
 	});
 	file.add(open);
 
+	JMenuItem settings = new JMenuItem("Settings");
+	settings.addActionListener(new ActionListener(){
+
+	    @Override
+	    public void actionPerformed(ActionEvent e) {
+		GUI.openSettingsFrame();
+	    }
+	});
+	file.add(settings);
+
 	JMenuItem quit = new JMenuItem("Quit");
 	quit.addActionListener(new ActionListener(){
 

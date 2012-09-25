@@ -29,6 +29,7 @@ public class OpenPackage extends LFrame {
 
     OpenPackage() {
 	super("Open Package");
+	this.setResizable(false);
 	background.setImage(LImages.multipurpose());
 
 	picker = new LList("Open File Picker");

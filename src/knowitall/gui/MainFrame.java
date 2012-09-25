@@ -14,6 +14,7 @@ import lev.gui.LFrame;
 import lev.gui.LImagePane;
 import lev.gui.LPanel;
 import lev.gui.Lg;
+import lev.gui.resources.LImages;
 
 /**
  *
@@ -47,8 +48,8 @@ public class MainFrame extends LFrame {
 	topPanel = GUI.topPanel;
 	add(topPanel, 0);
 
-//	menu = new KIAMenu();
-//	setJMenuBar(menu);
+	menu = new KIAMenu();
+	setJMenuBar(menu);
 
 	remeasure();
 	setVisible(true);
@@ -60,11 +61,11 @@ public class MainFrame extends LFrame {
 	mainPanel.remeasure(getRealSize());
 	topPanel.remeasure(getRealSize());
     }
-//
-//    @Override
-//    public Dimension getRealSize() {
-//	return new Dimension(getRealWidth(), getRealHeight() - menu.getHeight());
-//    }
+
+    @Override
+    public Dimension getRealSize() {
+	return new Dimension(getRealWidth(), getRealHeight() - menu.getHeight());
+    }
 
     public Dimension defaultSize() {
 	Dimension saved = new Dimension(KnowItAll.save.getInt(Settings.StartWidth), KnowItAll.save.getInt(Settings.StartHeight));
@@ -84,7 +85,7 @@ public class MainFrame extends LFrame {
 	    remeasure();
 	}
     }
-    
+
     public LImagePane getBackgroundPane() {
 	return background;
     }
