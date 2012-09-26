@@ -1,8 +1,10 @@
 {
 	
 	
-	"shortContent" : "Each time this trait is gained, select a Characteristic, and
-double its bonus.",
+	"shortContent" : "A characteristic's bonus is multiplied by a certain amount.  
+	On skill tests, +10 is added to the roll for each multiplier, up to +30.
+	On opposed tests, after a success, the multiplier is added as additional degress of success.  
+	On opposed test ties, a character with an unnatural characterstic of that type wins.",
 	
 	"content" : "One or more of the creature’s Characteristics is unnatural.
 Each time this trait is gained, select a Characteristic, and

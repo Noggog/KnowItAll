@@ -1,0 +1,132 @@
+{
+
+
+"extraSubCategories" : 
+	[ 
+
+		["Chapter Advances", "
+	<table border=1 width=100%>
+		<tr>
+			<td><b>Advance</b></td>
+			<td><b>Cost</b></td>
+			<td><b>Type</b></td>
+			<td><b>Prerequisites</b></td>
+		</tr>
+		<tr>
+			<td>Carouse</td>
+			<td>200</td>
+			<td>Skill</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>Carouse +10</td>
+			<td>200</td>
+			<td>Skill</td>
+			<td>Carouse</td>
+		</tr>
+		<tr>
+			<td>Carouse +20</td>
+			<td>200</td>
+			<td>Skill</td>
+			<td>Carouse +10</td>
+		</tr>
+		<tr>
+			<td>Performer (any)</td>
+			<td>200</td>
+			<td>Skill</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>Performer (any) +10</td>
+			<td>200</td>
+			<td>Skill</td>
+			<td>Performer (any)</td>
+		</tr>
+		<tr>
+			<td>Performer (any) +20</td>
+			<td>200</td>
+			<td>Skill</td>
+			<td>Performer (any) +10</td>
+		</tr>
+		<tr>
+			<td>Tracking</td>
+			<td>200</td>
+			<td>Skill</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>Tracking +10</td>
+			<td>200</td>
+			<td>Skill</td>
+			<td>Tracking</td>
+		</tr>
+		<tr>
+			<td>Tracking +20</td>
+			<td>200</td>
+			<td>Skill</td>
+			<td>Tracking +10</td>
+		</tr>
+		<tr>
+			<td>Wrangling</td>
+			<td>100</td>
+			<td>Skill</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>Wrangling</td>
+			<td>100</td>
+			<td>Skill</td>
+			<td>Wrangling</td>
+		</tr>
+		<tr>
+			<td>Wrangling +20</td>
+			<td>100</td>
+			<td>Skill</td>
+			<td>Wrangling +10</td>
+		</tr>
+		<tr>
+			<td>Flesh Render</td>
+			<td>500</td>
+			<td>Talent</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>Hardy</td>
+			<td>400</td>
+			<td>Talent</td>
+			<td>Toughness 40</td>
+		</tr>
+		<tr>
+			<td>Hatred (Chaos Space Marines)</td>
+			<td>500</td>
+			<td>Talent</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>Heightened Senses (Taste)</td>
+			<td>500</td>
+			<td>Talent</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>Talented (Carouse)</td>
+			<td>500</td>
+			<td>Talent</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>Talented (Tracking)</td>
+			<td>500</td>
+			<td>Talent</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>Wisdom of the Ancients</td>
+			<td>1,500</td>
+			<td>Talent</td>
+			<td>Int 40</td>
+		</tr>
+		
+	</table>"]
+	]
+}

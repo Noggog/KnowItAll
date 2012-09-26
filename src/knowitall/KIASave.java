@@ -23,7 +23,7 @@ public class KIASave extends LSaveFile {
 	Add(Settings.DividerLocation,		250,	    false);
 	Add(Settings.LastPackage,		".",	    false);
 	Add(Settings.OpenLastOnStartup,		true,	    false);
-	Add(Settings.SeparateSources,		false,	    false);
+	Add(Settings.MergeSources,		true,	    false);
 	Add(Settings.LinkedArticles,		true,	    false);
 	Add(Settings.LinkDirectionUsed,		false,	    false);
 	Add(Settings.ToolTipsOn,		true,	    false);
@@ -41,7 +41,7 @@ public class KIASave extends LSaveFile {
 	DividerLocation,
 	LastPackage,
 	OpenLastOnStartup,
-	SeparateSources,
+	MergeSources,
 	LinkedArticles,
 	LinkDirectionUsed,
 	ToolTipsOn,

@@ -1,5 +1,4 @@
 {
 	
-	"content" : "All enemies nearby suffer a penalty to Willpower Tests."
-
+	"content" : "All nearby enemies suffer a penalty to Willpower Tests."
 }

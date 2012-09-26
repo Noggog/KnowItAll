@@ -47,9 +47,7 @@ public class Database {
     }
 
     public static LSwingTreeNode getTree() {
-	if (KnowItAll.save.getBool(Settings.SeparateSources)) {
-	    return articleTree;
-	} else {
+	if (KnowItAll.save.getBool(Settings.MergeSources)) {
 	    CategoryIndex out = new CategoryIndex(articleTree.toString());
 	    for (LSwingTreeNode source : articleTree.getAllObjects()) {
 		for (LSwingTreeNode cata : source.getAllObjects()) {
@@ -57,6 +55,8 @@ public class Database {
 		}
 	    }
 	    return out;
+	} else {
+	    return articleTree;
 	}
     }
 

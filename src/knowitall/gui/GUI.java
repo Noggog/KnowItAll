@@ -4,6 +4,7 @@
  */
 package knowitall.gui;
 
+import java.awt.Font;
 import java.awt.MouseInfo;
 import java.awt.Point;
 import java.io.File;
@@ -18,6 +19,7 @@ import knowitall.KIASave.Settings;
 import knowitall.KnowItAll;
 import lev.Ln;
 import lev.gui.LSwingTree;
+import lev.gui.resources.LFonts;
 
 /**
  *
@@ -128,10 +130,10 @@ public class GUI {
 
     public static void regenerateTree() {
 	tree.setRoot(Database.getTree());
-	if (KnowItAll.save.getBool(Settings.SeparateSources)) {
-	    tree.expandToDepth(2);
-	} else {
+	if (KnowItAll.save.getBool(Settings.MergeSources)) {
 	    tree.expandToDepth(1);
+	} else {
+	    tree.expandToDepth(2);
 	}
     }
 
@@ -173,8 +175,7 @@ public class GUI {
     }
 
     public static void openSettingsFrame() {
-	settingsFrame.setVisible(true);
-	settingsFrame.setLocation(settingsFrame.centerScreen());
+	settingsFrame.open();
     }
 
     public static void setBackground(final File f) {

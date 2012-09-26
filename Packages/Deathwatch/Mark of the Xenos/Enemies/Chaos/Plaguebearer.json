@@ -25,7 +25,7 @@ of viruses.",
 "],
 		["Talents", "Talents: Crippling Strike, Fearless."],
 		["Traits", "Daemonic (TB 10),
-†Daemonic Presence,
+Daemonic Presence (-10, 10 meters),
 Fear (2), From Beyond, Improved Natural Weapons,
 Natural Weapons (Claws), Regeneration (1), Strange 
 Physiology, Unnatural Strength(x2), Unnatural
@@ -34,14 +34,7 @@ Toughness (x2), Warp Instability."],
 		["Weapons", "Plaguesword (1d10+13; Pen 1;
 Felling 1, Toxic), Claws (1d10+8; Pen 2; Toxic)."],
 		["Equipment", "Internal micro-bead (to relay data and receive instruction only), in-built respirator."],
-		["Special Rules", "<b>†Daemonic Presence:</b>
-All enemies
-within 10 metres of a Plaguebearer suffer
-a -10 penalty to Willpower Tests in
-the area.
-<br>
-<br>
-<b>Cloud of Flies:</b>
+		["Special Rules", "<b>Cloud of Flies:</b>
 All those within 5 metres take
 a -10 penalty to Weapon Skill and Ballistic Skill
 Tests as choking clouds of buzzing, biting

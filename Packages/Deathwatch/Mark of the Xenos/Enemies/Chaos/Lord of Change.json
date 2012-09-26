@@ -98,7 +98,7 @@ Command (Fel) +20, Common Lore (All) (Int) +20, Charm (Fel)
 (Per), Speak Language (All known languages) +20."],
 		["Talents", "Blademaster, Combat Master, Lightning Attack,
 Resistance (Psychic Powers), Swift Attack, Strong Minded."],
-		["Traits", "Daemonic, †Daemonic Presence (TB 12), Dark Sight,
+		["Traits", "Daemonic (TB 12), Daemonic Presence (-20, 25 meters), Dark Sight,
 Fear 4 (Terrifying), Flyer (10), From Beyond, Size (Massive),
 The Stuff of Nightmares, Improved Natural Weapons (Claws
 and Beak), Unnatural Strength (x3), Unnatural Intelligence
@@ -108,14 +108,7 @@ and Beak), Unnatural Strength (x3), Unnatural Intelligence
 R; Tearing), Staff of Tzeentch (2d10+14 I; Tearing,
 Warp Weapon)."],
 		["Equipment", ""],
-		["Special Rules", "<b>†Daemonic Presence:</b> All those within 25 metres of a Lord
-of Change realise that they are merely the playthings of
-capricious gods, beginning to doubt their every conviction.
-All characters suffer a -20 penalty to Willpower Tests in
-the area.
-<br>
-<br>
-<b>Master of Plotters:</b> All Daemons of Tzeentch are master
+		["Special Rules", "<b>Master of Plotters:</b> All Daemons of Tzeentch are master
 schemers, their very essence a primal form of deceit
 and treachery, and the Lords of Change are the greatest
 masterminds of all. No matter the circumstances, a Lord of

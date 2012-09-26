@@ -15,7 +15,7 @@ Psyniscience (Per), Speak Language (any one)."],
 		["Talents", "Fearless, Lightning Attack, Lightning
 Reflexes, Sprint, Step Aside, Swift Attack."],
 		["Traits", "Daemonic (TB 6),
-†Daemonic Presence,
+Daemonic Presence (-10, 10 meters),
 Fear (2), From Beyond, Improved Natural
 Weapons, Natural Weapons (Claws),
 Preternatural Speed, Strange Physiology,
@@ -23,12 +23,7 @@ Unnatural Agility (x2), Warp Instability."],
 		["Armor", "Reinforced structure and armor plate (All 7)"],
 		["Weapons", "Claws (1d10+6 R; Pen 6;
 Razor Sharp)."],
-		["Equipment", ""],
-		["Special Rules", "†Daemonic Presence:
-All enemies
-within 10 metres of a Daemonette suffer
-a -10 penalty to Willpower Tests in
-the area."]
+		["Equipment", ""]
 	],
 	
 	"grid" :

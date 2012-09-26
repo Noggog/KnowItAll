@@ -4,12 +4,9 @@
  */
 package knowitall.gui;
 
-import java.awt.Color;
-import java.awt.Font;
-import lev.gui.LCheckBox;
+import javax.swing.JTabbedPane;
+import lev.gui.LButton;
 import lev.gui.LFrame;
-import lev.gui.resources.LFonts;
-import lev.gui.resources.LImages;
 
 /**
  *
@@ -17,17 +14,33 @@ import lev.gui.resources.LImages;
  */
 public class SettingsFrame extends LFrame {
 
-    LCheckBox openLastPackage;
-    static Font settingsFont = LFonts.MyriadPro(15);
+    JTabbedPane tabs;
+    LButton cancel;
+    LButton accept;
+    SettingsFilters filters = new SettingsFilters();
 
     public SettingsFrame() {
 	super("Settings");
 	setSize(500, 400);
 	this.setResizable(false);
 
-	openLastPackage = new LCheckBox("Open Last Package", settingsFont, Color.BLACK);
-	openLastPackage.setOffset(-3);
-	add(openLastPackage);
+	accept = new LButton("Accept");
+	accept.setLocation(getRealWidth() - 10 - accept.getWidth(), getRealHeight() - 10 - accept.getHeight());
+	getContentPane().add(accept);
+
+	cancel = new LButton("Cancel");
+	cancel.setLocation(accept.getX() - 10 - cancel.getWidth(), accept.getY());
+	getContentPane().add(cancel);
+
+	tabs = new JTabbedPane();
+	tabs.setSize(getSize());
+	tabs.addTab("Filters", filters);
+	getContentPane().add(tabs);
     }
 
+    public void open() {
+	filters.open();
+	setLocation(centerScreen());
+	setVisible(true);
+    }
 }

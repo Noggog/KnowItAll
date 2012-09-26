@@ -6,6 +6,7 @@ package knowitall.gui;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.beans.PropertyChangeEvent;
@@ -25,7 +26,6 @@ import knowitall.KIASave.Settings;
 import knowitall.KnowItAll;
 import lev.gui.*;
 import lev.gui.resources.LFonts;
-import skyproc.gui.SPDefaultGUI;
 
 /**
  *
@@ -45,13 +45,9 @@ public class MainPanel extends LPanel {
     MainPanel() throws IOException {
 	super();
 
-	search = new SearchBar();
-	GUI.search = search;
-	search.setLocation(Spacings.mainPanel * 2 + 87, Spacings.mainPanel);
-	add(search);
-
 	try {
-	    logo = new LImagePane(SPDefaultGUI.class.getResource("SkyProc Logo Small.png"));
+	    logo = new LImagePane(GUI.class.getResource("Reloader.png"));
+	    logo.setMaxSize(40, 40);
 	    logo.addMouseListener(new MouseListener() {
 
 		@Override
@@ -75,11 +71,18 @@ public class MainPanel extends LPanel {
 		public void mouseExited(MouseEvent e) {
 		}
 	    });
-	    logo.setLocation(Spacings.mainPanel, search.getY() + search.getHeight() / 2 - logo.getHeight() / 2 + 4);
+	    logo.setLocation(Spacings.mainPanel, 0);
 	    add(logo);
 	} catch (IOException ex) {
 	    Debug.log.logException(ex);
 	}
+
+	search = new SearchBar();
+	GUI.search = search;
+	search.setLocation(logo.getX() + logo.getWidth() + Spacings.mainPanel, Spacings.mainPanel);
+	add(search);
+
+	logo.setLocation(logo.getX(), search.getY() + search.getHeight() / 2 - logo.getHeight() / 2);
 
 	backTabManager = new BackTabManager();
 	GUI.backTabManager = backTabManager;

@@ -11,16 +11,13 @@ body seemingly at random.",
 		["Skills", "Awareness (Per), Dodge (Ag), Psyniscience (Per),
 Speak Language (Any one)."],
 		["Talents", "Fearless."],
-		["Traits", "Daemonic (TB 6), †Daemonic Presence, Fear (2),
+		["Traits", "Daemonic (TB 6), Daemonic Presence (-10, 10 meters), Fear (2),
 From Beyond, Improved Natural Weapons, Natural Weapons
 (Claws), Strange Physiology, Warp Instability."],
 		["Armor", ""],
 		["Weapons", "Warpfire (30m; S/3/-; 1d10+10 E; Pen 6), Claws
 (1d10+5; Pen 2)."],
-		["Equipment", ""],
-		["Special Rules", "<b>†Daemonic Presence:</b> All enemies within 10 metres of
-a Pink Horror suffer a -10 penalty to Willpower Tests in
-the area."]
+		["Equipment", ""]
 	],
 	
 	"grid" :

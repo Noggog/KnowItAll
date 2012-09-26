@@ -16,7 +16,7 @@ Forbidden Lore (Warp, Daemonology) (Int), Deceive (Fel),
 Speak Language (All known languages)."],
 		["Talents", "True Grit, Strong Minded, Bulging Biceps, Crushing
 Blow, Die Hard."],
-		["Traits", "Crawler, Daemonic (TB 14), †Daemonic Presence, Dark
+		["Traits", "Crawler, Daemonic (TB 14), Daemonic Presence (-20, 25 meters), Dark
 Sight, Fear 4 (Terrifying), From Beyond, Regeneration (5), Size
 (Massive), Unnatural Strength (x3), Unnatural Toughness (x2),
 Unnatural Willpower (x2), Warp Instability."],
@@ -24,12 +24,7 @@ Unnatural Willpower (x2), Warp Instability."],
 		["Weapons", "Tooth and Nail (1d10+21 R; Pen 2; Felling (2),
 Toxic), Plague Blade (2d10+21 R; Pen 6; Felling (2), Toxic)."],
 		["Equipment", "Internal micro-bead (to relay data and receive instruction only), in-built respirator."],
-		["Special Rules", "<b>†Daemonic Presence:</b> All enemies within 25 metres of a
-Great Unclean One suffer a -20 penalty to Willpower Tests in
-the area.
-<br>
-<br>
-<b>Cloud of Flies:</b> All those within 5 metres take a -10 penalty
+		["Special Rules", "<b>Cloud of Flies:</b> All those within 5 metres take a -10 penalty
 to Weapon Skill and Ballistic Skill Tests as choking clouds of
 buzzing, biting flies attack every exposed inch of flesh.
 <br>
