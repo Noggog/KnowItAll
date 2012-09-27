@@ -4,8 +4,13 @@
  */
 package knowitall.gui;
 
+import java.awt.AlphaComposite;
 import java.awt.Color;
+import java.awt.Composite;
 import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Rectangle;
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
 import javax.swing.text.html.StyleSheet;
@@ -23,7 +28,6 @@ public class ArticleDisplay extends LPanel {
 
     Article article;
     LHTMLPane htmlContent;
-
     static LinkListener listener = new LinkListener();
 
     public ArticleDisplay() {
@@ -40,9 +44,9 @@ public class ArticleDisplay extends LPanel {
 	htmlContent.addHyperLinkListener(listener);
 	htmlContent.honorDisplayProperties();
 	htmlContent.setFont(LFonts.MyriadPro(16));
+	htmlContent.setOpaque(false);
+	htmlContent.transparentBackground();
 	add(htmlContent);
-	setOpaque(true);
-	this.setBackground(Color.WHITE);
     }
 
     public void load(Article a) {
@@ -51,6 +55,21 @@ public class ArticleDisplay extends LPanel {
 	if (a != null) {
 	    htmlContent.setText(a.getHTML(true));
 	}
+    }
+
+    @Override
+    public void paint(Graphics g) {
+	Graphics2D g2 = (Graphics2D) g.create();
+	Composite old = g2.getComposite();
+	if (GUI.articleBGtransparancy < 1) {
+	    g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, GUI.articleBGtransparancy));
+	}
+	g2.setPaint(Color.WHITE);
+	Rectangle r = new Rectangle(getWidth(), getHeight());
+	g2.fill(r);
+	g2.setComposite(old);
+	super.paint(g2);
+	g2.dispose();
     }
 
     @Override
@@ -77,13 +96,15 @@ public class ArticleDisplay extends LPanel {
 
 	@Override
 	public void hyperlinkUpdate(HyperlinkEvent h) {
-	    HyperlinkEvent.EventType type = h.getEventType();
-	    if (type == HyperlinkEvent.EventType.ENTERED) {
-		GUI.setTooltip(h.getDescription());
-	    } else if (type == HyperlinkEvent.EventType.ACTIVATED) {
-		GUI.setArticle(h.getDescription());
-	    } else if (type == HyperlinkEvent.EventType.EXITED) {
-		GUI.hideTooltip();
+	    if (GUI.mainFrameFocus) {
+		HyperlinkEvent.EventType type = h.getEventType();
+		if (type == HyperlinkEvent.EventType.ENTERED) {
+		    GUI.setTooltip(h.getDescription());
+		} else if (type == HyperlinkEvent.EventType.ACTIVATED) {
+		    GUI.setArticle(h.getDescription());
+		} else if (type == HyperlinkEvent.EventType.EXITED) {
+		    GUI.hideTooltip();
+		}
 	    }
 	}
     }

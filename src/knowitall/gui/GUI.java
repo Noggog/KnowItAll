@@ -41,6 +41,12 @@ public class GUI {
     static SettingsFrame settingsFrame = new SettingsFrame();
     static boolean defaultPicker = false;
 
+    // State
+    static public boolean mainFrameFocus = true;
+
+    // Settings
+    static public float articleBGtransparancy = 1.0f;
+
     public static void displayArticles(boolean on) {
 	if (contentPanel != null) {
 	    contentPanel.displayArticles(on);

@@ -11,6 +11,8 @@ import java.awt.event.WindowListener;
 import java.io.File;
 import java.io.IOException;
 import java.util.Random;
+import javax.swing.UIManager;
+import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.WindowConstants;
 import knowitall.KIASave.Settings;
 import knowitall.gui.GUI;
@@ -37,6 +39,12 @@ public class KnowItAll {
 	    if (handleArgs(args)) {
 		Debug.log.close();
 		return;
+	    }
+	    for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+		if ("Nimbus".equals(info.getName())) {
+		    UIManager.setLookAndFeel(info.getClassName());
+		    break;
+		}
 	    }
 	    File saveF = Ln.getMyDocuments();
 	    save = new KIASave(saveF.getPath() + "/Know It All");
@@ -67,7 +75,6 @@ public class KnowItAll {
 	GUI.frame.createGUI();
 	GUI.frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
 	GUI.frame.addWindowListener(new WindowListener() {
-
 	    @Override
 	    public void windowOpened(WindowEvent e) {
 	    }
@@ -91,10 +98,12 @@ public class KnowItAll {
 
 	    @Override
 	    public void windowActivated(WindowEvent e) {
+		GUI.mainFrameFocus = true;
 	    }
 
 	    @Override
 	    public void windowDeactivated(WindowEvent e) {
+		GUI.mainFrameFocus = false;
 	    }
 	});
     }

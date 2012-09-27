@@ -63,10 +63,6 @@ public class ArticleTooltip extends LPanel {
 	super.setSize(pane.getWidth() + margin, pane.getBottom() + Spacings.tooltip + 5);
     }
 
-    private AlphaComposite makeComposite(float alpha) {
-	return (AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));
-    }
-
     @Override
     public void paint(Graphics g) {
 	Graphics2D g2d = (Graphics2D) g.create();

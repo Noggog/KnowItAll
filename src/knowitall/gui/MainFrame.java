@@ -7,6 +7,8 @@ package knowitall.gui;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.io.IOException;
 import knowitall.KIASave.Settings;
 import knowitall.KnowItAll;

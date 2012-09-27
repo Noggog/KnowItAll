@@ -4,9 +4,7 @@
  */
 package knowitall.gui;
 
-import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Font;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.beans.PropertyChangeEvent;
@@ -16,6 +14,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JSplitPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingUtilities;
+import javax.swing.border.Border;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.TreeSelectionModel;
@@ -25,7 +24,6 @@ import knowitall.Debug;
 import knowitall.KIASave.Settings;
 import knowitall.KnowItAll;
 import lev.gui.*;
-import lev.gui.resources.LFonts;
 
 /**
  *
@@ -108,13 +106,14 @@ public class MainPanel extends LPanel {
 
 	treeScroll = new LScrollPane(tree);
 	treeScroll.setBorder(BorderFactory.createEmptyBorder());
+	treeScroll.setViewportBorder(BorderFactory.createEmptyBorder());
 
 	articleContent = new ContentPanel();
+	articleContent.setSize(100,100);
 	GUI.contentPanel = articleContent;
 
 	articleScroll = new LScrollPane(articleContent);
 	articleScroll.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-	articleScroll.setBorder(BorderFactory.createEmptyBorder());
 
 	split = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, treeScroll, articleScroll);
 	split.setOpaque(false);

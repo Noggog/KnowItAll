@@ -4,6 +4,7 @@
  */
 package knowitall.gui;
 
+import java.awt.Color;
 import javax.swing.JTabbedPane;
 import lev.gui.LButton;
 import lev.gui.LFrame;
@@ -18,9 +19,21 @@ public class SettingsFrame extends LFrame {
     LButton cancel;
     LButton accept;
     SettingsFilters filters = new SettingsFilters();
+    boolean init = false;
 
     public SettingsFrame() {
 	super("Settings");
+    }
+
+    public void open() {
+	if (!init) {
+	    init();
+	}
+	setLocation(centerScreen());
+	setVisible(true);
+    }
+
+    void init() {
 	setSize(500, 400);
 	this.setResizable(false);
 
@@ -34,13 +47,8 @@ public class SettingsFrame extends LFrame {
 
 	tabs = new JTabbedPane();
 	tabs.setSize(getSize());
+	tabs.setBackground(Color.GRAY);
 	tabs.addTab("Filters", filters);
 	getContentPane().add(tabs);
-    }
-
-    public void open() {
-	filters.open();
-	setLocation(centerScreen());
-	setVisible(true);
     }
 }
