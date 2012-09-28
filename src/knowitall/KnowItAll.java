@@ -108,6 +108,7 @@ public class KnowItAll {
 
 	    @Override
 	    public void windowDeactivated(WindowEvent e) {
+		GUI.hideTooltip();
 		GUI.mainFrameFocus = false;
 	    }
 	});

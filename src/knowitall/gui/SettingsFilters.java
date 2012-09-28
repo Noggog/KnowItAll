@@ -38,6 +38,13 @@ public class SettingsFilters extends SettingsPanel {
 	    }
 	});
 	linkedArticlesBelow = cBox("Linked Articles Below", Settings.LinkedArticles);
+	linkedArticlesBelow.addActionListener(new ActionListener() {
+
+	    @Override
+	    public void actionPerformed(ActionEvent arg0) {
+		GUI.reloadArticle();
+	    }
+	});
 	tooltips = cBox("Tooltips On", Settings.ToolTipsOn);
 	shortenGrids = cBox("Shorten Grids", Settings.ShortenGrids);
 
@@ -45,6 +52,6 @@ public class SettingsFilters extends SettingsPanel {
 	place(mergeSources);
 	place(linkedArticlesBelow);
 	place(tooltips);
-	place(shortenGrids);
+//	place(shortenGrids);
     }
 }

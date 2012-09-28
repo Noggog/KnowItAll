@@ -78,6 +78,10 @@ public class GUI {
 	contentPanel.updateContent(a);
     }
 
+    public static void reloadArticle() {
+	contentPanel.updateContent(contentPanel.target);
+    }
+
     public static void setTooltip(String s) {
 	if (Database.hasArticle(s)) {
 	    setTooltip(Database.getArticle(s));
@@ -85,7 +89,9 @@ public class GUI {
     }
 
     public static void setTooltip(Article a) {
-	search.setFocusable(false);
+	if (!KnowItAll.save.getBool(Settings.ToolTipsOn)) {
+	    return;
+	}
 	tooltip.load(a);
 	tooltip.setSize(mainPanel.getWidth() - 50);
 	Point mouse = MouseInfo.getPointerInfo().getLocation();
@@ -121,8 +127,6 @@ public class GUI {
 	SwingUtilities.invokeLater(new Runnable() {
 	    @Override
 	    public void run() {
-		search.setFocusable(true);
-		search.requestFocus();
 		tooltip.setVisible(false);
 		dimmer.setVisible(false);
 	    }

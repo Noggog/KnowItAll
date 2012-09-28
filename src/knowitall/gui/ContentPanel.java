@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import javax.swing.SwingUtilities;
 import knowitall.Article;
 import knowitall.Database;
+import knowitall.KIASave.Settings;
+import knowitall.KnowItAll;
 import lev.gui.LPanel;
 import lev.gui.LSwingWorker;
 
@@ -111,8 +113,10 @@ public class ContentPanel extends LPanel {
 	    ArrayList<Article> articles = new ArrayList<>();
 	    if (target != null) {
 		articles.add(target);
-		for (Article link : target.getLinks()) {
-		    articles.add(link);
+		if (KnowItAll.save.getBool(Settings.LinkedArticles)) {
+		    for (Article link : target.getLinks()) {
+			articles.add(link);
+		    }
 		}
 	    }
 	    loadArticles(articles);
