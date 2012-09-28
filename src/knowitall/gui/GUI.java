@@ -4,7 +4,6 @@
  */
 package knowitall.gui;
 
-import java.awt.Font;
 import java.awt.MouseInfo;
 import java.awt.Point;
 import java.io.File;
@@ -14,12 +13,13 @@ import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 import knowitall.Article;
 import knowitall.Database;
+import knowitall.Debug;
 import knowitall.KIASave;
 import knowitall.KIASave.Settings;
 import knowitall.KnowItAll;
 import lev.Ln;
 import lev.gui.LSwingTree;
-import lev.gui.resources.LFonts;
+import lev.gui.LSwingTreeNode;
 
 /**
  *
@@ -40,10 +40,8 @@ public class GUI {
     static OpenPackage openPackage = new OpenPackage();
     static SettingsFrame settingsFrame = new SettingsFrame();
     static boolean defaultPicker = false;
-
     // State
     static public boolean mainFrameFocus = true;
-
     // Settings
     static public float articleBGtransparancy = 1.0f;
 
@@ -95,7 +93,6 @@ public class GUI {
 
 	// Bump tooltip on screen if it's off
 	SwingUtilities.invokeLater(new Runnable() {
-
 	    @Override
 	    public void run() {
 		if (tooltip.getY() + tooltip.getHeight() > mainPanel.getHeight()) {
@@ -112,7 +109,6 @@ public class GUI {
 	});
 	// Make dimmer and tooltip visible.
 	SwingUtilities.invokeLater(new Runnable() {
-
 	    @Override
 	    public void run() {
 		tooltip.setVisible(true);
@@ -123,7 +119,6 @@ public class GUI {
 
     public static void hideTooltip() {
 	SwingUtilities.invokeLater(new Runnable() {
-
 	    @Override
 	    public void run() {
 		search.setFocusable(true);
@@ -186,7 +181,6 @@ public class GUI {
 
     public static void setBackground(final File f) {
 	SwingWorker backgroundLoad = new SwingWorker() {
-
 	    @Override
 	    protected Object doInBackground() throws Exception {
 		frame.getBackgroundPane().setImage(f);
@@ -197,8 +191,11 @@ public class GUI {
     }
 
     public static void loadPackages() {
-	progressShow();
-	Database.loadLooseFiles();
+	File target = new File(KnowItAll.save.getStr(Settings.LastPackage));
+	if (!target.getPath().equals(".") && target.isDirectory()) {
+	    progressShow();
+	    Database.loadLooseFiles();
+	}
     }
 
     public static void loaded() {
@@ -222,7 +219,6 @@ public class GUI {
 
     public static void progressSetMax(final int max) {
 	SwingUtilities.invokeLater(new Runnable() {
-
 	    @Override
 	    public void run() {
 		progressPane.reset();
@@ -233,7 +229,6 @@ public class GUI {
 
     public static void progressSetTitle(final String title) {
 	SwingUtilities.invokeLater(new Runnable() {
-
 	    @Override
 	    public void run() {
 		progressPane.setTitle(title);
@@ -243,7 +238,6 @@ public class GUI {
 
     public static void progressProcessed(final String title) {
 	SwingUtilities.invokeLater(new Runnable() {
-
 	    @Override
 	    public void run() {
 		progressPane.processed(title);
@@ -253,7 +247,6 @@ public class GUI {
 
     public static void progressIncrement() {
 	SwingUtilities.invokeLater(new Runnable() {
-
 	    @Override
 	    public void run() {
 		progressPane.increment();
@@ -263,7 +256,6 @@ public class GUI {
 
     public static void progressIncrement(final String title) {
 	SwingUtilities.invokeLater(new Runnable() {
-
 	    @Override
 	    public void run() {
 		progressPane.increment(title);
@@ -273,7 +265,6 @@ public class GUI {
 
     public static void progressSetValue(final int value) {
 	SwingUtilities.invokeLater(new Runnable() {
-
 	    @Override
 	    public void run() {
 		progressPane.setValue(value);
@@ -283,7 +274,6 @@ public class GUI {
 
     public static void progressSetValueRemaining(final int value) {
 	SwingUtilities.invokeLater(new Runnable() {
-
 	    @Override
 	    public void run() {
 		progressPane.setValue(progressPane.progress.getMaximum() - value);

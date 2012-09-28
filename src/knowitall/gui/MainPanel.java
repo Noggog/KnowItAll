@@ -14,11 +14,10 @@ import javax.swing.BorderFactory;
 import javax.swing.JSplitPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingUtilities;
-import javax.swing.border.Border;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.TreeSelectionModel;
-import knowitall.Article;
+import knowitall.ArticleNode;
 import knowitall.Database;
 import knowitall.Debug;
 import knowitall.KIASave.Settings;
@@ -97,7 +96,7 @@ public class MainPanel extends LPanel {
 		if (node == null) {
 		    return;
 		}
-		if (node instanceof Article) {
+		if (node instanceof ArticleNode) {
 		    GUI.setArticle(node.toString());
 		}
 	    }

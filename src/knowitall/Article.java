@@ -15,7 +15,7 @@ import lev.gui.LSwingTreeNode;
  *
  * @author Justin Swanson
  */
-public class Article extends LSwingTreeNode implements Comparable {
+public class Article implements Comparable {
 
     public Category category;
     File specFile;
@@ -312,11 +312,6 @@ public class Article extends LSwingTreeNode implements Comparable {
     }
 
     @Override
-    public void print(int depth) {
-	Debug.log.log(getName(), Ln.getNAmount(depth, "   ") + "Article: " + getName() + " ==============");
-    }
-
-    @Override
     public int hashCode() {
 	int hash = 3;
 	hash = 97 * hash + Objects.hashCode(getName());
@@ -355,4 +350,6 @@ public class Article extends LSwingTreeNode implements Comparable {
 	Source src;
 	int page = 0;
     }
+
+
 }

@@ -18,9 +18,10 @@ import lev.gui.resources.LFonts;
 public class SettingsPanel extends LPanel {
 
     public static LCheckBox cBox (String title, Enum s) {
-	LCheckBox box = new LCheckBox(title, LFonts.MyriadPro(14), Color.RED);
+	LCheckBox box = new LCheckBox(title, LFonts.MyriadPro(15), Color.BLACK);
+	box.setOffset(-1);
 	if (s != null) {
-	    box.tie(s, KnowItAll.save);
+	    box.tie(s, KnowItAll.save, SettingsFrame.help, true);
 	}
 	return box;
     }

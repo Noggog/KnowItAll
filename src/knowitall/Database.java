@@ -25,6 +25,7 @@ public class Database {
     private static CategoryIndex indexTree;
     private static Map<String, CategoryIndex> categoryIndex = new TreeMap<>();
     private static LSwingTreeNode articleTree;
+    private static LSwingTreeNode articleTreeDisplay;
     private static Map<String, Article> articles = new TreeMap<>();
     private static ArrayList<Source> loadOrder = new ArrayList<>();
 
@@ -48,13 +49,9 @@ public class Database {
 
     public static LSwingTreeNode getTree() {
 	if (KnowItAll.save.getBool(Settings.MergeSources)) {
-	    CategoryIndex out = new CategoryIndex(articleTree.toString());
-	    for (LSwingTreeNode source : articleTree.getAllObjects()) {
-		for (LSwingTreeNode cata : source.getAllObjects()) {
-		    out.mergeIn(cata);
-		}
-	    }
-	    return out;
+	    articleTreeDisplay = new CategoryIndex(articleTree.toString());
+	    copyMerged(articleTreeDisplay);
+	    return articleTreeDisplay;
 	} else {
 	    return articleTree;
 	}
@@ -125,6 +122,30 @@ public class Database {
 	    // Load content
 	    for (Source s : loadOrder) {
 		loadSource(s);
+	    }
+	}
+    }
+
+    static void copyMerged(LSwingTreeNode to) {
+	for (LSwingTreeNode source : articleTree.getAllObjects()) {
+	    for (LSwingTreeNode cata : source.getAllObjects()) {
+		mergeCata((Category) cata, to);
+	    }
+	}
+    }
+
+    static void mergeCata(Category c, LSwingTreeNode to) {
+	Category target = (Category) to.get(c);
+	if (target == null) {
+	    target = new Category(c.index);
+	    to.add(target);
+	}
+	for (LSwingTreeNode item : c.getAllObjects()) {
+	    if (item instanceof Category) {
+		mergeCata((Category) item, target);
+	    } else if (item instanceof ArticleNode) {
+		ArticleNode a = (ArticleNode) item;
+		target.add(new ArticleNode(a.a));
 	    }
 	}
     }
@@ -221,8 +242,9 @@ public class Database {
     static void loadArticle(Source s, Category c, File articleF) {
 	try {
 	    Article a = new Article(s, c);
+	    ArticleNode n = new ArticleNode(a);
 	    if (a.load(articleF)) {
-		c.add(a);
+		c.add(n);
 		for (String name : a.getNames()) {
 		    articles.put(name.toUpperCase(), a);
 		}

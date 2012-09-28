@@ -4,8 +4,10 @@
  */
 package knowitall.gui;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.SwingUtilities;
 import knowitall.KIASave.Settings;
-import knowitall.KnowItAll;
 import lev.gui.LCheckBox;
 
 /**
@@ -20,18 +22,29 @@ public class SettingsFilters extends SettingsPanel {
     LCheckBox tooltips;
     LCheckBox shortenGrids;
 
-    public SettingsFilters () {
+    public SettingsFilters() {
 
-	openLastPackage = cBox("Load on Startup", Settings.OpenLastOnStartup);
+	last.x = SettingsFrame.help.getX() - 20;
+	last.y += 10;
+	alignRight(true);
+
+	openLastPackage = cBox("Load On Startup", Settings.OpenLastOnStartup);
 	mergeSources = cBox("Merge Sources", Settings.MergeSources);
+	mergeSources.addActionListener(new ActionListener() {
+
+	    @Override
+	    public void actionPerformed(ActionEvent arg0) {
+		GUI.regenerateTree();
+	    }
+	});
 	linkedArticlesBelow = cBox("Linked Articles Below", Settings.LinkedArticles);
 	tooltips = cBox("Tooltips On", Settings.ToolTipsOn);
 	shortenGrids = cBox("Shorten Grids", Settings.ShortenGrids);
 
-//	add(openLastPackage);
-	add(mergeSources);
-
-	setSize(500, 400);
+	place(openLastPackage);
+	place(mergeSources);
+	place(linkedArticlesBelow);
+	place(tooltips);
+	place(shortenGrids);
     }
-
 }

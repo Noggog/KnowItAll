@@ -31,7 +31,7 @@ public class BackTabManager extends LPanel {
 	    tabs.add(b);
 	    add(b);
 	}
-	img = LImages.arrow(true);
+	img = LImages.arrow(true, false);
     }
 
     public void putOnArticle(Article a) {

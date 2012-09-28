@@ -50,7 +50,12 @@ public class KnowItAll {
 	    save = new KIASave(saveF.getPath() + "/Know It All");
 	    save.init();
 	    createFrame();
-	    if (save.getBool(Settings.OpenLastOnStartup) && !save.getStr(Settings.LastPackage).equals(".")) {
+	    if (save.getBool(Settings.OpenLastOnStartup)) {
+		if (save.getStr(Settings.LastPackage).equals(".")
+			&& Database.packages.isDirectory()
+			&& Database.packages.listFiles().length > 0) {
+		    save.setStr(Settings.LastPackage, Database.packages.listFiles()[0].getPath());
+		}
 		GUI.loadPackages();
 	    }
 	} catch (Exception e) {

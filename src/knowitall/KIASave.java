@@ -33,6 +33,16 @@ public class KIASave extends LSaveFile {
     @Override
     protected void initHelp() {
 	this.helpInfo.put(Settings.OpenLastOnStartup, "Opens the last used package automatically when starting up.");
+
+	this.helpInfo.put(Settings.MergeSources, "On the left display tree, combine all the "
+		+ "sources into one big collection, rather than separating the sources.");
+
+	this.helpInfo.put(Settings.LinkedArticles, "Put articles that are referenced "
+		+ "in the main article below it.  Turn this off to show only the main article.");
+
+	this.helpInfo.put(Settings.ToolTipsOn, "Show popup tooltips of article links you mouse over.");
+
+	this.helpInfo.put(Settings.ShortenGrids, "Make grids as short as possible by using the shortest known names of articles.");
     }
 
     public static enum Settings {
