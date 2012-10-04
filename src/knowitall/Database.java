@@ -38,6 +38,10 @@ public class Database {
     public static void reloadArticles() {
 	reloadArticles(null);
     }
+    
+    public static Article getArticle() {
+	return articles.values().toArray(new Article[0])[0];
+    }
 
     public static void clear() {
 	categoryIndex.clear();

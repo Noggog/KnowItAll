@@ -25,6 +25,7 @@ public class ArticleDisplay extends LPanel {
     Article article;
     LHTMLPane htmlContent;
     static LinkListener listener = new LinkListener();
+    static Font articleFont = LFonts.MyriadPro(16);
 
     public ArticleDisplay() {
 	htmlContent = new LHTMLPane();
@@ -39,7 +40,7 @@ public class ArticleDisplay extends LPanel {
 	ss.addRule("table { border-style: hidden; }");
 	htmlContent.addHyperLinkListener(listener);
 	htmlContent.honorDisplayProperties();
-	htmlContent.setFont(LFonts.MyriadPro(16));
+	htmlContent.setFont(articleFont);
 	htmlContent.setOpaque(false);
 	htmlContent.transparentBackground();
 	add(htmlContent);
@@ -57,7 +58,7 @@ public class ArticleDisplay extends LPanel {
     public void paint(Graphics g) {
 	Graphics2D g2 = (Graphics2D) g.create();
 	Composite old = g2.getComposite();
-	float trans = KnowItAll.save.getFloat(Settings.ArticleTrans);
+	float trans = (float)(KnowItAll.save.getInt(Settings.ArticleTrans) / 100.0);
 	if (trans < 1) {
 	    g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, trans));
 	}
@@ -73,10 +74,16 @@ public class ArticleDisplay extends LPanel {
     public void remeasure(Dimension size) {
 	if (article != null) {
 	    htmlContent.setSize(size.width - 2);
-	    setSize(size.width, htmlContent.getBottom() + Spacings.article);
+	    super.setSize(size.width, htmlContent.getBottom() + Spacings.article);
 	} else {
-	    setSize(1, 1);
+	    super.setSize(1, 1);
 	}
+    }
+    
+    @Override
+    public void setSize(int x, int y) {
+	htmlContent.setSize(x, y);
+	super.setSize(x, y);
     }
 
     int position(LTextArea area, Dimension size, int y) {

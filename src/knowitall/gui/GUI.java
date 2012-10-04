@@ -6,6 +6,7 @@ package knowitall.gui;
 
 import java.awt.MouseInfo;
 import java.awt.Point;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.Collection;
 import javax.swing.JFileChooser;
@@ -13,13 +14,11 @@ import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 import knowitall.Article;
 import knowitall.Database;
-import knowitall.Debug;
 import knowitall.KIASave;
 import knowitall.KIASave.Settings;
 import knowitall.KnowItAll;
 import lev.Ln;
 import lev.gui.LSwingTree;
-import lev.gui.LSwingTreeNode;
 
 /**
  *
@@ -78,6 +77,10 @@ public class GUI {
 
     public static void reloadArticle() {
 	contentPanel.updateContent(contentPanel.target);
+    }
+
+    public static void repaintContent() {
+	contentPanel.repaint();
     }
 
     public static void setTooltip(String s) {
@@ -190,6 +193,10 @@ public class GUI {
 	    }
 	};
 	backgroundLoad.execute();
+    }
+    
+    public static BufferedImage getBackground() {
+	return frame.getBackgroundPane().getImage();
     }
 
     public static void loadPackages() {

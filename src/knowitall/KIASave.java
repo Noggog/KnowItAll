@@ -33,7 +33,7 @@ public class KIASave extends LSaveFile {
 	//Colors
 	Add(Settings.ArticleBack,		Color.WHITE);
 	Add(Settings.ArticleFont,		Color.BLACK);
-	Add(Settings.ArticleTrans,		1.0f);
+	Add(Settings.ArticleTrans,		100);
 	Add(Settings.ToolBack,			Color.WHITE);
 	Add(Settings.ToolFont,			Color.BLACK);
 	Add(Settings.SearchBack,		Color.WHITE);

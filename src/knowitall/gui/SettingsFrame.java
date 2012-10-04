@@ -5,16 +5,12 @@
 package knowitall.gui;
 
 import java.awt.Color;
-import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JTabbedPane;
 import knowitall.KnowItAll;
 import lev.gui.LButton;
 import lev.gui.LFrame;
-import lev.gui.LHelpPanel;
-import lev.gui.resources.LFonts;
-import lev.gui.resources.LImages;
 
 /**
  *
@@ -36,14 +32,14 @@ public class SettingsFrame extends LFrame {
     public void open() {
 	if (!init) {
 	    init();
-	}
+	}   
 	KnowItAll.save.saveToCancelSave();
 	setLocation(centerScreen());
 	setVisible(true);
     }
 
     void init() {
-	setSize(500, 400);
+	setSize(700, 500);
 	this.setResizable(false);
 
 	accept = new LButton("Accept");
@@ -70,7 +66,7 @@ public class SettingsFrame extends LFrame {
 	getContentPane().add(cancel);
 
 	filters = new SettingsFilters(getSize());
-	colors = new SettingsColors();
+	colors = new SettingsColors(getSize());
 
 	tabs = new JTabbedPane();
 	tabs.setSize(getSize());
