@@ -7,6 +7,7 @@ package knowitall.gui;
 import java.awt.Color;
 import knowitall.KnowItAll;
 import lev.gui.LCheckBox;
+import lev.gui.LHelpPanel;
 import lev.gui.LPanel;
 import lev.gui.Setting;
 import lev.gui.resources.LFonts;
@@ -17,11 +18,13 @@ import lev.gui.resources.LFonts;
  */
 public class SettingsPanel extends LPanel {
 
-    public static LCheckBox cBox (String title, Enum s) {
+    LHelpPanel help;
+
+    public LCheckBox cBox (String title, Enum s) {
 	LCheckBox box = new LCheckBox(title, LFonts.MyriadPro(15), Color.BLACK);
 	box.setOffset(-1);
 	if (s != null) {
-	    box.tie(s, KnowItAll.save, SettingsFrame.help, true);
+	    box.tie(s, KnowItAll.save, help, true);
 	}
 	return box;
     }

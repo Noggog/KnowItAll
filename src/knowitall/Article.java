@@ -8,8 +8,6 @@ import java.io.*;
 import java.util.*;
 import knowitall.Debug.Logs;
 import lev.LMergeMap;
-import lev.Ln;
-import lev.gui.LSwingTreeNode;
 
 /**
  *
@@ -350,6 +348,5 @@ public class Article implements Comparable {
 	Source src;
 	int page = 0;
     }
-
-
+    
 }

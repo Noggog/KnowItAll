@@ -25,8 +25,8 @@ public class SettingsFrame extends LFrame {
     JTabbedPane tabs;
     LButton cancel;
     LButton accept;
-    static public LHelpPanel help;
     SettingsFilters filters;
+    SettingsColors colors;
     boolean init = false;
 
     public SettingsFrame() {
@@ -69,18 +69,14 @@ public class SettingsFrame extends LFrame {
 	});
 	getContentPane().add(cancel);
 
-	Rectangle helpA = new Rectangle(200, 30, 300, getHeight());
-	help = new LHelpPanel(helpA, LFonts.MyriadProBold(25), Color.BLACK, Color.DARK_GRAY, LImages.arrow(true, true), 0);
-	help.setTitleOffset(3);
-	help.setXOffsets(10, 21);
-	getContentPane().add(help);
-
-	filters = new SettingsFilters();
+	filters = new SettingsFilters(getSize());
+	colors = new SettingsColors();
 
 	tabs = new JTabbedPane();
 	tabs.setSize(getSize());
 	tabs.setBackground(Color.GRAY);
-	tabs.addTab("All", filters);
+	tabs.addTab("General", filters);
+	tabs.addTab("Colors", colors);
 	getContentPane().add(tabs);
 
 	init = true;

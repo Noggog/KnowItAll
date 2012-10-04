@@ -4,17 +4,13 @@
  */
 package knowitall.gui;
 
-import java.awt.AlphaComposite;
-import java.awt.Color;
-import java.awt.Composite;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Rectangle;
+import java.awt.*;
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
 import javax.swing.text.html.StyleSheet;
 import knowitall.Article;
+import knowitall.KIASave.Settings;
+import knowitall.KnowItAll;
 import lev.gui.LHTMLPane;
 import lev.gui.LPanel;
 import lev.gui.LTextArea;
@@ -61,10 +57,11 @@ public class ArticleDisplay extends LPanel {
     public void paint(Graphics g) {
 	Graphics2D g2 = (Graphics2D) g.create();
 	Composite old = g2.getComposite();
-	if (GUI.articleBGtransparancy < 1) {
-	    g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, GUI.articleBGtransparancy));
+	float trans = KnowItAll.save.getFloat(Settings.ArticleTrans);
+	if (trans < 1) {
+	    g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, trans));
 	}
-	g2.setPaint(Color.WHITE);
+	g2.setPaint(KnowItAll.save.getColor(Settings.ArticleBack));
 	Rectangle r = new Rectangle(getWidth(), getHeight());
 	g2.fill(r);
 	g2.setComposite(old);

@@ -4,6 +4,7 @@
  */
 package knowitall;
 
+import java.awt.Color;
 import lev.gui.LSaveFile;
 
 /**
@@ -18,16 +19,26 @@ public class KIASave extends LSaveFile {
 
     @Override
     protected void initSettings() {
-	Add(Settings.StartWidth,		0,	    false);
-	Add(Settings.StartHeight,		0,	    false);
-	Add(Settings.DividerLocation,		250,	    false);
-	Add(Settings.LastPackage,		".",	    false);
-	Add(Settings.OpenLastOnStartup,		true,	    false);
-	Add(Settings.MergeSources,		true,	    false);
-	Add(Settings.LinkedArticles,		true,	    false);
-	Add(Settings.LinkDirectionUsed,		false,	    false);
-	Add(Settings.ToolTipsOn,		true,	    false);
-	Add(Settings.ShortenGrids,		true,	    false);
+	Add(Settings.StartWidth,		0);
+	Add(Settings.StartHeight,		0);
+	Add(Settings.DividerLocation,		250);
+	Add(Settings.LastPackage,		".");
+	Add(Settings.OpenLastOnStartup,		true);
+	Add(Settings.MergeSources,		true);
+	Add(Settings.LinkedArticles,		true);
+	Add(Settings.LinkDirectionUsed,		false);
+	Add(Settings.ToolTipsOn,		true);
+	Add(Settings.ShortenGrids,		true);
+
+	//Colors
+	Add(Settings.ArticleBack,		Color.WHITE);
+	Add(Settings.ArticleFont,		Color.BLACK);
+	Add(Settings.ArticleTrans,		1.0f);
+	Add(Settings.ToolBack,			Color.WHITE);
+	Add(Settings.ToolFont,			Color.BLACK);
+	Add(Settings.SearchBack,		Color.WHITE);
+	Add(Settings.SearchFont,		Color.BLACK);
+	Add(Settings.LinkFont,			Color.BLUE);
     }
 
     @Override
@@ -55,7 +66,17 @@ public class KIASave extends LSaveFile {
 	LinkedArticles,
 	LinkDirectionUsed,
 	ToolTipsOn,
-	ShortenGrids
+	ShortenGrids,
+
+	// Colors
+	ArticleBack,
+	ArticleFont,
+	ArticleTrans,
+	ToolBack,
+	ToolFont,
+	SearchBack,
+	SearchFont,
+	LinkFont,
 	;
     }
 

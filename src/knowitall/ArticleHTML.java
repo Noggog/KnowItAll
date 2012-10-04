@@ -5,17 +5,7 @@
 package knowitall;
 
 import java.util.Map;
-import org.apache.ecs.MultiPartElement;
-import org.apache.ecs.html.B;
-import org.apache.ecs.html.BR;
-import org.apache.ecs.html.Body;
-import org.apache.ecs.html.Font;
-import org.apache.ecs.html.HR;
-import org.apache.ecs.html.Head;
-import org.apache.ecs.html.Html;
-import org.apache.ecs.html.TD;
-import org.apache.ecs.html.TR;
-import org.apache.ecs.html.Table;
+import org.apache.ecs.html.*;
 
 /**
  *
@@ -29,10 +19,10 @@ public class ArticleHTML {
 	Html html = new Html().addElement(new Head());
 	Body body = new Body();
 
-//	generateIconTable(a, body);
-
-	// Title
+//	generateTitleTable(a, body);
 	body.addElement(new Font(6).addElement(new B().addElement(a.getName()))).addElement(new BR());
+//	body.addElement(new IMG("file:/" + a.getIcon()).addAttribute("style", "float:right"));
+
 	if (!a.intro.isEmpty()) {
 	    body.addElement(a.intro.toString()).addElement(new BR()).addElement(new BR());
 	}
@@ -61,6 +51,21 @@ public class ArticleHTML {
 	html.addElement(body);
 
 	return html.toString();
+    }
+
+    static public void generateTitleTable(Article a, Body body) {
+	Table t = new Table();
+	t.addAttribute("width", "100%");
+	t.addAttribute("border", "1");
+
+	TR tr = new TR();
+	tr.addElement(new TD().addElement(new Font(6).addElement(new B().addElement(a.getName()))));
+	if (!a.getIcon().equals("")) {
+	    tr.addElement(new TD().addElement(new IMG("file:/" + a.getIcon())).addAttribute("align", "right"));
+	}
+
+	t.addElement(tr);
+	body.addElement(t);
     }
 
     static public void generateSubCategories(Article a, Body body) {

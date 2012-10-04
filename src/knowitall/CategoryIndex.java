@@ -4,13 +4,16 @@
  */
 package knowitall;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
+import javax.imageio.ImageIO;
 import lev.Ln;
 import lev.gui.LSwingTreeNode;
 
@@ -25,13 +28,23 @@ public class CategoryIndex extends LSwingTreeNode implements Comparable {
     ArrayList<String> subCategoryOrder = new ArrayList<>();
     Set<String> gridSet = new HashSet<>();
     ArrayList<String> gridOrder = new ArrayList<>();
+    BufferedImage icon;
+    String iconPath = "";
 
     public CategoryIndex(File src) {
 	name = src.getName();
 	for (File specF : src.listFiles()) {
 	    if (Ln.isFileType(specF, "JSON") || Ln.isFileType(specF, "TXT")) {
 		load(specF);
-		break;
+	    } else if (Ln.isFileType(specF, "JPG")
+		    || Ln.isFileType(specF, "JPEG")
+		    || Ln.isFileType(specF, "PNG")) {
+		try {
+		    icon = ImageIO.read(specF);
+		    iconPath = specF.getAbsolutePath();
+		} catch (IOException ex) {
+		    Debug.log.logError("Category Icon", "Failed to load image: " + specF);
+		}
 	    }
 	}
     }
@@ -122,6 +135,6 @@ public class CategoryIndex extends LSwingTreeNode implements Comparable {
     }
 
     public String getIcon() {
-	return "Icon";
+	return iconPath;
     }
 }

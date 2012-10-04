@@ -67,8 +67,8 @@ public class ArticleSpec {
 	}
 
 	// Content
-	shortContent = cleanContentStr(shortContent);
-	content = cleanContentStr(content);
+//	shortContent = cleanContentStr(shortContent);
+//	content = cleanContentStr(content);
     }
 
     public String cleanContentStr(String in) {

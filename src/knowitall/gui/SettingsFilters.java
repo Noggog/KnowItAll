@@ -4,11 +4,16 @@
  */
 package knowitall.gui;
 
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.SwingUtilities;
 import knowitall.KIASave.Settings;
 import lev.gui.LCheckBox;
+import lev.gui.LHelpPanel;
+import lev.gui.resources.LFonts;
+import lev.gui.resources.LImages;
 
 /**
  *
@@ -22,9 +27,15 @@ public class SettingsFilters extends SettingsPanel {
     LCheckBox tooltips;
     LCheckBox shortenGrids;
 
-    public SettingsFilters() {
+    public SettingsFilters(Dimension size) {
 
-	last.x = SettingsFrame.help.getX() - 20;
+	Rectangle helpA = new Rectangle(200, 0, 300, size.height);
+	help = new LHelpPanel(helpA, LFonts.MyriadProBold(25), Color.BLACK, Color.DARK_GRAY, LImages.arrow(true, true), 0);
+	help.setTitleOffset(3);
+	help.setXOffsets(10, 21);
+	add(help);
+
+	last.x = help.getX() - 20;
 	last.y += 10;
 	alignRight(true);
 
