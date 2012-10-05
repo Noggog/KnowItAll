@@ -31,6 +31,7 @@ public class ArticleDisplay extends ArticlePane {
 		+ "margin-left: 10px;}");
 	ss.addRule("table { border-style: hidden; }");
 	setBodyFontColor(KnowItAll.save.getColor(Settings.ArticleFont));
+	setLinkFontColor(KnowItAll.save.getColor(Settings.ArticleLinkFont));
 	htmlContent.addHyperLinkListener(listener);
 	add(htmlContent);
     }

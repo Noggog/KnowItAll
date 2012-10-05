@@ -86,6 +86,7 @@ public class SettingsFrame extends LFrame {
     void accept() {
 	GUI.setArticleFontColor(display.articleText.getValue());
 	GUI.setTooltipFontColor(display.tooltipText.getValue());
-	GUI.setLinkFontColor(display.linkText.getValue());
+	GUI.setArticleLinkFontColor(display.articleLinkText.getValue());
+	GUI.setTooltipLinkFontColor(display.tooltipLinkText.getValue());
     }
 }

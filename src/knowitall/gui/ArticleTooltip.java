@@ -6,8 +6,6 @@ package knowitall.gui;
 
 import java.awt.*;
 import java.awt.geom.Ellipse2D;
-import javax.swing.text.Style;
-import javax.swing.text.StyleConstants;
 import knowitall.Article;
 import knowitall.KIASave.Settings;
 import knowitall.KnowItAll;
@@ -26,6 +24,7 @@ public class ArticleTooltip extends ArticlePane {
 	ss.addRule("body {}");
 	htmlContent.setLocation(Spacings.tooltip, Spacings.tooltip);
 	setBodyFontColor(KnowItAll.save.getColor(Settings.ToolFont));
+	setLinkFontColor(KnowItAll.save.getColor(Settings.ToolLinkFont));
 	add(htmlContent);
 	setVisible(false);
     }
@@ -52,6 +51,10 @@ public class ArticleTooltip extends ArticlePane {
 	htmlContent.compactContent(x - margin);
 	htmlContent.setSize(htmlContent.getWidth(), htmlContent.getHeight() + 5);
 	super.setSize(htmlContent.getWidth() + margin, htmlContent.getBottom() + Spacings.tooltip + 5);
+    }
+    
+    public void setRealSize(int x, int y) {
+	super.setSize(x, y);
     }
 
     @Override

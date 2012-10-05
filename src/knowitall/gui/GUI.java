@@ -135,11 +135,14 @@ public class GUI {
 	tooltip.setBodyFontColor(c);
     }
     
-    public static void setLinkFontColor(Color c) {
-	tooltip.setLinkFontColor(c);
+    public static void setArticleLinkFontColor(Color c) {
 	for (ArticleDisplay a : contentPanel.displays) {
 	    a.setLinkFontColor(c);
 	}
+    }
+    
+    public static void setTooltipLinkFontColor (Color c) {
+	tooltip.setLinkFontColor(c);
     }
 
     public static void hideTooltip() {

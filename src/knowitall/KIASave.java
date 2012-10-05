@@ -33,13 +33,14 @@ public class KIASave extends LSaveFile {
 	//Colors
 	Add(Settings.ArticleBack,		Color.WHITE);
 	Add(Settings.ArticleFont,		Color.BLACK);
+	Add(Settings.ArticleLinkFont,		Color.BLUE);
 	Add(Settings.ArticleTrans,		100);
 	Add(Settings.ToolBack,			Color.WHITE);
 	Add(Settings.ToolFont,			Color.BLACK);
+	Add(Settings.ToolLinkFont,		Color.BLUE);
 	Add(Settings.ToolTrans,			100);
 	Add(Settings.SearchBack,		Color.WHITE);
 	Add(Settings.SearchFont,		Color.BLACK);
-	Add(Settings.LinkFont,			Color.BLUE);
     }
 
     @Override
@@ -73,9 +74,10 @@ public class KIASave extends LSaveFile {
 	ArticleBack,
 	ArticleFont,
 	ArticleTrans,
-	LinkFont,
+	ArticleLinkFont,
 	ToolBack,
 	ToolFont,
+	ToolLinkFont,
 	ToolTrans,
 	SearchBack,
 	SearchFont,

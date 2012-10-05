@@ -4,6 +4,7 @@
  */
 package knowitall.gui;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -11,6 +12,7 @@ import knowitall.Database;
 import knowitall.KIASave.Settings;
 import lev.gui.LColorSetting;
 import lev.gui.LImagePane;
+import lev.gui.LLabel;
 import lev.gui.LSlider;
 
 /**
@@ -19,13 +21,16 @@ import lev.gui.LSlider;
  */
 public class SettingsDisplay extends SettingsPanel {
 
+    LLabel articles;
     LColorSetting articleBackground;
     LColorSetting articleText;
-    LColorSetting linkText;
+    LColorSetting articleLinkText;
     LSlider articleAlpha;
     
+    LLabel tooltips;
     LColorSetting tooltipBackground;
     LColorSetting tooltipText;
+    LColorSetting tooltipLinkText;
     LSlider tooltipAlpha;
     
     LImagePane example;
@@ -37,10 +42,13 @@ public class SettingsDisplay extends SettingsPanel {
 	setPreferredSize(new Dimension(size.width - 21, size.height));
 
 	last.x = 200;
-	last.y += 10;
+	last.y += 15;
 	align(Align.Center);
 
-	articleBackground = color("Article Background", Settings.ArticleBack);
+	articles = new LLabel("Articles", headerFont, Color.BLACK);
+	place(articles);
+	
+	articleBackground = color("Background", Settings.ArticleBack);
 	articleBackground.addActionListener(new Runnable(){
 
 	    @Override
@@ -50,7 +58,7 @@ public class SettingsDisplay extends SettingsPanel {
 	});
 	place(articleBackground);
 
-	articleText = color("Article Text", Settings.ArticleFont);
+	articleText = color("Text", Settings.ArticleFont);
 	articleText.addActionListener(new Runnable(){
 
 	    @Override
@@ -61,18 +69,16 @@ public class SettingsDisplay extends SettingsPanel {
 	});
 	place(articleText);
 
-	linkText = color("Links", Settings.LinkFont);
-	linkText.addActionListener(new Runnable(){
+	articleLinkText = color("Links", Settings.ArticleLinkFont);
+	articleLinkText.addActionListener(new Runnable(){
 
 	    @Override
 	    public void run() {
-		article.setLinkFontColor(linkText.getValue());
-		tooltip.setLinkFontColor(linkText.getValue());
+		article.setLinkFontColor(articleLinkText.getValue());
 		article.repaint();
-		tooltip.repaint();
 	    }
 	});
-	place(linkText);
+	place(articleLinkText);
 
 	articleAlpha = slider("Article Transparency", Settings.ArticleTrans, 0, 100);
 	articleAlpha.addChangeListener(new ChangeListener() {
@@ -83,8 +89,13 @@ public class SettingsDisplay extends SettingsPanel {
 	    }
 	});
 	place(articleAlpha);
+	
+	last.y += 32;
+	
+	tooltips = new LLabel("Tooltips", headerFont, Color.BLACK);
+	place(tooltips);
 
-	tooltipBackground = color("Tooltip Background", Settings.ToolBack);
+	tooltipBackground = color("Background", Settings.ToolBack);
 	tooltipBackground.addActionListener(new Runnable(){
 
 	    @Override
@@ -94,7 +105,7 @@ public class SettingsDisplay extends SettingsPanel {
 	});
 	place(tooltipBackground);
 	
-	tooltipText = color("Tooltip Text", Settings.ToolFont);
+	tooltipText = color("Text", Settings.ToolFont);
 	tooltipText.addActionListener(new Runnable(){
 
 	    @Override
@@ -104,6 +115,17 @@ public class SettingsDisplay extends SettingsPanel {
 	    }
 	});
 	place(tooltipText);
+	
+	tooltipLinkText = color("Link Text", Settings.ToolLinkFont);
+	tooltipLinkText.addActionListener(new Runnable(){
+
+	    @Override
+	    public void run() {
+		tooltip.setLinkFontColor(tooltipLinkText.getValue());
+		tooltip.repaint();
+	    }
+	});
+	place(tooltipLinkText);
 	
 	// Example
 	example = new LImagePane(GUI.getBackground());
@@ -120,7 +142,8 @@ public class SettingsDisplay extends SettingsPanel {
 
 	tooltip = new ArticleTooltip();
 	tooltip.load(Database.getDisplayArticle());
-	tooltip.setSize(400, 150);
+	tooltip.setSize(400, 135);
+	tooltip.setRealSize(400, 135);
 	tooltip.setLocation(20, article.getY() + article.getHeight() + 20);
 	tooltip.setVisible(true);
 	example.add(tooltip);

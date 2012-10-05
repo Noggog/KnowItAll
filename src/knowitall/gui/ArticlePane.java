@@ -31,7 +31,6 @@ public class ArticlePane extends LPanel {
 	htmlContent.setVisible(true);
 	ss = htmlContent.getStyleSheet();
 	ss.addRule("a {}");
-	setLinkFontColor(KnowItAll.save.getColor(Settings.LinkFont));
 	htmlContent.honorDisplayProperties();
 	htmlContent.setFont(articleFont);
 	htmlContent.setOpaque(false);

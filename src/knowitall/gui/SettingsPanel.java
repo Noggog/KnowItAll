@@ -18,6 +18,7 @@ public class SettingsPanel extends LPanel {
 
     LHelpPanel help;
     static Font settingsFont = LFonts.MyriadPro(15);
+    static Font headerFont = LFonts.MyriadProBold(18);
 
     public LCheckBox cBox (String title, Enum s) {
 	LCheckBox box = new LCheckBox(title, settingsFont, Color.BLACK);
