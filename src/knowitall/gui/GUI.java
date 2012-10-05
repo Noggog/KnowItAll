@@ -19,7 +19,7 @@ import knowitall.KIASave;
 import knowitall.KIASave.Settings;
 import knowitall.KnowItAll;
 import lev.Ln;
-import lev.gui.LSwingTree;
+import lev.gui.LTree;
 
 /**
  *
@@ -35,7 +35,7 @@ public class GUI {
     static SearchBar search;
     static BackTabManager backTabManager;
     static ArticleTooltip tooltip;
-    static LSwingTree tree;
+    static LTree tree;
     static KIAProgressPane progressPane;
     static OpenPackage openPackage = new OpenPackage();
     static SettingsFrame settingsFrame = new SettingsFrame();

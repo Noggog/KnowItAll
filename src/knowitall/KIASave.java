@@ -41,6 +41,9 @@ public class KIASave extends LSaveFile {
 	Add(Settings.ToolTrans,			100);
 	Add(Settings.SearchBack,		Color.WHITE);
 	Add(Settings.SearchFont,		Color.BLACK);
+	Add(Settings.TreeBack,			Color.WHITE);
+	Add(Settings.TreeFont,			Color.BLACK);
+	Add(Settings.TreeTrans,			100);
     }
 
     @Override
@@ -81,6 +84,9 @@ public class KIASave extends LSaveFile {
 	ToolTrans,
 	SearchBack,
 	SearchFont,
+	TreeFont,
+	TreeBack,
+	TreeTrans,
 	;
     }
 

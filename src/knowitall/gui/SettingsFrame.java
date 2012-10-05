@@ -7,11 +7,13 @@ package knowitall.gui;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.BorderFactory;
 import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 import knowitall.KnowItAll;
 import lev.gui.LButton;
 import lev.gui.LFrame;
+import lev.gui.LPanel;
 import lev.gui.LScrollPane;
 
 /**
@@ -44,20 +46,8 @@ public class SettingsFrame extends LFrame {
 	setSize(700, 500);
 	this.setResizable(false);
 
-	cancel = new LButton("Cancel");
-	cancel.setLocation(20, getRealHeight() - 10 - cancel.getHeight());
-	cancel.addActionListener(new ActionListener(){
-
-	    @Override
-	    public void actionPerformed(ActionEvent e) {
-		setVisible(false);
-		KnowItAll.save.revertToCancel();
-	    }
-	});
-	getContentPane().add(cancel);
-
 	accept = new LButton("Accept");
-	accept.setLocation(cancel.getRight() + 10, cancel.getY());
+	accept.setLocation(getRealWidth() - 10 - accept.getWidth(), 6);
 	accept.addActionListener(new ActionListener(){
 
 	    @Override
@@ -66,7 +56,26 @@ public class SettingsFrame extends LFrame {
 		setVisible(false);
 	    }
 	});
-	getContentPane().add(accept);
+	
+	cancel = new LButton("Cancel");
+	cancel.setLocation(accept.getX() - cancel.getWidth() - 10, accept.getY());
+	cancel.addActionListener(new ActionListener(){
+
+	    @Override
+	    public void actionPerformed(ActionEvent e) {
+		setVisible(false);
+		KnowItAll.save.revertToCancel();
+	    }
+	});
+
+	LPanel buttons = new LPanel();
+	buttons.setOpaque(true);
+	buttons.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+	buttons.setLocation(-1, getRealHeight() - 30);
+	buttons.setSize(getWidth(), 40 + accept.getHeight());
+	getContentPane().add(buttons);
+	buttons.add(cancel);
+	buttons.add(accept);
 
 	filters = new SettingsFilters(getSize());
 	display = new SettingsDisplay(getSize());
@@ -74,7 +83,7 @@ public class SettingsFrame extends LFrame {
 	displayScroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
 	tabs = new JTabbedPane();
-	tabs.setSize(getSize().width - 6, getSize().height - 28);
+	tabs.setSize(getSize().width - 6, buttons.getY());
 	tabs.setBackground(Color.GRAY);
 	tabs.addTab("General", filters);
 	tabs.addTab("Colors", displayScroll);

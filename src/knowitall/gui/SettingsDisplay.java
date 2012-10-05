@@ -10,10 +10,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import knowitall.Database;
 import knowitall.KIASave.Settings;
-import lev.gui.LColorSetting;
-import lev.gui.LImagePane;
-import lev.gui.LLabel;
-import lev.gui.LSlider;
+import lev.gui.*;
 
 /**
  *
@@ -33,9 +30,15 @@ public class SettingsDisplay extends SettingsPanel {
     LColorSetting tooltipLinkText;
     LSlider tooltipAlpha;
     
+    LLabel treeLabel;
+    LColorSetting treeBackground;
+    LColorSetting treeText;
+    LSlider treeAlpha;
+    
     LImagePane example;
     ArticleDisplay article;
     ArticleTooltip tooltip;
+    LTree tree;
 
     public SettingsDisplay (Dimension size) {
 	setSize(size);
@@ -80,7 +83,7 @@ public class SettingsDisplay extends SettingsPanel {
 	});
 	place(articleLinkText);
 
-	articleAlpha = slider("Article Transparency", Settings.ArticleTrans, 0, 100);
+	articleAlpha = slider("Transparency", Settings.ArticleTrans, 0, 100);
 	articleAlpha.addChangeListener(new ChangeListener() {
 
 	    @Override
@@ -127,6 +130,43 @@ public class SettingsDisplay extends SettingsPanel {
 	});
 	place(tooltipLinkText);
 	
+	last.y += 40;
+	
+	treeLabel = new LLabel("Tree", headerFont, Color.BLACK);
+	place(treeLabel);
+	
+	treeBackground = color("Background", Settings.TreeBack);
+	treeBackground.addActionListener(new Runnable(){
+
+	    @Override
+	    public void run() {
+		tooltip.setBodyFontColor(tooltipText.getValue());
+		tooltip.repaint();
+	    }
+	});
+	place(treeBackground);
+	
+	treeText = color("Text", Settings.TreeFont);
+	treeText.addActionListener(new Runnable(){
+
+	    @Override
+	    public void run() {
+		tooltip.setBodyFontColor(tooltipText.getValue());
+		tooltip.repaint();
+	    }
+	});
+	place(treeText);
+
+	treeAlpha = slider("Transparency", Settings.TreeTrans, 0, 100);
+	treeAlpha.addChangeListener(new ChangeListener() {
+
+	    @Override
+	    public void stateChanged(ChangeEvent e) {
+		article.repaint();
+	    }
+	});
+	place(treeAlpha);
+	
 	// Example
 	example = new LImagePane(GUI.getBackground());
 	example.setSize(350, getHeight());
@@ -146,6 +186,14 @@ public class SettingsDisplay extends SettingsPanel {
 	tooltip.setRealSize(400, 135);
 	tooltip.setLocation(20, article.getY() + article.getHeight() + 20);
 	tooltip.setVisible(true);
+	example.add(tooltip);
+	
+	tree = new LTree();
+	tree.setRoot(Database.getTree());
+//	tree.expand(true);
+	tree.setLocation(20, 0);
+//	tree.setSize(400, 135);
+	tree.setVisible(true);
 	example.add(tooltip);
     }
 }

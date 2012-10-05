@@ -32,7 +32,7 @@ public class MainPanel extends LPanel {
 
     LImagePane logo;
     SearchBar search;
-    LSwingTree tree;
+    LTree tree;
     LScrollPane treeScroll;
     LScrollPane articleScroll;
     JSplitPane split;
@@ -86,7 +86,7 @@ public class MainPanel extends LPanel {
 	backTabManager.setLocation(0, search.getY() + search.getHeight());
 	add(backTabManager);
 
-	tree = new LSwingTree();
+	tree = new LTree();
 	tree.getSelectionModel().setSelectionMode(TreeSelectionModel.SINGLE_TREE_SELECTION);
 	tree.addTreeSelectionListener(new TreeSelectionListener() {
 
@@ -114,7 +114,7 @@ public class MainPanel extends LPanel {
 	articleScroll = new LScrollPane(articleContent);
 	articleScroll.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
-	split = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, treeScroll, articleScroll);
+	split = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, tree, articleScroll);
 	split.setOpaque(false);
 	split.setLocation(0, search.getY() + search.getHeight() + BackTab.height);
 	split.setBorder(BorderFactory.createEmptyBorder());
