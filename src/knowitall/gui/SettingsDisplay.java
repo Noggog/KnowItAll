@@ -8,6 +8,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import javax.swing.tree.DefaultTreeCellRenderer;
 import knowitall.Database;
 import knowitall.KIASave.Settings;
 import lev.gui.*;
@@ -23,24 +24,23 @@ public class SettingsDisplay extends SettingsPanel {
     LColorSetting articleText;
     LColorSetting articleLinkText;
     LSlider articleAlpha;
-    
     LLabel tooltips;
     LColorSetting tooltipBackground;
     LColorSetting tooltipText;
     LColorSetting tooltipLinkText;
     LSlider tooltipAlpha;
-    
     LLabel treeLabel;
     LColorSetting treeBackground;
+    LColorSetting treeBackgroundSel;
     LColorSetting treeText;
+    LColorSetting treeTextSel;
     LSlider treeAlpha;
-    
     LImagePane example;
     ArticleDisplay article;
     ArticleTooltip tooltip;
     LTree tree;
 
-    public SettingsDisplay (Dimension size) {
+    public SettingsDisplay(Dimension size) {
 	setSize(size);
 	setPreferredSize(new Dimension(size.width - 21, size.height));
 
@@ -50,9 +50,9 @@ public class SettingsDisplay extends SettingsPanel {
 
 	articles = new LLabel("Articles", headerFont, Color.BLACK);
 	place(articles);
-	
+
 	articleBackground = color("Background", Settings.ArticleBack);
-	articleBackground.addActionListener(new Runnable(){
+	articleBackground.addActionListener(new Runnable() {
 
 	    @Override
 	    public void run() {
@@ -62,7 +62,7 @@ public class SettingsDisplay extends SettingsPanel {
 	place(articleBackground);
 
 	articleText = color("Text", Settings.ArticleFont);
-	articleText.addActionListener(new Runnable(){
+	articleText.addActionListener(new Runnable() {
 
 	    @Override
 	    public void run() {
@@ -73,7 +73,7 @@ public class SettingsDisplay extends SettingsPanel {
 	place(articleText);
 
 	articleLinkText = color("Links", Settings.ArticleLinkFont);
-	articleLinkText.addActionListener(new Runnable(){
+	articleLinkText.addActionListener(new Runnable() {
 
 	    @Override
 	    public void run() {
@@ -92,14 +92,14 @@ public class SettingsDisplay extends SettingsPanel {
 	    }
 	});
 	place(articleAlpha);
-	
+
 	last.y += 32;
-	
+
 	tooltips = new LLabel("Tooltips", headerFont, Color.BLACK);
 	place(tooltips);
 
 	tooltipBackground = color("Background", Settings.ToolBack);
-	tooltipBackground.addActionListener(new Runnable(){
+	tooltipBackground.addActionListener(new Runnable() {
 
 	    @Override
 	    public void run() {
@@ -107,9 +107,9 @@ public class SettingsDisplay extends SettingsPanel {
 	    }
 	});
 	place(tooltipBackground);
-	
+
 	tooltipText = color("Text", Settings.ToolFont);
-	tooltipText.addActionListener(new Runnable(){
+	tooltipText.addActionListener(new Runnable() {
 
 	    @Override
 	    public void run() {
@@ -118,9 +118,9 @@ public class SettingsDisplay extends SettingsPanel {
 	    }
 	});
 	place(tooltipText);
-	
+
 	tooltipLinkText = color("Link Text", Settings.ToolLinkFont);
-	tooltipLinkText.addActionListener(new Runnable(){
+	tooltipLinkText.addActionListener(new Runnable() {
 
 	    @Override
 	    public void run() {
@@ -129,44 +129,66 @@ public class SettingsDisplay extends SettingsPanel {
 	    }
 	});
 	place(tooltipLinkText);
-	
+
 	last.y += 45;
-	
+
 	treeLabel = new LLabel("Tree", headerFont, Color.BLACK);
 	place(treeLabel);
-	
+
 	treeBackground = color("Background", Settings.TreeBack);
-	treeBackground.addActionListener(new Runnable(){
+	treeBackground.addActionListener(new Runnable() {
 
 	    @Override
 	    public void run() {
-		tooltip.setBodyFontColor(tooltipText.getValue());
-		tooltip.repaint();
+		tree.setBackground(treeBackground.getValue(), false);
+		tree.repaint();
 	    }
 	});
 	place(treeBackground);
-	
+
+//	treeBackgroundSel = color("Background Selected", Settings.TreeBackSelected);
+//	treeBackgroundSel.addActionListener(new Runnable() {
+//
+//	    @Override
+//	    public void run() {
+//		tree.setBackground(treeBackgroundSel.getValue(), true);
+//		tree.repaint();
+//	    }
+//	});
+//	place(treeBackgroundSel);
+
 	treeText = color("Text", Settings.TreeFont);
-	treeText.addActionListener(new Runnable(){
+	treeText.addActionListener(new Runnable() {
 
 	    @Override
 	    public void run() {
-		tooltip.setBodyFontColor(tooltipText.getValue());
-		tooltip.repaint();
+		tree.setForeground(treeText.getValue(), false);
+		tree.repaint();
 	    }
 	});
 	place(treeText);
+
+	treeTextSel = color("Text Selected", Settings.TreeFontSelected);
+	treeTextSel.addActionListener(new Runnable() {
+
+	    @Override
+	    public void run() {
+		tree.setForeground(treeTextSel.getValue(), true);
+		tree.repaint();
+	    }
+	});
+	place(treeTextSel);
 
 	treeAlpha = slider("Transparency", Settings.TreeTrans, 0, 100);
 	treeAlpha.addChangeListener(new ChangeListener() {
 
 	    @Override
 	    public void stateChanged(ChangeEvent e) {
-		article.repaint();
+		tree.repaint();
 	    }
 	});
 	place(treeAlpha);
-	
+
 	// Example
 	example = new LImagePane(GUI.getBackground());
 	example.setSize(350, getHeight());
@@ -187,8 +209,8 @@ public class SettingsDisplay extends SettingsPanel {
 	tooltip.setLocation(20, article.getY() + article.getHeight() + 20);
 	tooltip.setVisible(true);
 	example.add(tooltip);
-	
-	tree = new LTree();
+
+	tree = new ArticleTree();
 	tree.setRoot(Database.getTree());
 	tree.expand(true);
 	tree.setLocation(20, tooltip.getY() + tooltip.getHeight() + 20);

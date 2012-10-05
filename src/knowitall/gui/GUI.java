@@ -36,7 +36,7 @@ public class GUI {
     static SearchBar search;
     static BackTabManager backTabManager;
     static ArticleTooltip tooltip;
-    static LTree tree;
+    static ArticleTree tree;
     static KIAProgressPane progressPane;
     static OpenPackage openPackage = new OpenPackage();
     static SettingsFrame settingsFrame = new SettingsFrame();

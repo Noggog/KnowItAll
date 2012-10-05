@@ -29,7 +29,7 @@ public class MainPanel extends LPanel {
 
     LImagePane logo;
     SearchBar search;
-    LTree tree;
+    ArticleTree tree;
     LScrollPane treeScroll;
     LScrollPane articleScroll;
     JSplitPane split;
@@ -83,7 +83,7 @@ public class MainPanel extends LPanel {
 	backTabManager.setLocation(0, search.getY() + search.getHeight());
 	add(backTabManager);
 
-	tree = new LTree();
+	tree = new ArticleTree();
 	tree.getSelectionModel().setSelectionMode(TreeSelectionModel.SINGLE_TREE_SELECTION);
 	tree.addTreeSelectionListener(new TreeSelectionListener() {
 

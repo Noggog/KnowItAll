@@ -42,7 +42,9 @@ public class KIASave extends LSaveFile {
 	Add(Settings.SearchBack,		Color.WHITE);
 	Add(Settings.SearchFont,		Color.BLACK);
 	Add(Settings.TreeBack,			Color.WHITE);
+	Add(Settings.TreeBackSelected,		new Color(57,105,138));
 	Add(Settings.TreeFont,			Color.BLACK);
+	Add(Settings.TreeFontSelected,		Color.WHITE);
 	Add(Settings.TreeTrans,			100);
     }
 
@@ -85,7 +87,9 @@ public class KIASave extends LSaveFile {
 	SearchBack,
 	SearchFont,
 	TreeFont,
+	TreeFontSelected,
 	TreeBack,
+	TreeBackSelected,
 	TreeTrans,
 	;
     }
