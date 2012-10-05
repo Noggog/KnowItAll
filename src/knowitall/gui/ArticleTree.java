@@ -42,5 +42,6 @@ public class ArticleTree extends LTree {
 	g2.fillRect(0, 0, getWidth(), getHeight());
 	g2.setComposite(old);
 	super.paint(g2);
+	g2.dispose();
     }
 }

@@ -24,11 +24,13 @@ public class SettingsDisplay extends SettingsPanel {
     LColorSetting articleText;
     LColorSetting articleLinkText;
     LSlider articleAlpha;
+    
     LLabel tooltips;
     LColorSetting tooltipBackground;
     LColorSetting tooltipText;
     LColorSetting tooltipLinkText;
     LSlider tooltipAlpha;
+    
     LLabel treeLabel;
     LColorSetting treeBackground;
     LColorSetting treeBackgroundSel;
@@ -36,9 +38,14 @@ public class SettingsDisplay extends SettingsPanel {
     LColorSetting treeTextSel;
     LSlider treeAlpha;
     LImagePane example;
+    
+    LLabel dimmerLabel;
+    LSlider dimmerAlpha;
+    
     ArticleDisplay article;
     ArticleTooltip tooltip;
     LTree tree;
+    Dimmer dimmer;
 
     public SettingsDisplay(Dimension size) {
 	setSize(size);
@@ -188,6 +195,23 @@ public class SettingsDisplay extends SettingsPanel {
 	    }
 	});
 	place(treeAlpha);
+	
+	last.y += 45;
+	
+	dimmerLabel = new LLabel("Dimmer", headerFont, Color.BLACK);
+	place(dimmerLabel);
+	
+	dimmerAlpha = slider("Transparency", Settings.DimmerTrans, 0, 100);
+	dimmerAlpha.addChangeListener(new ChangeListener() {
+
+	    @Override
+	    public void stateChanged(ChangeEvent e) {
+		dimmer.setVisibleOverride(false);
+		dimmer.repaint();
+		dimmer.setVisibleOverride(true);
+	    }
+	});
+	place(dimmerAlpha);
 
 	// Example
 	example = new LImagePane(GUI.getBackground());
@@ -216,5 +240,15 @@ public class SettingsDisplay extends SettingsPanel {
 	tree.setLocation(20, tooltip.getY() + tooltip.getHeight() + 20);
 	tree.setSize(400, 135);
 	example.add(tree);
+	
+	dimmer = new Dimmer();
+	dimmer.setLocation(0, tree.getY() + tree.getHeight() + 20);
+	dimmer.setSize(400, 100);
+	dimmer.setVisibleOverride(true);
+	example.add(dimmer);
+	
+	setSize(getWidth(), last.y + 20);
+	setPreferredSize(getSize());
+	example.setSize(350, getHeight());
     }
 }

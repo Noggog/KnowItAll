@@ -46,6 +46,7 @@ public class KIASave extends LSaveFile {
 	Add(Settings.TreeFont,			Color.BLACK);
 	Add(Settings.TreeFontSelected,		Color.WHITE);
 	Add(Settings.TreeTrans,			100);
+	Add(Settings.DimmerTrans,		50);
     }
 
     @Override
@@ -91,6 +92,7 @@ public class KIASave extends LSaveFile {
 	TreeBack,
 	TreeBackSelected,
 	TreeTrans,
+	DimmerTrans,
 	;
     }
 

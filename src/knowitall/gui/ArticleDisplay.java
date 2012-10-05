@@ -8,6 +8,7 @@ import java.awt.*;
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
 import knowitall.Article;
+import knowitall.Debug;
 import knowitall.KIASave.Settings;
 import knowitall.KnowItAll;
 import lev.gui.LTextArea;
@@ -48,7 +49,7 @@ public class ArticleDisplay extends ArticlePane {
     public void paint(Graphics g) {
 	Graphics2D g2 = (Graphics2D) g.create();
 	Composite old = g2.getComposite();
-	float trans = (float)(KnowItAll.save.getInt(Settings.ArticleTrans) / 100.0);
+	float trans = (float) (KnowItAll.save.getInt(Settings.ArticleTrans) / 100.0);
 	if (trans < 1) {
 	    g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, trans));
 	}
@@ -64,7 +65,14 @@ public class ArticleDisplay extends ArticlePane {
     public void remeasure(Dimension size) {
 	if (article != null) {
 	    htmlContent.setSize(size.width - 2);
-	    super.setSize(size.width, htmlContent.getBottom() + Spacings.article);
+	    int bottom = htmlContent.getBottom();
+	    super.setSize(size.width, bottom + Spacings.article);
+	    if (Debug.log.logging()) {
+		Debug.log.log("Article Remeasure", "Article : " + article);
+		Debug.log.log("Article Remeasure", "  Size: " + size);
+		Debug.log.log("Article Remeasure", "  htmlContent bottom: " + bottom);
+		Debug.log.log("Article Remeasure", "  Final size: " + getSize());
+	    }
 	} else {
 	    super.setSize(1, 1);
 	}
@@ -75,7 +83,7 @@ public class ArticleDisplay extends ArticlePane {
 	htmlContent.setSize(x, y);
 	super.setSize(x, y);
     }
-    
+
     @Override
     public void setEnabled(boolean on) {
 	htmlContent.setEnabled(on);
