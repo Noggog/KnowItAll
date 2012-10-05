@@ -74,6 +74,11 @@ public class ArticleDisplay extends ArticlePane {
 	htmlContent.setSize(x, y);
 	super.setSize(x, y);
     }
+    
+    @Override
+    public void setEnabled(boolean on) {
+	htmlContent.setEnabled(on);
+    }
 
     int position(LTextArea area, Dimension size, int y) {
 	if (area.isVisible()) {

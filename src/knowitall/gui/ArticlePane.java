@@ -47,4 +47,8 @@ public class ArticlePane extends LPanel {
 	Style s = ss.getStyle("a");
 	s.addAttribute(StyleConstants.Foreground, c);
     }
+    
+    public void setSelectable(boolean on) {
+	htmlContent.setEnabled(false);
+    }
 }

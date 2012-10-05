@@ -7,6 +7,7 @@ package knowitall.gui;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 import knowitall.KnowItAll;
 import lev.gui.LButton;
@@ -68,15 +69,19 @@ public class SettingsFrame extends LFrame {
 
 	filters = new SettingsFilters(getSize());
 	display = new SettingsDisplay(getSize());
+	JScrollPane displayScroll = new JScrollPane(display);
+	displayScroll.setVisible(true);
+	displayScroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
 	tabs = new JTabbedPane();
-	tabs.setSize(getSize());
+	tabs.setSize(getSize().width - 3, getSize().height - 10);
 	tabs.setBackground(Color.GRAY);
 	tabs.addTab("General", filters);
-	tabs.addTab("Colors", display);
+	tabs.addTab("Colors", displayScroll);
 	getContentPane().add(tabs);
 
 	init = true;
+	
     }
 
     void accept() {

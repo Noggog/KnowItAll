@@ -34,6 +34,7 @@ public class SettingsDisplay extends SettingsPanel {
 
     public SettingsDisplay (Dimension size) {
 	setSize(size);
+	setPreferredSize(new Dimension(size.width - 24, size.height));
 
 	last.x = 200;
 	last.y += 10;
