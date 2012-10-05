@@ -30,11 +30,6 @@ public class ArticleTooltip extends ArticlePane {
 	setVisible(false);
     }
 
-    public final void setBodyFontColor(Color c) {
-	Style s = ss.getStyle("body");
-	s.addAttribute(StyleConstants.Foreground, c);
-    }
-
     public void load(Article a) {
 	setVisible(false);
 	if (a != null) {

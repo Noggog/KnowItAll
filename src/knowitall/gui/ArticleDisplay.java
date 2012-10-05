@@ -7,16 +7,10 @@ package knowitall.gui;
 import java.awt.*;
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
-import javax.swing.text.Style;
-import javax.swing.text.StyleConstants;
-import javax.swing.text.html.StyleSheet;
 import knowitall.Article;
 import knowitall.KIASave.Settings;
 import knowitall.KnowItAll;
-import lev.gui.LHTMLPane;
-import lev.gui.LPanel;
 import lev.gui.LTextArea;
-import lev.gui.resources.LFonts;
 
 /**
  *
@@ -39,11 +33,6 @@ public class ArticleDisplay extends ArticlePane {
 	setBodyFontColor(KnowItAll.save.getColor(Settings.ArticleFont));
 	htmlContent.addHyperLinkListener(listener);
 	add(htmlContent);
-    }
-
-    public final void setBodyFontColor(Color c) {
-	Style s = ss.getStyle("body");
-	s.addAttribute(StyleConstants.Foreground, c);
     }
 
     public void load(Article a) {

@@ -17,7 +17,7 @@ import lev.gui.LSlider;
  *
  * @author Justin Swanson
  */
-public class SettingsColors extends SettingsPanel {
+public class SettingsDisplay extends SettingsPanel {
 
     LColorSetting articleBackground;
     LColorSetting articleText;
@@ -32,7 +32,7 @@ public class SettingsColors extends SettingsPanel {
     ArticleDisplay article;
     ArticleTooltip tooltip;
 
-    public SettingsColors (Dimension size) {
+    public SettingsDisplay (Dimension size) {
 	setSize(size);
 
 	last.x = 200;
@@ -65,8 +65,10 @@ public class SettingsColors extends SettingsPanel {
 
 	    @Override
 	    public void run() {
-		article.setBodyFontColor(articleText.getValue());
+		article.setLinkFontColor(linkText.getValue());
+		tooltip.setLinkFontColor(linkText.getValue());
 		article.repaint();
+		tooltip.repaint();
 	    }
 	});
 	place(linkText);
@@ -109,15 +111,15 @@ public class SettingsColors extends SettingsPanel {
 	add(example);
 
 	article = new ArticleDisplay();
-	article.load(Database.getArticle());
-	article.setSize(600, 150);
+	article.load(Database.getDisplayArticle());
+	article.setSize(400, 150);
 	article.setLocation(20, 20);
 	article.setVisible(true);
 	example.add(article);
 
 	tooltip = new ArticleTooltip();
-	tooltip.load(Database.getArticle());
-	tooltip.setSize(600, 150);
+	tooltip.load(Database.getDisplayArticle());
+	tooltip.setSize(400, 150);
 	tooltip.setLocation(20, article.getY() + article.getHeight() + 20);
 	tooltip.setVisible(true);
 	example.add(tooltip);

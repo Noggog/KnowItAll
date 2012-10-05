@@ -39,7 +39,7 @@ public class Database {
 	reloadArticles(null);
     }
     
-    public static Article getArticle() {
+    public static Article getDisplayArticle() {
 	return articles.values().toArray(new Article[0])[0];
     }
 

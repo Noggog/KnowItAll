@@ -47,6 +47,10 @@ public class LinkString {
 	    }
 	}
     }
+    
+    public boolean hasLink() {
+	return content.size() > 1;
+    }
 
     public abstract class LSObject {
     }

@@ -134,6 +134,13 @@ public class GUI {
     public static void setTooltipFontColor(Color c) {
 	tooltip.setBodyFontColor(c);
     }
+    
+    public static void setLinkFontColor(Color c) {
+	tooltip.setLinkFontColor(c);
+	for (ArticleDisplay a : contentPanel.displays) {
+	    a.setLinkFontColor(c);
+	}
+    }
 
     public static void hideTooltip() {
 	SwingUtilities.invokeLater(new Runnable() {

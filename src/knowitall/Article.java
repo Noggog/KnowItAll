@@ -147,7 +147,7 @@ public class Article implements Comparable {
     public String getShort() {
 	return shortContent.toString();
     }
-
+    
     public Map<String, LinkString> getSubcategories() {
 	return subCategories;
     }

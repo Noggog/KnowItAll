@@ -22,7 +22,7 @@ public class SettingsFrame extends LFrame {
     LButton cancel;
     LButton accept;
     SettingsFilters filters;
-    SettingsColors colors;
+    SettingsDisplay display;
     boolean init = false;
 
     public SettingsFrame() {
@@ -67,20 +67,21 @@ public class SettingsFrame extends LFrame {
 	getContentPane().add(cancel);
 
 	filters = new SettingsFilters(getSize());
-	colors = new SettingsColors(getSize());
+	display = new SettingsDisplay(getSize());
 
 	tabs = new JTabbedPane();
 	tabs.setSize(getSize());
 	tabs.setBackground(Color.GRAY);
 	tabs.addTab("General", filters);
-	tabs.addTab("Colors", colors);
+	tabs.addTab("Colors", display);
 	getContentPane().add(tabs);
 
 	init = true;
     }
 
     void accept() {
-	GUI.setArticleFontColor(colors.articleText.getValue());
-	GUI.setTooltipFontColor(colors.tooltipText.getValue());
+	GUI.setArticleFontColor(display.articleText.getValue());
+	GUI.setTooltipFontColor(display.tooltipText.getValue());
+	GUI.setLinkFontColor(display.linkText.getValue());
     }
 }

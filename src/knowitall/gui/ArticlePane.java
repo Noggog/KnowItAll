@@ -4,8 +4,13 @@
  */
 package knowitall.gui;
 
+import java.awt.Color;
 import java.awt.Font;
+import javax.swing.text.Style;
+import javax.swing.text.StyleConstants;
 import javax.swing.text.html.StyleSheet;
+import knowitall.KIASave.Settings;
+import knowitall.KnowItAll;
 import lev.gui.LHTMLPane;
 import lev.gui.LPanel;
 import lev.gui.resources.LFonts;
@@ -25,9 +30,21 @@ public class ArticlePane extends LPanel {
 	htmlContent = new LHTMLPane();
 	htmlContent.setVisible(true);
 	ss = htmlContent.getStyleSheet();
+	ss.addRule("a {}");
+	setLinkFontColor(KnowItAll.save.getColor(Settings.LinkFont));
 	htmlContent.honorDisplayProperties();
 	htmlContent.setFont(articleFont);
 	htmlContent.setOpaque(false);
 	htmlContent.transparentBackground();
+    }
+
+    public final void setBodyFontColor(Color c) {
+	Style s = ss.getStyle("body");
+	s.addAttribute(StyleConstants.Foreground, c);
+    }
+    
+    public final void setLinkFontColor(Color c) {
+	Style s = ss.getStyle("a");
+	s.addAttribute(StyleConstants.Foreground, c);
     }
 }
