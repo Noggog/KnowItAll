@@ -130,7 +130,7 @@ public class SettingsDisplay extends SettingsPanel {
 	});
 	place(tooltipLinkText);
 	
-	last.y += 40;
+	last.y += 45;
 	
 	treeLabel = new LLabel("Tree", headerFont, Color.BLACK);
 	place(treeLabel);
@@ -190,10 +190,9 @@ public class SettingsDisplay extends SettingsPanel {
 	
 	tree = new LTree();
 	tree.setRoot(Database.getTree());
-//	tree.expand(true);
-	tree.setLocation(20, 0);
-//	tree.setSize(400, 135);
-	tree.setVisible(true);
-	example.add(tooltip);
+	tree.expand(true);
+	tree.setLocation(20, tooltip.getY() + tooltip.getHeight() + 20);
+	tree.setSize(400, 135);
+	example.add(tree);
     }
 }

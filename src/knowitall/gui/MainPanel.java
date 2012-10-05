@@ -10,10 +10,7 @@ import java.awt.event.MouseListener;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.io.IOException;
-import javax.swing.BorderFactory;
-import javax.swing.JSplitPane;
-import javax.swing.ScrollPaneConstants;
-import javax.swing.SwingUtilities;
+import javax.swing.*;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.TreeSelectionModel;
@@ -114,7 +111,7 @@ public class MainPanel extends LPanel {
 	articleScroll = new LScrollPane(articleContent);
 	articleScroll.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
-	split = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, tree, articleScroll);
+	split = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, treeScroll, articleScroll);
 	split.setOpaque(false);
 	split.setLocation(0, search.getY() + search.getHeight() + BackTab.height);
 	split.setBorder(BorderFactory.createEmptyBorder());

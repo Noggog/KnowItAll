@@ -13,6 +13,7 @@ import java.util.Collection;
 import javax.swing.JFileChooser;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
+import javax.swing.tree.DefaultTreeModel;
 import knowitall.Article;
 import knowitall.Database;
 import knowitall.KIASave;
@@ -156,12 +157,13 @@ public class GUI {
     }
 
     public static void regenerateTree() {
-	tree.setRoot(Database.getTree());
-	if (KnowItAll.save.getBool(Settings.MergeSources)) {
-	    tree.expandToDepth(1);
-	} else {
-	    tree.expandToDepth(2);
-	}
+	tree.setModel(new DefaultTreeModel(Database.getTree()));
+//	tree.setRoot(Database.getTree());
+//	if (KnowItAll.save.getBool(Settings.MergeSources)) {
+//	    tree.expandToDepth(1);
+//	} else {
+//	    tree.expandToDepth(2);
+//	}
     }
 
     public static int dividerLocation() {
