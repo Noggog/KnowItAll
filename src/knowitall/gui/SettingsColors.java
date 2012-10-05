@@ -27,10 +27,10 @@ public class SettingsColors extends SettingsPanel {
 
     public SettingsColors (Dimension size) {
 	setSize(size);
-	
+
 	last.x = 200;
 	last.y += 10;
-	align(Align.Center); 
+	align(Align.Center);
 
 	articleBackground = color("Article Background", Settings.ArticleBack);
 	articleBackground.addActionListener(new Runnable(){
@@ -41,12 +41,13 @@ public class SettingsColors extends SettingsPanel {
 	    }
 	});
 	place(articleBackground);
-	
+
 	articleText = color("Article Text", Settings.ArticleFont);
 	articleText.addActionListener(new Runnable(){
 
 	    @Override
 	    public void run() {
+		article.setBodyFontColor(articleText.getValue());
 		article.repaint();
 	    }
 	});
@@ -61,12 +62,12 @@ public class SettingsColors extends SettingsPanel {
 	    }
 	});
 	place(articleAlpha);
-	
+
 	example = new LImagePane(GUI.getBackground());
 	example.setSize(350, getHeight());
 	example.setLocation(getWidth() - example.getWidth(), 0);
 	add(example);
-	
+
 	article = new ArticleDisplay();
 	article.load(Database.getArticle());
 	article.setSize(600, 150);

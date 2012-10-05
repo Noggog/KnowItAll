@@ -32,7 +32,7 @@ public class SettingsFrame extends LFrame {
     public void open() {
 	if (!init) {
 	    init();
-	}   
+	}
 	KnowItAll.save.saveToCancelSave();
 	setLocation(centerScreen());
 	setVisible(true);
@@ -48,6 +48,7 @@ public class SettingsFrame extends LFrame {
 
 	    @Override
 	    public void actionPerformed(ActionEvent e) {
+		accept();
 		setVisible(false);
 	    }
 	});
@@ -76,5 +77,9 @@ public class SettingsFrame extends LFrame {
 	getContentPane().add(tabs);
 
 	init = true;
+    }
+
+    void accept() {
+	GUI.setArticleFontColor(colors.articleText.getValue());
     }
 }

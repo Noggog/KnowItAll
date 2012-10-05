@@ -4,6 +4,7 @@
  */
 package knowitall.gui;
 
+import java.awt.Color;
 import java.awt.MouseInfo;
 import java.awt.Point;
 import java.awt.image.BufferedImage;
@@ -124,6 +125,12 @@ public class GUI {
 	});
     }
 
+    public static void setArticleFontColor(Color c) {
+	for (ArticleDisplay a : contentPanel.displays) {
+	    a.setBodyFontColor(c);
+	}
+    }
+
     public static void hideTooltip() {
 	SwingUtilities.invokeLater(new Runnable() {
 	    @Override
@@ -194,7 +201,7 @@ public class GUI {
 	};
 	backgroundLoad.execute();
     }
-    
+
     public static BufferedImage getBackground() {
 	return frame.getBackgroundPane().getImage();
     }

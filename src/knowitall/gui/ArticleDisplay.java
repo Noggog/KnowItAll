@@ -5,8 +5,11 @@
 package knowitall.gui;
 
 import java.awt.*;
+import java.util.Enumeration;
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
+import javax.swing.text.Style;
+import javax.swing.text.StyleConstants;
 import javax.swing.text.html.StyleSheet;
 import knowitall.Article;
 import knowitall.KIASave.Settings;
@@ -24,6 +27,7 @@ public class ArticleDisplay extends LPanel {
 
     Article article;
     LHTMLPane htmlContent;
+    StyleSheet ss;
     static LinkListener listener = new LinkListener();
     static Font articleFont = LFonts.MyriadPro(16);
 
@@ -31,19 +35,25 @@ public class ArticleDisplay extends LPanel {
 	htmlContent = new LHTMLPane();
 	htmlContent.setLocation(0, Spacings.article);
 	htmlContent.setVisible(true);
-	StyleSheet ss = htmlContent.getStyleSheet();
+	ss = htmlContent.getStyleSheet();
 	ss.addRule("body {"
 		+ "margin-top: 0px;"
 		+ "margin-right: 10px;"
 		+ "margin-bottom: 15px;"
 		+ "margin-left: 10px;}");
 	ss.addRule("table { border-style: hidden; }");
+	setBodyFontColor(KnowItAll.save.getColor(Settings.ArticleFont));
 	htmlContent.addHyperLinkListener(listener);
 	htmlContent.honorDisplayProperties();
 	htmlContent.setFont(articleFont);
 	htmlContent.setOpaque(false);
 	htmlContent.transparentBackground();
 	add(htmlContent);
+    }
+
+    public final void setBodyFontColor(Color c) {
+	Style s = ss.getStyle("body");
+	s.addAttribute(StyleConstants.Foreground, c);
     }
 
     public void load(Article a) {
@@ -79,7 +89,7 @@ public class ArticleDisplay extends LPanel {
 	    super.setSize(1, 1);
 	}
     }
-    
+
     @Override
     public void setSize(int x, int y) {
 	htmlContent.setSize(x, y);
