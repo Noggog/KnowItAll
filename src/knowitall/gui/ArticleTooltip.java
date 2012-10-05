@@ -4,43 +4,41 @@
  */
 package knowitall.gui;
 
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Rectangle;
-import java.awt.RenderingHints;
+import java.awt.*;
 import java.awt.geom.Ellipse2D;
+import javax.swing.text.Style;
+import javax.swing.text.StyleConstants;
 import knowitall.Article;
-import lev.gui.LHTMLPane;
-import lev.gui.LPanel;
-import lev.gui.resources.LFonts;
+import knowitall.KIASave.Settings;
+import knowitall.KnowItAll;
 
 /**
  *
  * @author Justin Swanson
  */
-public class ArticleTooltip extends LPanel {
+public class ArticleTooltip extends ArticlePane {
 
-    LHTMLPane pane;
     private static Rectangle h = new Rectangle(0, 0, 5000, 1);
     private final static int fadeHeight = 15;
     private static Ellipse2D.Float circle = new Ellipse2D.Float(0, 0, 2 * fadeHeight, 2 * fadeHeight);
 
     ArticleTooltip() {
-	pane = new LHTMLPane();
-	pane.setLocation(Spacings.tooltip, Spacings.tooltip);
-	pane.honorDisplayProperties();
-	pane.setFont(LFonts.MyriadPro(16));
-	pane.setOpaque(false);
-	add(pane);
+	ss.addRule("body {}");
+	htmlContent.setLocation(Spacings.tooltip, Spacings.tooltip);
+	setBodyFontColor(KnowItAll.save.getColor(Settings.ToolFont));
+	add(htmlContent);
 	setVisible(false);
+    }
+
+    public final void setBodyFontColor(Color c) {
+	Style s = ss.getStyle("body");
+	s.addAttribute(StyleConstants.Foreground, c);
     }
 
     public void load(Article a) {
 	setVisible(false);
 	if (a != null) {
-	    pane.setText(a.getHTML(false));
+	    htmlContent.setText(a.getHTML(false));
 	}
     }
 
@@ -56,16 +54,21 @@ public class ArticleTooltip extends LPanel {
 
     public void setSize(int x) {
 	int margin = 2 * Spacings.tooltip;
-	pane.compactContent(x - margin);
-	pane.setSize(pane.getWidth(), pane.getHeight() + 5);
-	super.setSize(pane.getWidth() + margin, pane.getBottom() + Spacings.tooltip + 5);
+	htmlContent.compactContent(x - margin);
+	htmlContent.setSize(htmlContent.getWidth(), htmlContent.getHeight() + 5);
+	super.setSize(htmlContent.getWidth() + margin, htmlContent.getBottom() + Spacings.tooltip + 5);
     }
 
     @Override
     public void paint(Graphics g) {
 	Graphics2D g2d = (Graphics2D) g.create();
 	g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-	g2d.setPaint(Color.WHITE);
+	g2d.setPaint(KnowItAll.save.getColor(Settings.ToolBack));
+	Composite old = g2d.getComposite();
+	float trans = (float)(KnowItAll.save.getInt(Settings.ToolTrans) / 100.0);
+	if (trans < 1) {
+	    g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, trans));
+	}
 	int doubleFade = 2 * fadeHeight;
 	// Top left circle
 	circle.x = 0;
@@ -93,6 +96,7 @@ public class ArticleTooltip extends LPanel {
 	h.x = 0;
 	h.y = fadeHeight;
 	g2d.fill(h);
+	g2d.setComposite(old);
 	super.paint(g2d);
 	g2d.dispose();
     }

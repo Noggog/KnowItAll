@@ -130,6 +130,10 @@ public class GUI {
 	    a.setBodyFontColor(c);
 	}
     }
+    
+    public static void setTooltipFontColor(Color c) {
+	tooltip.setBodyFontColor(c);
+    }
 
     public static void hideTooltip() {
 	SwingUtilities.invokeLater(new Runnable() {

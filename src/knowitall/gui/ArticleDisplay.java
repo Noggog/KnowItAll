@@ -5,7 +5,6 @@
 package knowitall.gui;
 
 import java.awt.*;
-import java.util.Enumeration;
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
 import javax.swing.text.Style;
@@ -23,19 +22,14 @@ import lev.gui.resources.LFonts;
  *
  * @author Justin Swanson
  */
-public class ArticleDisplay extends LPanel {
+public class ArticleDisplay extends ArticlePane {
 
     Article article;
-    LHTMLPane htmlContent;
-    StyleSheet ss;
     static LinkListener listener = new LinkListener();
-    static Font articleFont = LFonts.MyriadPro(16);
 
     public ArticleDisplay() {
-	htmlContent = new LHTMLPane();
+	super();
 	htmlContent.setLocation(0, Spacings.article);
-	htmlContent.setVisible(true);
-	ss = htmlContent.getStyleSheet();
 	ss.addRule("body {"
 		+ "margin-top: 0px;"
 		+ "margin-right: 10px;"
@@ -44,10 +38,6 @@ public class ArticleDisplay extends LPanel {
 	ss.addRule("table { border-style: hidden; }");
 	setBodyFontColor(KnowItAll.save.getColor(Settings.ArticleFont));
 	htmlContent.addHyperLinkListener(listener);
-	htmlContent.honorDisplayProperties();
-	htmlContent.setFont(articleFont);
-	htmlContent.setOpaque(false);
-	htmlContent.transparentBackground();
 	add(htmlContent);
     }
 
