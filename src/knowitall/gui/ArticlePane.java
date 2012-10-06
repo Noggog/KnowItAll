@@ -19,7 +19,7 @@ import lev.gui.resources.LFonts;
  *
  * @author Justin Swanson
  */
-public class ArticlePane extends LPanel {
+public abstract class ArticlePane extends LPanel {
     
     LHTMLPane htmlContent;
     StyleSheet ss;
@@ -46,6 +46,10 @@ public class ArticlePane extends LPanel {
 	Style s = ss.getStyle("a");
 	s.addAttribute(StyleConstants.Foreground, c);
     }
+    
+    public abstract void fetchBodyFontColor ();
+    
+    public abstract void fetchLinkFontColor ();
     
     public void setSelectable(boolean on) {
 	htmlContent.setEnabled(false);

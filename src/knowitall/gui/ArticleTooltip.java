@@ -98,4 +98,14 @@ public class ArticleTooltip extends ArticlePane {
 	super.paint(g2d);
 	g2d.dispose();
     }
+    
+    @Override
+    public void fetchBodyFontColor()  {
+	setBodyFontColor(KnowItAll.save.getColor(Settings.ToolFont));
+    }
+
+    @Override
+    public void fetchLinkFontColor() {
+	setLinkFontColor(KnowItAll.save.getColor(Settings.ToolLinkFont));
+    }
 }

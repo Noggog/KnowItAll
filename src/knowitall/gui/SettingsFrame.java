@@ -91,11 +91,15 @@ public class SettingsFrame extends LFrame {
 	    @Override
 	    public void mouseEntered(MouseEvent arg0) {
 		KnowItAll.save.peekDefaults();
+		getSelectedPanel().updateColors();
+		tabs.repaint();
 	    }
 
 	    @Override
 	    public void mouseExited(MouseEvent arg0) {
 		KnowItAll.save.clearPeek();
+		getSelectedPanel().updateColors();
+		tabs.repaint();
 	    }
 	});
 
@@ -126,11 +130,7 @@ public class SettingsFrame extends LFrame {
     }
 
     void accept() {
-	GUI.setArticleFontColor(display.articleText.getValue());
-	GUI.setTooltipFontColor(display.tooltipText.getValue());
-	GUI.setArticleLinkFontColor(display.articleLinkText.getValue());
-	GUI.setTooltipLinkFontColor(display.tooltipLinkText.getValue());
-	GUI.tree.grabColors();
+	GUI.fetchSetColors();
 	GUI.tree.repaint();
     }
 
@@ -139,5 +139,9 @@ public class SettingsFrame extends LFrame {
 	super.setVisible(t);
 	filters.displayScroll.scrollToTop();
 	display.displayScroll.scrollToTop();
+    }
+    
+    SettingsPanel getSelectedPanel() {
+	return (SettingsPanel) tabs.getSelectedComponent();
     }
 }

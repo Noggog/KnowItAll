@@ -145,6 +145,14 @@ public class GUI {
     public static void setTooltipLinkFontColor (Color c) {
 	tooltip.setLinkFontColor(c);
     }
+    
+    public static void fetchSetColors () {
+	GUI.setArticleFontColor(KnowItAll.save.getColor(Settings.ArticleFont));
+	GUI.setTooltipFontColor(KnowItAll.save.getColor(Settings.ToolFont));
+	GUI.setArticleLinkFontColor(KnowItAll.save.getColor(Settings.ArticleLinkFont));
+	GUI.setTooltipLinkFontColor(KnowItAll.save.getColor(Settings.ToolLinkFont));
+	GUI.tree.grabColors();
+    }
 
     public static void hideTooltip() {
 	SwingUtilities.invokeLater(new Runnable() {

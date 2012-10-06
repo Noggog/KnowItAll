@@ -75,4 +75,8 @@ public class SettingsPanel extends LPanel {
 	super.setPreferredSize(size);
 	pane.setPreferredSize(size);
     }
+
+    public void updateColors() {
+	
+    }
 }

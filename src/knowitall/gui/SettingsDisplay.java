@@ -5,11 +5,7 @@
 package knowitall.gui;
 
 import java.awt.Color;
-import java.awt.Component;
 import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import javax.swing.JScrollPane;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import knowitall.Database;
@@ -237,5 +233,13 @@ public class SettingsDisplay extends SettingsPanel {
 	pane.setPreferredSize(pane.getSize());
 	example.setSize(350, pane.getHeight());
 
+    }
+    
+    @Override
+    public void updateColors() {
+	article.fetchBodyFontColor();
+	article.fetchLinkFontColor();
+	tooltip.fetchBodyFontColor();
+	tooltip.fetchLinkFontColor();
     }
 }

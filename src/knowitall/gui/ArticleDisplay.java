@@ -99,6 +99,16 @@ public class ArticleDisplay extends ArticlePane {
 	return y;
     }
 
+    @Override
+    public void fetchBodyFontColor()  {
+	setBodyFontColor(KnowItAll.save.getColor(Settings.ArticleFont));
+    }
+
+    @Override
+    public void fetchLinkFontColor() {
+	setLinkFontColor(KnowItAll.save.getColor(Settings.ArticleLinkFont));
+    }
+
     static class LinkListener implements HyperlinkListener {
 
 	@Override
@@ -115,4 +125,5 @@ public class ArticleDisplay extends ArticlePane {
 	    }
 	}
     }
+    
 }
