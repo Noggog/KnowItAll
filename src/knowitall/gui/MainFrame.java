@@ -48,6 +48,7 @@ public class MainFrame extends LFrame {
 	add(topPanel, 0);
 
 	menu = new KIAMenu();
+	GUI.menu = menu;
 	setJMenuBar(menu);
 
 	remeasure();

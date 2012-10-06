@@ -17,11 +17,16 @@ import knowitall.KnowItAll;
  */
 public class KIAMenu extends JMenuBar {
 
+    JMenu file;
+    JMenuItem open;
+    JMenuItem settings;
+    JMenuItem quit;
+    
     KIAMenu () {
-	JMenu file = new JMenu("File");
+	file = new JMenu("File");
 	add(file);
 
-	JMenuItem open = new JMenuItem("Open Package");
+	open = new JMenuItem("Open Package");
 	open.addActionListener(new ActionListener(){
 
 	    @Override
@@ -31,7 +36,7 @@ public class KIAMenu extends JMenuBar {
 	});
 	file.add(open);
 
-	JMenuItem settings = new JMenuItem("Settings");
+	settings = new JMenuItem("Settings");
 	settings.addActionListener(new ActionListener(){
 
 	    @Override
@@ -41,7 +46,7 @@ public class KIAMenu extends JMenuBar {
 	});
 	file.add(settings);
 
-	JMenuItem quit = new JMenuItem("Quit");
+	quit = new JMenuItem("Quit");
 	quit.addActionListener(new ActionListener(){
 
 	    @Override
@@ -51,7 +56,7 @@ public class KIAMenu extends JMenuBar {
 	});
 	file.add(quit);
 
-	JMenu view = new JMenu("View");
-	add(view);
+//	JMenu view = new JMenu("View");
+//	add(view);
     }
 }

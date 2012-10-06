@@ -34,6 +34,7 @@ public class GUI {
     static TopPanel topPanel;
     static ContentPanel contentPanel;
     static SearchBar search;
+    static KIAMenu menu;
     static BackTabManager backTabManager;
     static ArticleTooltip tooltip;
     static ArticleTree tree;
@@ -102,6 +103,7 @@ public class GUI {
 
 	// Bump tooltip on screen if it's off
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		if (tooltip.getY() + tooltip.getHeight() > mainPanel.getHeight()) {
@@ -118,6 +120,7 @@ public class GUI {
 	});
 	// Make dimmer and tooltip visible.
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		tooltip.setVisible(true);
@@ -131,22 +134,22 @@ public class GUI {
 	    a.setBodyFontColor(c);
 	}
     }
-    
+
     public static void setTooltipFontColor(Color c) {
 	tooltip.setBodyFontColor(c);
     }
-    
+
     public static void setArticleLinkFontColor(Color c) {
 	for (ArticleDisplay a : contentPanel.displays) {
 	    a.setLinkFontColor(c);
 	}
     }
-    
-    public static void setTooltipLinkFontColor (Color c) {
+
+    public static void setTooltipLinkFontColor(Color c) {
 	tooltip.setLinkFontColor(c);
     }
-    
-    public static void fetchSetColors () {
+
+    public static void fetchSetColors() {
 	GUI.setArticleFontColor(KnowItAll.save.getColor(Settings.ArticleFont));
 	GUI.setTooltipFontColor(KnowItAll.save.getColor(Settings.ToolFont));
 	GUI.setArticleLinkFontColor(KnowItAll.save.getColor(Settings.ArticleLinkFont));
@@ -156,6 +159,7 @@ public class GUI {
 
     public static void hideTooltip() {
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		tooltip.setVisible(false);
@@ -208,7 +212,7 @@ public class GUI {
 
     public static void openPackage(File p) {
 	KnowItAll.save.setStr(Settings.LastPackage, p.getPath());
-	Database.loadLooseFiles();
+	startLoading();
     }
 
     public static void openSettingsFrame() {
@@ -217,6 +221,7 @@ public class GUI {
 
     public static void setBackground(final File f) {
 	SwingWorker backgroundLoad = new SwingWorker() {
+
 	    @Override
 	    protected Object doInBackground() throws Exception {
 		frame.getBackgroundPane().setImage(f);
@@ -234,8 +239,13 @@ public class GUI {
 	File target = new File(KnowItAll.save.getStr(Settings.LastPackage));
 	if (!target.getPath().equals(".") && target.isDirectory()) {
 	    progressShow();
-	    Database.loadLooseFiles();
+	    startLoading();
 	}
+    }
+
+    public static void startLoading() {
+	menu.settings.setEnabled(false);
+	Database.loadLooseFiles();
     }
 
     public static void loaded() {
@@ -243,6 +253,7 @@ public class GUI {
 	GUI.updateContentDisplay();
 	mainPanel.setVisible(true);
 	progressHide();
+	menu.settings.setEnabled(true);
     }
 
     public static void progressHide() {
@@ -259,6 +270,7 @@ public class GUI {
 
     public static void progressSetMax(final int max) {
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		progressPane.reset();
@@ -269,6 +281,7 @@ public class GUI {
 
     public static void progressSetTitle(final String title) {
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		progressPane.setTitle(title);
@@ -278,6 +291,7 @@ public class GUI {
 
     public static void progressProcessed(final String title) {
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		progressPane.processed(title);
@@ -287,6 +301,7 @@ public class GUI {
 
     public static void progressIncrement() {
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		progressPane.increment();
@@ -296,6 +311,7 @@ public class GUI {
 
     public static void progressIncrement(final String title) {
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		progressPane.increment(title);
@@ -305,6 +321,7 @@ public class GUI {
 
     public static void progressSetValue(final int value) {
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		progressPane.setValue(value);
@@ -314,6 +331,7 @@ public class GUI {
 
     public static void progressSetValueRemaining(final int value) {
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		progressPane.setValue(progressPane.progress.getMaximum() - value);

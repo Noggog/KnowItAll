@@ -10,7 +10,10 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import knowitall.Database;
 import knowitall.KIASave.Settings;
-import lev.gui.*;
+import lev.gui.LColorSetting;
+import lev.gui.LImagePane;
+import lev.gui.LLabel;
+import lev.gui.LSlider;
 
 /**
  *
