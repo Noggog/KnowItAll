@@ -39,7 +39,7 @@ public class SettingsDisplay extends SettingsPanel {
     LSlider dimmerAlpha;
     ArticleDisplay article;
     ArticleTooltip tooltip;
-    LTree tree;
+    ArticleTree tree;
     Dimmer dimmer;
 
     public SettingsDisplay(Dimension size) {
@@ -241,5 +241,6 @@ public class SettingsDisplay extends SettingsPanel {
 	article.fetchLinkFontColor();
 	tooltip.fetchBodyFontColor();
 	tooltip.fetchLinkFontColor();
+	tree.fetchColors();
     }
 }

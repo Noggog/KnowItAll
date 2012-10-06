@@ -13,7 +13,10 @@ import java.awt.event.MouseListener;
 import javax.swing.BorderFactory;
 import javax.swing.JTabbedPane;
 import knowitall.KnowItAll;
-import lev.gui.*;
+import lev.gui.LButton;
+import lev.gui.LFrame;
+import lev.gui.LPanel;
+import lev.gui.LUserSetting;
 
 /**
  *
@@ -25,6 +28,7 @@ public class SettingsFrame extends LFrame {
     LButton cancel;
     LButton accept;
     LButton defaults;
+    LButton saved;
     SettingsFilters filters;
     SettingsDisplay display;
     boolean init = false;
@@ -74,8 +78,7 @@ public class SettingsFrame extends LFrame {
 
 	    @Override
 	    public void mouseClicked(MouseEvent arg0) {
-		SettingsPanel p = (SettingsPanel) tabs.getSelectedComponent();
-		for (LUserSetting s : p.settings) {
+		for (LUserSetting s : getSelectedPanel().settings) {
 		    KnowItAll.save.revertToDefault(s);
 		}
 	    }
@@ -102,6 +105,41 @@ public class SettingsFrame extends LFrame {
 		tabs.repaint();
 	    }
 	});
+	
+	saved = new LButton("Saved");
+	saved.setLocation(defaults.getRight() + 10, defaults.getY());
+	saved.addMouseListener(new MouseListener() {
+
+	    @Override
+	    public void mouseClicked(MouseEvent arg0) {
+		for (LUserSetting s : getSelectedPanel().settings) {
+		    KnowItAll.save.revertToSaved(s);
+		}
+	    }
+
+	    @Override
+	    public void mousePressed(MouseEvent arg0) {
+	    }
+
+	    @Override
+	    public void mouseReleased(MouseEvent arg0) {
+	    }
+
+	    @Override
+	    public void mouseEntered(MouseEvent arg0) {
+		KnowItAll.save.peekSaved();
+		getSelectedPanel().updateColors();
+		tabs.repaint();
+	    }
+
+	    @Override
+	    public void mouseExited(MouseEvent arg0) {
+		KnowItAll.save.clearPeek();
+		getSelectedPanel().updateColors();
+		tabs.repaint();
+	    }
+	});
+	
 
 	LPanel buttons = new LPanel();
 	buttons.setOpaque(true);
@@ -112,6 +150,7 @@ public class SettingsFrame extends LFrame {
 	buttons.add(cancel);
 	buttons.add(accept);
 	buttons.add(defaults);
+	buttons.add(saved);
 
 	int buttonHeight = 30;
 	Dimension realSize = new Dimension(getWidth() - 6, buttons.getY() - buttonHeight);

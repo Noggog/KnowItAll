@@ -20,11 +20,11 @@ public class ArticleTree extends LTree {
 
     ArticleTree() {
 	super();
-	grabColors();
+	fetchColors();
 	setOpaque(false);
     }
 
-    public final void grabColors() {
+    public final void fetchColors() {
 	setForeground(KnowItAll.save.getColor(Settings.TreeFont), false);
 	setForeground(KnowItAll.save.getColor(Settings.TreeFontSelected), true);
 	setBackground(KnowItAll.save.getColor(Settings.TreeBack), false);

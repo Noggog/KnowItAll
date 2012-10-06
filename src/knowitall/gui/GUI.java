@@ -151,7 +151,7 @@ public class GUI {
 	GUI.setTooltipFontColor(KnowItAll.save.getColor(Settings.ToolFont));
 	GUI.setArticleLinkFontColor(KnowItAll.save.getColor(Settings.ArticleLinkFont));
 	GUI.setTooltipLinkFontColor(KnowItAll.save.getColor(Settings.ToolLinkFont));
-	GUI.tree.grabColors();
+	GUI.tree.fetchColors();
     }
 
     public static void hideTooltip() {
