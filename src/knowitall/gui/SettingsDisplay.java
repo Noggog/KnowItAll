@@ -5,10 +5,13 @@
 package knowitall.gui;
 
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JScrollPane;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import javax.swing.tree.DefaultTreeCellRenderer;
 import knowitall.Database;
 import knowitall.KIASave.Settings;
 import lev.gui.*;
@@ -24,13 +27,11 @@ public class SettingsDisplay extends SettingsPanel {
     LColorSetting articleText;
     LColorSetting articleLinkText;
     LSlider articleAlpha;
-    
     LLabel tooltips;
     LColorSetting tooltipBackground;
     LColorSetting tooltipText;
     LColorSetting tooltipLinkText;
     LSlider tooltipAlpha;
-    
     LLabel treeLabel;
     LColorSetting treeBackground;
     LColorSetting treeBackgroundSel;
@@ -38,20 +39,17 @@ public class SettingsDisplay extends SettingsPanel {
     LColorSetting treeTextSel;
     LSlider treeAlpha;
     LImagePane example;
-    
     LLabel dimmerLabel;
     LSlider dimmerAlpha;
-    
     ArticleDisplay article;
     ArticleTooltip tooltip;
     LTree tree;
     Dimmer dimmer;
 
     public SettingsDisplay(Dimension size) {
-	setSize(size);
-	setPreferredSize(new Dimension(size.width - 21, size.height));
+	super(size);
 
-	last.x = 200;
+	last.x = 160;
 	last.y += 15;
 	align(Align.Center);
 
@@ -60,7 +58,6 @@ public class SettingsDisplay extends SettingsPanel {
 
 	articleBackground = color("Background", Settings.ArticleBack);
 	articleBackground.addActionListener(new Runnable() {
-
 	    @Override
 	    public void run() {
 		article.repaint();
@@ -70,7 +67,6 @@ public class SettingsDisplay extends SettingsPanel {
 
 	articleText = color("Text", Settings.ArticleFont);
 	articleText.addActionListener(new Runnable() {
-
 	    @Override
 	    public void run() {
 		article.setBodyFontColor(articleText.getValue());
@@ -81,7 +77,6 @@ public class SettingsDisplay extends SettingsPanel {
 
 	articleLinkText = color("Links", Settings.ArticleLinkFont);
 	articleLinkText.addActionListener(new Runnable() {
-
 	    @Override
 	    public void run() {
 		article.setLinkFontColor(articleLinkText.getValue());
@@ -92,7 +87,6 @@ public class SettingsDisplay extends SettingsPanel {
 
 	articleAlpha = slider("Transparency", Settings.ArticleTrans, 0, 100);
 	articleAlpha.addChangeListener(new ChangeListener() {
-
 	    @Override
 	    public void stateChanged(ChangeEvent e) {
 		article.repaint();
@@ -107,7 +101,6 @@ public class SettingsDisplay extends SettingsPanel {
 
 	tooltipBackground = color("Background", Settings.ToolBack);
 	tooltipBackground.addActionListener(new Runnable() {
-
 	    @Override
 	    public void run() {
 		tooltip.repaint();
@@ -117,7 +110,6 @@ public class SettingsDisplay extends SettingsPanel {
 
 	tooltipText = color("Text", Settings.ToolFont);
 	tooltipText.addActionListener(new Runnable() {
-
 	    @Override
 	    public void run() {
 		tooltip.setBodyFontColor(tooltipText.getValue());
@@ -128,7 +120,6 @@ public class SettingsDisplay extends SettingsPanel {
 
 	tooltipLinkText = color("Link Text", Settings.ToolLinkFont);
 	tooltipLinkText.addActionListener(new Runnable() {
-
 	    @Override
 	    public void run() {
 		tooltip.setLinkFontColor(tooltipLinkText.getValue());
@@ -144,7 +135,6 @@ public class SettingsDisplay extends SettingsPanel {
 
 	treeBackground = color("Background", Settings.TreeBack);
 	treeBackground.addActionListener(new Runnable() {
-
 	    @Override
 	    public void run() {
 		tree.setBackground(treeBackground.getValue(), false);
@@ -166,7 +156,6 @@ public class SettingsDisplay extends SettingsPanel {
 
 	treeText = color("Text", Settings.TreeFont);
 	treeText.addActionListener(new Runnable() {
-
 	    @Override
 	    public void run() {
 		tree.setForeground(treeText.getValue(), false);
@@ -177,7 +166,6 @@ public class SettingsDisplay extends SettingsPanel {
 
 	treeTextSel = color("Text Selected", Settings.TreeFontSelected);
 	treeTextSel.addActionListener(new Runnable() {
-
 	    @Override
 	    public void run() {
 		tree.setForeground(treeTextSel.getValue(), true);
@@ -188,22 +176,20 @@ public class SettingsDisplay extends SettingsPanel {
 
 	treeAlpha = slider("Transparency", Settings.TreeTrans, 0, 100);
 	treeAlpha.addChangeListener(new ChangeListener() {
-
 	    @Override
 	    public void stateChanged(ChangeEvent e) {
 		tree.repaint();
 	    }
 	});
 	place(treeAlpha);
-	
+
 	last.y += 45;
-	
+
 	dimmerLabel = new LLabel("Dimmer", headerFont, Color.BLACK);
 	place(dimmerLabel);
-	
+
 	dimmerAlpha = slider("Transparency", Settings.DimmerTrans, 0, 100);
 	dimmerAlpha.addChangeListener(new ChangeListener() {
-
 	    @Override
 	    public void stateChanged(ChangeEvent e) {
 		dimmer.setVisibleOverride(false);
@@ -217,7 +203,7 @@ public class SettingsDisplay extends SettingsPanel {
 	example = new LImagePane(GUI.getBackground());
 	example.setSize(350, getHeight());
 	example.setLocation(getWidth() - example.getWidth(), 0);
-	add(example);
+	pane.add(example);
 
 	article = new ArticleDisplay();
 	article.load(Database.getDisplayArticle());
@@ -238,17 +224,18 @@ public class SettingsDisplay extends SettingsPanel {
 	tree.setRoot(Database.getTree());
 	tree.expand(true);
 	tree.setLocation(20, tooltip.getY() + tooltip.getHeight() + 20);
-	tree.setSize(400, 135);
+	tree.setSize(400, 165);
 	example.add(tree);
-	
+
 	dimmer = new Dimmer();
 	dimmer.setLocation(0, tree.getY() + tree.getHeight() + 20);
 	dimmer.setSize(400, 100);
 	dimmer.setVisibleOverride(true);
 	example.add(dimmer);
-	
-	setSize(getWidth(), last.y + 20);
-	setPreferredSize(getSize());
-	example.setSize(350, getHeight());
+
+	pane.setSize(getWidth(), last.y + 20);
+	pane.setPreferredSize(pane.getSize());
+	example.setSize(350, pane.getHeight());
+
     }
 }

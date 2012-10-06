@@ -28,7 +28,7 @@ public class SettingsFilters extends SettingsPanel {
     LCheckBox shortenGrids;
 
     public SettingsFilters(Dimension size) {
-	setSize(size);
+	super(size);
 
 	Rectangle helpA = new Rectangle(250, 0, 350, size.height);
 	help = new LHelpPanel(helpA, LFonts.MyriadProBold(25), Color.BLACK, Color.DARK_GRAY, LImages.arrow(true, true), 0);
@@ -38,7 +38,7 @@ public class SettingsFilters extends SettingsPanel {
 
 	last.x = 200;
 	last.y += 10;
-	align(Align.Center); 
+	align(Align.Center);
 
 	openLastPackage = cBox("Load On Startup", Settings.OpenLastOnStartup);
 	mergeSources = cBox("Merge Sources", Settings.MergeSources);

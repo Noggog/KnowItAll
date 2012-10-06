@@ -5,16 +5,15 @@
 package knowitall.gui;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import javax.swing.BorderFactory;
-import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 import knowitall.KnowItAll;
-import lev.gui.LButton;
-import lev.gui.LFrame;
-import lev.gui.LPanel;
-import lev.gui.LScrollPane;
+import lev.gui.*;
 
 /**
  *
@@ -25,6 +24,7 @@ public class SettingsFrame extends LFrame {
     JTabbedPane tabs;
     LButton cancel;
     LButton accept;
+    LButton defaults;
     SettingsFilters filters;
     SettingsDisplay display;
     boolean init = false;
@@ -48,7 +48,7 @@ public class SettingsFrame extends LFrame {
 
 	accept = new LButton("Accept");
 	accept.setLocation(getRealWidth() - 10 - accept.getWidth(), 6);
-	accept.addActionListener(new ActionListener(){
+	accept.addActionListener(new ActionListener() {
 
 	    @Override
 	    public void actionPerformed(ActionEvent e) {
@@ -56,15 +56,46 @@ public class SettingsFrame extends LFrame {
 		setVisible(false);
 	    }
 	});
-	
+
 	cancel = new LButton("Cancel");
 	cancel.setLocation(accept.getX() - cancel.getWidth() - 10, accept.getY());
-	cancel.addActionListener(new ActionListener(){
+	cancel.addActionListener(new ActionListener() {
 
 	    @Override
 	    public void actionPerformed(ActionEvent e) {
 		setVisible(false);
 		KnowItAll.save.revertToCancel();
+	    }
+	});
+
+	defaults = new LButton("Defaults");
+	defaults.setLocation(20, 6);
+	defaults.addMouseListener(new MouseListener() {
+
+	    @Override
+	    public void mouseClicked(MouseEvent arg0) {
+		SettingsPanel p = (SettingsPanel) tabs.getSelectedComponent();
+		for (LUserSetting s : p.settings) {
+		    KnowItAll.save.revertToDefault(s);
+		}
+	    }
+
+	    @Override
+	    public void mousePressed(MouseEvent arg0) {
+	    }
+
+	    @Override
+	    public void mouseReleased(MouseEvent arg0) {
+	    }
+
+	    @Override
+	    public void mouseEntered(MouseEvent arg0) {
+		KnowItAll.save.peekDefaults();
+	    }
+
+	    @Override
+	    public void mouseExited(MouseEvent arg0) {
+		KnowItAll.save.clearPeek();
 	    }
 	});
 
@@ -76,17 +107,19 @@ public class SettingsFrame extends LFrame {
 	getContentPane().add(buttons);
 	buttons.add(cancel);
 	buttons.add(accept);
+	buttons.add(defaults);
 
-	filters = new SettingsFilters(getSize());
-	display = new SettingsDisplay(getSize());
-	LScrollPane displayScroll = new LScrollPane(display);
-	displayScroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+	int buttonHeight = 30;
+	Dimension realSize = new Dimension(getWidth() - 6, buttons.getY() - buttonHeight);
+
+	filters = new SettingsFilters(realSize);
+	display = new SettingsDisplay(realSize);
 
 	tabs = new JTabbedPane();
-	tabs.setSize(getSize().width - 6, buttons.getY());
+	tabs.setSize(realSize.width, realSize.height + buttonHeight);
 	tabs.setBackground(Color.GRAY);
 	tabs.addTab("General", filters);
-	tabs.addTab("Colors", displayScroll);
+	tabs.addTab("Colors", display);
 	getContentPane().add(tabs);
 
 	init = true;
@@ -99,5 +132,12 @@ public class SettingsFrame extends LFrame {
 	GUI.setTooltipLinkFontColor(display.tooltipLinkText.getValue());
 	GUI.tree.grabColors();
 	GUI.tree.repaint();
+    }
+
+    @Override
+    public void setVisible(boolean t) {
+	super.setVisible(t);
+	filters.displayScroll.scrollToTop();
+	display.displayScroll.scrollToTop();
     }
 }
