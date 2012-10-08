@@ -66,6 +66,7 @@ public class SettingsDisplay extends SettingsPanel {
 	    @Override
 	    public void run() {
 		article.repaint();
+		GUI.repaintContent();
 	    }
 	});
 	place(articleBackground);
@@ -76,6 +77,7 @@ public class SettingsDisplay extends SettingsPanel {
 	    public void run() {
 		article.setBodyFontColor(articleText.getValue());
 		article.repaint();
+		GUI.repaintContent();
 	    }
 	});
 	place(articleText);
@@ -86,6 +88,7 @@ public class SettingsDisplay extends SettingsPanel {
 	    public void run() {
 		article.setLinkFontColor(articleLinkText.getValue());
 		article.repaint();
+		GUI.repaintContent();
 	    }
 	});
 	place(articleLinkText);
@@ -95,6 +98,7 @@ public class SettingsDisplay extends SettingsPanel {
 	    @Override
 	    public void stateChanged(ChangeEvent e) {
 		article.repaint();
+		GUI.repaintContent();
 	    }
 	});
 	place(articleAlpha);
@@ -144,6 +148,7 @@ public class SettingsDisplay extends SettingsPanel {
 	    public void run() {
 		tree.setBackground(treeBackground.getValue(), false);
 		tree.repaint();
+		GUI.repaintContent();
 	    }
 	});
 	place(treeBackground);
@@ -165,6 +170,7 @@ public class SettingsDisplay extends SettingsPanel {
 	    public void run() {
 		tree.setForeground(treeText.getValue(), false);
 		tree.repaint();
+		GUI.repaintContent();
 	    }
 	});
 	place(treeText);
@@ -175,6 +181,7 @@ public class SettingsDisplay extends SettingsPanel {
 	    public void run() {
 		tree.setForeground(treeTextSel.getValue(), true);
 		tree.repaint();
+		GUI.repaintContent();
 	    }
 	});
 	place(treeTextSel);
@@ -184,6 +191,7 @@ public class SettingsDisplay extends SettingsPanel {
 	    @Override
 	    public void stateChanged(ChangeEvent e) {
 		tree.repaint();
+		GUI.repaintContent();
 	    }
 	});
 	place(treeAlpha);
@@ -214,6 +222,7 @@ public class SettingsDisplay extends SettingsPanel {
 	    @Override
 	    public void run() {
 		divider.repaint();
+		GUI.repaintContent();
 	    }
 	});
 	place(dividerColor);
@@ -223,6 +232,7 @@ public class SettingsDisplay extends SettingsPanel {
 	    @Override
 	    public void stateChanged(ChangeEvent e) {
 		divider.repaint();
+		GUI.repaintContent();
 	    }
 	});
 	place(dividerAlpha);

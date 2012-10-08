@@ -96,6 +96,7 @@ public class SettingsFrame extends LFrame {
 		KnowItAll.save.peekDefaults();
 		getSelectedPanel().updateColors();
 		tabs.repaint();
+		GUI.repaintContent();
 	    }
 
 	    @Override
@@ -103,6 +104,7 @@ public class SettingsFrame extends LFrame {
 		KnowItAll.save.clearPeek();
 		getSelectedPanel().updateColors();
 		tabs.repaint();
+		GUI.repaintContent();
 	    }
 	});
 
@@ -130,6 +132,7 @@ public class SettingsFrame extends LFrame {
 		KnowItAll.save.peekSaved();
 		getSelectedPanel().updateColors();
 		tabs.repaint();
+		GUI.repaintContent();
 	    }
 
 	    @Override
@@ -137,6 +140,7 @@ public class SettingsFrame extends LFrame {
 		KnowItAll.save.clearPeek();
 		getSelectedPanel().updateColors();
 		tabs.repaint();
+		GUI.repaintContent();
 	    }
 	});
 
