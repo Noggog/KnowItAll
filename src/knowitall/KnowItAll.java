@@ -40,12 +40,9 @@ public class KnowItAll {
 		Debug.log.close();
 		return;
 	    }
-	    for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
-		if ("Nimbus".equals(info.getName())) {
-		    UIManager.setLookAndFeel(info.getClassName());
-		    break;
-		}
-	    }
+	    
+	    GUI.laf();
+	    
 	    File saveF = Ln.getMyDocuments();
 	    save = new KIASave(saveF.getPath() + "/Know It All");
 	    save.init();

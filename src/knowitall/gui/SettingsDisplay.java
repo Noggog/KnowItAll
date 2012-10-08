@@ -6,6 +6,7 @@ package knowitall.gui;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import javax.swing.JSplitPane;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import knowitall.Database;
@@ -40,10 +41,15 @@ public class SettingsDisplay extends SettingsPanel {
     LImagePane example;
     LLabel dimmerLabel;
     LSlider dimmerAlpha;
+    LLabel dividerLabel;
+    LColorSetting dividerColor;
+    LSlider dividerAlpha;
+    // Examples
     ArticleDisplay article;
     ArticleTooltip tooltip;
     ArticleTree tree;
     Dimmer dimmer;
+    JSplitPane divider;
 
     public SettingsDisplay(Dimension size) {
 	super(size);
@@ -198,6 +204,29 @@ public class SettingsDisplay extends SettingsPanel {
 	});
 	place(dimmerAlpha);
 
+	last.y += 45;
+
+	dividerLabel = new LLabel("Divider", headerFont, Color.BLACK);
+	place(dividerLabel);
+
+	dividerColor = color("Background", Settings.DividerColor);
+	dividerColor.addActionListener(new Runnable() {
+	    @Override
+	    public void run() {
+		divider.repaint();
+	    }
+	});
+	place(dividerColor);
+
+	dividerAlpha = slider("Transparency", Settings.DividerTrans, 0, 100);
+	dividerAlpha.addChangeListener(new ChangeListener() {
+	    @Override
+	    public void stateChanged(ChangeEvent e) {
+		divider.repaint();
+	    }
+	});
+	place(dividerAlpha);
+
 	// Example
 	example = new LImagePane(GUI.getBackground());
 	example.setSize(350, getHeight());
@@ -232,12 +261,17 @@ public class SettingsDisplay extends SettingsPanel {
 	dimmer.setVisibleOverride(true);
 	example.add(dimmer);
 
+	divider = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
+	divider.setSize(example.getWidth(), 30);
+	divider.setLocation(0, dimmer.getY() + dimmer.getHeight() + 58);
+	example.add(divider);
+
 	pane.setSize(getWidth(), last.y + 20);
 	pane.setPreferredSize(pane.getSize());
 	example.setSize(350, pane.getHeight());
 
     }
-    
+
     @Override
     public void updateColors() {
 	article.fetchBodyFontColor();

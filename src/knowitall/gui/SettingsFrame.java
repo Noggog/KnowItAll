@@ -105,7 +105,7 @@ public class SettingsFrame extends LFrame {
 		tabs.repaint();
 	    }
 	});
-	
+
 	saved = new LButton("Saved");
 	saved.setLocation(defaults.getRight() + 10, defaults.getY());
 	saved.addMouseListener(new MouseListener() {
@@ -139,7 +139,7 @@ public class SettingsFrame extends LFrame {
 		tabs.repaint();
 	    }
 	});
-	
+
 
 	LPanel buttons = new LPanel();
 	buttons.setOpaque(true);
@@ -179,7 +179,7 @@ public class SettingsFrame extends LFrame {
 	filters.displayScroll.scrollToTop();
 	display.displayScroll.scrollToTop();
     }
-    
+
     SettingsPanel getSelectedPanel() {
 	return (SettingsPanel) tabs.getSelectedComponent();
     }

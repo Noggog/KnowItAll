@@ -47,6 +47,8 @@ public class KIASave extends LSaveFile {
 	Add(Settings.TreeFontSelected,		Color.WHITE);
 	Add(Settings.TreeTrans,			100);
 	Add(Settings.DimmerTrans,		50);
+	Add(Settings.DividerColor,		new Color(214,217,223));
+	Add(Settings.DividerTrans,		100);
     }
 
     @Override
@@ -93,6 +95,8 @@ public class KIASave extends LSaveFile {
 	TreeBackSelected,
 	TreeTrans,
 	DimmerTrans,
+	DividerColor,
+	DividerTrans,
 	;
     }
 

@@ -10,7 +10,10 @@ import java.awt.event.MouseListener;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.io.IOException;
-import javax.swing.*;
+import javax.swing.BorderFactory;
+import javax.swing.JSplitPane;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.SwingUtilities;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.TreeSelectionModel;
@@ -19,7 +22,10 @@ import knowitall.Database;
 import knowitall.Debug;
 import knowitall.KIASave.Settings;
 import knowitall.KnowItAll;
-import lev.gui.*;
+import lev.gui.LImagePane;
+import lev.gui.LPanel;
+import lev.gui.LScrollPane;
+import lev.gui.LSwingTreeNode;
 
 /**
  *

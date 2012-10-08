@@ -5,14 +5,14 @@
 package knowitall.gui;
 
 import java.awt.Color;
+import java.awt.Composite;
+import java.awt.Graphics2D;
 import java.awt.MouseInfo;
 import java.awt.Point;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.Collection;
-import javax.swing.JFileChooser;
-import javax.swing.SwingUtilities;
-import javax.swing.SwingWorker;
+import javax.swing.*;
 import javax.swing.tree.DefaultTreeModel;
 import knowitall.Article;
 import knowitall.Database;
@@ -20,7 +20,7 @@ import knowitall.KIASave;
 import knowitall.KIASave.Settings;
 import knowitall.KnowItAll;
 import lev.Ln;
-import lev.gui.LTree;
+import lev.gui.Lg;
 
 /**
  *
@@ -41,9 +41,39 @@ public class GUI {
     static KIAProgressPane progressPane;
     static OpenPackage openPackage = new OpenPackage();
     static SettingsFrame settingsFrame = new SettingsFrame();
+    static Painter splitPaneDivPainter;
     static boolean defaultPicker = false;
     // State
     static public boolean mainFrameFocus = true;
+
+    public static void laf() throws ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException {
+
+	splitPaneDivPainter = new Painter(){
+
+	    @Override
+	    public void paint(Graphics2D g2, Object arg1, int width, int height) {
+		g2.setPaint(KnowItAll.save.getColor(Settings.DividerColor));
+		Composite old = g2.getComposite();
+		g2.setComposite(Lg.getAlphaComposite(KnowItAll.save.getInt(Settings.DividerTrans) / 100f));
+		g2.fillRect(0, 0, width, height);
+		g2.setComposite(old);
+	    }
+	};
+
+	UIManager.put("SplitPane.background", Color.RED);
+	UIManager.put("SplitPane.highlight", Color.RED);
+	UIManager.put("SplitPane.dividerFocusColor", Color.RED);
+	UIManager.put("SplitPane.foreground", Color.RED);
+	UIManager.put("SplitPane:SplitPaneDivider[Enabled].backgroundPainter", splitPaneDivPainter);
+
+	for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+	    if ("Nimbus".equals(info.getName())) {
+		UIManager.setLookAndFeel(info.getClassName());
+		break;
+	    }
+	}
+
+    }
 
     public static void displayArticles(boolean on) {
 	if (contentPanel != null) {

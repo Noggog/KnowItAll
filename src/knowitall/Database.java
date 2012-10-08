@@ -280,7 +280,7 @@ public class Database {
 	GUI.finalizeArticles(articles.values());
 	printArticles();
 	GUI.loaded();
-	int wer = 23;
+//	int wer = 23;
     }
 
     public static Article getArticle(String name) {
