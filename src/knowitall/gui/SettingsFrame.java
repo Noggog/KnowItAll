@@ -31,12 +31,12 @@ public class SettingsFrame extends LFrame {
     LButton saved;
     SettingsFilters filters;
     SettingsDisplay display;
-    boolean init = false;
 
     public SettingsFrame() {
 	super("Settings");
     }
 
+    @Override
     public void open() {
 	if (!init) {
 	    init();
@@ -46,7 +46,8 @@ public class SettingsFrame extends LFrame {
 	setVisible(true);
     }
 
-    void init() {
+    @Override
+    protected void init() {
 	setSize(700, 500);
 	this.setResizable(false);
 

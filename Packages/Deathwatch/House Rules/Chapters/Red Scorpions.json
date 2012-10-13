@@ -378,7 +378,7 @@ of the other companies.",
 
 	"extraSubCategories" : 
 	[ 
-		["Benefits", "+5 Willpower, the Resistance (Mutation) Talent"],
+		["Benefits", "+5 Willpower, +5 to a Characteristic of your choice."],
 
 
 		["Demeanour", "Path of the Pure is a Demeanour (see page 32 of the DEATHWATCH Core Rulebook) unique to Space Marines from the
@@ -461,8 +461,26 @@ to the Emperor beyond any shadow of a doubt."],
 		<td>Tactics (Defensive Doctrine) +10</td>
 	</tr>
 	<tr>
+		<td>Command</td>
+		<td>400</td>
+		<td>Skill</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>Command +10</td>
+		<td>400</td>
+		<td>Skill</td>
+		<td>Command</td>
+	</tr>
+	<tr>
+		<td>Command +20</td>
+		<td>400</td>
+		<td>Skill</td>
+		<td>Command +10</td>
+	</tr>
+	<tr>
 		<td>Abhor the Witch</td>
-		<td>600</td>
+		<td>800</td>
 		<td>Talent</td>
 		<td>Adeptus Astartes</td>
 	</tr>
@@ -478,7 +496,30 @@ to the Emperor beyond any shadow of a doubt."],
 		<td>Talent</td>
 		<td>-</td>
 	</tr>
-	
+	<tr>
+		<td>Bolter Drill</td>
+		<td>800</td>
+		<td>Talent</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>Hatred Heretics</td>
+		<td>500</td>
+		<td>Talent</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>Resistance (Taint)</td>
+		<td>500</td>
+		<td>Talent</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>Exemplar of Honour</td>
+		<td>800</td>
+		<td>Talent</td>
+		<td>-</td>
+	</tr>
 </table>"],
 
 

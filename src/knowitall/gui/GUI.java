@@ -4,11 +4,7 @@
  */
 package knowitall.gui;
 
-import java.awt.Color;
-import java.awt.Composite;
-import java.awt.Graphics2D;
-import java.awt.MouseInfo;
-import java.awt.Point;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.Collection;
@@ -49,6 +45,7 @@ public class GUI {
     public static void laf() throws ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException {
 
 	splitPaneDivPainter = new Painter() {
+
 	    @Override
 	    public void paint(Graphics2D g2, Object arg1, int width, int height) {
 		g2.setPaint(KnowItAll.save.getColor(Settings.DividerColor));
@@ -113,6 +110,7 @@ public class GUI {
 
     public static void repaintContent() {
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		fetchSetColors();
@@ -138,6 +136,7 @@ public class GUI {
 
 	// Bump tooltip on screen if it's off
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		if (tooltip.getY() + tooltip.getHeight() > mainPanel.getHeight()) {
@@ -154,6 +153,7 @@ public class GUI {
 	});
 	// Make dimmer and tooltip visible.
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		tooltip.setVisible(true);
@@ -192,6 +192,7 @@ public class GUI {
 
     public static void hideTooltip() {
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		tooltip.setVisible(false);
@@ -253,9 +254,11 @@ public class GUI {
 
     public static void setBackground(final File f) {
 	SwingWorker backgroundLoad = new SwingWorker() {
+
 	    @Override
 	    protected Object doInBackground() throws Exception {
 		frame.getBackgroundPane().setImage(f);
+		settingsFrame.display.setBackgroundImage(getBackground());
 		return null;
 	    }
 	};
@@ -285,6 +288,19 @@ public class GUI {
 	mainPanel.setVisible(true);
 	progressHide();
 	menu.settings.setEnabled(true);
+	initMenus();
+    }
+
+    private static void initMenus() {
+	SwingWorker init = new SwingWorker() {
+
+	    @Override
+	    protected Object doInBackground() throws Exception {
+		settingsFrame.init();
+		return null;
+	    }
+	};
+	init.execute();
     }
 
     public static void progressHide() {
@@ -301,6 +317,7 @@ public class GUI {
 
     public static void progressSetMax(final int max) {
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		progressPane.reset();
@@ -311,6 +328,7 @@ public class GUI {
 
     public static void progressSetTitle(final String title) {
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		progressPane.setTitle(title);
@@ -320,6 +338,7 @@ public class GUI {
 
     public static void progressProcessed(final String title) {
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		progressPane.processed(title);
@@ -329,6 +348,7 @@ public class GUI {
 
     public static void progressIncrement() {
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		progressPane.increment();
@@ -338,6 +358,7 @@ public class GUI {
 
     public static void progressIncrement(final String title) {
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		progressPane.increment(title);
@@ -347,6 +368,7 @@ public class GUI {
 
     public static void progressSetValue(final int value) {
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		progressPane.setValue(value);
@@ -356,10 +378,15 @@ public class GUI {
 
     public static void progressSetValueRemaining(final int value) {
 	SwingUtilities.invokeLater(new Runnable() {
+
 	    @Override
 	    public void run() {
 		progressPane.setValue(progressPane.progress.getMaximum() - value);
 	    }
 	});
+    }
+
+    public static Rectangle getGUIbounds() {
+	return frame.getBounds();
     }
 }

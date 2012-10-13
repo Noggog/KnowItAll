@@ -29,6 +29,10 @@ public class OpenPackage extends LFrame {
 
     OpenPackage() {
 	super("Open Package");
+    }
+
+    @Override
+    protected void init() {
 	this.setResizable(false);
 	background.setImage(LImages.multipurpose());
 
@@ -53,15 +57,17 @@ public class OpenPackage extends LFrame {
 
 	    @Override
 	    public void actionPerformed(ActionEvent arg0) {
-		open();
+		openPackage();
 	    }
 	});
 	background.Add(open);
 
 	setRealSize(300, 300);
+	
+	init = true;
     }
-
-    void open() {
+    
+    public void openPackage() {
 	String in = picker.getSelectedElement();
 	if (in.isEmpty()) {
 	    return;

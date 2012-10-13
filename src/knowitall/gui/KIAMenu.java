@@ -20,6 +20,7 @@ public class KIAMenu extends JMenuBar {
     JMenu file;
     JMenuItem open;
     JMenuItem settings;
+    JMenuItem wizard;
     JMenuItem quit;
     
     KIAMenu () {
@@ -45,6 +46,17 @@ public class KIAMenu extends JMenuBar {
 	    }
 	});
 	file.add(settings);
+	
+	wizard = new JMenuItem("Wizard");
+	wizard.addActionListener(new ActionListener(){
+
+	    @Override
+	    public void actionPerformed(ActionEvent e) {
+		GUI.openSettingsFrame();
+	    }
+	});
+	file.add(wizard);
+	
 
 	quit = new JMenuItem("Quit");
 	quit.addActionListener(new ActionListener(){

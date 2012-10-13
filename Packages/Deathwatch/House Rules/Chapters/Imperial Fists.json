@@ -197,7 +197,7 @@ honoured Chapters of the Adeptus Astartes.
 
 	"extraSubCategories" : 
 	[ 
-		["Benefits", "+10 Willpower"],
+		["Benefits", "+5 Willpower, +5 Weapon Skill"],
 		
 		["Implants", "Although Imperial Fists Space Marines possess both the Betcher’s gland and sus-an membrane implants,
 their zygotes have long since ceased to function. Imperial Fists characters do not gain the benefi ts of either of
@@ -283,10 +283,16 @@ Imperial Fist to withdraw when he sees only dishonour in doing so."],
 		<td>-</td>
 	</tr>
 	<tr>
-		<td>Eye of Vengeance</td>
+		<td>Blademaster</td>
 		<td>1,000</td>
 		<td>Talent</td>
-		<td>Adeptus Astartes, BS 50</td>
+		<td>WS 30</td>
+	</tr>
+	<tr>
+		<td>Bolter Drill</td>
+		<td>800</td>
+		<td>Talent</td>
+		<td>-</td>
 	</tr>
 	<tr>
 		<td>Peer (Adeptus Astartes)</td>

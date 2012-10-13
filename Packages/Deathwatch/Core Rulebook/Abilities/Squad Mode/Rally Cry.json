@@ -1,0 +1,27 @@
+{
+	
+	"content" : "Ultramarines are natural leaders and the embodiment
+of the Codex Astartes. In battle their purity and natural
+authority is a power force, able to rally their fellow Battle-
+Brothers and reinforce their will to fight. When a Battle-
+Brother uses this ability, it instantly restores a number of
+Cohesion equal to his Fellowship Bonus. The reverence the
+Ultramarines hold for their Primarch and the strength of will
+required to make a Rally Cry is such that a Battle-Brother
+may only use this ability once per game session.
+<br>
+<br>
+<b>Improvement:</b> This ability cannot be improved.",
+
+	"extraSubCategories" : 
+	[ 
+		["Action", "Free Action"],
+		["Cost", "0"],
+		["Sustained", "No"],
+		["Stance", "Defensive"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 225
+}

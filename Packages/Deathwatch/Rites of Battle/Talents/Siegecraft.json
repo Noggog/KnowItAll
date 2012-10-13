@@ -1,0 +1,20 @@
+{	
+	"shortContent" : "If he has time to prepare the battlefield (1d5 hours at a minimum), the
+Imperial Fist may improve the Armour Points of a piece of cover by a number equal to his Intelligence Bonus.",
+	
+	"content" : "The Adeptus Astartes of the Imperial Fists Chapter are renowned for their ability to craft fortifications that have stood
+the tests of the worst enemies of Mankind. If he has time to prepare the battlefield (1d5 hours at a minimum), the
+Imperial Fist may improve the Armour Points of a piece of cover by a number equal to his Intelligence Bonus. At the
+GM’s discretion, this effect may apply to a number of pieces of cover equal to the Space Marine’s Rank. This bonus stacks
+with that of the Siege Master ability, but the bonus points are added after any effect from Siege Master. The effects of
+this Talent cannot be applied more than once to any piece of cover, and the effects are permanent.",
+
+	"extraSubCategories" : 
+	[ 
+		["Prerequisites", "None"]
+	],
+	
+	"GMOnly" : false,
+	
+	"pageNumber" : 49
+}

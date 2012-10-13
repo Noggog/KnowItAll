@@ -1,0 +1,370 @@
+{
+	"content" : "
+		<b>Rank 1 Deathwatch Advances</b>
+		<table border=1 width=100%>
+			<tr>
+				<td><b>Advance</b></td>
+				<td><b>Cost</b></td>
+				<td><b>Type</b></td>
+				<td><b>Prerequisites</b></td>
+			</tr>
+				<tr>
+				<td>Ciphers (Xenos Markings)</td>
+				<td>200</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Ciphers (Deathwatch)</td>
+				<td>200</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Ciphers (Inquisition)</td>
+				<td>200</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Lore: Common (Deathwatch)</td>
+				<td>200</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Lore: Common (Jericho Reach)</td>
+				<td>400</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+  <tr>
+    <td>Lore: Forbidden (Xenos)</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Interrogation</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Sleight of Hand</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Hunter of Aliens</td>
+    <td>1,000</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Resistance (Cold)</td>
+    <td>300</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Resistance (Heat)</td>
+    <td>300</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr></table>
+  
+  <br><br>
+			<b>Rank 2 Deathwatch Advances</b>
+		<table border=1 width=100%>
+			<tr>
+				<td><b>Advance</b></td>
+				<td><b>Cost</b></td>
+				<td><b>Type</b></td>
+				<td><b>Prerequisites</b></td>
+			</tr>
+			<tr>
+			 <td>Ciphers (Xenos Markings) +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Ciphers (Xenos Markings)</td>
+  </tr>
+  <tr>
+    <td>Ciphers (Deathwatch) +10</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Ciphers (Deathwatch)</td>
+  </tr>
+  <tr>
+    <td>Lore: Common (Deathwatch) +10</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Lore: Common (Deathwatch)</td>
+  </tr>
+  <tr>
+    <td>Lore: Common (Jericho Reach) +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Lore: Common (Jericho Reach)</td>
+  </tr>
+  <tr>
+    <td>Interrogation +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Interrogation</td>
+  </tr>
+  <tr>
+    <td>Sleight of Hand +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Sleight of Hand</td>
+  </tr>
+  <tr>
+    <td>Hatred (Orks)</td>
+    <td>500</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Hatred (Tyranids)</td>
+    <td>Talent</td>
+    <td>-</td>
+    <td>&nbsp;</td>
+  </tr>
+</table><br><br>
+			<b>Rank 3 Deathwatch Advances</b>
+		<table border=1 width=100%>
+			<tr>
+				<td><b>Advance</b></td>
+				<td><b>Cost</b></td>
+				<td><b>Type</b></td>
+				<td><b>Prerequisites</b></td>
+			</tr>
+			<tr>
+			<td>Ciphers (Xenos Markings) +20</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Ciphers (Xenos Markings) +10</td>
+  </tr>
+  <tr>
+    <td>Ciphers (Deathwatch) +20</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Ciphers (Deathwatch) +10</td>
+  </tr>
+  <tr>
+    <td>Lore: Common (Deathwatch) +20</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Lore: Common (Deathwatch) +10</td>
+  </tr>
+  <tr>
+    <td>Lore: Common (Jericho Reach) +20</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Lore: Common (Jericho Reach) +10</td>
+  </tr>
+  <tr>
+    <td>Interrogation +20</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Interrogation +10</td>
+  </tr>
+  <tr>
+    <td>Sleight of Hand +20</td>
+    <td>400</td>
+    <td>Skill </td>
+    <td>Sleight of Hand +10</td>
+  </tr>
+  <tr>
+    <td>Exotic Weapon Training (any)</td>
+    <td>500</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Hatred (Eldar)</td>
+    <td>500</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Hatred (Tau)</td>
+    <td>500</td>
+    <td>Talent</td>
+    <td>-</td></table><br><br>
+			
+			<b>Rank 4 Deathwatch Advances</b>
+		<table border=1 width=100%>
+			<tr>
+				<td><b>Advance</b></td>
+				<td><b>Cost</b></td>
+				<td><b>Type</b></td>
+				<td><b>Prerequisites</b></td>
+			</tr>
+			<tr>
+			 <td>Lore: Forbidden (Black Library)</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Lore: Forbidden (Inquisition)</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Lore: Forbidden (Traitor Legions)</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Lore: Forbidden (Warp)</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Scourge of Heretics</td>
+    <td>1,000</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+</table><br><br>
+			<b>Rank 5 Deathwatch Advances</b>
+		<table border=1 width=100%>
+			<tr>
+				<td><b>Advance</b></td>
+				<td><b>Cost</b></td>
+				<td><b>Type</b></td>
+				<td><b>Prerequisites</b></td>
+			</tr>
+			<tr>
+    <td>Lore: Forbidden (Inquisition) +10</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Lore: Forbidden (Inquitition)</td>
+  </tr>
+  <tr>
+    <td>Lore: Forbidden (Warp) +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Lore: Forbidden (Warp)</td>
+  </tr>
+  <tr>
+    <td>Lore: Forbidden (Xenos) +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Lore: Forbidden (Xenos)</td>
+  </tr>
+  <tr>
+    <td>Peer (Inquisition)</td>
+    <td>1,000</td>
+    <td>Talent</td>
+    <td>Fel 30</td>
+  </tr>
+  <tr>
+    <td>Slayer of Daemons</td>
+    <td>1,000</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr></table><br><br>
+			
+		<b>Rank 6 Deathwatch Advances</b>
+		<table border=1 width=100%>
+			<tr>
+				<td><b>Advance</b></td>
+				<td><b>Cost</b></td>
+				<td><b>Type</b></td>
+				<td><b>Prerequisites</b></td>
+			</tr>
+			 <tr>
+    <td>Lore: Forbiden (Black Library) +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Lore: Forbidden (Black Library)</td>
+  </tr>
+  <tr>
+    <td>Lore: Forbidden (Inquisition) +20</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Lore: Forbidden (Inquisition) +10</td>
+  </tr>
+  <tr>
+    <td>Lore: Forbidden (Traitor Legions) +10</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Lore: Forbiden (Traitor Legions)</td>
+  </tr>
+  <tr>
+    <td>Lore: Forbidden (Warp) +20</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Lore: Forbidden (Warp) +10</td>
+  </tr>
+  <tr>
+    <td>Lore: Forbidden (Xenos) +20</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Lore: Forbidden (Xenos) +10</td>
+  </tr>
+</table><br><br>
+			<b>Rank 7 Deathwatch Advances</b>
+		<table border=1 width=100%>
+			<tr>
+				<td><b>Advance</b></td>
+				<td><b>Cost</b></td>
+				<td><b>Type</b></td>
+				<td><b>Prerequisites</b></td>
+			</tr>
+			 <tr>
+    <td>Lore: Forbidden (Traitor Legions) +20</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Lore: Forbidden (Traitor Legions) +10</td>
+  </tr>
+  <tr>
+    <td>Sound Constitution</td>
+    <td>1,000</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Strong Minded</td>
+    <td>1,500</td>
+    <td>Talent</td>
+    <td>WP 30, Resistance (Psychic Powers)</td>
+  </tr>
+</table><br><br>
+			
+			<b>Rank 8 Deathwatch Advances</b>
+		<table border=1 width=100%>
+			<tr>
+				<td><b>Advance</b></td>
+				<td><b>Cost</b></td>
+				<td><b>Type</b></td>
+				<td><b>Prerequisites</b></td>
+			</tr>
+			  <tr>
+    <td>Lore: Forbidden (Black Library) +20</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Lore: Forbidden (Black Library) +10</td>
+  </tr>
+  <tr>
+    <td>Good Reputation (Inquisition)</td>
+    <td>1,500</td>
+    <td>Talent</td>
+    <td>Fel 50, Peer (Inquisition)</td>
+  </tr>
+  <tr>
+    <td>Sound Constitution (x2)</td>
+    <td>1,000</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+</table>"
+}

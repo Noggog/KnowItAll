@@ -1,8 +1,8 @@
 {
 
-
 "extraSubCategories" : 
 	[ 
+		["Benefits", "+5 Perception, +5 Fellowship, Space Wolves characters begin with the Heightened Senses (Smell) Talent and the Counterattack Talent."],
 
 		["Chapter Advances", "
 	<table border=1 width=100%>
@@ -127,6 +127,7 @@
 			<td>Int 40</td>
 		</tr>
 		
-	</table>"]
+	</table>"
+		]
 	]
 }

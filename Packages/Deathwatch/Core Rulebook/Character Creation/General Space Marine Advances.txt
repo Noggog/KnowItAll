@@ -1,0 +1,1047 @@
+{
+	"content" : "
+		<b>Rank 1 General Advances</b>
+		<table border=1 width=100%>
+			<tr>
+				<td><b>Advance</b></td>
+				<td><b>Cost</b></td>
+				<td><b>Type</b></td>
+				<td><b>Prerequisites</b></td>
+			</tr>
+			<tr>
+				<td>Awareness</td>
+				<td>200</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Carouse</td>
+				<td>200</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Ciphers (Chapter Runes)</td>
+				<td>200</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Climb</td>
+				<td>400</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Concealment</td>
+				<td>800</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Dodge</td>
+				<td>300</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Drive (any)</td>
+				<td>600</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Intimidate</td>
+				<td>400</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Literacy</td>
+				<td>200</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Lore: Comon (Adeptus Astartes)</td>
+				<td>400</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Lore: Common (Imperium)</td>
+				<td>400</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Lore: Common (War)</td>
+				<td>400</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Navigation (Surface)</td>
+				<td>400</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Search</td>
+				<td>400</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Silent Move</td>
+				<td>300</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Speak Language (any)</td>
+				<td>200</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Swim</td>
+				<td>200</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Tech-Use</td>
+				<td>800</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Trade (any)</td>
+				<td>600</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Astartes Weapon Specialization</td>
+				<td>1,500</td>
+				<td>Talent</td>
+				<td>Astartes Weapon Training</td>
+			</tr>
+			<tr>
+				<td>Signature Wargear</td>
+				<td>500</td>
+				<td>Talent</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Sound Constitution (x2)</td>
+				<td>500</td>
+				<td>Talent</td>
+				<td>-</td>
+			</tr>
+		</table><br>
+		<br>
+		<b>Rank 2 General Advances</b>
+		<table border=1 width=100%>
+			<tr>
+				<td><b>Advance</b></td>
+				<td><b>Cost</b></td>
+				<td><b>Type</b></td>
+				<td><b>Prerequisites</b></td>
+			</tr>
+			<tr>
+				<td>Awareness +10</td>
+				<td>300</td>
+				<td>Skill</td>
+				<td>Awareness</td>
+			</tr>
+			<tr>
+				<td>Carouse +10</td>
+				<td>200</td>
+				<td>Skill</td>
+				<td>Carouse</td>
+			</tr>
+			<tr>
+				<td>Charm</td>
+				<td>800</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Climb +10</td>
+				<td>400</td>
+				<td>Skill</td>
+				<td>Climb</td>
+			</tr>
+			<tr>
+				<td>Command</td>
+				<td>300</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Deceive</td>
+				<td>400</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Demolition</td>
+				<td>400</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Gamble</td>
+				<td>200</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Inquiry</td>
+				<td>800</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Literacy +10</td>
+				<td>200</td>
+				<td>Skill</td>
+				<td>Literacy</td>
+			</tr>
+			<tr>
+				<td>Logic</td>
+				<td>400</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Lore: Common (Imperial Guard)</td>
+				<td>200</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Lore: Common (Imperial Navy)</td>
+				<td>200</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Scrutiny</td>
+				<td>400</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Speak Language (any) +10</td>
+				<td>200</td>
+				<td>Skill</td>
+				<td>Speak Language (smae Skill group)</td>
+			</tr>
+			<tr>
+				<td>Survival +10</td>
+				<td>400</td>
+				<td>Skill</td>
+				<td>Survival</td>
+			</tr>
+			<tr>
+				<td>Swim +10</td>
+				<td>200</td>
+				<td>Skill</td>
+				<td>Swim</td>
+			</tr>
+			<tr>
+				<td>Tracking</td>
+				<td>400</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Trade (any) +10</td>
+				<td>400</td>
+				<td>Skill</td>
+				<td>Trade (same Skill group)</td>
+			</tr>
+			<tr>
+				<td>Wrangling</td>
+				<td>200</td>
+				<td>Skill</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Air of Authority</td>
+				<td>1,000</td>
+				<td>Talent</td>
+				<td>Fel 30</td>
+			</tr>
+			<tr>
+				<td>Ployglot</td>
+				<td>500</td>
+				<td>Talent</td>
+				<td>Int 40, Fel 30</td>
+			</tr>
+			<tr>
+				<td>Resistance (Poisons)</td>
+				<td>500</td>
+				<td>Talent</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Signiture Wargear (Master)</td>
+				<td>1,000</td>
+				<td>Talent</td>
+				<td>Signature Wargear (same item)</td>
+			</tr>
+			<tr>
+				<td>Total Recall</td>
+				<td>500</td>
+				<td>Talent</td>
+				<td>Int 30</td>
+			</tr>
+			
+		</table><br>
+		<br>
+		<b>Rank 3 General Advances</b>
+		<table border=1 width=100%>
+	<tr>
+				<td><b>Advance</b></td>
+				<td><b>Cost</b></td>
+				<td><b>Type</b></td>
+				<td><b>Prerequisites</b></td>
+			</tr>
+  <tr>
+    <td>Awareness +20</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Awareness +10</td>
+  </tr>
+  <tr>
+    <td>Carouse +20</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Carouse +10</td>
+  </tr>
+  <tr>
+    <td>Ciphers (Chapter Rules) +10</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Ciphers (Chapter Runes)</td>
+  </tr>
+  <tr>
+    <td>Climb +20</td>
+    <td>400</td>
+    <td>kill</td>
+    <td>Climb +10</td>
+  </tr>
+  <tr>
+    <td>Concealment +10</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Concealment</td>
+  </tr>
+  <tr>
+    <td>Contortionist</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Drive (any) +10</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Drive (same Skill group)</td>
+  </tr>
+  <tr>
+    <td>Evaluate</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Interrogation</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Intimidate +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Intimidate</td>
+  </tr>
+  <tr>
+    <td>Literacy +20</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Literacy +10</td>
+  </tr>
+  <tr>
+    <td>Lore: Common (Adeptus Astartes) +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Lore: Common (Adeptus Astartes)</td>
+  </tr>
+  <tr>
+    <td>Lore: Comon (Ecclesiarchy)</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Lore: Common (Imperial Guard) +10</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Lore: Common (Imperial Guard)</td>
+  </tr>
+  <tr>
+    <td>Lore: Common (Imperial Navy) +10</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Lore: Common (Imperial Navy)</td>
+  </tr>
+  <tr>
+    <td>Lore: Common (Imperium) +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Lore: Common (Imperium)</td>
+  </tr>
+  <tr>
+    <td>Lore: Common (Tech)</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Lore: Common (Adeptus Astartes)</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Lore: Common (Imperium)</td>
+  </tr>
+  <tr>
+    <td>Performer (any)</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Pilot (any)</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Search +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Search</td>
+  </tr>
+  <tr>
+    <td>Security</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Silent Move +10</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Silent Move</td>
+  </tr>
+  <tr>
+    <td>Speak Language (any) +20</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Speak Language (same Skill group)</td>
+  </tr>
+  <tr>
+    <td>Swim +20</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Swim +10</td>
+  </tr>
+  <tr>
+    <td>Tactics (any) +20</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Trade (same type) +10</td>
+  </tr>
+  <tr>
+    <td>Orthoproxy</td>
+    <td>500</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Rapid Reaction</td>
+    <td>500</td>
+    <td>Talent</td>
+    <td>Ag 400</td>
+  </tr>
+  <tr>
+    <td>Rapid Reload</td>
+    <td>300</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+		
+		</table><br>
+		<br>
+		<b>Rank 4 General Advances</b>
+		<table border=1 width=100%>
+    <td><b>Advance</b></td>
+    <td><b>Cost</b></td>
+    <td><b>Type</b></td>
+    <td><b>Prerequisites</b></td>
+  </tr>
+  <tr>
+    <td>Charm +10</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Charm</td>
+  </tr>
+  <tr>
+    <td>Command +10</td>
+    <td>500</td>
+    <td>Skill</td>
+    <td>Command</td>
+  </tr>
+  <tr>
+    <td>Deceive +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Deceive</td>
+  </tr>
+  <tr>
+    <td>Demolition +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Demolition</td>
+  </tr>
+  <tr>
+    <td>Gamble +10</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Gamble</td>
+  </tr>
+  <tr>
+    <td>Inquiry +10</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Inquiry</td>
+  </tr>
+  <tr>
+    <td>Logic +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Logic</td>
+  </tr>
+  <tr>
+    <td>Lore: Common (Ecclesiarchy) +10</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Lore: Common (Ecclesiarchy)</td>
+  </tr>
+  <tr>
+    <td>Lore: Common (Imperial Guard) +20</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Lore: Common (Imperial Guard) +10</td>
+  </tr>
+  <tr>
+    <td>Lore: Common (Imperial Navy) +20</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Lore: Common (Imperial Navy) +10</td>
+  </tr>
+  <tr>
+    <td>Lore: Common (Tech) +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Lore: Common (Tech)</td>
+  </tr>
+  <tr>
+    <td>Performer (any) +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Performer (same Skill group)</td>
+  </tr>
+  <tr>
+    <td>Scrutiny +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Scrutiny</td>
+  </tr>
+  <tr>
+    <td>Shadowing</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Survival +20</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Survival +10</td>
+  </tr>
+  <tr>
+    <td>Iron Discipline</td>
+    <td>1,000</td>
+    <td>Talent</td>
+    <td>WP 30, Command</td>
+  </tr>
+  <tr>
+    <td>Iron Jaw</td>
+    <td>500</td>
+    <td>Talent</td>
+    <td>T 40</td>
+  </tr>
+  <tr>
+    <td>Sprint</td>
+    <td>600</td>
+    <td>Talent </td>
+    <td>-</td>
+  </tr>
+</tbody></table><br>
+
+
+		<br>
+		<b>Rank 5 General Advances</b>
+		<table border=1 width=100%>
+   <td><b>Advance</b></td>
+    <td><b>Cost</b></td>
+    <td><b>Type</b></td>
+    <td><b>Prerequisites</b></td>
+  </tr>
+  <tr>
+    <td>Concealment +20</td>
+    <td>800</td>
+    <td><p>Skill
+    </p></td>
+    <td><p>Concealment +10</p></td>
+  </tr>
+  <tr>
+    <td>Ciphers (Chapter Runes) +20</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Ciphers (Chapter Runes) +10</td>
+  </tr>
+  <tr>
+    <td>Dodge +10</td>
+    <td>500</td>
+    <td>Skill</td>
+    <td>Dodge</td>
+  </tr>
+  <tr>
+    <td>Drive (any) +20</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Drive (same Skill group) +10</td>
+  </tr>
+  <tr>
+    <td>Evaluate +10</td>
+    <td>400</td>
+    <td>kill</td>
+    <td>Evaluate</td>
+  </tr>
+  <tr>
+    <td>Intimidate +20</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Intimidate +10</td>
+  </tr>
+  <tr>
+    <td>Navigation (Stellar)</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Lore: Common (Adeptus Astartes) +20</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Lore: Common (Adeptus Astartes) +10</td>
+  </tr>
+  <tr>
+    <td>Lore: Common (Ecclesiarchy) +20</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Lore: Common (Ecclesiarchy) +10</td>
+  </tr>
+  <tr>
+    <td>Lore: Common (Imperium) +20</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Lore: Common (Imperium) +10</td>
+  </tr>
+  <tr>
+    <td>Lore: Common (Tech) +20</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Lore: Common (Tech) +10</td>
+  </tr>
+  <tr>
+    <td>Lore: Scholastic (any)</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Performer (any) +20</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Performer (same Skill group) +10</td>
+  </tr>
+  <tr>
+    <td>Pilot (any) +10</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Pilot (same Skill group)</td>
+  </tr>
+  <tr>
+    <td>Search +20</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Search +10</td>
+  </tr>
+  <tr>
+    <td>Security +10</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Security</td>
+  </tr>
+  <tr>
+    <td>Silent Move +20</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Silent Move +10</td>
+  </tr>
+  <tr>
+    <td>Tracking +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Tracking</td>
+  </tr>
+  <tr>
+    <td>Wrangling +10</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Wrangling</td>
+  </tr>
+  <tr>
+    <td>Call to Vengeance</td>
+    <td>1,000</td>
+    <td>Talent</td>
+    <td>Fel 40</td>
+  </tr>
+  <tr>
+    <td>Double Team</td>
+    <td>500</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Hardy</td>
+    <td>1,000</td>
+    <td>Talent</td>
+    <td>T 40</td>
+  </tr>
+  <tr>
+    <td>Mimic</td>
+    <td>500</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Peer (Adeptus Astartes)</td>
+    <td>500</td>
+    <td>Talent</td>
+    <td><p>Fel (30)</p></td>
+  </tr>
+  <tr>
+    <td>Signature Wargear</td>
+    <td>500</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Sound Constitution (x2)</td>
+    <td>1,000</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+</tbody></table><br>
+		<br>
+		<b>Rank 6 General Advances</b>
+		<table border=1 width=100%>
+			<tr>
+    <td><strong>Advance</strong></td>
+    <td><strong>Cost</strong></td>
+    <td><strong>Type</strong></td>
+    <td><strong>Prerequisites</strong></td>
+  </tr>
+  <tr>
+    <td>Charm +20</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Charm +10</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Command +10</td>
+  </tr>
+  <tr>
+    <td>Deceive +200</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Deceive +10</td>
+  </tr>
+  <tr>
+    <td>Demolition +20</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Demolition +10</td>
+  </tr>
+  <tr>
+    <td>Gamble +20</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Gamble+10</td>
+  </tr>
+  <tr>
+    <td>Inquiry +20</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Inquiry +10</td>
+  </tr>
+  <tr>
+    <td>Logic +20</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Logic +10</td>
+  </tr>
+  <tr>
+    <td>Navigation (Surface) +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Navigtion (Surface)</td>
+  </tr>
+  <tr>
+    <td>Scrutiny +20</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Scrutiny +10</td>
+  </tr>
+  <tr>
+    <td>Good Reputation (Adeptus Astartes)</td>
+    <td>500</td>
+    <td>Talent</td>
+    <td>Fel 50, Peer (same Talent group)</td>
+  </tr>
+  <tr>
+    <td>Hammer Blow</td>
+    <td>1,000</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Last Man Standing</td>
+    <td>500</td>
+    <td>Talent</td>
+    <td>Nerves of Steel</td>
+  </tr>
+  <tr>
+    <td>Paranoia</td>
+    <td>500</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Sound Constitution</td>
+    <td>1,000</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Unbowed and Unbroken</td>
+    <td>1,500</td>
+    <td>Talent</td>
+    <td>Fel 30</td>
+  </tr>
+  <tr>
+    <td>Wisdom of the Ancients</td>
+    <td>1,000</td>
+    <td>Talent</td>
+    <td>Int 40</td>
+  </tr>
+</tbody></table><br>
+
+
+		<br>
+		<b>Rank 7 General Advances</b>
+		<table border=1 width=100%>
+			<tr>
+				<td><b>Advance</b></td>
+				<td><b>Cost</b></td>
+				<td><b>Type</b></td>
+				<td><b>Prerequisites</b></td>
+			</tr>
+			<tr>
+    <td>Chem-Use</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Evaluate +20</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Evaluate +10</td>
+  </tr>
+  <tr>
+    <td>Interrogation +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Interrogation</td>
+  </tr>
+  <tr>
+    <td>Lore: Forbiden (Adeptus Astartes) +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Lore: Forbidden (Adeptus Astartes)</td>
+  </tr>
+  <tr>
+    <td>Navigation (Surface) +20</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Navigation (Surface) +10</td>
+  </tr>
+  <tr>
+    <td>Pilot (any) +20</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Pilot (same Skill group) +10</td>
+  </tr>
+  <tr>
+    <td>Security +20</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Secutiry +10</td>
+  </tr>
+  <tr>
+    <td>Tactics (any) +10</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Tactics (same Skill group)</td>
+  </tr>
+  <tr>
+    <td>Tech-Use +10</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Tech-Use</td>
+  </tr>
+  <tr>
+    <td>Tracking +20</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Tracking +10</td>
+  </tr>
+  <tr>
+    <td>Wrangling +20</td>
+    <td>200</td>
+    <td>Skill</td>
+    <td>Wrangling +10</td>
+  </tr>
+  <tr>
+    <td>Blind Fighting</td>
+    <td>800</td>
+    <td>Talent</td>
+    <td>Per 30</td>
+  </tr>
+  <tr>
+    <td>Bolter Drill</td>
+    <td>1,500</td>
+    <td>Talent</td>
+    <td>Astartes Weapon Training</td>
+  </tr>
+  <tr>
+    <td>Fearless</td>
+    <td>1,000</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Signature Wargear (Hero) (any)</td>
+    <td>1,500</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Sound Constitution</td>
+    <td>1,000</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+</tbody></table><br>
+		<br>
+		<b>Rank 8 General Advances</b>
+		<table border=1 width=100%>
+			<tr>
+				<td><b>Advance</b></td>
+				<td><b>Cost</b></td>
+				<td><b>Type</b></td>
+				<td><b>Prerequisites</b></td>
+			</tr>
+			<tr>
+    <td>Dodge +20</td>
+    <td>600</td>
+    <td>Skill</td>
+    <td>Dodge +10</td>
+  </tr>
+  <tr>
+    <td>Interrogation +20</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Interrogation +10</td>
+  </tr>
+  <tr>
+    <td>Lore: Forbidden (Adeptus Astartes) +20</td>
+    <td>400</td>
+    <td>Skill</td>
+    <td>Lore: Forbidden (Adeptus Astartes) +10</td>
+  </tr>
+  <tr>
+    <td>Medicae</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Tactics (any) +20</td>
+    <td>800</td>
+    <td>Skill</td>
+    <td>Tactics (same Skill group) +10</td>
+  </tr>
+  <tr>
+    <td>Into the Jaws of Hell</td>
+    <td>1,500</td>
+    <td>Talent</td>
+    <td>Iron Discipline</td>
+  </tr>
+  <tr>
+    <td>Mastor Orator</td>
+    <td>1,000</td>
+    <td>Talent</td>
+    <td>Fel 30</td>
+  </tr>
+  <tr>
+    <td>Sound Constitution</td>
+    <td>1,000</td>
+    <td>Talent</td>
+    <td>-</td>
+  </tr>
+		</table>"
+}

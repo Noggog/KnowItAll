@@ -6,6 +6,7 @@ package knowitall.gui;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.image.BufferedImage;
 import javax.swing.JSplitPane;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -238,8 +239,8 @@ public class SettingsDisplay extends SettingsPanel {
 	place(dividerAlpha);
 
 	// Example
-	example = new LImagePane(GUI.getBackground());
-	example.setSize(350, getHeight());
+	example = new LImagePane();
+	setBackgroundImage(GUI.getBackground());
 	example.setLocation(getWidth() - example.getWidth(), 0);
 	pane.add(example);
 
@@ -282,6 +283,11 @@ public class SettingsDisplay extends SettingsPanel {
 
     }
 
+    public void setBackgroundImage(BufferedImage img) {
+	example.setImage(img);
+	example.setSize(350, getHeight());
+    }
+    
     @Override
     public void updateColors() {
 	article.fetchBodyFontColor();

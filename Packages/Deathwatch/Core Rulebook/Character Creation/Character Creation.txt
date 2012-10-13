@@ -1,0 +1,115 @@
+{
+	"content" : "<b>Stage 1: Generate Characteristics</b><br>
+Many of the key aspects of your character are defined
+in terms of numbers. Some of the most basic of these are
+called Characteristics. They represent your Space Marine’s
+capabilities, ranging from physical Characteristics such as
+Strength and Toughness to mental ones like Intelligence and
+Willpower.<br>
+• The player begins with a score of 30 in each Characteristic
+and may allocate a total of 100 additional points to his
+Characteristics, adding no more than 20 to any one
+Characteristic. This method generates characters with
+slightly lower than average scores.
+• All Space Marine characters begin the game with the
+Skills, Talents, and Traits listed on page 36 in the Core Rulebookand have already been marked for you on your character sheet(see page 397 in the Core Rulebook).<br>
+• All Space Marines have many special implants that give
+them special bonuses and abilities which aresummarised on page 16 in the Core Rulebook and detailed on page 36.<br>
+• All Space Marines seconded to the Deathwatch begin with
+Skills and Talents already marked for you on the character
+sheet.<br>
+<br>
+<b>Stage 2: Select Chapter</b><br>
+The next step in creating your character is to determine your
+Space Marine’s home Chapter. A Chapter is a self-contained
+Space Marine force that has been your character’s home for
+decades (if not centuries!). The Imperium is a vast civilisation,
+and by the time your character begins his adventures in the
+Deathwatch, he has been influenced by many factors, chief
+amongst them the beliefs and traditions of his home Chapter.<br>
+• Apply your chapters characteristic changes, demeanor, solo and squad mode abilities. <br>
+• Each Chapter modifies your character’s Characteristics.<br>
+• The culture and gene-seed of a Space Marine’s Chapter
+grants him a Solo Mode Ability and 2 Squad Mode Abilities.<br>
+• All Space Marines of a particular Chapter possess a
+Demeanour that embodies the beliefs and traditions of
+that Chapter.<br>
+<br>
+<b>Stage 3: Select Specialty</b>
+Deathwatch has six Specialities: Deathwatch Apothecary, Deathwatch Assault
+Marine, Deathwatch Devastator Marine, Deathwatch Librarian,
+Deathwatch Tactical Marine, and Deathwatch Techmarine.<br>
+• Space Marine characters each have a Speciality that
+represents their role in the Kill-team. Choose one.<br>
+• Most Specialities include at least one Skill that the Space
+Marine gains during character creation.<br>
+• Each Speciality has a selection of Special Abilities.
+Choose one and note it.<br>
+• Some Specialities (such as Librarian and Techmarine)
+gain further options from their Special Abilities.<br>
+<br>
+<b>Stage 4: Movement, Wounds, Fate, and Experience</b><br>
+• Determine the Space Marine’s starting wounds by rolling
+1d5 and adding 18 to the result.<br>
+• Determine the Space Marine’s starting Fate Points by
+rolling 1d10. 1-7=3 Fate Points, 8-9=4 Fate Points, 10=5 Fate Points.<br>
+• Determine your movement. The Space Marine’s
+power armour will increase your Agility Bonus by 1 for
+this purpose. Take your Agiligy Bonus plus 1 for your power armor: Half Move=Ag bonus, Full Move=2*Ag Bonus, Charge=3*Ag Bonus, Run=6*Ag Bonus.<br>
+• You may now further customise your Space Marine by
+spending 1,000 experience points on certain Advances. Your total xp should be 12,000 by the time you start playing. <br>
+<br>
+<b>Stage 5: Starting Equipment</b><br>
+• All Specialities Standard Issue: Astartes power armour,
+Astartes bolt pistol, 3 Astartes frag grenades, 3 Astartes
+krak grenades, Astartes combat knife, repair cement, one
+Chapter Trapping.
+• Deathwatch Apothecary Standard Issue: Astartes
+bolter with fire selector, reductor and narthecium.
+• Deathwatch Assault Marine Standard Issue: Astartes
+chainsword, Astartes jump pack.
+• Deathwatch Devastator Marine Standard Issue:
+Astartes heavy bolter with backpack ammo supply.
+• Deathwatch Librarian Standard Issue: Astartes bolter
+with fire selector, force weapon.
+• Deathwatch Tactical Marine Standard Issue:
+Astartes bolter with fire selector, one clip of Special Issue
+ammunition (not exceeding 25 Requisition per clip)
+per mission. Note that you must still meet the Renown
+requirement for this ammunition.
+• Deathwatch Techmarine Standard Issue: Astartes bolter
+with fire selector, Astartes servo-arm (as a part of his power
+armour), and one other Common craftsmanship cybernetic
+(chosen at character creation). See the Cybernetics section
+for rules on installing further bionics.<br>
+<br>
+<b>Stage 6: Giving Characters Life</b><br>
+Once all the numbers are finished with, it is time to flesh
+out your Space Marine. This stage helps you define your
+character’s past, temperaments, beliefs, and more. This step
+is an important one, as it helps you portray the character
+during game play and makes your Space Marine a unique
+being, helping to set him apart from others who may fill a
+similar niche. During this step, you also select your character’s
+Demeanours—strong elements of his personality that define
+him as an individual.<br>
+• Consider your character’s appearance. What colour is his
+hair? Does he have any distinguishing features?<br>
+• Before joining the Deathwatch, your Space Marine
+performed admirably in the service of his Chapter.
+These events are what led to his selection to join the
+Deathwatch. Choose or randomly roll for a past history
+event from the tables on page 29 in the Core Rulebook.<br>
+• Your Space Marine’s power armour has had many owners,
+and it may have some particular quirks. Randomly roll
+for your power armour’s history and quirks on Table
+5–12 on page 162 in the Core Rulebook.<br>
+• Answer the questions on page 31 in the Core Rulebook to flesh out the
+personality of your Space Marine.<br>
+• Choose a personal Demeanour on page 32 in the Core Rulebook that best fits your
+character. Your personal Demeanour may change over
+time as your character develops during the game.<br>
+• Give your Space Marine a name, either by thinking one
+up on your own or choosing one from Table 1–11 on
+page 34 in the Core Rulebook or listed with your Chapter's data."
+}
