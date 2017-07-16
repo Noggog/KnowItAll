@@ -4,16 +4,11 @@
  */
 package knowitall.gui;
 
-import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import knowitall.KIASave.Settings;
 import lev.gui.LCheckBox;
-import lev.gui.LHelpPanel;
-import lev.gui.resources.LFonts;
-import lev.gui.resources.LImages;
 
 /**
  *
@@ -30,11 +25,7 @@ public class SettingsFilters extends SettingsPanel {
     public SettingsFilters(Dimension size) {
 	super(size);
 
-	Rectangle helpA = new Rectangle(250, 0, 350, size.height);
-	help = new LHelpPanel(helpA, LFonts.MyriadProBold(25), Color.BLACK, Color.DARK_GRAY, LImages.arrow(true, true), 0);
-	help.setTitleOffset(3);
-	help.setXOffsets(10, 21);
-	add(help);
+	addHelp(size);
 
 	last.x = 200;
 	last.y += 10;
@@ -60,10 +51,10 @@ public class SettingsFilters extends SettingsPanel {
 	tooltips = cBox("Tooltips On", Settings.ToolTipsOn);
 	shortenGrids = cBox("Shorten Grids", Settings.ShortenGrids);
 
-	place(openLastPackage);
-	place(mergeSources);
-	place(linkedArticlesBelow);
-	place(tooltips);
-//	place(shortenGrids);
+	placeAdd(openLastPackage);
+	placeAdd(mergeSources);
+	placeAdd(linkedArticlesBelow);
+	placeAdd(tooltips);
+//	placeAdd(shortenGrids);
     }
 }

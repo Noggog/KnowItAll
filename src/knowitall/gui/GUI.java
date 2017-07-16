@@ -17,6 +17,7 @@ import knowitall.KIASave.Settings;
 import knowitall.KnowItAll;
 import lev.Ln;
 import lev.gui.Lg;
+import lev.gui.resources.LFonts;
 
 /**
  *
@@ -37,10 +38,13 @@ public class GUI {
     static KIAProgressPane progressPane;
     static OpenPackage openPackage = new OpenPackage();
     static SettingsFrame settingsFrame = new SettingsFrame();
+    static WizardFrame wizard = new WizardFrame();
     static Painter splitPaneDivPainter;
     static boolean defaultPicker = false;
     // State
     static public boolean mainFrameFocus = true;
+    static Font settingsFont = LFonts.MyriadPro(15);
+    static Font headerFont = LFonts.MyriadProBold(18);
 
     public static void laf() throws ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException {
 
@@ -250,6 +254,10 @@ public class GUI {
 
     public static void openSettingsFrame() {
 	settingsFrame.open();
+    }
+    
+    public static void openArticleWizardFrame() {
+	wizard.open();
     }
 
     public static void setBackground(final File f) {

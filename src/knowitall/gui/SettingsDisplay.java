@@ -59,8 +59,8 @@ public class SettingsDisplay extends SettingsPanel {
 	last.y += 15;
 	align(Align.Center);
 
-	articles = new LLabel("Articles", headerFont, Color.BLACK);
-	place(articles);
+	articles = new LLabel("Articles", GUI.headerFont, Color.BLACK);
+	placeAdd(articles);
 
 	articleBackground = color("Background", Settings.ArticleBack);
 	articleBackground.addActionListener(new Runnable() {
@@ -70,7 +70,7 @@ public class SettingsDisplay extends SettingsPanel {
 		GUI.repaintContent();
 	    }
 	});
-	place(articleBackground);
+	placeAdd(articleBackground);
 
 	articleText = color("Text", Settings.ArticleFont);
 	articleText.addActionListener(new Runnable() {
@@ -81,7 +81,7 @@ public class SettingsDisplay extends SettingsPanel {
 		GUI.repaintContent();
 	    }
 	});
-	place(articleText);
+	placeAdd(articleText);
 
 	articleLinkText = color("Links", Settings.ArticleLinkFont);
 	articleLinkText.addActionListener(new Runnable() {
@@ -92,7 +92,7 @@ public class SettingsDisplay extends SettingsPanel {
 		GUI.repaintContent();
 	    }
 	});
-	place(articleLinkText);
+	placeAdd(articleLinkText);
 
 	articleAlpha = slider("Transparency", Settings.ArticleTrans, 0, 100);
 	articleAlpha.addChangeListener(new ChangeListener() {
@@ -102,12 +102,12 @@ public class SettingsDisplay extends SettingsPanel {
 		GUI.repaintContent();
 	    }
 	});
-	place(articleAlpha);
+	placeAdd(articleAlpha);
 
 	last.y += 32;
 
-	tooltips = new LLabel("Tooltips", headerFont, Color.BLACK);
-	place(tooltips);
+	tooltips = new LLabel("Tooltips", GUI.headerFont, Color.BLACK);
+	placeAdd(tooltips);
 
 	tooltipBackground = color("Background", Settings.ToolBack);
 	tooltipBackground.addActionListener(new Runnable() {
@@ -116,7 +116,7 @@ public class SettingsDisplay extends SettingsPanel {
 		tooltip.repaint();
 	    }
 	});
-	place(tooltipBackground);
+	placeAdd(tooltipBackground);
 
 	tooltipText = color("Text", Settings.ToolFont);
 	tooltipText.addActionListener(new Runnable() {
@@ -126,7 +126,7 @@ public class SettingsDisplay extends SettingsPanel {
 		tooltip.repaint();
 	    }
 	});
-	place(tooltipText);
+	placeAdd(tooltipText);
 
 	tooltipLinkText = color("Link Text", Settings.ToolLinkFont);
 	tooltipLinkText.addActionListener(new Runnable() {
@@ -136,12 +136,12 @@ public class SettingsDisplay extends SettingsPanel {
 		tooltip.repaint();
 	    }
 	});
-	place(tooltipLinkText);
+	placeAdd(tooltipLinkText);
 
 	last.y += 45;
 
-	treeLabel = new LLabel("Tree", headerFont, Color.BLACK);
-	place(treeLabel);
+	treeLabel = new LLabel("Tree", GUI.headerFont, Color.BLACK);
+	placeAdd(treeLabel);
 
 	treeBackground = color("Background", Settings.TreeBack);
 	treeBackground.addActionListener(new Runnable() {
@@ -152,7 +152,7 @@ public class SettingsDisplay extends SettingsPanel {
 		GUI.repaintContent();
 	    }
 	});
-	place(treeBackground);
+	placeAdd(treeBackground);
 
 //	treeBackgroundSel = color("Background Selected", Settings.TreeBackSelected);
 //	treeBackgroundSel.addActionListener(new Runnable() {
@@ -163,7 +163,7 @@ public class SettingsDisplay extends SettingsPanel {
 //		tree.repaint();
 //	    }
 //	});
-//	place(treeBackgroundSel);
+//	placeAdd(treeBackgroundSel);
 
 	treeText = color("Text", Settings.TreeFont);
 	treeText.addActionListener(new Runnable() {
@@ -174,7 +174,7 @@ public class SettingsDisplay extends SettingsPanel {
 		GUI.repaintContent();
 	    }
 	});
-	place(treeText);
+	placeAdd(treeText);
 
 	treeTextSel = color("Text Selected", Settings.TreeFontSelected);
 	treeTextSel.addActionListener(new Runnable() {
@@ -185,7 +185,7 @@ public class SettingsDisplay extends SettingsPanel {
 		GUI.repaintContent();
 	    }
 	});
-	place(treeTextSel);
+	placeAdd(treeTextSel);
 
 	treeAlpha = slider("Transparency", Settings.TreeTrans, 0, 100);
 	treeAlpha.addChangeListener(new ChangeListener() {
@@ -195,12 +195,12 @@ public class SettingsDisplay extends SettingsPanel {
 		GUI.repaintContent();
 	    }
 	});
-	place(treeAlpha);
+	placeAdd(treeAlpha);
 
 	last.y += 45;
 
-	dimmerLabel = new LLabel("Dimmer", headerFont, Color.BLACK);
-	place(dimmerLabel);
+	dimmerLabel = new LLabel("Dimmer", GUI.headerFont, Color.BLACK);
+	placeAdd(dimmerLabel);
 
 	dimmerAlpha = slider("Transparency", Settings.DimmerTrans, 0, 100);
 	dimmerAlpha.addChangeListener(new ChangeListener() {
@@ -211,12 +211,12 @@ public class SettingsDisplay extends SettingsPanel {
 		dimmer.setVisibleOverride(true);
 	    }
 	});
-	place(dimmerAlpha);
+	placeAdd(dimmerAlpha);
 
 	last.y += 45;
 
-	dividerLabel = new LLabel("Divider", headerFont, Color.BLACK);
-	place(dividerLabel);
+	dividerLabel = new LLabel("Divider", GUI.headerFont, Color.BLACK);
+	placeAdd(dividerLabel);
 
 	dividerColor = color("Background", Settings.DividerColor);
 	dividerColor.addActionListener(new Runnable() {
@@ -226,7 +226,7 @@ public class SettingsDisplay extends SettingsPanel {
 		GUI.repaintContent();
 	    }
 	});
-	place(dividerColor);
+	placeAdd(dividerColor);
 
 	dividerAlpha = slider("Transparency", Settings.DividerTrans, 0, 100);
 	dividerAlpha.addChangeListener(new ChangeListener() {
@@ -236,7 +236,7 @@ public class SettingsDisplay extends SettingsPanel {
 		GUI.repaintContent();
 	    }
 	});
-	place(dividerAlpha);
+	placeAdd(dividerAlpha);
 
 	// Example
 	example = new LImagePane();

@@ -1,0 +1,14 @@
+aka in links
+plaguebearer thing on multiple lines
+Flesh Render
+Bolter Drill tooltip
+indent subcategory secondary lines
+override tree display (special indicator?)
+laaarge article tooltipping
+sort by rarity
+
+Settings::::
+font sizes
+link style
+shorten grid names to shortest AKA
+shorten other areas

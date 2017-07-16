@@ -34,22 +34,19 @@ public class SettingsFrame extends LFrame {
 
     public SettingsFrame() {
 	super("Settings");
+	setSize(700, 500);
+	this.setResizable(false);
     }
 
     @Override
     public void open() {
-	if (!init) {
-	    init();
-	}
 	KnowItAll.save.saveToCancelSave();
 	setLocation(centerScreen());
-	setVisible(true);
+	super.open();
     }
 
     @Override
     protected void init() {
-	setSize(700, 500);
-	this.setResizable(false);
 
 	accept = new LButton("Accept");
 	accept.setLocation(getRealWidth() - 10 - accept.getWidth(), 6);

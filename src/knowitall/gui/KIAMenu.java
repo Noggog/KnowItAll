@@ -46,17 +46,6 @@ public class KIAMenu extends JMenuBar {
 	    }
 	});
 	file.add(settings);
-	
-	wizard = new JMenuItem("Wizard");
-	wizard.addActionListener(new ActionListener(){
-
-	    @Override
-	    public void actionPerformed(ActionEvent e) {
-		GUI.openSettingsFrame();
-	    }
-	});
-	file.add(wizard);
-	
 
 	quit = new JMenuItem("Quit");
 	quit.addActionListener(new ActionListener(){
@@ -68,7 +57,17 @@ public class KIAMenu extends JMenuBar {
 	});
 	file.add(quit);
 
-//	JMenu view = new JMenu("View");
-//	add(view);
+	JMenu edit = new JMenu("Edit");
+	add(edit);
+	
+	wizard = new JMenuItem("New Article");
+	wizard.addActionListener(new ActionListener(){
+
+	    @Override
+	    public void actionPerformed(ActionEvent e) {
+		GUI.openArticleWizardFrame();
+	    }
+	});
+	edit.add(wizard);
     }
 }

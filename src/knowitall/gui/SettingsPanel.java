@@ -7,12 +7,13 @@ package knowitall.gui;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
-import java.awt.Font;
+import java.awt.Rectangle;
 import java.util.ArrayList;
 import javax.swing.JScrollPane;
 import knowitall.KnowItAll;
 import lev.gui.*;
 import lev.gui.resources.LFonts;
+import lev.gui.resources.LImages;
 
 /**
  *
@@ -21,8 +22,6 @@ import lev.gui.resources.LFonts;
 public class SettingsPanel extends LPanel {
 
     LHelpPanel help;
-    static Font settingsFont = LFonts.MyriadPro(15);
-    static Font headerFont = LFonts.MyriadProBold(18);
     ArrayList<LUserSetting> settings = new ArrayList<>();
     LPanel pane;
     LScrollPane displayScroll;
@@ -40,8 +39,16 @@ public class SettingsPanel extends LPanel {
 	displayScroll.setSize(size);
     }
 
+    public void addHelp(Dimension size) {
+	Rectangle helpA = new Rectangle(250, 0, 350, size.height);
+	help = new LHelpPanel(helpA, LFonts.MyriadProBold(25), Color.BLACK, Color.DARK_GRAY, LImages.arrow(true, true), 0);
+	help.setTitleOffset(3);
+	help.setXOffsets(10, 21);
+	add(help);
+    }
+    
     public LCheckBox cBox(String title, Enum s) {
-	LCheckBox box = new LCheckBox(title, settingsFont, Color.BLACK);
+	LCheckBox box = new LCheckBox(title, GUI.settingsFont, Color.BLACK);
 	box.setOffset(-1);
 	if (s != null) {
 	    box.tie(s, KnowItAll.save, help, true);
@@ -50,19 +57,19 @@ public class SettingsPanel extends LPanel {
     }
 
     public LColorSetting color(String title, Enum s) {
-	LColorSetting out = new LColorSetting(title, settingsFont, Color.BLACK, Color.BLUE);
+	LColorSetting out = new LColorSetting(title, GUI.settingsFont, Color.BLACK, Color.BLUE);
 	out.tie(s, KnowItAll.save);
 	return out;
     }
 
     public LSlider slider(String title, Enum s, int min, int max) {
-	LSlider out = new LSlider(title, settingsFont, Color.BLACK, min, max, 0);
+	LSlider out = new LSlider(title, GUI.settingsFont, Color.BLACK, min, max, 0);
 	out.tie(s, KnowItAll.save);
 	return out;
     }
 
     @Override
-    public void place(Component c) {
+    public void placeAdd(Component c) {
 	setPlacement(c);
 	pane.Add(c);
 	if (c instanceof LUserSetting) {
